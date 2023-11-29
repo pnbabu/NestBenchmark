@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnestutil.a CMakeFiles/nestutil.dir/iaf_propagator.cpp.o CMakeFiles/nestutil.dir/logging_event.cpp.o CMakeFiles/nestutil.dir/numerics.cpp.o CMakeFiles/nestutil.dir/stopwatch.cpp.o
+/usr/bin/ranlib libnestutil.a

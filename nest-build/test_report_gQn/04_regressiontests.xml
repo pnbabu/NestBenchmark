@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" name="04_regressiontests" tests="61" skipped="1" time="12" timestamp="2023-11-01T13:54:46+00:00">
+  <properties>
+    <property name="os.arch" value="x86_64" />
+    <property name="os.name" value="Linux" />
+    <property name="os.version" value="5.10.16.3-microsoft-standard-WSL2" />
+  </properties>
+  <testcase classname="regressiontests" name="issue-327.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-659.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-665.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-707.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-708.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-735.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-737-threads.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-737.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-740.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-832.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-888.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-156.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-157.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-235.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-293.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-310.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-349.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-382.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-386.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-414.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-421.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-433.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-451.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-452.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-464.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-466.sli" time="0">    <skipped message="Skipped" type=""></skipped>
+  </testcase>
+  <testcase classname="regressiontests" name="ticket-475.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-478.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-481.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-507.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-514.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-537.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-564.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-566.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-573.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-580.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-618.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-619.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-638.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-643.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-673.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-681.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-686-positive-parameters.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-689.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-692-getconnections-args.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-710.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-716.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-733.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-737.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-772.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-777.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-784.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-785.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-787.sli" time="11">  </testcase>
+  <testcase classname="regressiontests" name="ticket-798.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-800.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-85.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="ticket-881.sli" time="0">  </testcase>
+  <testcase classname="regressiontests.sli2py_ignore" name="issue-2052.sli" time="0">  </testcase>
+  <testcase classname="regressiontests" name="issue-1703.py" time="1">  </testcase>
+  <testcase classname="regressiontests" name="issue-779-1016.py" time="0">  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

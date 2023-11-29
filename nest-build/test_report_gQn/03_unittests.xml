@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" name="03_unittests" tests="37" skipped="0" time="0" timestamp="2023-11-01T13:54:43+00:00">
+  <properties>
+    <property name="os.arch" value="x86_64" />
+    <property name="os.name" value="Linux" />
+    <property name="os.version" value="5.10.16.3-microsoft-standard-WSL2" />
+  </properties>
+  <testcase classname="unittests" name="test_aeif_cond_beta_multisynapse.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_common_props_setting.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_count_connections.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_gamma_sup_generator.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_iaf_ps_psp_poisson_generator_accuracy.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_iaf_psc_exp.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_iaf_psc_exp_multisynapse.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_iaf_psc_exp_ps.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_iaf_psc_exp_ps_lossless.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_iaf_psp.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_iaf_psp_normalized.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_iaf_psp_peak.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_inh_stdp_synapse.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_pp_psc_delta.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_ppd_sup_generator.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_psp_amplitude_consistency.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_set_start_stop_origin.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_spike_poisson_ps_base2.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_stdp_synapse.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_symmetric_connections.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_syn_hom_w.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_threaded_multimeter.sli" time="0">  </testcase>
+  <testcase classname="unittests" name="test_voltmeter_reset.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_DoubleVector_IntVector.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_Map.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_MapIndexed.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_connect.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_cva.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_cvi.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_dirname.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_fast_operators.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_lambertw.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_message.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_round.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_rows_cols_pos.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_sort.sli" time="0">  </testcase>
+  <testcase classname="unittests.sli2py_ignore" name="test_spike_dilutor.sli" time="0">  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

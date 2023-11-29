@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" name="02_selftests" tests="8" skipped="0" time="0" timestamp="2023-11-01T13:54:42+00:00">
+  <properties>
+    <property name="os.arch" value="x86_64" />
+    <property name="os.name" value="Linux" />
+    <property name="os.version" value="5.10.16.3-microsoft-standard-WSL2" />
+  </properties>
+  <testcase classname="selftests" name="test_pass_or_die.sli" time="0">  </testcase>
+  <testcase classname="selftests" name="test_assert_or_die_b.sli" time="0">  </testcase>
+  <testcase classname="selftests" name="test_assert_or_die_p.sli" time="0">  </testcase>
+  <testcase classname="selftests" name="test_fail_or_die.sli" time="0">  </testcase>
+  <testcase classname="selftests" name="test_crash_or_die.sli" time="0">  </testcase>
+  <testcase classname="selftests" name="test_failbutnocrash_or_die_crash.sli" time="0">  </testcase>
+  <testcase classname="selftests" name="test_failbutnocrash_or_die_pass.sli" time="0">  </testcase>
+  <testcase classname="selftests" name="test_passorfailbutnocrash_or_die.sli" time="0">  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
