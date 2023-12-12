@@ -727,5 +727,7 @@ CMakeFiles/nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o: \
  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/nest_types.h \
  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/ring_buffer.h \
  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/universal_data_logger.h \
+ /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/stopwatch.h \
  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/dictdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/nest_time.h
+ /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/nest_time.h \
+ /usr/local/include/nest/stopwatch.h

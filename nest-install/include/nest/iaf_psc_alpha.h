@@ -222,10 +222,11 @@ public:
   void get_status( DictionaryDatum& ) const override;
   void set_status( const DictionaryDatum& ) override;
 
+
 private:
   void init_buffers_() override;
   void pre_run_hook() override;
-
+  Stopwatch update_sw;
   void update( Time const&, const long, const long ) override;
 
   // The next two classes need to be friends to access the State_ class/member
@@ -437,6 +438,7 @@ iaf_psc_alpha::handles_test_event( DataLoggingRequest& dlr, size_t receptor_type
   return B_.logger_.connect_logging_device( dlr, recordablesMap_ );
 }
 
+
 inline void
 iaf_psc_alpha::get_status( DictionaryDatum& d ) const
 {
@@ -445,6 +447,7 @@ iaf_psc_alpha::get_status( DictionaryDatum& d ) const
   ArchivingNode::get_status( d );
 
   ( *d )[ names::recordables ] = recordablesMap_.get_list();
+  def< double >( d, names::update_stopwatch, update_sw.elapsed() );
 }
 
 inline void

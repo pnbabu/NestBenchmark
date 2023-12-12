@@ -11,10 +11,10 @@ PATHTOFILE = "/home/lukkyguy/code/BachlorThesis/Running/examples/brunel_alpha_ne
 PATHTOSHFILE = "/home/lukkyguy/code/BachlorThesis/Running/start.sh"
 
 NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml","iaf_psc_alpha"]
-
+#NEURONMODELS = ["iaf_psc_alpha"]
 NETWORKSCALES = np.logspace(2, 4, 10, dtype=int)
 THREADS = 8
-ITERATIONS=3
+ITERATIONS=2
 
 
 
@@ -22,6 +22,7 @@ def start_benchmark(iteration):
     
     combinations = [['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {THREADS} --iteration {iteration}'] for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
     processes = [subprocess.run(command) for command in combinations]
+    deleteDat()
 
 
 def extract_value_from_filename(filename, key):
@@ -30,8 +31,6 @@ def extract_value_from_filename(filename, key):
     return match.group(1) if match else None
 
 def plot_benchmark(data):
-   
-
     realTimeFactors = {}
     for neuron in data:
         realTimeFactors[neuron] = {}
@@ -87,11 +86,37 @@ def plot_timedist(data):
         plt.title(neuron)
         plt.legend()
         plt.savefig(f'output_{neuron}.png')
+
+def plot_Custom(data):
+    neuron = next(iter(data))
+    size = next(iter(data[neuron]))
+    entry = data[neuron][size]
+    stopwatches = entry[0]["stopwatches"].keys()
+
+    for stopwatch in stopwatches:
+        plt.figure()
+        for neuron, scales in data.items():
+            x = sorted(scales.keys())
+            y = np.array([np.mean([iteration_data['stopwatches'][stopwatch] for iteration_data in scales[scale].values()]) for scale in x])
+            y_std = np.array([np.std([iteration_data['stopwatches'][stopwatch] for iteration_data in scales[scale].values()]) for scale in x])
+            plt.plot(x, y, label=neuron)
+            plt.fill_between(x, y - y_std, y + y_std, alpha=0.2)
+
+        plt.xscale('log')
+        plt.yscale('log')
+        formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+        plt.gca().yaxis.set_major_formatter(formatter)
+
+        plt.xlabel('Network Scale')
+        plt.ylabel('Time')
+        plt.title(stopwatch)
+        plt.legend()
+        plt.savefig(f'output_{stopwatch}.png')
+    
         
 
             
 def deleteDat():
-
     for filename in os.listdir("./"):
         if filename.endswith(".dat"):
             os.remove(f"./{filename}")
@@ -109,7 +134,6 @@ if __name__ == "__main__":
         os.remove("output.png")
     for i in range(ITERATIONS):
         start_benchmark(i)
-    deleteDat()
     data = {}
     for filename in os.listdir("./timings"):
         if filename.endswith(".json"):
@@ -121,5 +145,6 @@ if __name__ == "__main__":
                 data.setdefault(simulated_neuron, {}).setdefault(network_scale, {}).setdefault(iteration, json_data)
     plot_benchmark(data)
     plot_timedist(data)
+    plot_Custom(data)
     
 

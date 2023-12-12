@@ -367,6 +367,11 @@ status = nest.GetKernelStatus()
 status = convert_np_arrays_to_lists(status)
 #create the folder if it does not exist
 
+
+status["stopwatches"] = {}
+stopwatch = nodes_ex.get('update_stopwatch')
+status["stopwatches"]["update"] = stopwatch
+
 if not os.path.exists("timings"):
     os.makedirs("timings")
 with open(f"timings/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}].json", "w") as f:

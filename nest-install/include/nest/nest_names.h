@@ -649,6 +649,7 @@ extern const Name y_1;
 
 extern const Name z;
 extern const Name z_connected;
+extern const Name update_stopwatch;
 } // namespace names
 
 } // namespace nest

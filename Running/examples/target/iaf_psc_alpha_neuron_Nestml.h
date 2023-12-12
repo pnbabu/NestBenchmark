@@ -20,7 +20,7 @@
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
  *  Generated from NESTML at time: 2023-11-08 09:35:58.449407
-**/
+ **/
 #ifndef IAF_PSC_ALPHA_NEURON_NESTML
 #define IAF_PSC_ALPHA_NEURON_NESTML
 
@@ -42,38 +42,38 @@
 #include "ring_buffer.h"
 #include "universal_data_logger.h"
 
+#include "stopwatch.h"
+
 // Includes from sli:
 #include "dictdatum.h"
 
 namespace nest
 {
-namespace iaf_psc_alpha_neuron_Nestml_names
-{
-    const Name _V_m( "V_m" );
-    const Name _refr_t( "refr_t" );
-    const Name _is_refractory( "is_refractory" );
-    const Name _I_kernel_exc__X__exc_spikes( "I_kernel_exc__X__exc_spikes" );
-    const Name _I_kernel_exc__X__exc_spikes__d( "I_kernel_exc__X__exc_spikes__d" );
-    const Name _I_kernel_inh__X__inh_spikes( "I_kernel_inh__X__inh_spikes" );
-    const Name _I_kernel_inh__X__inh_spikes__d( "I_kernel_inh__X__inh_spikes__d" );
-    const Name _C_m( "C_m" );
-    const Name _tau_m( "tau_m" );
-    const Name _tau_syn_inh( "tau_syn_inh" );
-    const Name _tau_syn_exc( "tau_syn_exc" );
-    const Name _refr_T( "refr_T" );
-    const Name _E_L( "E_L" );
-    const Name _V_reset( "V_reset" );
-    const Name _V_th( "V_th" );
-    const Name _I_e( "I_e" );
+  namespace iaf_psc_alpha_neuron_Nestml_names
+  {
+    const Name _V_m("V_m");
+    const Name _refr_t("refr_t");
+    const Name _is_refractory("is_refractory");
+    const Name _I_kernel_exc__X__exc_spikes("I_kernel_exc__X__exc_spikes");
+    const Name _I_kernel_exc__X__exc_spikes__d("I_kernel_exc__X__exc_spikes__d");
+    const Name _I_kernel_inh__X__inh_spikes("I_kernel_inh__X__inh_spikes");
+    const Name _I_kernel_inh__X__inh_spikes__d("I_kernel_inh__X__inh_spikes__d");
+    const Name _C_m("C_m");
+    const Name _tau_m("tau_m");
+    const Name _tau_syn_inh("tau_syn_inh");
+    const Name _tau_syn_exc("tau_syn_exc");
+    const Name _refr_T("refr_T");
+    const Name _E_L("E_L");
+    const Name _V_reset("V_reset");
+    const Name _V_th("V_th");
+    const Name _I_e("I_e");
+  }
 }
-}
-
-
-
 
 #include "nest_time.h"
-  typedef size_t nest_port_t;
-  typedef size_t nest_rport_t;
+#include <nest/stopwatch.h>
+typedef size_t nest_port_t;
+typedef size_t nest_rport_t;
 
 /* BeginDocumentation
   Name: iaf_psc_alpha_neuron_Nestml
@@ -165,7 +165,7 @@ class iaf_psc_alpha_neuron_Nestml : public nest::ArchivingNode
 public:
   /**
    * The constructor is only used to create the model prototype in the model manager.
-  **/
+   **/
   iaf_psc_alpha_neuron_Nestml();
 
   /**
@@ -173,12 +173,12 @@ public:
    * @node The copy constructor needs to initialize the parameters and the state.
    *       Initialization of buffers and interal variables is deferred to
    *       @c init_buffers_() and @c pre_run_hook() (or calibrate() in NEST 3.3 and older).
-  **/
+   **/
   iaf_psc_alpha_neuron_Nestml(const iaf_psc_alpha_neuron_Nestml &);
 
   /**
    * Destructor.
-  **/
+   **/
   ~iaf_psc_alpha_neuron_Nestml() override;
 
   // -------------------------------------------------------------------------
@@ -187,14 +187,13 @@ public:
   //        and Hiding
   // -------------------------------------------------------------------------
 
-  using nest::Node::handles_test_event;
   using nest::Node::handle;
+  using nest::Node::handles_test_event;
 
   /**
    * Used to validate that we can send nest::SpikeEvent to desired target:port.
-  **/
-  nest_port_t send_test_event(nest::Node& target, nest_rport_t receptor_type, nest::synindex, bool) override;
-
+   **/
+  nest_port_t send_test_event(nest::Node &target, nest_rport_t receptor_type, nest::synindex, bool) override;
 
   // -------------------------------------------------------------------------
   //   Functions handling incoming events.
@@ -202,14 +201,13 @@ public:
   //   defining handle() for the given event.
   // -------------------------------------------------------------------------
 
+  void handle(nest::SpikeEvent &) override;   //! accept spikes
+  void handle(nest::CurrentEvent &) override; //! accept input current
 
-  void handle(nest::SpikeEvent &) override;        //! accept spikes
-  void handle(nest::CurrentEvent &) override;      //! accept input current
-
-  void handle(nest::DataLoggingRequest &) override;//! allow recording with multimeter
-  nest_port_t handles_test_event(nest::SpikeEvent&, nest_port_t) override;
-  nest_port_t handles_test_event(nest::CurrentEvent&, nest_port_t) override;
-  nest_port_t handles_test_event(nest::DataLoggingRequest&, nest_port_t) override;
+  void handle(nest::DataLoggingRequest &) override; //! allow recording with multimeter
+  nest_port_t handles_test_event(nest::SpikeEvent &, nest_port_t) override;
+  nest_port_t handles_test_event(nest::CurrentEvent &, nest_port_t) override;
+  nest_port_t handles_test_event(nest::DataLoggingRequest &, nest_port_t) override;
 
   // -------------------------------------------------------------------------
   //   Functions for getting/setting parameters and state values.
@@ -217,7 +215,6 @@ public:
 
   void get_status(DictionaryDatum &) const override;
   void set_status(const DictionaryDatum &) override;
-
 
   // -------------------------------------------------------------------------
   //   Getters/setters for state block
@@ -292,7 +289,6 @@ public:
   {
     S_.I_kernel_inh__X__inh_spikes__d = __v;
   }
-
 
   // -------------------------------------------------------------------------
   //   Getters/setters for parameters
@@ -387,7 +383,6 @@ public:
   {
     P_.I_e = __v;
   }
-
 
   // -------------------------------------------------------------------------
   //   Getters/setters for internals
@@ -520,27 +515,23 @@ public:
     V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d = __v;
   }
 
-
   // -------------------------------------------------------------------------
   //   Methods corresponding to event handlers
   // -------------------------------------------------------------------------
 
-  
-
   // -------------------------------------------------------------------------
   //   Initialization functions
   // -------------------------------------------------------------------------
-  void calibrate_time( const nest::TimeConverter& tc ) override;
+  void calibrate_time(const nest::TimeConverter &tc) override;
 
 protected:
+private:
+  void recompute_internal_variables(bool exclude_timestep = false);
 
 private:
-  void recompute_internal_variables(bool exclude_timestep=false);
-
-private:
-
   static const nest_port_t MIN_SPIKE_RECEPTOR = 0;
   static const nest_port_t PORT_NOT_AVAILABLE = -1;
+  nest::Stopwatch update_sw;
 
   enum SynapseTypes
   {
@@ -551,27 +542,27 @@ private:
 
   static const size_t NUM_SPIKE_RECEPTORS = MAX_SPIKE_RECEPTOR - MIN_SPIKE_RECEPTOR;
 
-static std::vector< std::tuple< int, int > > rport_to_nestml_buffer_idx;
+  static std::vector<std::tuple<int, int>> rport_to_nestml_buffer_idx;
 
   /**
    * Reset state of neuron.
-  **/
+   **/
 
   void init_state_internal_();
 
   /**
    * Reset internal buffers of neuron.
-  **/
+   **/
   void init_buffers_() override;
 
   /**
    * Initialize auxiliary quantities, leave parameters and state untouched.
-  **/
+   **/
   void pre_run_hook() override;
 
   /**
    * Take neuron through given time interval
-  **/
+   **/
   void update(nest::Time const &, const long, const long) override;
 
   // The next two classes need to be friends to access the State_ class/member
@@ -600,7 +591,7 @@ static std::vector< std::tuple< int, int > > rport_to_nestml_buffer_idx;
    *         assignment operator to copy those members.
   **/
   struct Parameters_
-  {    
+  {
     //!  Capacitance of the membrane
     double C_m;
     //!  Membrane time constant
@@ -622,7 +613,7 @@ static std::vector< std::tuple< int, int > > rport_to_nestml_buffer_idx;
 
     /**
      * Initialize parameters to their default values.
-    **/
+     **/
     Parameters_();
   };
 
@@ -645,9 +636,9 @@ static std::vector< std::tuple< int, int > > rport_to_nestml_buffer_idx;
    *       - If State_ contained members that cannot copy themselves, such
    *         as C-style arrays, you need to define the copy constructor and
    *         assignment operator to copy those members.
-  **/
+   **/
   struct State_
-  {    
+  {
     double V_m;
     //!  Refractory period timer
     double refr_t;
@@ -674,7 +665,7 @@ static std::vector< std::tuple< int, int > > rport_to_nestml_buffer_idx;
    * @node Variables_ needs neither constructor, copy constructor or assignment operator,
    *       since it is initialized by @c pre_run_hook() (or calibrate() in NEST 3.3 and older). If Variables_ has members that
    *       cannot destroy themselves, Variables_ will need a destructor.
-  **/
+   **/
   struct Variables_
   {
     double __h;
@@ -702,7 +693,7 @@ static std::vector< std::tuple< int, int > > rport_to_nestml_buffer_idx;
    * @node Buffers_ needs neither constructor, copy constructor or assignment operator,
    *       since it is initialized by @c init_nodes_(). If Buffers_ has members that
    *       cannot destroy themselves, Buffers_ will need a destructor.
-  **/
+   **/
   struct Buffers_
   {
     Buffers_(iaf_psc_alpha_neuron_Nestml &);
@@ -710,62 +701,59 @@ static std::vector< std::tuple< int, int > > rport_to_nestml_buffer_idx;
 
     /**
      * Logger for all analog data
-    **/
+     **/
     nest::UniversalDataLogger<iaf_psc_alpha_neuron_Nestml> logger_;
 
     // -----------------------------------------------------------------------
     //   Spike buffers and sums of incoming spikes/currents per timestep
-    // -----------------------------------------------------------------------    
-
-
+    // -----------------------------------------------------------------------
 
     /**
      * Buffer containing the incoming spikes
-    **/
-    inline std::vector< nest::RingBuffer >& get_spike_inputs_()
+     **/
+    inline std::vector<nest::RingBuffer> &get_spike_inputs_()
     {
-        return spike_inputs_;
+      return spike_inputs_;
     }
-    std::vector< nest::RingBuffer > spike_inputs_;
+    std::vector<nest::RingBuffer> spike_inputs_;
 
     /**
      * Buffer containing the sum of all the incoming spikes
-    **/
-    inline std::vector< double >& get_spike_inputs_grid_sum_()
+     **/
+    inline std::vector<double> &get_spike_inputs_grid_sum_()
     {
-        return spike_inputs_grid_sum_;
+      return spike_inputs_grid_sum_;
     }
-    std::vector< double > spike_inputs_grid_sum_;
+    std::vector<double> spike_inputs_grid_sum_;
 
     /**
      * Buffer containing a flag whether incoming spikes have been received on a given port
-    **/
-    inline std::vector< nest::RingBuffer >& get_spike_input_received_()
+     **/
+    inline std::vector<nest::RingBuffer> &get_spike_input_received_()
     {
-        return spike_input_received_;
+      return spike_input_received_;
     }
-    std::vector< nest::RingBuffer > spike_input_received_;
+    std::vector<nest::RingBuffer> spike_input_received_;
 
     /**
      * Buffer containing a flag whether incoming spikes have been received on a given port
-    **/
-    inline std::vector< double >& get_spike_input_received_grid_sum_()
+     **/
+    inline std::vector<double> &get_spike_input_received_grid_sum_()
     {
-        return spike_input_received_grid_sum_;
+      return spike_input_received_grid_sum_;
     }
-    std::vector< double > spike_input_received_grid_sum_;
+    std::vector<double> spike_input_received_grid_sum_;
 
     // -----------------------------------------------------------------------
     //   Continuous-input buffers
     // -----------------------------------------------------------------------
 
-    
-
     nest::RingBuffer
-     I_stim;   //!< Buffer for input (type: pA)
+        I_stim; //!< Buffer for input (type: pA)
 
-    inline nest::RingBuffer& get_I_stim() {
-        return I_stim;
+    inline nest::RingBuffer &get_I_stim()
+    {
+      return I_stim;
     }
 
     double I_stim_grid_sum_;
@@ -779,50 +767,46 @@ static std::vector< std::tuple< int, int > > rport_to_nestml_buffer_idx;
     return S_.I_kernel_exc__X__exc_spikes * 1.0 - S_.I_kernel_inh__X__inh_spikes * 1.0 + P_.I_e + B_.I_stim_grid_sum_;
   }
 
-
-
   // -------------------------------------------------------------------------
   //   Getters/setters for input buffers
-  // -------------------------------------------------------------------------  
-
-
-
+  // -------------------------------------------------------------------------
 
   /**
    * Buffer containing the incoming spikes
-  **/
-  inline std::vector< nest::RingBuffer >& get_spike_inputs_()
+   **/
+  inline std::vector<nest::RingBuffer> &get_spike_inputs_()
   {
-      return B_.get_spike_inputs_();
+    return B_.get_spike_inputs_();
   }
 
   /**
    * Buffer containing the sum of all the incoming spikes
-  **/
-  inline std::vector< double >& get_spike_inputs_grid_sum_()
+   **/
+  inline std::vector<double> &get_spike_inputs_grid_sum_()
   {
-      return B_.get_spike_inputs_grid_sum_();
+    return B_.get_spike_inputs_grid_sum_();
   }
 
   /**
    * Buffer containing a flag whether incoming spikes have been received on a given port
-  **/
-  inline std::vector< nest::RingBuffer >& get_spike_input_received_()
+   **/
+  inline std::vector<nest::RingBuffer> &get_spike_input_received_()
   {
-      return B_.get_spike_input_received_();
+    return B_.get_spike_input_received_();
   }
 
   /**
    * Buffer containing a flag whether incoming spikes have been received on a given port
-  **/
-  inline std::vector< double >& get_spike_input_received_grid_sum_()
+   **/
+  inline std::vector<double> &get_spike_input_received_grid_sum_()
   {
-      return B_.get_spike_input_received_grid_sum_();
+    return B_.get_spike_input_received_grid_sum_();
   }
 
-inline nest::RingBuffer& get_I_stim() {
+  inline nest::RingBuffer &get_I_stim()
+  {
     return B_.get_I_stim();
-}
+  }
 
   // -------------------------------------------------------------------------
   //   Member variables of neuron model.
@@ -834,19 +818,18 @@ inline nest::RingBuffer& get_I_stim() {
   //   ``Device`` child class they belong to.
   // -------------------------------------------------------------------------
 
-
-  Parameters_       P_;        //!< Free parameters.
-  State_            S_;        //!< Dynamic state.
-  DelayedVariables_ DV_;       //!< Delayed state variables.
-  Variables_        V_;        //!< Internal Variables
-  Buffers_          B_;        //!< Buffers.
+  Parameters_ P_;        //!< Free parameters.
+  State_ S_;             //!< Dynamic state.
+  DelayedVariables_ DV_; //!< Delayed state variables.
+  Variables_ V_;         //!< Internal Variables
+  Buffers_ B_;           //!< Buffers.
 
   //! Mapping of recordables names to access functions
   static nest::RecordablesMap<iaf_psc_alpha_neuron_Nestml> recordablesMap_;
 
 }; /* neuron iaf_psc_alpha_neuron_Nestml */
 
-inline nest_port_t iaf_psc_alpha_neuron_Nestml::send_test_event(nest::Node& target, nest_rport_t receptor_type, nest::synindex, bool)
+inline nest_port_t iaf_psc_alpha_neuron_Nestml::send_test_event(nest::Node &target, nest_rport_t receptor_type, nest::synindex, bool)
 {
   // You should usually not change the code in this function.
   // It confirms that the target of connection @c c accepts @c nest::SpikeEvent on
@@ -856,20 +839,20 @@ inline nest_port_t iaf_psc_alpha_neuron_Nestml::send_test_event(nest::Node& targ
   return target.handles_test_event(e, receptor_type);
 }
 
-inline nest_port_t iaf_psc_alpha_neuron_Nestml::handles_test_event(nest::SpikeEvent&, nest_port_t receptor_type)
+inline nest_port_t iaf_psc_alpha_neuron_Nestml::handles_test_event(nest::SpikeEvent &, nest_port_t receptor_type)
 {
-    // You should usually not change the code in this function.
-    // It confirms to the connection management system that we are able
-    // to handle @c SpikeEvent on port 0. You need to extend the function
-    // if you want to differentiate between input ports.
-    if (receptor_type != 0)
-    {
-      throw nest::UnknownReceptorType(receptor_type, get_name());
-    }
-    return 0;
+  // You should usually not change the code in this function.
+  // It confirms to the connection management system that we are able
+  // to handle @c SpikeEvent on port 0. You need to extend the function
+  // if you want to differentiate between input ports.
+  if (receptor_type != 0)
+  {
+    throw nest::UnknownReceptorType(receptor_type, get_name());
+  }
+  return 0;
 }
 
-inline nest_port_t iaf_psc_alpha_neuron_Nestml::handles_test_event(nest::CurrentEvent&, nest_port_t receptor_type)
+inline nest_port_t iaf_psc_alpha_neuron_Nestml::handles_test_event(nest::CurrentEvent &, nest_port_t receptor_type)
 {
   // You should usually not change the code in this function.
   // It confirms to the connection management system that we are able
@@ -882,7 +865,7 @@ inline nest_port_t iaf_psc_alpha_neuron_Nestml::handles_test_event(nest::Current
   return 0;
 }
 
-inline nest_port_t iaf_psc_alpha_neuron_Nestml::handles_test_event(nest::DataLoggingRequest& dlr, nest_port_t receptor_type)
+inline nest_port_t iaf_psc_alpha_neuron_Nestml::handles_test_event(nest::DataLoggingRequest &dlr, nest_port_t receptor_type)
 {
   // You should usually not change the code in this function.
   // It confirms to the connection management system that we are able
@@ -919,9 +902,11 @@ inline void iaf_psc_alpha_neuron_Nestml::get_status(DictionaryDatum &__d) const
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_names::_I_kernel_inh__X__inh_spikes, get_I_kernel_inh__X__inh_spikes());
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_names::_I_kernel_inh__X__inh_spikes__d, get_I_kernel_inh__X__inh_spikes__d());
 
-  ArchivingNode::get_status( __d );
+  ArchivingNode::get_status(__d);
 
   (*__d)[nest::names::recordables] = recordablesMap_.get_list();
+  def<double>(__d, nest::names::update_stopwatch, update_sw.elapsed());
+  // comment
 }
 
 inline void iaf_psc_alpha_neuron_Nestml::set_status(const DictionaryDatum &__d)
@@ -986,14 +971,8 @@ inline void iaf_psc_alpha_neuron_Nestml::set_status(const DictionaryDatum &__d)
   set_I_kernel_inh__X__inh_spikes(tmp_I_kernel_inh__X__inh_spikes);
   set_I_kernel_inh__X__inh_spikes__d(tmp_I_kernel_inh__X__inh_spikes__d);
 
-
-
-
-
   // recompute internal variables in case they are dependent on parameters or state that might have been updated in this call to set_status()
   recompute_internal_variables();
 };
-
-
 
 #endif /* #ifndef IAF_PSC_ALPHA_NEURON_NESTML */

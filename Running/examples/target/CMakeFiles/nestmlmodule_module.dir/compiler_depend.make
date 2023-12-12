@@ -804,8 +804,10 @@ CMakeFiles/nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o: iaf_psc_alpha_
   /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/nest_types.h \
   /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/ring_buffer.h \
   /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/universal_data_logger.h \
+  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/dictdatum.h \
-  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/nest_time.h
+  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/nest_time.h \
+  /usr/local/include/nest/stopwatch.h
 
 CMakeFiles/nestmlmodule_module.dir/nestmlmodule.o: nestmlmodule.cpp \
   /usr/include/stdc-predef.h \
@@ -1622,8 +1624,10 @@ CMakeFiles/nestmlmodule_module.dir/nestmlmodule.o: nestmlmodule.cpp \
   /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/ring_buffer.h \
   /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/universal_data_logger.h \
   /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/recordables_map.h \
+  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/dictdatum.h \
-  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/nest_time.h
+  /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/nest_time.h \
+  /usr/local/include/nest/stopwatch.h
 
 
 /home/lukkyguy/code/BachlorThesis/nest-install/include/nest/nest_impl.h:
@@ -3025,6 +3029,8 @@ iaf_psc_alpha_neuron_Nestml.cpp:
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
 /usr/include/boost/mpl/lambda_fwd.hpp:
+
+/usr/local/include/nest/stopwatch.h:
 
 /usr/include/boost/type_traits/is_complex.hpp:
 
