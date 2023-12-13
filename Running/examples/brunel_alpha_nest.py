@@ -49,7 +49,7 @@ References
 # should be imported before nest.
 
 import time
-
+import sys
 import matplotlib.pyplot as plt
 import nest
 import nest.raster_plot
@@ -58,6 +58,7 @@ import scipy.special as sp
 import json
 import argparse
 import os
+
 
 ###############################################################################
 # Definition of functions used in this example. First, define the `Lambert W`
@@ -74,7 +75,7 @@ parser.add_argument('--iteration', type=int, help='iteration number used for the
 
 args = parser.parse_args()
 
-
+print("foo")
 def LambertWm1(x):
     # Using scipy to mimic the gsl_sf_lambert_Wm1 function.
     return sp.lambertw(x, k=-1 if x < 0 else 0).real
@@ -100,6 +101,7 @@ nest.ResetKernel()
 nest.local_num_threads = parser.parse_args().threads
 
 
+print("foo1")
 
 ###############################################################################
 # Assigning the current time to a variable in order to determine the build
@@ -131,6 +133,7 @@ order = args.network_scale
 NE = 4 * order  # number of excitatory neurons
 NI = 1 * order  # number of inhibitory neurons
 N_neurons = NE + NI  # number of neurons in total
+print(f"Number of neurons : {N_neurons}")
 N_rec = 50  # record from 50 neurons
 
 ###############################################################################
@@ -184,6 +187,7 @@ J_in = -g * J_ex  # amplitude of inhibitory postsynaptic current
 # membrane potential around its threshold, the external firing rate and the
 # rate of the poisson generator which is multiplied by the in-degree CE and
 # converted to Hz by multiplication by 1000.
+print("foo2")
 
 nu_th = (theta * CMem) / (J_ex * CE * np.exp(1) * tauMem * tauSyn)
 nu_ex = eta * nu_th
@@ -199,8 +203,8 @@ p_rate = 1000.0 * nu_ex * CE
 nest.resolution = dt
 nest.print_time = True
 nest.overwrite_files = True
-nest.Install("nestmlmodule")
 
+nest.Install("nestmlmodule")
 print("Building network")
 
 ###############################################################################
@@ -339,7 +343,6 @@ sim_time = endsimulate - endbuild
 # Printing the network properties, firing rates and building times.
 
 print("Brunel network simulation (Python)")
-print(f"Number of neurons : {N_neurons}")
 print(f"Number of synapses: {num_synapses}")
 print(f"       Excitatory : {num_synapses_ex}")
 print(f"       Inhibitory : {num_synapses_in}")

@@ -1,4 +1,5 @@
 import subprocess
+import sys
 import os
 import re
 import json
@@ -7,21 +8,26 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import FuncFormatter
 
-PATHTOFILE = "/home/lukkyguy/code/BachlorThesis/Running/examples/brunel_alpha_nest.py"
-PATHTOSHFILE = "/home/lukkyguy/code/BachlorThesis/Running/start.sh"
+PATHTOFILE = "/home/charl/NestBenchmark/Running/examples/brunel_alpha_nest.py"
+PATHTOSHFILE = "/home/charl/NestBenchmark/Running/start.sh"
 
 NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml","iaf_psc_alpha"]
 #NEURONMODELS = ["iaf_psc_alpha"]
-NETWORKSCALES = np.logspace(2, 4, 10, dtype=int)
+#NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
+NETWORKSCALES = np.logspace(3.4, 3.6, 2, dtype=int)
 THREADS = 8
-ITERATIONS=2
+ITERATIONS=1
 
 
 
 def start_benchmark(iteration):
-    
     combinations = [['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {THREADS} --iteration {iteration}'] for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
     processes = [subprocess.run(command) for command in combinations]
+    exit_codes = [process.returncode for process in processes]	
+    if np.any(exit_codes):
+        print("Error executing network script")
+        sys.exit(1)
+
     deleteDat()
 
 

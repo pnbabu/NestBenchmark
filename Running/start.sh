@@ -1,1 +1,1 @@
-source /home/lukkyguy/code/BachlorThesis/nest-install/bin/nest_vars.sh
+source /home/charl/nest-simulator-install/bin/nest_vars.sh
