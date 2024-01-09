@@ -1,7 +1,7 @@
 libnestutil/CMakeFiles/nestutil.dir/iaf_propagator.cpp.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/iaf_propagator.cpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/iaf_propagator.cpp \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/iaf_propagator.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/iaf_propagator.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -79,7 +79,7 @@ libnestutil/CMakeFiles/nestutil.dir/iaf_propagator.cpp.o: \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/numerics.h \
- /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/numerics.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/limits

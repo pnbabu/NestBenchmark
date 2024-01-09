@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukkyguy/code/BachlorThesis/nest-simulator
+CMAKE_SOURCE_DIR = /home/lukkyguy/code/NestBenchmark/nest-simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukkyguy/code/BachlorThesis/nest-build
+CMAKE_BINARY_DIR = /home/lukkyguy/code/NestBenchmark/nest-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil//CMakeFiles/progress.marks
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles 0
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil//CMakeFiles/progress.marks
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/clean
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/preinstall
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/preinstall
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libnestutil/CMakeFiles/nestutil.dir/rule:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/CMakeFiles/nestutil.dir/rule
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnestutil/CMakeFiles/nestutil.dir/rule
 .PHONY : libnestutil/CMakeFiles/nestutil.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ nestutil: libnestutil/CMakeFiles/nestutil.dir/rule
 
 # fast build rule for target.
 nestutil/fast:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/build
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/build
 .PHONY : nestutil/fast
 
 iaf_propagator.o: iaf_propagator.cpp.o
@@ -190,7 +190,7 @@ iaf_propagator.o: iaf_propagator.cpp.o
 
 # target to build an object file
 iaf_propagator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/iaf_propagator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/iaf_propagator.cpp.o
 .PHONY : iaf_propagator.cpp.o
 
 iaf_propagator.i: iaf_propagator.cpp.i
@@ -198,7 +198,7 @@ iaf_propagator.i: iaf_propagator.cpp.i
 
 # target to preprocess a source file
 iaf_propagator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/iaf_propagator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/iaf_propagator.cpp.i
 .PHONY : iaf_propagator.cpp.i
 
 iaf_propagator.s: iaf_propagator.cpp.s
@@ -206,7 +206,7 @@ iaf_propagator.s: iaf_propagator.cpp.s
 
 # target to generate assembly for a file
 iaf_propagator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/iaf_propagator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/iaf_propagator.cpp.s
 .PHONY : iaf_propagator.cpp.s
 
 logging_event.o: logging_event.cpp.o
@@ -214,7 +214,7 @@ logging_event.o: logging_event.cpp.o
 
 # target to build an object file
 logging_event.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/logging_event.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/logging_event.cpp.o
 .PHONY : logging_event.cpp.o
 
 logging_event.i: logging_event.cpp.i
@@ -222,7 +222,7 @@ logging_event.i: logging_event.cpp.i
 
 # target to preprocess a source file
 logging_event.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/logging_event.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/logging_event.cpp.i
 .PHONY : logging_event.cpp.i
 
 logging_event.s: logging_event.cpp.s
@@ -230,7 +230,7 @@ logging_event.s: logging_event.cpp.s
 
 # target to generate assembly for a file
 logging_event.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/logging_event.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/logging_event.cpp.s
 .PHONY : logging_event.cpp.s
 
 numerics.o: numerics.cpp.o
@@ -238,7 +238,7 @@ numerics.o: numerics.cpp.o
 
 # target to build an object file
 numerics.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/numerics.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/numerics.cpp.o
 .PHONY : numerics.cpp.o
 
 numerics.i: numerics.cpp.i
@@ -246,7 +246,7 @@ numerics.i: numerics.cpp.i
 
 # target to preprocess a source file
 numerics.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/numerics.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/numerics.cpp.i
 .PHONY : numerics.cpp.i
 
 numerics.s: numerics.cpp.s
@@ -254,7 +254,7 @@ numerics.s: numerics.cpp.s
 
 # target to generate assembly for a file
 numerics.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/numerics.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/numerics.cpp.s
 .PHONY : numerics.cpp.s
 
 stopwatch.o: stopwatch.cpp.o
@@ -262,7 +262,7 @@ stopwatch.o: stopwatch.cpp.o
 
 # target to build an object file
 stopwatch.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/stopwatch.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/stopwatch.cpp.o
 .PHONY : stopwatch.cpp.o
 
 stopwatch.i: stopwatch.cpp.i
@@ -270,7 +270,7 @@ stopwatch.i: stopwatch.cpp.i
 
 # target to preprocess a source file
 stopwatch.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/stopwatch.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/stopwatch.cpp.i
 .PHONY : stopwatch.cpp.i
 
 stopwatch.s: stopwatch.cpp.s
@@ -278,7 +278,7 @@ stopwatch.s: stopwatch.cpp.s
 
 # target to generate assembly for a file
 stopwatch.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/stopwatch.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f libnestutil/CMakeFiles/nestutil.dir/build.make libnestutil/CMakeFiles/nestutil.dir/stopwatch.cpp.s
 .PHONY : stopwatch.cpp.s
 
 # Help Target
@@ -318,6 +318,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

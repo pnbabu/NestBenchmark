@@ -1,8 +1,8 @@
 sli/CMakeFiles/sli_lib.dir/fdstream.cc.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/fdstream.cc \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/fdstream.cc \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/fdstream.h \
- /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/fdstream.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h \
  /usr/include/fcntl.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

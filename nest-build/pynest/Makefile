@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukkyguy/code/BachlorThesis/nest-simulator
+CMAKE_SOURCE_DIR = /home/lukkyguy/code/NestBenchmark/nest-simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukkyguy/code/BachlorThesis/nest-build
+CMAKE_BINARY_DIR = /home/lukkyguy/code/NestBenchmark/nest-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles /home/lukkyguy/code/BachlorThesis/nest-build/pynest//CMakeFiles/progress.marks
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles 0
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles /home/lukkyguy/code/NestBenchmark/nest-build/pynest//CMakeFiles/progress.marks
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/clean
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/preinstall
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/preinstall
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 pynest/CMakeFiles/pynestkernel.dir/rule:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/CMakeFiles/pynestkernel.dir/rule
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pynest/CMakeFiles/pynestkernel.dir/rule
 .PHONY : pynest/CMakeFiles/pynestkernel.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ pynestkernel: pynest/CMakeFiles/pynestkernel.dir/rule
 
 # fast build rule for target.
 pynestkernel/fast:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f pynest/CMakeFiles/pynestkernel.dir/build.make pynest/CMakeFiles/pynestkernel.dir/build
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f pynest/CMakeFiles/pynestkernel.dir/build.make pynest/CMakeFiles/pynestkernel.dir/build
 .PHONY : pynestkernel/fast
 
 pynestkernel.o: pynestkernel.cxx.o
@@ -190,7 +190,7 @@ pynestkernel.o: pynestkernel.cxx.o
 
 # target to build an object file
 pynestkernel.cxx.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f pynest/CMakeFiles/pynestkernel.dir/build.make pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f pynest/CMakeFiles/pynestkernel.dir/build.make pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o
 .PHONY : pynestkernel.cxx.o
 
 pynestkernel.i: pynestkernel.cxx.i
@@ -198,7 +198,7 @@ pynestkernel.i: pynestkernel.cxx.i
 
 # target to preprocess a source file
 pynestkernel.cxx.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f pynest/CMakeFiles/pynestkernel.dir/build.make pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f pynest/CMakeFiles/pynestkernel.dir/build.make pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.i
 .PHONY : pynestkernel.cxx.i
 
 pynestkernel.s: pynestkernel.cxx.s
@@ -206,7 +206,7 @@ pynestkernel.s: pynestkernel.cxx.s
 
 # target to generate assembly for a file
 pynestkernel.cxx.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f pynest/CMakeFiles/pynestkernel.dir/build.make pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f pynest/CMakeFiles/pynestkernel.dir/build.make pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.s
 .PHONY : pynestkernel.cxx.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

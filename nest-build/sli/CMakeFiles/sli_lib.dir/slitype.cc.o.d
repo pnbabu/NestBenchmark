@@ -1,7 +1,7 @@
 sli/CMakeFiles/sli_lib.dir/slitype.cc.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slitype.cc \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slitype.cc \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slitype.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slitype.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -151,7 +151,7 @@ sli/CMakeFiles/sli_lib.dir/slitype.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/name.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
@@ -163,4 +163,4 @@ sli/CMakeFiles/sli_lib.dir/slitype.cc.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slifunction.h
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slifunction.h

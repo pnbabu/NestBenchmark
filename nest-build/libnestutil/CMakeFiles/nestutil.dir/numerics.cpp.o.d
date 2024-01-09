@@ -1,8 +1,8 @@
 libnestutil/CMakeFiles/nestutil.dir/numerics.cpp.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/numerics.cpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/numerics.cpp \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/numerics.h \
- /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/numerics.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h \
  /usr/include/c++/11/cassert \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

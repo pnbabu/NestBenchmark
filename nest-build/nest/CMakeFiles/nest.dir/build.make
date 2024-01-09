@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukkyguy/code/BachlorThesis/nest-simulator
+CMAKE_SOURCE_DIR = /home/lukkyguy/code/NestBenchmark/nest-simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukkyguy/code/BachlorThesis/nest-build
+CMAKE_BINARY_DIR = /home/lukkyguy/code/NestBenchmark/nest-build
 
 # Include any dependencies generated for this target.
 include nest/CMakeFiles/nest.dir/depend.make
@@ -70,32 +70,32 @@ include nest/CMakeFiles/nest.dir/progress.make
 include nest/CMakeFiles/nest.dir/flags.make
 
 nest/CMakeFiles/nest.dir/main.cpp.o: nest/CMakeFiles/nest.dir/flags.make
-nest/CMakeFiles/nest.dir/main.cpp.o: /home/lukkyguy/code/BachlorThesis/nest-simulator/nest/main.cpp
+nest/CMakeFiles/nest.dir/main.cpp.o: /home/lukkyguy/code/NestBenchmark/nest-simulator/nest/main.cpp
 nest/CMakeFiles/nest.dir/main.cpp.o: nest/CMakeFiles/nest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object nest/CMakeFiles/nest.dir/main.cpp.o"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nest/CMakeFiles/nest.dir/main.cpp.o -MF CMakeFiles/nest.dir/main.cpp.o.d -o CMakeFiles/nest.dir/main.cpp.o -c /home/lukkyguy/code/BachlorThesis/nest-simulator/nest/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object nest/CMakeFiles/nest.dir/main.cpp.o"
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nest/CMakeFiles/nest.dir/main.cpp.o -MF CMakeFiles/nest.dir/main.cpp.o.d -o CMakeFiles/nest.dir/main.cpp.o -c /home/lukkyguy/code/NestBenchmark/nest-simulator/nest/main.cpp
 
 nest/CMakeFiles/nest.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nest.dir/main.cpp.i"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/BachlorThesis/nest-simulator/nest/main.cpp > CMakeFiles/nest.dir/main.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/nest-simulator/nest/main.cpp > CMakeFiles/nest.dir/main.cpp.i
 
 nest/CMakeFiles/nest.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nest.dir/main.cpp.s"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/BachlorThesis/nest-simulator/nest/main.cpp -o CMakeFiles/nest.dir/main.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/nest-simulator/nest/main.cpp -o CMakeFiles/nest.dir/main.cpp.s
 
 nest/CMakeFiles/nest.dir/neststartup.cpp.o: nest/CMakeFiles/nest.dir/flags.make
-nest/CMakeFiles/nest.dir/neststartup.cpp.o: /home/lukkyguy/code/BachlorThesis/nest-simulator/nest/neststartup.cpp
+nest/CMakeFiles/nest.dir/neststartup.cpp.o: /home/lukkyguy/code/NestBenchmark/nest-simulator/nest/neststartup.cpp
 nest/CMakeFiles/nest.dir/neststartup.cpp.o: nest/CMakeFiles/nest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object nest/CMakeFiles/nest.dir/neststartup.cpp.o"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nest/CMakeFiles/nest.dir/neststartup.cpp.o -MF CMakeFiles/nest.dir/neststartup.cpp.o.d -o CMakeFiles/nest.dir/neststartup.cpp.o -c /home/lukkyguy/code/BachlorThesis/nest-simulator/nest/neststartup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object nest/CMakeFiles/nest.dir/neststartup.cpp.o"
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT nest/CMakeFiles/nest.dir/neststartup.cpp.o -MF CMakeFiles/nest.dir/neststartup.cpp.o.d -o CMakeFiles/nest.dir/neststartup.cpp.o -c /home/lukkyguy/code/NestBenchmark/nest-simulator/nest/neststartup.cpp
 
 nest/CMakeFiles/nest.dir/neststartup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nest.dir/neststartup.cpp.i"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/BachlorThesis/nest-simulator/nest/neststartup.cpp > CMakeFiles/nest.dir/neststartup.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/nest-simulator/nest/neststartup.cpp > CMakeFiles/nest.dir/neststartup.cpp.i
 
 nest/CMakeFiles/nest.dir/neststartup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nest.dir/neststartup.cpp.s"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/BachlorThesis/nest-simulator/nest/neststartup.cpp -o CMakeFiles/nest.dir/neststartup.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/nest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/nest-simulator/nest/neststartup.cpp -o CMakeFiles/nest.dir/neststartup.cpp.s
 
 # Object files for target nest
 nest_OBJECTS = \
@@ -123,18 +123,18 @@ nest/nest: /usr/lib/x86_64-linux-gnu/libgslcblas.so
 nest/nest: /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so
 nest/nest: /usr/lib/x86_64-linux-gnu/libpthread.a
 nest/nest: nest/CMakeFiles/nest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable nest"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/nest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable nest"
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/nest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 nest/CMakeFiles/nest.dir/build: nest/nest
 .PHONY : nest/CMakeFiles/nest.dir/build
 
 nest/CMakeFiles/nest.dir/clean:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/nest && $(CMAKE_COMMAND) -P CMakeFiles/nest.dir/cmake_clean.cmake
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/nest && $(CMAKE_COMMAND) -P CMakeFiles/nest.dir/cmake_clean.cmake
 .PHONY : nest/CMakeFiles/nest.dir/clean
 
 nest/CMakeFiles/nest.dir/depend:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukkyguy/code/BachlorThesis/nest-simulator /home/lukkyguy/code/BachlorThesis/nest-simulator/nest /home/lukkyguy/code/BachlorThesis/nest-build /home/lukkyguy/code/BachlorThesis/nest-build/nest /home/lukkyguy/code/BachlorThesis/nest-build/nest/CMakeFiles/nest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukkyguy/code/NestBenchmark/nest-simulator /home/lukkyguy/code/NestBenchmark/nest-simulator/nest /home/lukkyguy/code/NestBenchmark/nest-build /home/lukkyguy/code/NestBenchmark/nest-build/nest /home/lukkyguy/code/NestBenchmark/nest-build/nest/CMakeFiles/nest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : nest/CMakeFiles/nest.dir/depend
 

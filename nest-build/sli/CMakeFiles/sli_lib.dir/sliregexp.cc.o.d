@@ -1,7 +1,7 @@
 sli/CMakeFiles/sli_lib.dir/sliregexp.cc.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/sliregexp.cc \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sliregexp.cc \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/sliregexp.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sliregexp.h \
  /usr/include/regex.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -36,8 +36,8 @@ sli/CMakeFiles/sli_lib.dir/sliregexp.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/lockptrdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/lockptr.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/lockptrdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/lockptr.h \
  /usr/include/c++/11/cassert \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -126,8 +126,8 @@ sli/CMakeFiles/sli_lib.dir/sliregexp.cc.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/datum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slitype.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/datum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slitype.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/cstdint /usr/include/c++/11/bits/localefwd.h \
@@ -174,27 +174,27 @@ sli/CMakeFiles/sli_lib.dir/sliregexp.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/name.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.h \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/map \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slifunction.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slimodule.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/arraydatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slifunction.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slimodule.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/arraydatum.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/aggregatedatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/allocator.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/interpret.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/aggregatedatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/allocator.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/interpret.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/list.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/sliactions.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slibuiltins.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/token.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sliactions.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slibuiltins.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/token.h \
  /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
@@ -202,17 +202,17 @@ sli/CMakeFiles/sli_lib.dir/sliregexp.cc.o: \
  /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tokenstack.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tarrayobj.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tokenarray.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tokenstack.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tarrayobj.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tokenarray.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/sliexceptions.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/dictdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/dict.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/integerdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/numericdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/genericdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/stringdatum.h
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sliexceptions.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/dictdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/dict.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/integerdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/numericdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/genericdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/stringdatum.h

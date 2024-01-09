@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lukkyguy/code/BachlorThesis/nest-simulator/thirdparty -I/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil -I/home/lukkyguy/code/BachlorThesis/nest-build/libnestutil
+CXX_INCLUDES = -I/home/lukkyguy/code/NestBenchmark/nest-simulator/thirdparty -I/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil -I/home/lukkyguy/code/NestBenchmark/nest-build/libnestutil
 
 CXX_FLAGS =  -std=c++11 -Wall -fopenmp -O2 -fdiagnostics-color=auto -fopenmp
 

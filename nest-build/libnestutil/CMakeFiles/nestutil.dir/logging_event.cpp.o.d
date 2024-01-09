@@ -1,7 +1,7 @@
 libnestutil/CMakeFiles/nestutil.dir/logging_event.cpp.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/logging_event.cpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/logging_event.cpp \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/logging_event.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/logging_event.h \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -150,6 +150,6 @@ libnestutil/CMakeFiles/nestutil.dir/logging_event.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/logging.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/logging.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/ctime

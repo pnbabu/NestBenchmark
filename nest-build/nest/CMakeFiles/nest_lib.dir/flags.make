@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -D_IS_PYNEST -Dnest_lib_EXPORTS
 
-CXX_INCLUDES = -I/home/lukkyguy/code/BachlorThesis/nest-simulator/thirdparty -I/home/lukkyguy/code/BachlorThesis/nest-build/nest -I/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil -I/home/lukkyguy/code/BachlorThesis/nest-build/libnestutil -I/home/lukkyguy/code/BachlorThesis/nest-simulator/sli -I/home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel -I/home/lukkyguy/code/BachlorThesis/nest-simulator/models -I/usr/include/python3.10
+CXX_INCLUDES = -I/home/lukkyguy/code/NestBenchmark/nest-simulator/thirdparty -I/home/lukkyguy/code/NestBenchmark/nest-build/nest -I/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil -I/home/lukkyguy/code/NestBenchmark/nest-build/libnestutil -I/home/lukkyguy/code/NestBenchmark/nest-simulator/sli -I/home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel -I/home/lukkyguy/code/NestBenchmark/nest-simulator/models -I/usr/include/python3.10
 
 CXX_FLAGS =  -std=c++11 -Wall -fopenmp -O2 -fdiagnostics-color=auto -fPIC -fopenmp
 

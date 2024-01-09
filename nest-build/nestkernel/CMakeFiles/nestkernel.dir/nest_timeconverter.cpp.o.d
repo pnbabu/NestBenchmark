@@ -1,8 +1,8 @@
 nestkernel/CMakeFiles/nestkernel.dir/nest_timeconverter.cpp.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_timeconverter.cpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_timeconverter.cpp \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_timeconverter.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_types.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_timeconverter.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_types.h \
  /usr/include/c++/11/cfloat \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -36,9 +36,9 @@ nestkernel/CMakeFiles/nestkernel.dir/nest_timeconverter.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h \
  /usr/include/c++/11/cstdint \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_time.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_time.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/cmath /usr/include/c++/11/bits/cpp_type_traits.h \
  /usr/include/c++/11/ext/type_traits.h /usr/include/math.h \
@@ -179,4 +179,4 @@ nestkernel/CMakeFiles/nestkernel.dir/nest_timeconverter.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/numerics.h
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/numerics.h

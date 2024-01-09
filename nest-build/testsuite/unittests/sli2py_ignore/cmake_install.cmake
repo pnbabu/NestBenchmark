@@ -1,8 +1,8 @@
-# Install script for directory: /home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/unittests/sli2py_ignore
+# Install script for directory: /home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/unittests/sli2py_ignore
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/BachlorThesis/nest-install")
+  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

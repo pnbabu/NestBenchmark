@@ -1,8 +1,8 @@
-# Install script for directory: /home/lukkyguy/code/BachlorThesis/nest-simulator/examples
+# Install script for directory: /home/lukkyguy/code/NestBenchmark/nest-simulator/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/BachlorThesis/nest-install")
+  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/nest" TYPE FILE FILES "/home/lukkyguy/code/BachlorThesis/nest-simulator/examples/run_examples.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/nest" TYPE FILE FILES "/home/lukkyguy/code/NestBenchmark/nest-simulator/examples/run_examples.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/nest/examples" TYPE DIRECTORY FILES "/home/lukkyguy/code/BachlorThesis/nest-simulator/examples/nest/" USE_SOURCE_PERMISSIONS)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/nest/examples" TYPE DIRECTORY FILES "/home/lukkyguy/code/NestBenchmark/nest-simulator/examples/nest/" USE_SOURCE_PERMISSIONS)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/nest/EditorSupport/vim/syntax" TYPE FILE FILES "/home/lukkyguy/code/BachlorThesis/nest-simulator/examples/EditorSupport/vim/syntax/sli.vim")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/nest/EditorSupport/vim/syntax" TYPE FILE FILES "/home/lukkyguy/code/NestBenchmark/nest-simulator/examples/EditorSupport/vim/syntax/sli.vim")
 endif()
 

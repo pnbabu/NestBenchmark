@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukkyguy/code/BachlorThesis/nest-simulator
+CMAKE_SOURCE_DIR = /home/lukkyguy/code/NestBenchmark/nest-simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukkyguy/code/BachlorThesis/nest-build
+CMAKE_BINARY_DIR = /home/lukkyguy/code/NestBenchmark/nest-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles /home/lukkyguy/code/BachlorThesis/nest-build/models//CMakeFiles/progress.marks
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles 0
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles /home/lukkyguy/code/NestBenchmark/nest-build/models//CMakeFiles/progress.marks
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/clean
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/preinstall
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/preinstall
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 models/CMakeFiles/models.dir/rule:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/CMakeFiles/models.dir/rule
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/CMakeFiles/models.dir/rule
 .PHONY : models/CMakeFiles/models.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ models: models/CMakeFiles/models.dir/rule
 
 # fast build rule for target.
 models/fast:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/build
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/build
 .PHONY : models/fast
 
 ac_generator.o: ac_generator.cpp.o
@@ -190,7 +190,7 @@ ac_generator.o: ac_generator.cpp.o
 
 # target to build an object file
 ac_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ac_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ac_generator.cpp.o
 .PHONY : ac_generator.cpp.o
 
 ac_generator.i: ac_generator.cpp.i
@@ -198,7 +198,7 @@ ac_generator.i: ac_generator.cpp.i
 
 # target to preprocess a source file
 ac_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ac_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ac_generator.cpp.i
 .PHONY : ac_generator.cpp.i
 
 ac_generator.s: ac_generator.cpp.s
@@ -206,7 +206,7 @@ ac_generator.s: ac_generator.cpp.s
 
 # target to generate assembly for a file
 ac_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ac_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ac_generator.cpp.s
 .PHONY : ac_generator.cpp.s
 
 aeif_cond_alpha.o: aeif_cond_alpha.cpp.o
@@ -214,7 +214,7 @@ aeif_cond_alpha.o: aeif_cond_alpha.cpp.o
 
 # target to build an object file
 aeif_cond_alpha.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha.cpp.o
 .PHONY : aeif_cond_alpha.cpp.o
 
 aeif_cond_alpha.i: aeif_cond_alpha.cpp.i
@@ -222,7 +222,7 @@ aeif_cond_alpha.i: aeif_cond_alpha.cpp.i
 
 # target to preprocess a source file
 aeif_cond_alpha.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha.cpp.i
 .PHONY : aeif_cond_alpha.cpp.i
 
 aeif_cond_alpha.s: aeif_cond_alpha.cpp.s
@@ -230,7 +230,7 @@ aeif_cond_alpha.s: aeif_cond_alpha.cpp.s
 
 # target to generate assembly for a file
 aeif_cond_alpha.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha.cpp.s
 .PHONY : aeif_cond_alpha.cpp.s
 
 aeif_cond_alpha_astro.o: aeif_cond_alpha_astro.cpp.o
@@ -238,7 +238,7 @@ aeif_cond_alpha_astro.o: aeif_cond_alpha_astro.cpp.o
 
 # target to build an object file
 aeif_cond_alpha_astro.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_astro.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_astro.cpp.o
 .PHONY : aeif_cond_alpha_astro.cpp.o
 
 aeif_cond_alpha_astro.i: aeif_cond_alpha_astro.cpp.i
@@ -246,7 +246,7 @@ aeif_cond_alpha_astro.i: aeif_cond_alpha_astro.cpp.i
 
 # target to preprocess a source file
 aeif_cond_alpha_astro.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_astro.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_astro.cpp.i
 .PHONY : aeif_cond_alpha_astro.cpp.i
 
 aeif_cond_alpha_astro.s: aeif_cond_alpha_astro.cpp.s
@@ -254,7 +254,7 @@ aeif_cond_alpha_astro.s: aeif_cond_alpha_astro.cpp.s
 
 # target to generate assembly for a file
 aeif_cond_alpha_astro.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_astro.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_astro.cpp.s
 .PHONY : aeif_cond_alpha_astro.cpp.s
 
 aeif_cond_alpha_multisynapse.o: aeif_cond_alpha_multisynapse.cpp.o
@@ -262,7 +262,7 @@ aeif_cond_alpha_multisynapse.o: aeif_cond_alpha_multisynapse.cpp.o
 
 # target to build an object file
 aeif_cond_alpha_multisynapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_multisynapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_multisynapse.cpp.o
 .PHONY : aeif_cond_alpha_multisynapse.cpp.o
 
 aeif_cond_alpha_multisynapse.i: aeif_cond_alpha_multisynapse.cpp.i
@@ -270,7 +270,7 @@ aeif_cond_alpha_multisynapse.i: aeif_cond_alpha_multisynapse.cpp.i
 
 # target to preprocess a source file
 aeif_cond_alpha_multisynapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_multisynapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_multisynapse.cpp.i
 .PHONY : aeif_cond_alpha_multisynapse.cpp.i
 
 aeif_cond_alpha_multisynapse.s: aeif_cond_alpha_multisynapse.cpp.s
@@ -278,7 +278,7 @@ aeif_cond_alpha_multisynapse.s: aeif_cond_alpha_multisynapse.cpp.s
 
 # target to generate assembly for a file
 aeif_cond_alpha_multisynapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_multisynapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_alpha_multisynapse.cpp.s
 .PHONY : aeif_cond_alpha_multisynapse.cpp.s
 
 aeif_cond_beta_multisynapse.o: aeif_cond_beta_multisynapse.cpp.o
@@ -286,7 +286,7 @@ aeif_cond_beta_multisynapse.o: aeif_cond_beta_multisynapse.cpp.o
 
 # target to build an object file
 aeif_cond_beta_multisynapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_beta_multisynapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_beta_multisynapse.cpp.o
 .PHONY : aeif_cond_beta_multisynapse.cpp.o
 
 aeif_cond_beta_multisynapse.i: aeif_cond_beta_multisynapse.cpp.i
@@ -294,7 +294,7 @@ aeif_cond_beta_multisynapse.i: aeif_cond_beta_multisynapse.cpp.i
 
 # target to preprocess a source file
 aeif_cond_beta_multisynapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_beta_multisynapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_beta_multisynapse.cpp.i
 .PHONY : aeif_cond_beta_multisynapse.cpp.i
 
 aeif_cond_beta_multisynapse.s: aeif_cond_beta_multisynapse.cpp.s
@@ -302,7 +302,7 @@ aeif_cond_beta_multisynapse.s: aeif_cond_beta_multisynapse.cpp.s
 
 # target to generate assembly for a file
 aeif_cond_beta_multisynapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_beta_multisynapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_beta_multisynapse.cpp.s
 .PHONY : aeif_cond_beta_multisynapse.cpp.s
 
 aeif_cond_exp.o: aeif_cond_exp.cpp.o
@@ -310,7 +310,7 @@ aeif_cond_exp.o: aeif_cond_exp.cpp.o
 
 # target to build an object file
 aeif_cond_exp.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_exp.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_exp.cpp.o
 .PHONY : aeif_cond_exp.cpp.o
 
 aeif_cond_exp.i: aeif_cond_exp.cpp.i
@@ -318,7 +318,7 @@ aeif_cond_exp.i: aeif_cond_exp.cpp.i
 
 # target to preprocess a source file
 aeif_cond_exp.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_exp.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_exp.cpp.i
 .PHONY : aeif_cond_exp.cpp.i
 
 aeif_cond_exp.s: aeif_cond_exp.cpp.s
@@ -326,7 +326,7 @@ aeif_cond_exp.s: aeif_cond_exp.cpp.s
 
 # target to generate assembly for a file
 aeif_cond_exp.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_exp.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_cond_exp.cpp.s
 .PHONY : aeif_cond_exp.cpp.s
 
 aeif_psc_alpha.o: aeif_psc_alpha.cpp.o
@@ -334,7 +334,7 @@ aeif_psc_alpha.o: aeif_psc_alpha.cpp.o
 
 # target to build an object file
 aeif_psc_alpha.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_alpha.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_alpha.cpp.o
 .PHONY : aeif_psc_alpha.cpp.o
 
 aeif_psc_alpha.i: aeif_psc_alpha.cpp.i
@@ -342,7 +342,7 @@ aeif_psc_alpha.i: aeif_psc_alpha.cpp.i
 
 # target to preprocess a source file
 aeif_psc_alpha.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_alpha.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_alpha.cpp.i
 .PHONY : aeif_psc_alpha.cpp.i
 
 aeif_psc_alpha.s: aeif_psc_alpha.cpp.s
@@ -350,7 +350,7 @@ aeif_psc_alpha.s: aeif_psc_alpha.cpp.s
 
 # target to generate assembly for a file
 aeif_psc_alpha.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_alpha.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_alpha.cpp.s
 .PHONY : aeif_psc_alpha.cpp.s
 
 aeif_psc_delta.o: aeif_psc_delta.cpp.o
@@ -358,7 +358,7 @@ aeif_psc_delta.o: aeif_psc_delta.cpp.o
 
 # target to build an object file
 aeif_psc_delta.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta.cpp.o
 .PHONY : aeif_psc_delta.cpp.o
 
 aeif_psc_delta.i: aeif_psc_delta.cpp.i
@@ -366,7 +366,7 @@ aeif_psc_delta.i: aeif_psc_delta.cpp.i
 
 # target to preprocess a source file
 aeif_psc_delta.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta.cpp.i
 .PHONY : aeif_psc_delta.cpp.i
 
 aeif_psc_delta.s: aeif_psc_delta.cpp.s
@@ -374,7 +374,7 @@ aeif_psc_delta.s: aeif_psc_delta.cpp.s
 
 # target to generate assembly for a file
 aeif_psc_delta.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta.cpp.s
 .PHONY : aeif_psc_delta.cpp.s
 
 aeif_psc_delta_clopath.o: aeif_psc_delta_clopath.cpp.o
@@ -382,7 +382,7 @@ aeif_psc_delta_clopath.o: aeif_psc_delta_clopath.cpp.o
 
 # target to build an object file
 aeif_psc_delta_clopath.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta_clopath.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta_clopath.cpp.o
 .PHONY : aeif_psc_delta_clopath.cpp.o
 
 aeif_psc_delta_clopath.i: aeif_psc_delta_clopath.cpp.i
@@ -390,7 +390,7 @@ aeif_psc_delta_clopath.i: aeif_psc_delta_clopath.cpp.i
 
 # target to preprocess a source file
 aeif_psc_delta_clopath.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta_clopath.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta_clopath.cpp.i
 .PHONY : aeif_psc_delta_clopath.cpp.i
 
 aeif_psc_delta_clopath.s: aeif_psc_delta_clopath.cpp.s
@@ -398,7 +398,7 @@ aeif_psc_delta_clopath.s: aeif_psc_delta_clopath.cpp.s
 
 # target to generate assembly for a file
 aeif_psc_delta_clopath.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta_clopath.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_delta_clopath.cpp.s
 .PHONY : aeif_psc_delta_clopath.cpp.s
 
 aeif_psc_exp.o: aeif_psc_exp.cpp.o
@@ -406,7 +406,7 @@ aeif_psc_exp.o: aeif_psc_exp.cpp.o
 
 # target to build an object file
 aeif_psc_exp.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_exp.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_exp.cpp.o
 .PHONY : aeif_psc_exp.cpp.o
 
 aeif_psc_exp.i: aeif_psc_exp.cpp.i
@@ -414,7 +414,7 @@ aeif_psc_exp.i: aeif_psc_exp.cpp.i
 
 # target to preprocess a source file
 aeif_psc_exp.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_exp.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_exp.cpp.i
 .PHONY : aeif_psc_exp.cpp.i
 
 aeif_psc_exp.s: aeif_psc_exp.cpp.s
@@ -422,7 +422,7 @@ aeif_psc_exp.s: aeif_psc_exp.cpp.s
 
 # target to generate assembly for a file
 aeif_psc_exp.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_exp.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/aeif_psc_exp.cpp.s
 .PHONY : aeif_psc_exp.cpp.s
 
 amat2_psc_exp.o: amat2_psc_exp.cpp.o
@@ -430,7 +430,7 @@ amat2_psc_exp.o: amat2_psc_exp.cpp.o
 
 # target to build an object file
 amat2_psc_exp.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/amat2_psc_exp.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/amat2_psc_exp.cpp.o
 .PHONY : amat2_psc_exp.cpp.o
 
 amat2_psc_exp.i: amat2_psc_exp.cpp.i
@@ -438,7 +438,7 @@ amat2_psc_exp.i: amat2_psc_exp.cpp.i
 
 # target to preprocess a source file
 amat2_psc_exp.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/amat2_psc_exp.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/amat2_psc_exp.cpp.i
 .PHONY : amat2_psc_exp.cpp.i
 
 amat2_psc_exp.s: amat2_psc_exp.cpp.s
@@ -446,7 +446,7 @@ amat2_psc_exp.s: amat2_psc_exp.cpp.s
 
 # target to generate assembly for a file
 amat2_psc_exp.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/amat2_psc_exp.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/amat2_psc_exp.cpp.s
 .PHONY : amat2_psc_exp.cpp.s
 
 astrocyte_lr_1994.o: astrocyte_lr_1994.cpp.o
@@ -454,7 +454,7 @@ astrocyte_lr_1994.o: astrocyte_lr_1994.cpp.o
 
 # target to build an object file
 astrocyte_lr_1994.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/astrocyte_lr_1994.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/astrocyte_lr_1994.cpp.o
 .PHONY : astrocyte_lr_1994.cpp.o
 
 astrocyte_lr_1994.i: astrocyte_lr_1994.cpp.i
@@ -462,7 +462,7 @@ astrocyte_lr_1994.i: astrocyte_lr_1994.cpp.i
 
 # target to preprocess a source file
 astrocyte_lr_1994.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/astrocyte_lr_1994.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/astrocyte_lr_1994.cpp.i
 .PHONY : astrocyte_lr_1994.cpp.i
 
 astrocyte_lr_1994.s: astrocyte_lr_1994.cpp.s
@@ -470,7 +470,7 @@ astrocyte_lr_1994.s: astrocyte_lr_1994.cpp.s
 
 # target to generate assembly for a file
 astrocyte_lr_1994.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/astrocyte_lr_1994.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/astrocyte_lr_1994.cpp.s
 .PHONY : astrocyte_lr_1994.cpp.s
 
 bernoulli_synapse.o: bernoulli_synapse.cpp.o
@@ -478,7 +478,7 @@ bernoulli_synapse.o: bernoulli_synapse.cpp.o
 
 # target to build an object file
 bernoulli_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/bernoulli_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/bernoulli_synapse.cpp.o
 .PHONY : bernoulli_synapse.cpp.o
 
 bernoulli_synapse.i: bernoulli_synapse.cpp.i
@@ -486,7 +486,7 @@ bernoulli_synapse.i: bernoulli_synapse.cpp.i
 
 # target to preprocess a source file
 bernoulli_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/bernoulli_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/bernoulli_synapse.cpp.i
 .PHONY : bernoulli_synapse.cpp.i
 
 bernoulli_synapse.s: bernoulli_synapse.cpp.s
@@ -494,7 +494,7 @@ bernoulli_synapse.s: bernoulli_synapse.cpp.s
 
 # target to generate assembly for a file
 bernoulli_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/bernoulli_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/bernoulli_synapse.cpp.s
 .PHONY : bernoulli_synapse.cpp.s
 
 clopath_synapse.o: clopath_synapse.cpp.o
@@ -502,7 +502,7 @@ clopath_synapse.o: clopath_synapse.cpp.o
 
 # target to build an object file
 clopath_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/clopath_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/clopath_synapse.cpp.o
 .PHONY : clopath_synapse.cpp.o
 
 clopath_synapse.i: clopath_synapse.cpp.i
@@ -510,7 +510,7 @@ clopath_synapse.i: clopath_synapse.cpp.i
 
 # target to preprocess a source file
 clopath_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/clopath_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/clopath_synapse.cpp.i
 .PHONY : clopath_synapse.cpp.i
 
 clopath_synapse.s: clopath_synapse.cpp.s
@@ -518,7 +518,7 @@ clopath_synapse.s: clopath_synapse.cpp.s
 
 # target to generate assembly for a file
 clopath_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/clopath_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/clopath_synapse.cpp.s
 .PHONY : clopath_synapse.cpp.s
 
 cm_compartmentcurrents.o: cm_compartmentcurrents.cpp.o
@@ -526,7 +526,7 @@ cm_compartmentcurrents.o: cm_compartmentcurrents.cpp.o
 
 # target to build an object file
 cm_compartmentcurrents.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_compartmentcurrents.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_compartmentcurrents.cpp.o
 .PHONY : cm_compartmentcurrents.cpp.o
 
 cm_compartmentcurrents.i: cm_compartmentcurrents.cpp.i
@@ -534,7 +534,7 @@ cm_compartmentcurrents.i: cm_compartmentcurrents.cpp.i
 
 # target to preprocess a source file
 cm_compartmentcurrents.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_compartmentcurrents.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_compartmentcurrents.cpp.i
 .PHONY : cm_compartmentcurrents.cpp.i
 
 cm_compartmentcurrents.s: cm_compartmentcurrents.cpp.s
@@ -542,7 +542,7 @@ cm_compartmentcurrents.s: cm_compartmentcurrents.cpp.s
 
 # target to generate assembly for a file
 cm_compartmentcurrents.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_compartmentcurrents.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_compartmentcurrents.cpp.s
 .PHONY : cm_compartmentcurrents.cpp.s
 
 cm_default.o: cm_default.cpp.o
@@ -550,7 +550,7 @@ cm_default.o: cm_default.cpp.o
 
 # target to build an object file
 cm_default.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_default.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_default.cpp.o
 .PHONY : cm_default.cpp.o
 
 cm_default.i: cm_default.cpp.i
@@ -558,7 +558,7 @@ cm_default.i: cm_default.cpp.i
 
 # target to preprocess a source file
 cm_default.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_default.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_default.cpp.i
 .PHONY : cm_default.cpp.i
 
 cm_default.s: cm_default.cpp.s
@@ -566,7 +566,7 @@ cm_default.s: cm_default.cpp.s
 
 # target to generate assembly for a file
 cm_default.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_default.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_default.cpp.s
 .PHONY : cm_default.cpp.s
 
 cm_tree.o: cm_tree.cpp.o
@@ -574,7 +574,7 @@ cm_tree.o: cm_tree.cpp.o
 
 # target to build an object file
 cm_tree.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_tree.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_tree.cpp.o
 .PHONY : cm_tree.cpp.o
 
 cm_tree.i: cm_tree.cpp.i
@@ -582,7 +582,7 @@ cm_tree.i: cm_tree.cpp.i
 
 # target to preprocess a source file
 cm_tree.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_tree.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_tree.cpp.i
 .PHONY : cm_tree.cpp.i
 
 cm_tree.s: cm_tree.cpp.s
@@ -590,7 +590,7 @@ cm_tree.s: cm_tree.cpp.s
 
 # target to generate assembly for a file
 cm_tree.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_tree.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cm_tree.cpp.s
 .PHONY : cm_tree.cpp.s
 
 cont_delay_synapse.o: cont_delay_synapse.cpp.o
@@ -598,7 +598,7 @@ cont_delay_synapse.o: cont_delay_synapse.cpp.o
 
 # target to build an object file
 cont_delay_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cont_delay_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cont_delay_synapse.cpp.o
 .PHONY : cont_delay_synapse.cpp.o
 
 cont_delay_synapse.i: cont_delay_synapse.cpp.i
@@ -606,7 +606,7 @@ cont_delay_synapse.i: cont_delay_synapse.cpp.i
 
 # target to preprocess a source file
 cont_delay_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cont_delay_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cont_delay_synapse.cpp.i
 .PHONY : cont_delay_synapse.cpp.i
 
 cont_delay_synapse.s: cont_delay_synapse.cpp.s
@@ -614,7 +614,7 @@ cont_delay_synapse.s: cont_delay_synapse.cpp.s
 
 # target to generate assembly for a file
 cont_delay_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cont_delay_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/cont_delay_synapse.cpp.s
 .PHONY : cont_delay_synapse.cpp.s
 
 correlation_detector.o: correlation_detector.cpp.o
@@ -622,7 +622,7 @@ correlation_detector.o: correlation_detector.cpp.o
 
 # target to build an object file
 correlation_detector.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlation_detector.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlation_detector.cpp.o
 .PHONY : correlation_detector.cpp.o
 
 correlation_detector.i: correlation_detector.cpp.i
@@ -630,7 +630,7 @@ correlation_detector.i: correlation_detector.cpp.i
 
 # target to preprocess a source file
 correlation_detector.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlation_detector.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlation_detector.cpp.i
 .PHONY : correlation_detector.cpp.i
 
 correlation_detector.s: correlation_detector.cpp.s
@@ -638,7 +638,7 @@ correlation_detector.s: correlation_detector.cpp.s
 
 # target to generate assembly for a file
 correlation_detector.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlation_detector.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlation_detector.cpp.s
 .PHONY : correlation_detector.cpp.s
 
 correlomatrix_detector.o: correlomatrix_detector.cpp.o
@@ -646,7 +646,7 @@ correlomatrix_detector.o: correlomatrix_detector.cpp.o
 
 # target to build an object file
 correlomatrix_detector.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlomatrix_detector.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlomatrix_detector.cpp.o
 .PHONY : correlomatrix_detector.cpp.o
 
 correlomatrix_detector.i: correlomatrix_detector.cpp.i
@@ -654,7 +654,7 @@ correlomatrix_detector.i: correlomatrix_detector.cpp.i
 
 # target to preprocess a source file
 correlomatrix_detector.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlomatrix_detector.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlomatrix_detector.cpp.i
 .PHONY : correlomatrix_detector.cpp.i
 
 correlomatrix_detector.s: correlomatrix_detector.cpp.s
@@ -662,7 +662,7 @@ correlomatrix_detector.s: correlomatrix_detector.cpp.s
 
 # target to generate assembly for a file
 correlomatrix_detector.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlomatrix_detector.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlomatrix_detector.cpp.s
 .PHONY : correlomatrix_detector.cpp.s
 
 correlospinmatrix_detector.o: correlospinmatrix_detector.cpp.o
@@ -670,7 +670,7 @@ correlospinmatrix_detector.o: correlospinmatrix_detector.cpp.o
 
 # target to build an object file
 correlospinmatrix_detector.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlospinmatrix_detector.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlospinmatrix_detector.cpp.o
 .PHONY : correlospinmatrix_detector.cpp.o
 
 correlospinmatrix_detector.i: correlospinmatrix_detector.cpp.i
@@ -678,7 +678,7 @@ correlospinmatrix_detector.i: correlospinmatrix_detector.cpp.i
 
 # target to preprocess a source file
 correlospinmatrix_detector.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlospinmatrix_detector.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlospinmatrix_detector.cpp.i
 .PHONY : correlospinmatrix_detector.cpp.i
 
 correlospinmatrix_detector.s: correlospinmatrix_detector.cpp.s
@@ -686,7 +686,7 @@ correlospinmatrix_detector.s: correlospinmatrix_detector.cpp.s
 
 # target to generate assembly for a file
 correlospinmatrix_detector.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlospinmatrix_detector.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/correlospinmatrix_detector.cpp.s
 .PHONY : correlospinmatrix_detector.cpp.s
 
 dc_generator.o: dc_generator.cpp.o
@@ -694,7 +694,7 @@ dc_generator.o: dc_generator.cpp.o
 
 # target to build an object file
 dc_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/dc_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/dc_generator.cpp.o
 .PHONY : dc_generator.cpp.o
 
 dc_generator.i: dc_generator.cpp.i
@@ -702,7 +702,7 @@ dc_generator.i: dc_generator.cpp.i
 
 # target to preprocess a source file
 dc_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/dc_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/dc_generator.cpp.i
 .PHONY : dc_generator.cpp.i
 
 dc_generator.s: dc_generator.cpp.s
@@ -710,7 +710,7 @@ dc_generator.s: dc_generator.cpp.s
 
 # target to generate assembly for a file
 dc_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/dc_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/dc_generator.cpp.s
 .PHONY : dc_generator.cpp.s
 
 diffusion_connection.o: diffusion_connection.cpp.o
@@ -718,7 +718,7 @@ diffusion_connection.o: diffusion_connection.cpp.o
 
 # target to build an object file
 diffusion_connection.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/diffusion_connection.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/diffusion_connection.cpp.o
 .PHONY : diffusion_connection.cpp.o
 
 diffusion_connection.i: diffusion_connection.cpp.i
@@ -726,7 +726,7 @@ diffusion_connection.i: diffusion_connection.cpp.i
 
 # target to preprocess a source file
 diffusion_connection.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/diffusion_connection.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/diffusion_connection.cpp.i
 .PHONY : diffusion_connection.cpp.i
 
 diffusion_connection.s: diffusion_connection.cpp.s
@@ -734,7 +734,7 @@ diffusion_connection.s: diffusion_connection.cpp.s
 
 # target to generate assembly for a file
 diffusion_connection.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/diffusion_connection.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/diffusion_connection.cpp.s
 .PHONY : diffusion_connection.cpp.s
 
 erfc_neuron.o: erfc_neuron.cpp.o
@@ -742,7 +742,7 @@ erfc_neuron.o: erfc_neuron.cpp.o
 
 # target to build an object file
 erfc_neuron.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/erfc_neuron.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/erfc_neuron.cpp.o
 .PHONY : erfc_neuron.cpp.o
 
 erfc_neuron.i: erfc_neuron.cpp.i
@@ -750,7 +750,7 @@ erfc_neuron.i: erfc_neuron.cpp.i
 
 # target to preprocess a source file
 erfc_neuron.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/erfc_neuron.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/erfc_neuron.cpp.i
 .PHONY : erfc_neuron.cpp.i
 
 erfc_neuron.s: erfc_neuron.cpp.s
@@ -758,7 +758,7 @@ erfc_neuron.s: erfc_neuron.cpp.s
 
 # target to generate assembly for a file
 erfc_neuron.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/erfc_neuron.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/erfc_neuron.cpp.s
 .PHONY : erfc_neuron.cpp.s
 
 gamma_sup_generator.o: gamma_sup_generator.cpp.o
@@ -766,7 +766,7 @@ gamma_sup_generator.o: gamma_sup_generator.cpp.o
 
 # target to build an object file
 gamma_sup_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gamma_sup_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gamma_sup_generator.cpp.o
 .PHONY : gamma_sup_generator.cpp.o
 
 gamma_sup_generator.i: gamma_sup_generator.cpp.i
@@ -774,7 +774,7 @@ gamma_sup_generator.i: gamma_sup_generator.cpp.i
 
 # target to preprocess a source file
 gamma_sup_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gamma_sup_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gamma_sup_generator.cpp.i
 .PHONY : gamma_sup_generator.cpp.i
 
 gamma_sup_generator.s: gamma_sup_generator.cpp.s
@@ -782,7 +782,7 @@ gamma_sup_generator.s: gamma_sup_generator.cpp.s
 
 # target to generate assembly for a file
 gamma_sup_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gamma_sup_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gamma_sup_generator.cpp.s
 .PHONY : gamma_sup_generator.cpp.s
 
 gap_junction.o: gap_junction.cpp.o
@@ -790,7 +790,7 @@ gap_junction.o: gap_junction.cpp.o
 
 # target to build an object file
 gap_junction.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gap_junction.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gap_junction.cpp.o
 .PHONY : gap_junction.cpp.o
 
 gap_junction.i: gap_junction.cpp.i
@@ -798,7 +798,7 @@ gap_junction.i: gap_junction.cpp.i
 
 # target to preprocess a source file
 gap_junction.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gap_junction.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gap_junction.cpp.i
 .PHONY : gap_junction.cpp.i
 
 gap_junction.s: gap_junction.cpp.s
@@ -806,7 +806,7 @@ gap_junction.s: gap_junction.cpp.s
 
 # target to generate assembly for a file
 gap_junction.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gap_junction.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gap_junction.cpp.s
 .PHONY : gap_junction.cpp.s
 
 gauss_rate.o: gauss_rate.cpp.o
@@ -814,7 +814,7 @@ gauss_rate.o: gauss_rate.cpp.o
 
 # target to build an object file
 gauss_rate.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gauss_rate.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gauss_rate.cpp.o
 .PHONY : gauss_rate.cpp.o
 
 gauss_rate.i: gauss_rate.cpp.i
@@ -822,7 +822,7 @@ gauss_rate.i: gauss_rate.cpp.i
 
 # target to preprocess a source file
 gauss_rate.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gauss_rate.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gauss_rate.cpp.i
 .PHONY : gauss_rate.cpp.i
 
 gauss_rate.s: gauss_rate.cpp.s
@@ -830,7 +830,7 @@ gauss_rate.s: gauss_rate.cpp.s
 
 # target to generate assembly for a file
 gauss_rate.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gauss_rate.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gauss_rate.cpp.s
 .PHONY : gauss_rate.cpp.s
 
 gif_cond_exp.o: gif_cond_exp.cpp.o
@@ -838,7 +838,7 @@ gif_cond_exp.o: gif_cond_exp.cpp.o
 
 # target to build an object file
 gif_cond_exp.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp.cpp.o
 .PHONY : gif_cond_exp.cpp.o
 
 gif_cond_exp.i: gif_cond_exp.cpp.i
@@ -846,7 +846,7 @@ gif_cond_exp.i: gif_cond_exp.cpp.i
 
 # target to preprocess a source file
 gif_cond_exp.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp.cpp.i
 .PHONY : gif_cond_exp.cpp.i
 
 gif_cond_exp.s: gif_cond_exp.cpp.s
@@ -854,7 +854,7 @@ gif_cond_exp.s: gif_cond_exp.cpp.s
 
 # target to generate assembly for a file
 gif_cond_exp.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp.cpp.s
 .PHONY : gif_cond_exp.cpp.s
 
 gif_cond_exp_multisynapse.o: gif_cond_exp_multisynapse.cpp.o
@@ -862,7 +862,7 @@ gif_cond_exp_multisynapse.o: gif_cond_exp_multisynapse.cpp.o
 
 # target to build an object file
 gif_cond_exp_multisynapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp_multisynapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp_multisynapse.cpp.o
 .PHONY : gif_cond_exp_multisynapse.cpp.o
 
 gif_cond_exp_multisynapse.i: gif_cond_exp_multisynapse.cpp.i
@@ -870,7 +870,7 @@ gif_cond_exp_multisynapse.i: gif_cond_exp_multisynapse.cpp.i
 
 # target to preprocess a source file
 gif_cond_exp_multisynapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp_multisynapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp_multisynapse.cpp.i
 .PHONY : gif_cond_exp_multisynapse.cpp.i
 
 gif_cond_exp_multisynapse.s: gif_cond_exp_multisynapse.cpp.s
@@ -878,7 +878,7 @@ gif_cond_exp_multisynapse.s: gif_cond_exp_multisynapse.cpp.s
 
 # target to generate assembly for a file
 gif_cond_exp_multisynapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp_multisynapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_cond_exp_multisynapse.cpp.s
 .PHONY : gif_cond_exp_multisynapse.cpp.s
 
 gif_pop_psc_exp.o: gif_pop_psc_exp.cpp.o
@@ -886,7 +886,7 @@ gif_pop_psc_exp.o: gif_pop_psc_exp.cpp.o
 
 # target to build an object file
 gif_pop_psc_exp.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_pop_psc_exp.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_pop_psc_exp.cpp.o
 .PHONY : gif_pop_psc_exp.cpp.o
 
 gif_pop_psc_exp.i: gif_pop_psc_exp.cpp.i
@@ -894,7 +894,7 @@ gif_pop_psc_exp.i: gif_pop_psc_exp.cpp.i
 
 # target to preprocess a source file
 gif_pop_psc_exp.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_pop_psc_exp.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_pop_psc_exp.cpp.i
 .PHONY : gif_pop_psc_exp.cpp.i
 
 gif_pop_psc_exp.s: gif_pop_psc_exp.cpp.s
@@ -902,7 +902,7 @@ gif_pop_psc_exp.s: gif_pop_psc_exp.cpp.s
 
 # target to generate assembly for a file
 gif_pop_psc_exp.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_pop_psc_exp.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_pop_psc_exp.cpp.s
 .PHONY : gif_pop_psc_exp.cpp.s
 
 gif_psc_exp.o: gif_psc_exp.cpp.o
@@ -910,7 +910,7 @@ gif_psc_exp.o: gif_psc_exp.cpp.o
 
 # target to build an object file
 gif_psc_exp.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp.cpp.o
 .PHONY : gif_psc_exp.cpp.o
 
 gif_psc_exp.i: gif_psc_exp.cpp.i
@@ -918,7 +918,7 @@ gif_psc_exp.i: gif_psc_exp.cpp.i
 
 # target to preprocess a source file
 gif_psc_exp.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp.cpp.i
 .PHONY : gif_psc_exp.cpp.i
 
 gif_psc_exp.s: gif_psc_exp.cpp.s
@@ -926,7 +926,7 @@ gif_psc_exp.s: gif_psc_exp.cpp.s
 
 # target to generate assembly for a file
 gif_psc_exp.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp.cpp.s
 .PHONY : gif_psc_exp.cpp.s
 
 gif_psc_exp_multisynapse.o: gif_psc_exp_multisynapse.cpp.o
@@ -934,7 +934,7 @@ gif_psc_exp_multisynapse.o: gif_psc_exp_multisynapse.cpp.o
 
 # target to build an object file
 gif_psc_exp_multisynapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp_multisynapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp_multisynapse.cpp.o
 .PHONY : gif_psc_exp_multisynapse.cpp.o
 
 gif_psc_exp_multisynapse.i: gif_psc_exp_multisynapse.cpp.i
@@ -942,7 +942,7 @@ gif_psc_exp_multisynapse.i: gif_psc_exp_multisynapse.cpp.i
 
 # target to preprocess a source file
 gif_psc_exp_multisynapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp_multisynapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp_multisynapse.cpp.i
 .PHONY : gif_psc_exp_multisynapse.cpp.i
 
 gif_psc_exp_multisynapse.s: gif_psc_exp_multisynapse.cpp.s
@@ -950,7 +950,7 @@ gif_psc_exp_multisynapse.s: gif_psc_exp_multisynapse.cpp.s
 
 # target to generate assembly for a file
 gif_psc_exp_multisynapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp_multisynapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/gif_psc_exp_multisynapse.cpp.s
 .PHONY : gif_psc_exp_multisynapse.cpp.s
 
 ginzburg_neuron.o: ginzburg_neuron.cpp.o
@@ -958,7 +958,7 @@ ginzburg_neuron.o: ginzburg_neuron.cpp.o
 
 # target to build an object file
 ginzburg_neuron.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ginzburg_neuron.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ginzburg_neuron.cpp.o
 .PHONY : ginzburg_neuron.cpp.o
 
 ginzburg_neuron.i: ginzburg_neuron.cpp.i
@@ -966,7 +966,7 @@ ginzburg_neuron.i: ginzburg_neuron.cpp.i
 
 # target to preprocess a source file
 ginzburg_neuron.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ginzburg_neuron.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ginzburg_neuron.cpp.i
 .PHONY : ginzburg_neuron.cpp.i
 
 ginzburg_neuron.s: ginzburg_neuron.cpp.s
@@ -974,7 +974,7 @@ ginzburg_neuron.s: ginzburg_neuron.cpp.s
 
 # target to generate assembly for a file
 ginzburg_neuron.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ginzburg_neuron.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ginzburg_neuron.cpp.s
 .PHONY : ginzburg_neuron.cpp.s
 
 glif_cond.o: glif_cond.cpp.o
@@ -982,7 +982,7 @@ glif_cond.o: glif_cond.cpp.o
 
 # target to build an object file
 glif_cond.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_cond.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_cond.cpp.o
 .PHONY : glif_cond.cpp.o
 
 glif_cond.i: glif_cond.cpp.i
@@ -990,7 +990,7 @@ glif_cond.i: glif_cond.cpp.i
 
 # target to preprocess a source file
 glif_cond.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_cond.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_cond.cpp.i
 .PHONY : glif_cond.cpp.i
 
 glif_cond.s: glif_cond.cpp.s
@@ -998,7 +998,7 @@ glif_cond.s: glif_cond.cpp.s
 
 # target to generate assembly for a file
 glif_cond.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_cond.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_cond.cpp.s
 .PHONY : glif_cond.cpp.s
 
 glif_psc.o: glif_psc.cpp.o
@@ -1006,7 +1006,7 @@ glif_psc.o: glif_psc.cpp.o
 
 # target to build an object file
 glif_psc.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc.cpp.o
 .PHONY : glif_psc.cpp.o
 
 glif_psc.i: glif_psc.cpp.i
@@ -1014,7 +1014,7 @@ glif_psc.i: glif_psc.cpp.i
 
 # target to preprocess a source file
 glif_psc.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc.cpp.i
 .PHONY : glif_psc.cpp.i
 
 glif_psc.s: glif_psc.cpp.s
@@ -1022,7 +1022,7 @@ glif_psc.s: glif_psc.cpp.s
 
 # target to generate assembly for a file
 glif_psc.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc.cpp.s
 .PHONY : glif_psc.cpp.s
 
 glif_psc_double_alpha.o: glif_psc_double_alpha.cpp.o
@@ -1030,7 +1030,7 @@ glif_psc_double_alpha.o: glif_psc_double_alpha.cpp.o
 
 # target to build an object file
 glif_psc_double_alpha.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc_double_alpha.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc_double_alpha.cpp.o
 .PHONY : glif_psc_double_alpha.cpp.o
 
 glif_psc_double_alpha.i: glif_psc_double_alpha.cpp.i
@@ -1038,7 +1038,7 @@ glif_psc_double_alpha.i: glif_psc_double_alpha.cpp.i
 
 # target to preprocess a source file
 glif_psc_double_alpha.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc_double_alpha.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc_double_alpha.cpp.i
 .PHONY : glif_psc_double_alpha.cpp.i
 
 glif_psc_double_alpha.s: glif_psc_double_alpha.cpp.s
@@ -1046,7 +1046,7 @@ glif_psc_double_alpha.s: glif_psc_double_alpha.cpp.s
 
 # target to generate assembly for a file
 glif_psc_double_alpha.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc_double_alpha.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/glif_psc_double_alpha.cpp.s
 .PHONY : glif_psc_double_alpha.cpp.s
 
 hh_cond_beta_gap_traub.o: hh_cond_beta_gap_traub.cpp.o
@@ -1054,7 +1054,7 @@ hh_cond_beta_gap_traub.o: hh_cond_beta_gap_traub.cpp.o
 
 # target to build an object file
 hh_cond_beta_gap_traub.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_beta_gap_traub.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_beta_gap_traub.cpp.o
 .PHONY : hh_cond_beta_gap_traub.cpp.o
 
 hh_cond_beta_gap_traub.i: hh_cond_beta_gap_traub.cpp.i
@@ -1062,7 +1062,7 @@ hh_cond_beta_gap_traub.i: hh_cond_beta_gap_traub.cpp.i
 
 # target to preprocess a source file
 hh_cond_beta_gap_traub.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_beta_gap_traub.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_beta_gap_traub.cpp.i
 .PHONY : hh_cond_beta_gap_traub.cpp.i
 
 hh_cond_beta_gap_traub.s: hh_cond_beta_gap_traub.cpp.s
@@ -1070,7 +1070,7 @@ hh_cond_beta_gap_traub.s: hh_cond_beta_gap_traub.cpp.s
 
 # target to generate assembly for a file
 hh_cond_beta_gap_traub.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_beta_gap_traub.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_beta_gap_traub.cpp.s
 .PHONY : hh_cond_beta_gap_traub.cpp.s
 
 hh_cond_exp_traub.o: hh_cond_exp_traub.cpp.o
@@ -1078,7 +1078,7 @@ hh_cond_exp_traub.o: hh_cond_exp_traub.cpp.o
 
 # target to build an object file
 hh_cond_exp_traub.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_exp_traub.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_exp_traub.cpp.o
 .PHONY : hh_cond_exp_traub.cpp.o
 
 hh_cond_exp_traub.i: hh_cond_exp_traub.cpp.i
@@ -1086,7 +1086,7 @@ hh_cond_exp_traub.i: hh_cond_exp_traub.cpp.i
 
 # target to preprocess a source file
 hh_cond_exp_traub.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_exp_traub.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_exp_traub.cpp.i
 .PHONY : hh_cond_exp_traub.cpp.i
 
 hh_cond_exp_traub.s: hh_cond_exp_traub.cpp.s
@@ -1094,7 +1094,7 @@ hh_cond_exp_traub.s: hh_cond_exp_traub.cpp.s
 
 # target to generate assembly for a file
 hh_cond_exp_traub.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_exp_traub.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_cond_exp_traub.cpp.s
 .PHONY : hh_cond_exp_traub.cpp.s
 
 hh_psc_alpha.o: hh_psc_alpha.cpp.o
@@ -1102,7 +1102,7 @@ hh_psc_alpha.o: hh_psc_alpha.cpp.o
 
 # target to build an object file
 hh_psc_alpha.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha.cpp.o
 .PHONY : hh_psc_alpha.cpp.o
 
 hh_psc_alpha.i: hh_psc_alpha.cpp.i
@@ -1110,7 +1110,7 @@ hh_psc_alpha.i: hh_psc_alpha.cpp.i
 
 # target to preprocess a source file
 hh_psc_alpha.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha.cpp.i
 .PHONY : hh_psc_alpha.cpp.i
 
 hh_psc_alpha.s: hh_psc_alpha.cpp.s
@@ -1118,7 +1118,7 @@ hh_psc_alpha.s: hh_psc_alpha.cpp.s
 
 # target to generate assembly for a file
 hh_psc_alpha.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha.cpp.s
 .PHONY : hh_psc_alpha.cpp.s
 
 hh_psc_alpha_clopath.o: hh_psc_alpha_clopath.cpp.o
@@ -1126,7 +1126,7 @@ hh_psc_alpha_clopath.o: hh_psc_alpha_clopath.cpp.o
 
 # target to build an object file
 hh_psc_alpha_clopath.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_clopath.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_clopath.cpp.o
 .PHONY : hh_psc_alpha_clopath.cpp.o
 
 hh_psc_alpha_clopath.i: hh_psc_alpha_clopath.cpp.i
@@ -1134,7 +1134,7 @@ hh_psc_alpha_clopath.i: hh_psc_alpha_clopath.cpp.i
 
 # target to preprocess a source file
 hh_psc_alpha_clopath.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_clopath.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_clopath.cpp.i
 .PHONY : hh_psc_alpha_clopath.cpp.i
 
 hh_psc_alpha_clopath.s: hh_psc_alpha_clopath.cpp.s
@@ -1142,7 +1142,7 @@ hh_psc_alpha_clopath.s: hh_psc_alpha_clopath.cpp.s
 
 # target to generate assembly for a file
 hh_psc_alpha_clopath.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_clopath.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_clopath.cpp.s
 .PHONY : hh_psc_alpha_clopath.cpp.s
 
 hh_psc_alpha_gap.o: hh_psc_alpha_gap.cpp.o
@@ -1150,7 +1150,7 @@ hh_psc_alpha_gap.o: hh_psc_alpha_gap.cpp.o
 
 # target to build an object file
 hh_psc_alpha_gap.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_gap.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_gap.cpp.o
 .PHONY : hh_psc_alpha_gap.cpp.o
 
 hh_psc_alpha_gap.i: hh_psc_alpha_gap.cpp.i
@@ -1158,7 +1158,7 @@ hh_psc_alpha_gap.i: hh_psc_alpha_gap.cpp.i
 
 # target to preprocess a source file
 hh_psc_alpha_gap.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_gap.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_gap.cpp.i
 .PHONY : hh_psc_alpha_gap.cpp.i
 
 hh_psc_alpha_gap.s: hh_psc_alpha_gap.cpp.s
@@ -1166,7 +1166,7 @@ hh_psc_alpha_gap.s: hh_psc_alpha_gap.cpp.s
 
 # target to generate assembly for a file
 hh_psc_alpha_gap.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_gap.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/hh_psc_alpha_gap.cpp.s
 .PHONY : hh_psc_alpha_gap.cpp.s
 
 ht_neuron.o: ht_neuron.cpp.o
@@ -1174,7 +1174,7 @@ ht_neuron.o: ht_neuron.cpp.o
 
 # target to build an object file
 ht_neuron.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_neuron.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_neuron.cpp.o
 .PHONY : ht_neuron.cpp.o
 
 ht_neuron.i: ht_neuron.cpp.i
@@ -1182,7 +1182,7 @@ ht_neuron.i: ht_neuron.cpp.i
 
 # target to preprocess a source file
 ht_neuron.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_neuron.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_neuron.cpp.i
 .PHONY : ht_neuron.cpp.i
 
 ht_neuron.s: ht_neuron.cpp.s
@@ -1190,7 +1190,7 @@ ht_neuron.s: ht_neuron.cpp.s
 
 # target to generate assembly for a file
 ht_neuron.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_neuron.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_neuron.cpp.s
 .PHONY : ht_neuron.cpp.s
 
 ht_synapse.o: ht_synapse.cpp.o
@@ -1198,7 +1198,7 @@ ht_synapse.o: ht_synapse.cpp.o
 
 # target to build an object file
 ht_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_synapse.cpp.o
 .PHONY : ht_synapse.cpp.o
 
 ht_synapse.i: ht_synapse.cpp.i
@@ -1206,7 +1206,7 @@ ht_synapse.i: ht_synapse.cpp.i
 
 # target to preprocess a source file
 ht_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_synapse.cpp.i
 .PHONY : ht_synapse.cpp.i
 
 ht_synapse.s: ht_synapse.cpp.s
@@ -1214,7 +1214,7 @@ ht_synapse.s: ht_synapse.cpp.s
 
 # target to generate assembly for a file
 ht_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ht_synapse.cpp.s
 .PHONY : ht_synapse.cpp.s
 
 iaf_chs_2007.o: iaf_chs_2007.cpp.o
@@ -1222,7 +1222,7 @@ iaf_chs_2007.o: iaf_chs_2007.cpp.o
 
 # target to build an object file
 iaf_chs_2007.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chs_2007.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chs_2007.cpp.o
 .PHONY : iaf_chs_2007.cpp.o
 
 iaf_chs_2007.i: iaf_chs_2007.cpp.i
@@ -1230,7 +1230,7 @@ iaf_chs_2007.i: iaf_chs_2007.cpp.i
 
 # target to preprocess a source file
 iaf_chs_2007.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chs_2007.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chs_2007.cpp.i
 .PHONY : iaf_chs_2007.cpp.i
 
 iaf_chs_2007.s: iaf_chs_2007.cpp.s
@@ -1238,7 +1238,7 @@ iaf_chs_2007.s: iaf_chs_2007.cpp.s
 
 # target to generate assembly for a file
 iaf_chs_2007.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chs_2007.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chs_2007.cpp.s
 .PHONY : iaf_chs_2007.cpp.s
 
 iaf_chxk_2008.o: iaf_chxk_2008.cpp.o
@@ -1246,7 +1246,7 @@ iaf_chxk_2008.o: iaf_chxk_2008.cpp.o
 
 # target to build an object file
 iaf_chxk_2008.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chxk_2008.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chxk_2008.cpp.o
 .PHONY : iaf_chxk_2008.cpp.o
 
 iaf_chxk_2008.i: iaf_chxk_2008.cpp.i
@@ -1254,7 +1254,7 @@ iaf_chxk_2008.i: iaf_chxk_2008.cpp.i
 
 # target to preprocess a source file
 iaf_chxk_2008.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chxk_2008.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chxk_2008.cpp.i
 .PHONY : iaf_chxk_2008.cpp.i
 
 iaf_chxk_2008.s: iaf_chxk_2008.cpp.s
@@ -1262,7 +1262,7 @@ iaf_chxk_2008.s: iaf_chxk_2008.cpp.s
 
 # target to generate assembly for a file
 iaf_chxk_2008.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chxk_2008.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_chxk_2008.cpp.s
 .PHONY : iaf_chxk_2008.cpp.s
 
 iaf_cond_alpha.o: iaf_cond_alpha.cpp.o
@@ -1270,7 +1270,7 @@ iaf_cond_alpha.o: iaf_cond_alpha.cpp.o
 
 # target to build an object file
 iaf_cond_alpha.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha.cpp.o
 .PHONY : iaf_cond_alpha.cpp.o
 
 iaf_cond_alpha.i: iaf_cond_alpha.cpp.i
@@ -1278,7 +1278,7 @@ iaf_cond_alpha.i: iaf_cond_alpha.cpp.i
 
 # target to preprocess a source file
 iaf_cond_alpha.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha.cpp.i
 .PHONY : iaf_cond_alpha.cpp.i
 
 iaf_cond_alpha.s: iaf_cond_alpha.cpp.s
@@ -1286,7 +1286,7 @@ iaf_cond_alpha.s: iaf_cond_alpha.cpp.s
 
 # target to generate assembly for a file
 iaf_cond_alpha.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha.cpp.s
 .PHONY : iaf_cond_alpha.cpp.s
 
 iaf_cond_alpha_mc.o: iaf_cond_alpha_mc.cpp.o
@@ -1294,7 +1294,7 @@ iaf_cond_alpha_mc.o: iaf_cond_alpha_mc.cpp.o
 
 # target to build an object file
 iaf_cond_alpha_mc.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha_mc.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha_mc.cpp.o
 .PHONY : iaf_cond_alpha_mc.cpp.o
 
 iaf_cond_alpha_mc.i: iaf_cond_alpha_mc.cpp.i
@@ -1302,7 +1302,7 @@ iaf_cond_alpha_mc.i: iaf_cond_alpha_mc.cpp.i
 
 # target to preprocess a source file
 iaf_cond_alpha_mc.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha_mc.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha_mc.cpp.i
 .PHONY : iaf_cond_alpha_mc.cpp.i
 
 iaf_cond_alpha_mc.s: iaf_cond_alpha_mc.cpp.s
@@ -1310,7 +1310,7 @@ iaf_cond_alpha_mc.s: iaf_cond_alpha_mc.cpp.s
 
 # target to generate assembly for a file
 iaf_cond_alpha_mc.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha_mc.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_alpha_mc.cpp.s
 .PHONY : iaf_cond_alpha_mc.cpp.s
 
 iaf_cond_beta.o: iaf_cond_beta.cpp.o
@@ -1318,7 +1318,7 @@ iaf_cond_beta.o: iaf_cond_beta.cpp.o
 
 # target to build an object file
 iaf_cond_beta.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_beta.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_beta.cpp.o
 .PHONY : iaf_cond_beta.cpp.o
 
 iaf_cond_beta.i: iaf_cond_beta.cpp.i
@@ -1326,7 +1326,7 @@ iaf_cond_beta.i: iaf_cond_beta.cpp.i
 
 # target to preprocess a source file
 iaf_cond_beta.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_beta.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_beta.cpp.i
 .PHONY : iaf_cond_beta.cpp.i
 
 iaf_cond_beta.s: iaf_cond_beta.cpp.s
@@ -1334,7 +1334,7 @@ iaf_cond_beta.s: iaf_cond_beta.cpp.s
 
 # target to generate assembly for a file
 iaf_cond_beta.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_beta.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_beta.cpp.s
 .PHONY : iaf_cond_beta.cpp.s
 
 iaf_cond_exp.o: iaf_cond_exp.cpp.o
@@ -1342,7 +1342,7 @@ iaf_cond_exp.o: iaf_cond_exp.cpp.o
 
 # target to build an object file
 iaf_cond_exp.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp.cpp.o
 .PHONY : iaf_cond_exp.cpp.o
 
 iaf_cond_exp.i: iaf_cond_exp.cpp.i
@@ -1350,7 +1350,7 @@ iaf_cond_exp.i: iaf_cond_exp.cpp.i
 
 # target to preprocess a source file
 iaf_cond_exp.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp.cpp.i
 .PHONY : iaf_cond_exp.cpp.i
 
 iaf_cond_exp.s: iaf_cond_exp.cpp.s
@@ -1358,7 +1358,7 @@ iaf_cond_exp.s: iaf_cond_exp.cpp.s
 
 # target to generate assembly for a file
 iaf_cond_exp.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp.cpp.s
 .PHONY : iaf_cond_exp.cpp.s
 
 iaf_cond_exp_sfa_rr.o: iaf_cond_exp_sfa_rr.cpp.o
@@ -1366,7 +1366,7 @@ iaf_cond_exp_sfa_rr.o: iaf_cond_exp_sfa_rr.cpp.o
 
 # target to build an object file
 iaf_cond_exp_sfa_rr.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp_sfa_rr.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp_sfa_rr.cpp.o
 .PHONY : iaf_cond_exp_sfa_rr.cpp.o
 
 iaf_cond_exp_sfa_rr.i: iaf_cond_exp_sfa_rr.cpp.i
@@ -1374,7 +1374,7 @@ iaf_cond_exp_sfa_rr.i: iaf_cond_exp_sfa_rr.cpp.i
 
 # target to preprocess a source file
 iaf_cond_exp_sfa_rr.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp_sfa_rr.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp_sfa_rr.cpp.i
 .PHONY : iaf_cond_exp_sfa_rr.cpp.i
 
 iaf_cond_exp_sfa_rr.s: iaf_cond_exp_sfa_rr.cpp.s
@@ -1382,7 +1382,7 @@ iaf_cond_exp_sfa_rr.s: iaf_cond_exp_sfa_rr.cpp.s
 
 # target to generate assembly for a file
 iaf_cond_exp_sfa_rr.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp_sfa_rr.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_cond_exp_sfa_rr.cpp.s
 .PHONY : iaf_cond_exp_sfa_rr.cpp.s
 
 iaf_psc_alpha.o: iaf_psc_alpha.cpp.o
@@ -1390,7 +1390,7 @@ iaf_psc_alpha.o: iaf_psc_alpha.cpp.o
 
 # target to build an object file
 iaf_psc_alpha.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha.cpp.o
 .PHONY : iaf_psc_alpha.cpp.o
 
 iaf_psc_alpha.i: iaf_psc_alpha.cpp.i
@@ -1398,7 +1398,7 @@ iaf_psc_alpha.i: iaf_psc_alpha.cpp.i
 
 # target to preprocess a source file
 iaf_psc_alpha.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha.cpp.i
 .PHONY : iaf_psc_alpha.cpp.i
 
 iaf_psc_alpha.s: iaf_psc_alpha.cpp.s
@@ -1406,7 +1406,7 @@ iaf_psc_alpha.s: iaf_psc_alpha.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_alpha.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha.cpp.s
 .PHONY : iaf_psc_alpha.cpp.s
 
 iaf_psc_alpha_multisynapse.o: iaf_psc_alpha_multisynapse.cpp.o
@@ -1414,7 +1414,7 @@ iaf_psc_alpha_multisynapse.o: iaf_psc_alpha_multisynapse.cpp.o
 
 # target to build an object file
 iaf_psc_alpha_multisynapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_multisynapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_multisynapse.cpp.o
 .PHONY : iaf_psc_alpha_multisynapse.cpp.o
 
 iaf_psc_alpha_multisynapse.i: iaf_psc_alpha_multisynapse.cpp.i
@@ -1422,7 +1422,7 @@ iaf_psc_alpha_multisynapse.i: iaf_psc_alpha_multisynapse.cpp.i
 
 # target to preprocess a source file
 iaf_psc_alpha_multisynapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_multisynapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_multisynapse.cpp.i
 .PHONY : iaf_psc_alpha_multisynapse.cpp.i
 
 iaf_psc_alpha_multisynapse.s: iaf_psc_alpha_multisynapse.cpp.s
@@ -1430,7 +1430,7 @@ iaf_psc_alpha_multisynapse.s: iaf_psc_alpha_multisynapse.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_alpha_multisynapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_multisynapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_multisynapse.cpp.s
 .PHONY : iaf_psc_alpha_multisynapse.cpp.s
 
 iaf_psc_alpha_ps.o: iaf_psc_alpha_ps.cpp.o
@@ -1438,7 +1438,7 @@ iaf_psc_alpha_ps.o: iaf_psc_alpha_ps.cpp.o
 
 # target to build an object file
 iaf_psc_alpha_ps.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_ps.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_ps.cpp.o
 .PHONY : iaf_psc_alpha_ps.cpp.o
 
 iaf_psc_alpha_ps.i: iaf_psc_alpha_ps.cpp.i
@@ -1446,7 +1446,7 @@ iaf_psc_alpha_ps.i: iaf_psc_alpha_ps.cpp.i
 
 # target to preprocess a source file
 iaf_psc_alpha_ps.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_ps.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_ps.cpp.i
 .PHONY : iaf_psc_alpha_ps.cpp.i
 
 iaf_psc_alpha_ps.s: iaf_psc_alpha_ps.cpp.s
@@ -1454,7 +1454,7 @@ iaf_psc_alpha_ps.s: iaf_psc_alpha_ps.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_alpha_ps.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_ps.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_alpha_ps.cpp.s
 .PHONY : iaf_psc_alpha_ps.cpp.s
 
 iaf_psc_delta.o: iaf_psc_delta.cpp.o
@@ -1462,7 +1462,7 @@ iaf_psc_delta.o: iaf_psc_delta.cpp.o
 
 # target to build an object file
 iaf_psc_delta.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta.cpp.o
 .PHONY : iaf_psc_delta.cpp.o
 
 iaf_psc_delta.i: iaf_psc_delta.cpp.i
@@ -1470,7 +1470,7 @@ iaf_psc_delta.i: iaf_psc_delta.cpp.i
 
 # target to preprocess a source file
 iaf_psc_delta.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta.cpp.i
 .PHONY : iaf_psc_delta.cpp.i
 
 iaf_psc_delta.s: iaf_psc_delta.cpp.s
@@ -1478,7 +1478,7 @@ iaf_psc_delta.s: iaf_psc_delta.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_delta.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta.cpp.s
 .PHONY : iaf_psc_delta.cpp.s
 
 iaf_psc_delta_ps.o: iaf_psc_delta_ps.cpp.o
@@ -1486,7 +1486,7 @@ iaf_psc_delta_ps.o: iaf_psc_delta_ps.cpp.o
 
 # target to build an object file
 iaf_psc_delta_ps.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta_ps.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta_ps.cpp.o
 .PHONY : iaf_psc_delta_ps.cpp.o
 
 iaf_psc_delta_ps.i: iaf_psc_delta_ps.cpp.i
@@ -1494,7 +1494,7 @@ iaf_psc_delta_ps.i: iaf_psc_delta_ps.cpp.i
 
 # target to preprocess a source file
 iaf_psc_delta_ps.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta_ps.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta_ps.cpp.i
 .PHONY : iaf_psc_delta_ps.cpp.i
 
 iaf_psc_delta_ps.s: iaf_psc_delta_ps.cpp.s
@@ -1502,7 +1502,7 @@ iaf_psc_delta_ps.s: iaf_psc_delta_ps.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_delta_ps.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta_ps.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_delta_ps.cpp.s
 .PHONY : iaf_psc_delta_ps.cpp.s
 
 iaf_psc_exp.o: iaf_psc_exp.cpp.o
@@ -1510,7 +1510,7 @@ iaf_psc_exp.o: iaf_psc_exp.cpp.o
 
 # target to build an object file
 iaf_psc_exp.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp.cpp.o
 .PHONY : iaf_psc_exp.cpp.o
 
 iaf_psc_exp.i: iaf_psc_exp.cpp.i
@@ -1518,7 +1518,7 @@ iaf_psc_exp.i: iaf_psc_exp.cpp.i
 
 # target to preprocess a source file
 iaf_psc_exp.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp.cpp.i
 .PHONY : iaf_psc_exp.cpp.i
 
 iaf_psc_exp.s: iaf_psc_exp.cpp.s
@@ -1526,7 +1526,7 @@ iaf_psc_exp.s: iaf_psc_exp.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_exp.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp.cpp.s
 .PHONY : iaf_psc_exp.cpp.s
 
 iaf_psc_exp_htum.o: iaf_psc_exp_htum.cpp.o
@@ -1534,7 +1534,7 @@ iaf_psc_exp_htum.o: iaf_psc_exp_htum.cpp.o
 
 # target to build an object file
 iaf_psc_exp_htum.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_htum.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_htum.cpp.o
 .PHONY : iaf_psc_exp_htum.cpp.o
 
 iaf_psc_exp_htum.i: iaf_psc_exp_htum.cpp.i
@@ -1542,7 +1542,7 @@ iaf_psc_exp_htum.i: iaf_psc_exp_htum.cpp.i
 
 # target to preprocess a source file
 iaf_psc_exp_htum.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_htum.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_htum.cpp.i
 .PHONY : iaf_psc_exp_htum.cpp.i
 
 iaf_psc_exp_htum.s: iaf_psc_exp_htum.cpp.s
@@ -1550,7 +1550,7 @@ iaf_psc_exp_htum.s: iaf_psc_exp_htum.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_exp_htum.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_htum.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_htum.cpp.s
 .PHONY : iaf_psc_exp_htum.cpp.s
 
 iaf_psc_exp_multisynapse.o: iaf_psc_exp_multisynapse.cpp.o
@@ -1558,7 +1558,7 @@ iaf_psc_exp_multisynapse.o: iaf_psc_exp_multisynapse.cpp.o
 
 # target to build an object file
 iaf_psc_exp_multisynapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_multisynapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_multisynapse.cpp.o
 .PHONY : iaf_psc_exp_multisynapse.cpp.o
 
 iaf_psc_exp_multisynapse.i: iaf_psc_exp_multisynapse.cpp.i
@@ -1566,7 +1566,7 @@ iaf_psc_exp_multisynapse.i: iaf_psc_exp_multisynapse.cpp.i
 
 # target to preprocess a source file
 iaf_psc_exp_multisynapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_multisynapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_multisynapse.cpp.i
 .PHONY : iaf_psc_exp_multisynapse.cpp.i
 
 iaf_psc_exp_multisynapse.s: iaf_psc_exp_multisynapse.cpp.s
@@ -1574,7 +1574,7 @@ iaf_psc_exp_multisynapse.s: iaf_psc_exp_multisynapse.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_exp_multisynapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_multisynapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_multisynapse.cpp.s
 .PHONY : iaf_psc_exp_multisynapse.cpp.s
 
 iaf_psc_exp_ps.o: iaf_psc_exp_ps.cpp.o
@@ -1582,7 +1582,7 @@ iaf_psc_exp_ps.o: iaf_psc_exp_ps.cpp.o
 
 # target to build an object file
 iaf_psc_exp_ps.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps.cpp.o
 .PHONY : iaf_psc_exp_ps.cpp.o
 
 iaf_psc_exp_ps.i: iaf_psc_exp_ps.cpp.i
@@ -1590,7 +1590,7 @@ iaf_psc_exp_ps.i: iaf_psc_exp_ps.cpp.i
 
 # target to preprocess a source file
 iaf_psc_exp_ps.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps.cpp.i
 .PHONY : iaf_psc_exp_ps.cpp.i
 
 iaf_psc_exp_ps.s: iaf_psc_exp_ps.cpp.s
@@ -1598,7 +1598,7 @@ iaf_psc_exp_ps.s: iaf_psc_exp_ps.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_exp_ps.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps.cpp.s
 .PHONY : iaf_psc_exp_ps.cpp.s
 
 iaf_psc_exp_ps_lossless.o: iaf_psc_exp_ps_lossless.cpp.o
@@ -1606,7 +1606,7 @@ iaf_psc_exp_ps_lossless.o: iaf_psc_exp_ps_lossless.cpp.o
 
 # target to build an object file
 iaf_psc_exp_ps_lossless.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps_lossless.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps_lossless.cpp.o
 .PHONY : iaf_psc_exp_ps_lossless.cpp.o
 
 iaf_psc_exp_ps_lossless.i: iaf_psc_exp_ps_lossless.cpp.i
@@ -1614,7 +1614,7 @@ iaf_psc_exp_ps_lossless.i: iaf_psc_exp_ps_lossless.cpp.i
 
 # target to preprocess a source file
 iaf_psc_exp_ps_lossless.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps_lossless.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps_lossless.cpp.i
 .PHONY : iaf_psc_exp_ps_lossless.cpp.i
 
 iaf_psc_exp_ps_lossless.s: iaf_psc_exp_ps_lossless.cpp.s
@@ -1622,7 +1622,7 @@ iaf_psc_exp_ps_lossless.s: iaf_psc_exp_ps_lossless.cpp.s
 
 # target to generate assembly for a file
 iaf_psc_exp_ps_lossless.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps_lossless.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_psc_exp_ps_lossless.cpp.s
 .PHONY : iaf_psc_exp_ps_lossless.cpp.s
 
 iaf_tum_2000.o: iaf_tum_2000.cpp.o
@@ -1630,7 +1630,7 @@ iaf_tum_2000.o: iaf_tum_2000.cpp.o
 
 # target to build an object file
 iaf_tum_2000.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_tum_2000.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_tum_2000.cpp.o
 .PHONY : iaf_tum_2000.cpp.o
 
 iaf_tum_2000.i: iaf_tum_2000.cpp.i
@@ -1638,7 +1638,7 @@ iaf_tum_2000.i: iaf_tum_2000.cpp.i
 
 # target to preprocess a source file
 iaf_tum_2000.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_tum_2000.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_tum_2000.cpp.i
 .PHONY : iaf_tum_2000.cpp.i
 
 iaf_tum_2000.s: iaf_tum_2000.cpp.s
@@ -1646,7 +1646,7 @@ iaf_tum_2000.s: iaf_tum_2000.cpp.s
 
 # target to generate assembly for a file
 iaf_tum_2000.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_tum_2000.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_tum_2000.cpp.s
 .PHONY : iaf_tum_2000.cpp.s
 
 inhomogeneous_poisson_generator.o: inhomogeneous_poisson_generator.cpp.o
@@ -1654,7 +1654,7 @@ inhomogeneous_poisson_generator.o: inhomogeneous_poisson_generator.cpp.o
 
 # target to build an object file
 inhomogeneous_poisson_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/inhomogeneous_poisson_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/inhomogeneous_poisson_generator.cpp.o
 .PHONY : inhomogeneous_poisson_generator.cpp.o
 
 inhomogeneous_poisson_generator.i: inhomogeneous_poisson_generator.cpp.i
@@ -1662,7 +1662,7 @@ inhomogeneous_poisson_generator.i: inhomogeneous_poisson_generator.cpp.i
 
 # target to preprocess a source file
 inhomogeneous_poisson_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/inhomogeneous_poisson_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/inhomogeneous_poisson_generator.cpp.i
 .PHONY : inhomogeneous_poisson_generator.cpp.i
 
 inhomogeneous_poisson_generator.s: inhomogeneous_poisson_generator.cpp.s
@@ -1670,7 +1670,7 @@ inhomogeneous_poisson_generator.s: inhomogeneous_poisson_generator.cpp.s
 
 # target to generate assembly for a file
 inhomogeneous_poisson_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/inhomogeneous_poisson_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/inhomogeneous_poisson_generator.cpp.s
 .PHONY : inhomogeneous_poisson_generator.cpp.s
 
 izhikevich.o: izhikevich.cpp.o
@@ -1678,7 +1678,7 @@ izhikevich.o: izhikevich.cpp.o
 
 # target to build an object file
 izhikevich.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/izhikevich.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/izhikevich.cpp.o
 .PHONY : izhikevich.cpp.o
 
 izhikevich.i: izhikevich.cpp.i
@@ -1686,7 +1686,7 @@ izhikevich.i: izhikevich.cpp.i
 
 # target to preprocess a source file
 izhikevich.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/izhikevich.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/izhikevich.cpp.i
 .PHONY : izhikevich.cpp.i
 
 izhikevich.s: izhikevich.cpp.s
@@ -1694,7 +1694,7 @@ izhikevich.s: izhikevich.cpp.s
 
 # target to generate assembly for a file
 izhikevich.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/izhikevich.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/izhikevich.cpp.s
 .PHONY : izhikevich.cpp.s
 
 jonke_synapse.o: jonke_synapse.cpp.o
@@ -1702,7 +1702,7 @@ jonke_synapse.o: jonke_synapse.cpp.o
 
 # target to build an object file
 jonke_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/jonke_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/jonke_synapse.cpp.o
 .PHONY : jonke_synapse.cpp.o
 
 jonke_synapse.i: jonke_synapse.cpp.i
@@ -1710,7 +1710,7 @@ jonke_synapse.i: jonke_synapse.cpp.i
 
 # target to preprocess a source file
 jonke_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/jonke_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/jonke_synapse.cpp.i
 .PHONY : jonke_synapse.cpp.i
 
 jonke_synapse.s: jonke_synapse.cpp.s
@@ -1718,7 +1718,7 @@ jonke_synapse.s: jonke_synapse.cpp.s
 
 # target to generate assembly for a file
 jonke_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/jonke_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/jonke_synapse.cpp.s
 .PHONY : jonke_synapse.cpp.s
 
 lin_rate.o: lin_rate.cpp.o
@@ -1726,7 +1726,7 @@ lin_rate.o: lin_rate.cpp.o
 
 # target to build an object file
 lin_rate.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/lin_rate.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/lin_rate.cpp.o
 .PHONY : lin_rate.cpp.o
 
 lin_rate.i: lin_rate.cpp.i
@@ -1734,7 +1734,7 @@ lin_rate.i: lin_rate.cpp.i
 
 # target to preprocess a source file
 lin_rate.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/lin_rate.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/lin_rate.cpp.i
 .PHONY : lin_rate.cpp.i
 
 lin_rate.s: lin_rate.cpp.s
@@ -1742,7 +1742,7 @@ lin_rate.s: lin_rate.cpp.s
 
 # target to generate assembly for a file
 lin_rate.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/lin_rate.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/lin_rate.cpp.s
 .PHONY : lin_rate.cpp.s
 
 mat2_psc_exp.o: mat2_psc_exp.cpp.o
@@ -1750,7 +1750,7 @@ mat2_psc_exp.o: mat2_psc_exp.cpp.o
 
 # target to build an object file
 mat2_psc_exp.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mat2_psc_exp.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mat2_psc_exp.cpp.o
 .PHONY : mat2_psc_exp.cpp.o
 
 mat2_psc_exp.i: mat2_psc_exp.cpp.i
@@ -1758,7 +1758,7 @@ mat2_psc_exp.i: mat2_psc_exp.cpp.i
 
 # target to preprocess a source file
 mat2_psc_exp.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mat2_psc_exp.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mat2_psc_exp.cpp.i
 .PHONY : mat2_psc_exp.cpp.i
 
 mat2_psc_exp.s: mat2_psc_exp.cpp.s
@@ -1766,7 +1766,7 @@ mat2_psc_exp.s: mat2_psc_exp.cpp.s
 
 # target to generate assembly for a file
 mat2_psc_exp.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mat2_psc_exp.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mat2_psc_exp.cpp.s
 .PHONY : mat2_psc_exp.cpp.s
 
 mcculloch_pitts_neuron.o: mcculloch_pitts_neuron.cpp.o
@@ -1774,7 +1774,7 @@ mcculloch_pitts_neuron.o: mcculloch_pitts_neuron.cpp.o
 
 # target to build an object file
 mcculloch_pitts_neuron.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mcculloch_pitts_neuron.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mcculloch_pitts_neuron.cpp.o
 .PHONY : mcculloch_pitts_neuron.cpp.o
 
 mcculloch_pitts_neuron.i: mcculloch_pitts_neuron.cpp.i
@@ -1782,7 +1782,7 @@ mcculloch_pitts_neuron.i: mcculloch_pitts_neuron.cpp.i
 
 # target to preprocess a source file
 mcculloch_pitts_neuron.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mcculloch_pitts_neuron.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mcculloch_pitts_neuron.cpp.i
 .PHONY : mcculloch_pitts_neuron.cpp.i
 
 mcculloch_pitts_neuron.s: mcculloch_pitts_neuron.cpp.s
@@ -1790,7 +1790,7 @@ mcculloch_pitts_neuron.s: mcculloch_pitts_neuron.cpp.s
 
 # target to generate assembly for a file
 mcculloch_pitts_neuron.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mcculloch_pitts_neuron.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mcculloch_pitts_neuron.cpp.s
 .PHONY : mcculloch_pitts_neuron.cpp.s
 
 mip_generator.o: mip_generator.cpp.o
@@ -1798,7 +1798,7 @@ mip_generator.o: mip_generator.cpp.o
 
 # target to build an object file
 mip_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mip_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mip_generator.cpp.o
 .PHONY : mip_generator.cpp.o
 
 mip_generator.i: mip_generator.cpp.i
@@ -1806,7 +1806,7 @@ mip_generator.i: mip_generator.cpp.i
 
 # target to preprocess a source file
 mip_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mip_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mip_generator.cpp.i
 .PHONY : mip_generator.cpp.i
 
 mip_generator.s: mip_generator.cpp.s
@@ -1814,7 +1814,7 @@ mip_generator.s: mip_generator.cpp.s
 
 # target to generate assembly for a file
 mip_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mip_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mip_generator.cpp.s
 .PHONY : mip_generator.cpp.s
 
 modelsmodule.o: modelsmodule.cpp.o
@@ -1822,7 +1822,7 @@ modelsmodule.o: modelsmodule.cpp.o
 
 # target to build an object file
 modelsmodule.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/modelsmodule.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/modelsmodule.cpp.o
 .PHONY : modelsmodule.cpp.o
 
 modelsmodule.i: modelsmodule.cpp.i
@@ -1830,7 +1830,7 @@ modelsmodule.i: modelsmodule.cpp.i
 
 # target to preprocess a source file
 modelsmodule.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/modelsmodule.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/modelsmodule.cpp.i
 .PHONY : modelsmodule.cpp.i
 
 modelsmodule.s: modelsmodule.cpp.s
@@ -1838,7 +1838,7 @@ modelsmodule.s: modelsmodule.cpp.s
 
 # target to generate assembly for a file
 modelsmodule.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/modelsmodule.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/modelsmodule.cpp.s
 .PHONY : modelsmodule.cpp.s
 
 multimeter.o: multimeter.cpp.o
@@ -1846,7 +1846,7 @@ multimeter.o: multimeter.cpp.o
 
 # target to build an object file
 multimeter.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/multimeter.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/multimeter.cpp.o
 .PHONY : multimeter.cpp.o
 
 multimeter.i: multimeter.cpp.i
@@ -1854,7 +1854,7 @@ multimeter.i: multimeter.cpp.i
 
 # target to preprocess a source file
 multimeter.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/multimeter.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/multimeter.cpp.i
 .PHONY : multimeter.cpp.i
 
 multimeter.s: multimeter.cpp.s
@@ -1862,7 +1862,7 @@ multimeter.s: multimeter.cpp.s
 
 # target to generate assembly for a file
 multimeter.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/multimeter.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/multimeter.cpp.s
 .PHONY : multimeter.cpp.s
 
 music_cont_in_proxy.o: music_cont_in_proxy.cpp.o
@@ -1870,7 +1870,7 @@ music_cont_in_proxy.o: music_cont_in_proxy.cpp.o
 
 # target to build an object file
 music_cont_in_proxy.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_in_proxy.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_in_proxy.cpp.o
 .PHONY : music_cont_in_proxy.cpp.o
 
 music_cont_in_proxy.i: music_cont_in_proxy.cpp.i
@@ -1878,7 +1878,7 @@ music_cont_in_proxy.i: music_cont_in_proxy.cpp.i
 
 # target to preprocess a source file
 music_cont_in_proxy.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_in_proxy.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_in_proxy.cpp.i
 .PHONY : music_cont_in_proxy.cpp.i
 
 music_cont_in_proxy.s: music_cont_in_proxy.cpp.s
@@ -1886,7 +1886,7 @@ music_cont_in_proxy.s: music_cont_in_proxy.cpp.s
 
 # target to generate assembly for a file
 music_cont_in_proxy.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_in_proxy.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_in_proxy.cpp.s
 .PHONY : music_cont_in_proxy.cpp.s
 
 music_cont_out_proxy.o: music_cont_out_proxy.cpp.o
@@ -1894,7 +1894,7 @@ music_cont_out_proxy.o: music_cont_out_proxy.cpp.o
 
 # target to build an object file
 music_cont_out_proxy.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_out_proxy.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_out_proxy.cpp.o
 .PHONY : music_cont_out_proxy.cpp.o
 
 music_cont_out_proxy.i: music_cont_out_proxy.cpp.i
@@ -1902,7 +1902,7 @@ music_cont_out_proxy.i: music_cont_out_proxy.cpp.i
 
 # target to preprocess a source file
 music_cont_out_proxy.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_out_proxy.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_out_proxy.cpp.i
 .PHONY : music_cont_out_proxy.cpp.i
 
 music_cont_out_proxy.s: music_cont_out_proxy.cpp.s
@@ -1910,7 +1910,7 @@ music_cont_out_proxy.s: music_cont_out_proxy.cpp.s
 
 # target to generate assembly for a file
 music_cont_out_proxy.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_out_proxy.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_cont_out_proxy.cpp.s
 .PHONY : music_cont_out_proxy.cpp.s
 
 music_event_in_proxy.o: music_event_in_proxy.cpp.o
@@ -1918,7 +1918,7 @@ music_event_in_proxy.o: music_event_in_proxy.cpp.o
 
 # target to build an object file
 music_event_in_proxy.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_in_proxy.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_in_proxy.cpp.o
 .PHONY : music_event_in_proxy.cpp.o
 
 music_event_in_proxy.i: music_event_in_proxy.cpp.i
@@ -1926,7 +1926,7 @@ music_event_in_proxy.i: music_event_in_proxy.cpp.i
 
 # target to preprocess a source file
 music_event_in_proxy.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_in_proxy.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_in_proxy.cpp.i
 .PHONY : music_event_in_proxy.cpp.i
 
 music_event_in_proxy.s: music_event_in_proxy.cpp.s
@@ -1934,7 +1934,7 @@ music_event_in_proxy.s: music_event_in_proxy.cpp.s
 
 # target to generate assembly for a file
 music_event_in_proxy.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_in_proxy.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_in_proxy.cpp.s
 .PHONY : music_event_in_proxy.cpp.s
 
 music_event_out_proxy.o: music_event_out_proxy.cpp.o
@@ -1942,7 +1942,7 @@ music_event_out_proxy.o: music_event_out_proxy.cpp.o
 
 # target to build an object file
 music_event_out_proxy.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_out_proxy.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_out_proxy.cpp.o
 .PHONY : music_event_out_proxy.cpp.o
 
 music_event_out_proxy.i: music_event_out_proxy.cpp.i
@@ -1950,7 +1950,7 @@ music_event_out_proxy.i: music_event_out_proxy.cpp.i
 
 # target to preprocess a source file
 music_event_out_proxy.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_out_proxy.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_out_proxy.cpp.i
 .PHONY : music_event_out_proxy.cpp.i
 
 music_event_out_proxy.s: music_event_out_proxy.cpp.s
@@ -1958,7 +1958,7 @@ music_event_out_proxy.s: music_event_out_proxy.cpp.s
 
 # target to generate assembly for a file
 music_event_out_proxy.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_out_proxy.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_event_out_proxy.cpp.s
 .PHONY : music_event_out_proxy.cpp.s
 
 music_message_in_proxy.o: music_message_in_proxy.cpp.o
@@ -1966,7 +1966,7 @@ music_message_in_proxy.o: music_message_in_proxy.cpp.o
 
 # target to build an object file
 music_message_in_proxy.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_message_in_proxy.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_message_in_proxy.cpp.o
 .PHONY : music_message_in_proxy.cpp.o
 
 music_message_in_proxy.i: music_message_in_proxy.cpp.i
@@ -1974,7 +1974,7 @@ music_message_in_proxy.i: music_message_in_proxy.cpp.i
 
 # target to preprocess a source file
 music_message_in_proxy.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_message_in_proxy.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_message_in_proxy.cpp.i
 .PHONY : music_message_in_proxy.cpp.i
 
 music_message_in_proxy.s: music_message_in_proxy.cpp.s
@@ -1982,7 +1982,7 @@ music_message_in_proxy.s: music_message_in_proxy.cpp.s
 
 # target to generate assembly for a file
 music_message_in_proxy.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_message_in_proxy.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_message_in_proxy.cpp.s
 .PHONY : music_message_in_proxy.cpp.s
 
 music_rate_in_proxy.o: music_rate_in_proxy.cpp.o
@@ -1990,7 +1990,7 @@ music_rate_in_proxy.o: music_rate_in_proxy.cpp.o
 
 # target to build an object file
 music_rate_in_proxy.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_in_proxy.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_in_proxy.cpp.o
 .PHONY : music_rate_in_proxy.cpp.o
 
 music_rate_in_proxy.i: music_rate_in_proxy.cpp.i
@@ -1998,7 +1998,7 @@ music_rate_in_proxy.i: music_rate_in_proxy.cpp.i
 
 # target to preprocess a source file
 music_rate_in_proxy.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_in_proxy.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_in_proxy.cpp.i
 .PHONY : music_rate_in_proxy.cpp.i
 
 music_rate_in_proxy.s: music_rate_in_proxy.cpp.s
@@ -2006,7 +2006,7 @@ music_rate_in_proxy.s: music_rate_in_proxy.cpp.s
 
 # target to generate assembly for a file
 music_rate_in_proxy.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_in_proxy.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_in_proxy.cpp.s
 .PHONY : music_rate_in_proxy.cpp.s
 
 music_rate_out_proxy.o: music_rate_out_proxy.cpp.o
@@ -2014,7 +2014,7 @@ music_rate_out_proxy.o: music_rate_out_proxy.cpp.o
 
 # target to build an object file
 music_rate_out_proxy.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_out_proxy.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_out_proxy.cpp.o
 .PHONY : music_rate_out_proxy.cpp.o
 
 music_rate_out_proxy.i: music_rate_out_proxy.cpp.i
@@ -2022,7 +2022,7 @@ music_rate_out_proxy.i: music_rate_out_proxy.cpp.i
 
 # target to preprocess a source file
 music_rate_out_proxy.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_out_proxy.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_out_proxy.cpp.i
 .PHONY : music_rate_out_proxy.cpp.i
 
 music_rate_out_proxy.s: music_rate_out_proxy.cpp.s
@@ -2030,7 +2030,7 @@ music_rate_out_proxy.s: music_rate_out_proxy.cpp.s
 
 # target to generate assembly for a file
 music_rate_out_proxy.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_out_proxy.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/music_rate_out_proxy.cpp.s
 .PHONY : music_rate_out_proxy.cpp.s
 
 noise_generator.o: noise_generator.cpp.o
@@ -2038,7 +2038,7 @@ noise_generator.o: noise_generator.cpp.o
 
 # target to build an object file
 noise_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/noise_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/noise_generator.cpp.o
 .PHONY : noise_generator.cpp.o
 
 noise_generator.i: noise_generator.cpp.i
@@ -2046,7 +2046,7 @@ noise_generator.i: noise_generator.cpp.i
 
 # target to preprocess a source file
 noise_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/noise_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/noise_generator.cpp.i
 .PHONY : noise_generator.cpp.i
 
 noise_generator.s: noise_generator.cpp.s
@@ -2054,7 +2054,7 @@ noise_generator.s: noise_generator.cpp.s
 
 # target to generate assembly for a file
 noise_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/noise_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/noise_generator.cpp.s
 .PHONY : noise_generator.cpp.s
 
 parrot_neuron.o: parrot_neuron.cpp.o
@@ -2062,7 +2062,7 @@ parrot_neuron.o: parrot_neuron.cpp.o
 
 # target to build an object file
 parrot_neuron.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron.cpp.o
 .PHONY : parrot_neuron.cpp.o
 
 parrot_neuron.i: parrot_neuron.cpp.i
@@ -2070,7 +2070,7 @@ parrot_neuron.i: parrot_neuron.cpp.i
 
 # target to preprocess a source file
 parrot_neuron.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron.cpp.i
 .PHONY : parrot_neuron.cpp.i
 
 parrot_neuron.s: parrot_neuron.cpp.s
@@ -2078,7 +2078,7 @@ parrot_neuron.s: parrot_neuron.cpp.s
 
 # target to generate assembly for a file
 parrot_neuron.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron.cpp.s
 .PHONY : parrot_neuron.cpp.s
 
 parrot_neuron_ps.o: parrot_neuron_ps.cpp.o
@@ -2086,7 +2086,7 @@ parrot_neuron_ps.o: parrot_neuron_ps.cpp.o
 
 # target to build an object file
 parrot_neuron_ps.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron_ps.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron_ps.cpp.o
 .PHONY : parrot_neuron_ps.cpp.o
 
 parrot_neuron_ps.i: parrot_neuron_ps.cpp.i
@@ -2094,7 +2094,7 @@ parrot_neuron_ps.i: parrot_neuron_ps.cpp.i
 
 # target to preprocess a source file
 parrot_neuron_ps.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron_ps.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron_ps.cpp.i
 .PHONY : parrot_neuron_ps.cpp.i
 
 parrot_neuron_ps.s: parrot_neuron_ps.cpp.s
@@ -2102,7 +2102,7 @@ parrot_neuron_ps.s: parrot_neuron_ps.cpp.s
 
 # target to generate assembly for a file
 parrot_neuron_ps.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron_ps.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/parrot_neuron_ps.cpp.s
 .PHONY : parrot_neuron_ps.cpp.s
 
 poisson_generator.o: poisson_generator.cpp.o
@@ -2110,7 +2110,7 @@ poisson_generator.o: poisson_generator.cpp.o
 
 # target to build an object file
 poisson_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator.cpp.o
 .PHONY : poisson_generator.cpp.o
 
 poisson_generator.i: poisson_generator.cpp.i
@@ -2118,7 +2118,7 @@ poisson_generator.i: poisson_generator.cpp.i
 
 # target to preprocess a source file
 poisson_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator.cpp.i
 .PHONY : poisson_generator.cpp.i
 
 poisson_generator.s: poisson_generator.cpp.s
@@ -2126,7 +2126,7 @@ poisson_generator.s: poisson_generator.cpp.s
 
 # target to generate assembly for a file
 poisson_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator.cpp.s
 .PHONY : poisson_generator.cpp.s
 
 poisson_generator_ps.o: poisson_generator_ps.cpp.o
@@ -2134,7 +2134,7 @@ poisson_generator_ps.o: poisson_generator_ps.cpp.o
 
 # target to build an object file
 poisson_generator_ps.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator_ps.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator_ps.cpp.o
 .PHONY : poisson_generator_ps.cpp.o
 
 poisson_generator_ps.i: poisson_generator_ps.cpp.i
@@ -2142,7 +2142,7 @@ poisson_generator_ps.i: poisson_generator_ps.cpp.i
 
 # target to preprocess a source file
 poisson_generator_ps.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator_ps.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator_ps.cpp.i
 .PHONY : poisson_generator_ps.cpp.i
 
 poisson_generator_ps.s: poisson_generator_ps.cpp.s
@@ -2150,7 +2150,7 @@ poisson_generator_ps.s: poisson_generator_ps.cpp.s
 
 # target to generate assembly for a file
 poisson_generator_ps.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator_ps.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/poisson_generator_ps.cpp.s
 .PHONY : poisson_generator_ps.cpp.s
 
 pp_cond_exp_mc_urbanczik.o: pp_cond_exp_mc_urbanczik.cpp.o
@@ -2158,7 +2158,7 @@ pp_cond_exp_mc_urbanczik.o: pp_cond_exp_mc_urbanczik.cpp.o
 
 # target to build an object file
 pp_cond_exp_mc_urbanczik.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_cond_exp_mc_urbanczik.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_cond_exp_mc_urbanczik.cpp.o
 .PHONY : pp_cond_exp_mc_urbanczik.cpp.o
 
 pp_cond_exp_mc_urbanczik.i: pp_cond_exp_mc_urbanczik.cpp.i
@@ -2166,7 +2166,7 @@ pp_cond_exp_mc_urbanczik.i: pp_cond_exp_mc_urbanczik.cpp.i
 
 # target to preprocess a source file
 pp_cond_exp_mc_urbanczik.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_cond_exp_mc_urbanczik.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_cond_exp_mc_urbanczik.cpp.i
 .PHONY : pp_cond_exp_mc_urbanczik.cpp.i
 
 pp_cond_exp_mc_urbanczik.s: pp_cond_exp_mc_urbanczik.cpp.s
@@ -2174,7 +2174,7 @@ pp_cond_exp_mc_urbanczik.s: pp_cond_exp_mc_urbanczik.cpp.s
 
 # target to generate assembly for a file
 pp_cond_exp_mc_urbanczik.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_cond_exp_mc_urbanczik.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_cond_exp_mc_urbanczik.cpp.s
 .PHONY : pp_cond_exp_mc_urbanczik.cpp.s
 
 pp_psc_delta.o: pp_psc_delta.cpp.o
@@ -2182,7 +2182,7 @@ pp_psc_delta.o: pp_psc_delta.cpp.o
 
 # target to build an object file
 pp_psc_delta.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_psc_delta.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_psc_delta.cpp.o
 .PHONY : pp_psc_delta.cpp.o
 
 pp_psc_delta.i: pp_psc_delta.cpp.i
@@ -2190,7 +2190,7 @@ pp_psc_delta.i: pp_psc_delta.cpp.i
 
 # target to preprocess a source file
 pp_psc_delta.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_psc_delta.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_psc_delta.cpp.i
 .PHONY : pp_psc_delta.cpp.i
 
 pp_psc_delta.s: pp_psc_delta.cpp.s
@@ -2198,7 +2198,7 @@ pp_psc_delta.s: pp_psc_delta.cpp.s
 
 # target to generate assembly for a file
 pp_psc_delta.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_psc_delta.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pp_psc_delta.cpp.s
 .PHONY : pp_psc_delta.cpp.s
 
 ppd_sup_generator.o: ppd_sup_generator.cpp.o
@@ -2206,7 +2206,7 @@ ppd_sup_generator.o: ppd_sup_generator.cpp.o
 
 # target to build an object file
 ppd_sup_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ppd_sup_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ppd_sup_generator.cpp.o
 .PHONY : ppd_sup_generator.cpp.o
 
 ppd_sup_generator.i: ppd_sup_generator.cpp.i
@@ -2214,7 +2214,7 @@ ppd_sup_generator.i: ppd_sup_generator.cpp.i
 
 # target to preprocess a source file
 ppd_sup_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ppd_sup_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ppd_sup_generator.cpp.i
 .PHONY : ppd_sup_generator.cpp.i
 
 ppd_sup_generator.s: ppd_sup_generator.cpp.s
@@ -2222,7 +2222,7 @@ ppd_sup_generator.s: ppd_sup_generator.cpp.s
 
 # target to generate assembly for a file
 ppd_sup_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ppd_sup_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ppd_sup_generator.cpp.s
 .PHONY : ppd_sup_generator.cpp.s
 
 pulsepacket_generator.o: pulsepacket_generator.cpp.o
@@ -2230,7 +2230,7 @@ pulsepacket_generator.o: pulsepacket_generator.cpp.o
 
 # target to build an object file
 pulsepacket_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pulsepacket_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pulsepacket_generator.cpp.o
 .PHONY : pulsepacket_generator.cpp.o
 
 pulsepacket_generator.i: pulsepacket_generator.cpp.i
@@ -2238,7 +2238,7 @@ pulsepacket_generator.i: pulsepacket_generator.cpp.i
 
 # target to preprocess a source file
 pulsepacket_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pulsepacket_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pulsepacket_generator.cpp.i
 .PHONY : pulsepacket_generator.cpp.i
 
 pulsepacket_generator.s: pulsepacket_generator.cpp.s
@@ -2246,7 +2246,7 @@ pulsepacket_generator.s: pulsepacket_generator.cpp.s
 
 # target to generate assembly for a file
 pulsepacket_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pulsepacket_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/pulsepacket_generator.cpp.s
 .PHONY : pulsepacket_generator.cpp.s
 
 quantal_stp_synapse.o: quantal_stp_synapse.cpp.o
@@ -2254,7 +2254,7 @@ quantal_stp_synapse.o: quantal_stp_synapse.cpp.o
 
 # target to build an object file
 quantal_stp_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/quantal_stp_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/quantal_stp_synapse.cpp.o
 .PHONY : quantal_stp_synapse.cpp.o
 
 quantal_stp_synapse.i: quantal_stp_synapse.cpp.i
@@ -2262,7 +2262,7 @@ quantal_stp_synapse.i: quantal_stp_synapse.cpp.i
 
 # target to preprocess a source file
 quantal_stp_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/quantal_stp_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/quantal_stp_synapse.cpp.i
 .PHONY : quantal_stp_synapse.cpp.i
 
 quantal_stp_synapse.s: quantal_stp_synapse.cpp.s
@@ -2270,7 +2270,7 @@ quantal_stp_synapse.s: quantal_stp_synapse.cpp.s
 
 # target to generate assembly for a file
 quantal_stp_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/quantal_stp_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/quantal_stp_synapse.cpp.s
 .PHONY : quantal_stp_synapse.cpp.s
 
 rate_connection_delayed.o: rate_connection_delayed.cpp.o
@@ -2278,7 +2278,7 @@ rate_connection_delayed.o: rate_connection_delayed.cpp.o
 
 # target to build an object file
 rate_connection_delayed.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_delayed.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_delayed.cpp.o
 .PHONY : rate_connection_delayed.cpp.o
 
 rate_connection_delayed.i: rate_connection_delayed.cpp.i
@@ -2286,7 +2286,7 @@ rate_connection_delayed.i: rate_connection_delayed.cpp.i
 
 # target to preprocess a source file
 rate_connection_delayed.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_delayed.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_delayed.cpp.i
 .PHONY : rate_connection_delayed.cpp.i
 
 rate_connection_delayed.s: rate_connection_delayed.cpp.s
@@ -2294,7 +2294,7 @@ rate_connection_delayed.s: rate_connection_delayed.cpp.s
 
 # target to generate assembly for a file
 rate_connection_delayed.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_delayed.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_delayed.cpp.s
 .PHONY : rate_connection_delayed.cpp.s
 
 rate_connection_instantaneous.o: rate_connection_instantaneous.cpp.o
@@ -2302,7 +2302,7 @@ rate_connection_instantaneous.o: rate_connection_instantaneous.cpp.o
 
 # target to build an object file
 rate_connection_instantaneous.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_instantaneous.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_instantaneous.cpp.o
 .PHONY : rate_connection_instantaneous.cpp.o
 
 rate_connection_instantaneous.i: rate_connection_instantaneous.cpp.i
@@ -2310,7 +2310,7 @@ rate_connection_instantaneous.i: rate_connection_instantaneous.cpp.i
 
 # target to preprocess a source file
 rate_connection_instantaneous.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_instantaneous.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_instantaneous.cpp.i
 .PHONY : rate_connection_instantaneous.cpp.i
 
 rate_connection_instantaneous.s: rate_connection_instantaneous.cpp.s
@@ -2318,7 +2318,7 @@ rate_connection_instantaneous.s: rate_connection_instantaneous.cpp.s
 
 # target to generate assembly for a file
 rate_connection_instantaneous.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_instantaneous.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/rate_connection_instantaneous.cpp.s
 .PHONY : rate_connection_instantaneous.cpp.s
 
 sic_connection.o: sic_connection.cpp.o
@@ -2326,7 +2326,7 @@ sic_connection.o: sic_connection.cpp.o
 
 # target to build an object file
 sic_connection.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sic_connection.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sic_connection.cpp.o
 .PHONY : sic_connection.cpp.o
 
 sic_connection.i: sic_connection.cpp.i
@@ -2334,7 +2334,7 @@ sic_connection.i: sic_connection.cpp.i
 
 # target to preprocess a source file
 sic_connection.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sic_connection.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sic_connection.cpp.i
 .PHONY : sic_connection.cpp.i
 
 sic_connection.s: sic_connection.cpp.s
@@ -2342,7 +2342,7 @@ sic_connection.s: sic_connection.cpp.s
 
 # target to generate assembly for a file
 sic_connection.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sic_connection.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sic_connection.cpp.s
 .PHONY : sic_connection.cpp.s
 
 siegert_neuron.o: siegert_neuron.cpp.o
@@ -2350,7 +2350,7 @@ siegert_neuron.o: siegert_neuron.cpp.o
 
 # target to build an object file
 siegert_neuron.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/siegert_neuron.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/siegert_neuron.cpp.o
 .PHONY : siegert_neuron.cpp.o
 
 siegert_neuron.i: siegert_neuron.cpp.i
@@ -2358,7 +2358,7 @@ siegert_neuron.i: siegert_neuron.cpp.i
 
 # target to preprocess a source file
 siegert_neuron.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/siegert_neuron.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/siegert_neuron.cpp.i
 .PHONY : siegert_neuron.cpp.i
 
 siegert_neuron.s: siegert_neuron.cpp.s
@@ -2366,7 +2366,7 @@ siegert_neuron.s: siegert_neuron.cpp.s
 
 # target to generate assembly for a file
 siegert_neuron.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/siegert_neuron.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/siegert_neuron.cpp.s
 .PHONY : siegert_neuron.cpp.s
 
 sigmoid_rate.o: sigmoid_rate.cpp.o
@@ -2374,7 +2374,7 @@ sigmoid_rate.o: sigmoid_rate.cpp.o
 
 # target to build an object file
 sigmoid_rate.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate.cpp.o
 .PHONY : sigmoid_rate.cpp.o
 
 sigmoid_rate.i: sigmoid_rate.cpp.i
@@ -2382,7 +2382,7 @@ sigmoid_rate.i: sigmoid_rate.cpp.i
 
 # target to preprocess a source file
 sigmoid_rate.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate.cpp.i
 .PHONY : sigmoid_rate.cpp.i
 
 sigmoid_rate.s: sigmoid_rate.cpp.s
@@ -2390,7 +2390,7 @@ sigmoid_rate.s: sigmoid_rate.cpp.s
 
 # target to generate assembly for a file
 sigmoid_rate.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate.cpp.s
 .PHONY : sigmoid_rate.cpp.s
 
 sigmoid_rate_gg_1998.o: sigmoid_rate_gg_1998.cpp.o
@@ -2398,7 +2398,7 @@ sigmoid_rate_gg_1998.o: sigmoid_rate_gg_1998.cpp.o
 
 # target to build an object file
 sigmoid_rate_gg_1998.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate_gg_1998.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate_gg_1998.cpp.o
 .PHONY : sigmoid_rate_gg_1998.cpp.o
 
 sigmoid_rate_gg_1998.i: sigmoid_rate_gg_1998.cpp.i
@@ -2406,7 +2406,7 @@ sigmoid_rate_gg_1998.i: sigmoid_rate_gg_1998.cpp.i
 
 # target to preprocess a source file
 sigmoid_rate_gg_1998.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate_gg_1998.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate_gg_1998.cpp.i
 .PHONY : sigmoid_rate_gg_1998.cpp.i
 
 sigmoid_rate_gg_1998.s: sigmoid_rate_gg_1998.cpp.s
@@ -2414,7 +2414,7 @@ sigmoid_rate_gg_1998.s: sigmoid_rate_gg_1998.cpp.s
 
 # target to generate assembly for a file
 sigmoid_rate_gg_1998.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate_gg_1998.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sigmoid_rate_gg_1998.cpp.s
 .PHONY : sigmoid_rate_gg_1998.cpp.s
 
 sinusoidal_gamma_generator.o: sinusoidal_gamma_generator.cpp.o
@@ -2422,7 +2422,7 @@ sinusoidal_gamma_generator.o: sinusoidal_gamma_generator.cpp.o
 
 # target to build an object file
 sinusoidal_gamma_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_gamma_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_gamma_generator.cpp.o
 .PHONY : sinusoidal_gamma_generator.cpp.o
 
 sinusoidal_gamma_generator.i: sinusoidal_gamma_generator.cpp.i
@@ -2430,7 +2430,7 @@ sinusoidal_gamma_generator.i: sinusoidal_gamma_generator.cpp.i
 
 # target to preprocess a source file
 sinusoidal_gamma_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_gamma_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_gamma_generator.cpp.i
 .PHONY : sinusoidal_gamma_generator.cpp.i
 
 sinusoidal_gamma_generator.s: sinusoidal_gamma_generator.cpp.s
@@ -2438,7 +2438,7 @@ sinusoidal_gamma_generator.s: sinusoidal_gamma_generator.cpp.s
 
 # target to generate assembly for a file
 sinusoidal_gamma_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_gamma_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_gamma_generator.cpp.s
 .PHONY : sinusoidal_gamma_generator.cpp.s
 
 sinusoidal_poisson_generator.o: sinusoidal_poisson_generator.cpp.o
@@ -2446,7 +2446,7 @@ sinusoidal_poisson_generator.o: sinusoidal_poisson_generator.cpp.o
 
 # target to build an object file
 sinusoidal_poisson_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_poisson_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_poisson_generator.cpp.o
 .PHONY : sinusoidal_poisson_generator.cpp.o
 
 sinusoidal_poisson_generator.i: sinusoidal_poisson_generator.cpp.i
@@ -2454,7 +2454,7 @@ sinusoidal_poisson_generator.i: sinusoidal_poisson_generator.cpp.i
 
 # target to preprocess a source file
 sinusoidal_poisson_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_poisson_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_poisson_generator.cpp.i
 .PHONY : sinusoidal_poisson_generator.cpp.i
 
 sinusoidal_poisson_generator.s: sinusoidal_poisson_generator.cpp.s
@@ -2462,7 +2462,7 @@ sinusoidal_poisson_generator.s: sinusoidal_poisson_generator.cpp.s
 
 # target to generate assembly for a file
 sinusoidal_poisson_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_poisson_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/sinusoidal_poisson_generator.cpp.s
 .PHONY : sinusoidal_poisson_generator.cpp.s
 
 spike_dilutor.o: spike_dilutor.cpp.o
@@ -2470,7 +2470,7 @@ spike_dilutor.o: spike_dilutor.cpp.o
 
 # target to build an object file
 spike_dilutor.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_dilutor.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_dilutor.cpp.o
 .PHONY : spike_dilutor.cpp.o
 
 spike_dilutor.i: spike_dilutor.cpp.i
@@ -2478,7 +2478,7 @@ spike_dilutor.i: spike_dilutor.cpp.i
 
 # target to preprocess a source file
 spike_dilutor.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_dilutor.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_dilutor.cpp.i
 .PHONY : spike_dilutor.cpp.i
 
 spike_dilutor.s: spike_dilutor.cpp.s
@@ -2486,7 +2486,7 @@ spike_dilutor.s: spike_dilutor.cpp.s
 
 # target to generate assembly for a file
 spike_dilutor.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_dilutor.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_dilutor.cpp.s
 .PHONY : spike_dilutor.cpp.s
 
 spike_generator.o: spike_generator.cpp.o
@@ -2494,7 +2494,7 @@ spike_generator.o: spike_generator.cpp.o
 
 # target to build an object file
 spike_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_generator.cpp.o
 .PHONY : spike_generator.cpp.o
 
 spike_generator.i: spike_generator.cpp.i
@@ -2502,7 +2502,7 @@ spike_generator.i: spike_generator.cpp.i
 
 # target to preprocess a source file
 spike_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_generator.cpp.i
 .PHONY : spike_generator.cpp.i
 
 spike_generator.s: spike_generator.cpp.s
@@ -2510,7 +2510,7 @@ spike_generator.s: spike_generator.cpp.s
 
 # target to generate assembly for a file
 spike_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_generator.cpp.s
 .PHONY : spike_generator.cpp.s
 
 spike_recorder.o: spike_recorder.cpp.o
@@ -2518,7 +2518,7 @@ spike_recorder.o: spike_recorder.cpp.o
 
 # target to build an object file
 spike_recorder.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_recorder.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_recorder.cpp.o
 .PHONY : spike_recorder.cpp.o
 
 spike_recorder.i: spike_recorder.cpp.i
@@ -2526,7 +2526,7 @@ spike_recorder.i: spike_recorder.cpp.i
 
 # target to preprocess a source file
 spike_recorder.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_recorder.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_recorder.cpp.i
 .PHONY : spike_recorder.cpp.i
 
 spike_recorder.s: spike_recorder.cpp.s
@@ -2534,7 +2534,7 @@ spike_recorder.s: spike_recorder.cpp.s
 
 # target to generate assembly for a file
 spike_recorder.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_recorder.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_recorder.cpp.s
 .PHONY : spike_recorder.cpp.s
 
 spike_train_injector.o: spike_train_injector.cpp.o
@@ -2542,7 +2542,7 @@ spike_train_injector.o: spike_train_injector.cpp.o
 
 # target to build an object file
 spike_train_injector.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_train_injector.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_train_injector.cpp.o
 .PHONY : spike_train_injector.cpp.o
 
 spike_train_injector.i: spike_train_injector.cpp.i
@@ -2550,7 +2550,7 @@ spike_train_injector.i: spike_train_injector.cpp.i
 
 # target to preprocess a source file
 spike_train_injector.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_train_injector.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_train_injector.cpp.i
 .PHONY : spike_train_injector.cpp.i
 
 spike_train_injector.s: spike_train_injector.cpp.s
@@ -2558,7 +2558,7 @@ spike_train_injector.s: spike_train_injector.cpp.s
 
 # target to generate assembly for a file
 spike_train_injector.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_train_injector.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spike_train_injector.cpp.s
 .PHONY : spike_train_injector.cpp.s
 
 spin_detector.o: spin_detector.cpp.o
@@ -2566,7 +2566,7 @@ spin_detector.o: spin_detector.cpp.o
 
 # target to build an object file
 spin_detector.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spin_detector.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spin_detector.cpp.o
 .PHONY : spin_detector.cpp.o
 
 spin_detector.i: spin_detector.cpp.i
@@ -2574,7 +2574,7 @@ spin_detector.i: spin_detector.cpp.i
 
 # target to preprocess a source file
 spin_detector.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spin_detector.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spin_detector.cpp.i
 .PHONY : spin_detector.cpp.i
 
 spin_detector.s: spin_detector.cpp.s
@@ -2582,7 +2582,7 @@ spin_detector.s: spin_detector.cpp.s
 
 # target to generate assembly for a file
 spin_detector.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spin_detector.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/spin_detector.cpp.s
 .PHONY : spin_detector.cpp.s
 
 static_synapse.o: static_synapse.cpp.o
@@ -2590,7 +2590,7 @@ static_synapse.o: static_synapse.cpp.o
 
 # target to build an object file
 static_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse.cpp.o
 .PHONY : static_synapse.cpp.o
 
 static_synapse.i: static_synapse.cpp.i
@@ -2598,7 +2598,7 @@ static_synapse.i: static_synapse.cpp.i
 
 # target to preprocess a source file
 static_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse.cpp.i
 .PHONY : static_synapse.cpp.i
 
 static_synapse.s: static_synapse.cpp.s
@@ -2606,7 +2606,7 @@ static_synapse.s: static_synapse.cpp.s
 
 # target to generate assembly for a file
 static_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse.cpp.s
 .PHONY : static_synapse.cpp.s
 
 static_synapse_hom_w.o: static_synapse_hom_w.cpp.o
@@ -2614,7 +2614,7 @@ static_synapse_hom_w.o: static_synapse_hom_w.cpp.o
 
 # target to build an object file
 static_synapse_hom_w.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse_hom_w.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse_hom_w.cpp.o
 .PHONY : static_synapse_hom_w.cpp.o
 
 static_synapse_hom_w.i: static_synapse_hom_w.cpp.i
@@ -2622,7 +2622,7 @@ static_synapse_hom_w.i: static_synapse_hom_w.cpp.i
 
 # target to preprocess a source file
 static_synapse_hom_w.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse_hom_w.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse_hom_w.cpp.i
 .PHONY : static_synapse_hom_w.cpp.i
 
 static_synapse_hom_w.s: static_synapse_hom_w.cpp.s
@@ -2630,7 +2630,7 @@ static_synapse_hom_w.s: static_synapse_hom_w.cpp.s
 
 # target to generate assembly for a file
 static_synapse_hom_w.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse_hom_w.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/static_synapse_hom_w.cpp.s
 .PHONY : static_synapse_hom_w.cpp.s
 
 stdp_dopamine_synapse.o: stdp_dopamine_synapse.cpp.o
@@ -2638,7 +2638,7 @@ stdp_dopamine_synapse.o: stdp_dopamine_synapse.cpp.o
 
 # target to build an object file
 stdp_dopamine_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_dopamine_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_dopamine_synapse.cpp.o
 .PHONY : stdp_dopamine_synapse.cpp.o
 
 stdp_dopamine_synapse.i: stdp_dopamine_synapse.cpp.i
@@ -2646,7 +2646,7 @@ stdp_dopamine_synapse.i: stdp_dopamine_synapse.cpp.i
 
 # target to preprocess a source file
 stdp_dopamine_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_dopamine_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_dopamine_synapse.cpp.i
 .PHONY : stdp_dopamine_synapse.cpp.i
 
 stdp_dopamine_synapse.s: stdp_dopamine_synapse.cpp.s
@@ -2654,7 +2654,7 @@ stdp_dopamine_synapse.s: stdp_dopamine_synapse.cpp.s
 
 # target to generate assembly for a file
 stdp_dopamine_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_dopamine_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_dopamine_synapse.cpp.s
 .PHONY : stdp_dopamine_synapse.cpp.s
 
 stdp_facetshw_synapse_hom.o: stdp_facetshw_synapse_hom.cpp.o
@@ -2662,7 +2662,7 @@ stdp_facetshw_synapse_hom.o: stdp_facetshw_synapse_hom.cpp.o
 
 # target to build an object file
 stdp_facetshw_synapse_hom.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_facetshw_synapse_hom.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_facetshw_synapse_hom.cpp.o
 .PHONY : stdp_facetshw_synapse_hom.cpp.o
 
 stdp_facetshw_synapse_hom.i: stdp_facetshw_synapse_hom.cpp.i
@@ -2670,7 +2670,7 @@ stdp_facetshw_synapse_hom.i: stdp_facetshw_synapse_hom.cpp.i
 
 # target to preprocess a source file
 stdp_facetshw_synapse_hom.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_facetshw_synapse_hom.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_facetshw_synapse_hom.cpp.i
 .PHONY : stdp_facetshw_synapse_hom.cpp.i
 
 stdp_facetshw_synapse_hom.s: stdp_facetshw_synapse_hom.cpp.s
@@ -2678,7 +2678,7 @@ stdp_facetshw_synapse_hom.s: stdp_facetshw_synapse_hom.cpp.s
 
 # target to generate assembly for a file
 stdp_facetshw_synapse_hom.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_facetshw_synapse_hom.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_facetshw_synapse_hom.cpp.s
 .PHONY : stdp_facetshw_synapse_hom.cpp.s
 
 stdp_nn_pre_centered_synapse.o: stdp_nn_pre_centered_synapse.cpp.o
@@ -2686,7 +2686,7 @@ stdp_nn_pre_centered_synapse.o: stdp_nn_pre_centered_synapse.cpp.o
 
 # target to build an object file
 stdp_nn_pre_centered_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_pre_centered_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_pre_centered_synapse.cpp.o
 .PHONY : stdp_nn_pre_centered_synapse.cpp.o
 
 stdp_nn_pre_centered_synapse.i: stdp_nn_pre_centered_synapse.cpp.i
@@ -2694,7 +2694,7 @@ stdp_nn_pre_centered_synapse.i: stdp_nn_pre_centered_synapse.cpp.i
 
 # target to preprocess a source file
 stdp_nn_pre_centered_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_pre_centered_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_pre_centered_synapse.cpp.i
 .PHONY : stdp_nn_pre_centered_synapse.cpp.i
 
 stdp_nn_pre_centered_synapse.s: stdp_nn_pre_centered_synapse.cpp.s
@@ -2702,7 +2702,7 @@ stdp_nn_pre_centered_synapse.s: stdp_nn_pre_centered_synapse.cpp.s
 
 # target to generate assembly for a file
 stdp_nn_pre_centered_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_pre_centered_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_pre_centered_synapse.cpp.s
 .PHONY : stdp_nn_pre_centered_synapse.cpp.s
 
 stdp_nn_restr_synapse.o: stdp_nn_restr_synapse.cpp.o
@@ -2710,7 +2710,7 @@ stdp_nn_restr_synapse.o: stdp_nn_restr_synapse.cpp.o
 
 # target to build an object file
 stdp_nn_restr_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_restr_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_restr_synapse.cpp.o
 .PHONY : stdp_nn_restr_synapse.cpp.o
 
 stdp_nn_restr_synapse.i: stdp_nn_restr_synapse.cpp.i
@@ -2718,7 +2718,7 @@ stdp_nn_restr_synapse.i: stdp_nn_restr_synapse.cpp.i
 
 # target to preprocess a source file
 stdp_nn_restr_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_restr_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_restr_synapse.cpp.i
 .PHONY : stdp_nn_restr_synapse.cpp.i
 
 stdp_nn_restr_synapse.s: stdp_nn_restr_synapse.cpp.s
@@ -2726,7 +2726,7 @@ stdp_nn_restr_synapse.s: stdp_nn_restr_synapse.cpp.s
 
 # target to generate assembly for a file
 stdp_nn_restr_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_restr_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_restr_synapse.cpp.s
 .PHONY : stdp_nn_restr_synapse.cpp.s
 
 stdp_nn_symm_synapse.o: stdp_nn_symm_synapse.cpp.o
@@ -2734,7 +2734,7 @@ stdp_nn_symm_synapse.o: stdp_nn_symm_synapse.cpp.o
 
 # target to build an object file
 stdp_nn_symm_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_symm_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_symm_synapse.cpp.o
 .PHONY : stdp_nn_symm_synapse.cpp.o
 
 stdp_nn_symm_synapse.i: stdp_nn_symm_synapse.cpp.i
@@ -2742,7 +2742,7 @@ stdp_nn_symm_synapse.i: stdp_nn_symm_synapse.cpp.i
 
 # target to preprocess a source file
 stdp_nn_symm_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_symm_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_symm_synapse.cpp.i
 .PHONY : stdp_nn_symm_synapse.cpp.i
 
 stdp_nn_symm_synapse.s: stdp_nn_symm_synapse.cpp.s
@@ -2750,7 +2750,7 @@ stdp_nn_symm_synapse.s: stdp_nn_symm_synapse.cpp.s
 
 # target to generate assembly for a file
 stdp_nn_symm_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_symm_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_nn_symm_synapse.cpp.s
 .PHONY : stdp_nn_symm_synapse.cpp.s
 
 stdp_pl_synapse_hom.o: stdp_pl_synapse_hom.cpp.o
@@ -2758,7 +2758,7 @@ stdp_pl_synapse_hom.o: stdp_pl_synapse_hom.cpp.o
 
 # target to build an object file
 stdp_pl_synapse_hom.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_pl_synapse_hom.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_pl_synapse_hom.cpp.o
 .PHONY : stdp_pl_synapse_hom.cpp.o
 
 stdp_pl_synapse_hom.i: stdp_pl_synapse_hom.cpp.i
@@ -2766,7 +2766,7 @@ stdp_pl_synapse_hom.i: stdp_pl_synapse_hom.cpp.i
 
 # target to preprocess a source file
 stdp_pl_synapse_hom.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_pl_synapse_hom.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_pl_synapse_hom.cpp.i
 .PHONY : stdp_pl_synapse_hom.cpp.i
 
 stdp_pl_synapse_hom.s: stdp_pl_synapse_hom.cpp.s
@@ -2774,7 +2774,7 @@ stdp_pl_synapse_hom.s: stdp_pl_synapse_hom.cpp.s
 
 # target to generate assembly for a file
 stdp_pl_synapse_hom.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_pl_synapse_hom.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_pl_synapse_hom.cpp.s
 .PHONY : stdp_pl_synapse_hom.cpp.s
 
 stdp_synapse.o: stdp_synapse.cpp.o
@@ -2782,7 +2782,7 @@ stdp_synapse.o: stdp_synapse.cpp.o
 
 # target to build an object file
 stdp_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse.cpp.o
 .PHONY : stdp_synapse.cpp.o
 
 stdp_synapse.i: stdp_synapse.cpp.i
@@ -2790,7 +2790,7 @@ stdp_synapse.i: stdp_synapse.cpp.i
 
 # target to preprocess a source file
 stdp_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse.cpp.i
 .PHONY : stdp_synapse.cpp.i
 
 stdp_synapse.s: stdp_synapse.cpp.s
@@ -2798,7 +2798,7 @@ stdp_synapse.s: stdp_synapse.cpp.s
 
 # target to generate assembly for a file
 stdp_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse.cpp.s
 .PHONY : stdp_synapse.cpp.s
 
 stdp_synapse_hom.o: stdp_synapse_hom.cpp.o
@@ -2806,7 +2806,7 @@ stdp_synapse_hom.o: stdp_synapse_hom.cpp.o
 
 # target to build an object file
 stdp_synapse_hom.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse_hom.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse_hom.cpp.o
 .PHONY : stdp_synapse_hom.cpp.o
 
 stdp_synapse_hom.i: stdp_synapse_hom.cpp.i
@@ -2814,7 +2814,7 @@ stdp_synapse_hom.i: stdp_synapse_hom.cpp.i
 
 # target to preprocess a source file
 stdp_synapse_hom.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse_hom.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse_hom.cpp.i
 .PHONY : stdp_synapse_hom.cpp.i
 
 stdp_synapse_hom.s: stdp_synapse_hom.cpp.s
@@ -2822,7 +2822,7 @@ stdp_synapse_hom.s: stdp_synapse_hom.cpp.s
 
 # target to generate assembly for a file
 stdp_synapse_hom.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse_hom.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_synapse_hom.cpp.s
 .PHONY : stdp_synapse_hom.cpp.s
 
 stdp_triplet_synapse.o: stdp_triplet_synapse.cpp.o
@@ -2830,7 +2830,7 @@ stdp_triplet_synapse.o: stdp_triplet_synapse.cpp.o
 
 # target to build an object file
 stdp_triplet_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_triplet_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_triplet_synapse.cpp.o
 .PHONY : stdp_triplet_synapse.cpp.o
 
 stdp_triplet_synapse.i: stdp_triplet_synapse.cpp.i
@@ -2838,7 +2838,7 @@ stdp_triplet_synapse.i: stdp_triplet_synapse.cpp.i
 
 # target to preprocess a source file
 stdp_triplet_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_triplet_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_triplet_synapse.cpp.i
 .PHONY : stdp_triplet_synapse.cpp.i
 
 stdp_triplet_synapse.s: stdp_triplet_synapse.cpp.s
@@ -2846,7 +2846,7 @@ stdp_triplet_synapse.s: stdp_triplet_synapse.cpp.s
 
 # target to generate assembly for a file
 stdp_triplet_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_triplet_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/stdp_triplet_synapse.cpp.s
 .PHONY : stdp_triplet_synapse.cpp.s
 
 step_current_generator.o: step_current_generator.cpp.o
@@ -2854,7 +2854,7 @@ step_current_generator.o: step_current_generator.cpp.o
 
 # target to build an object file
 step_current_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_current_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_current_generator.cpp.o
 .PHONY : step_current_generator.cpp.o
 
 step_current_generator.i: step_current_generator.cpp.i
@@ -2862,7 +2862,7 @@ step_current_generator.i: step_current_generator.cpp.i
 
 # target to preprocess a source file
 step_current_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_current_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_current_generator.cpp.i
 .PHONY : step_current_generator.cpp.i
 
 step_current_generator.s: step_current_generator.cpp.s
@@ -2870,7 +2870,7 @@ step_current_generator.s: step_current_generator.cpp.s
 
 # target to generate assembly for a file
 step_current_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_current_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_current_generator.cpp.s
 .PHONY : step_current_generator.cpp.s
 
 step_rate_generator.o: step_rate_generator.cpp.o
@@ -2878,7 +2878,7 @@ step_rate_generator.o: step_rate_generator.cpp.o
 
 # target to build an object file
 step_rate_generator.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_rate_generator.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_rate_generator.cpp.o
 .PHONY : step_rate_generator.cpp.o
 
 step_rate_generator.i: step_rate_generator.cpp.i
@@ -2886,7 +2886,7 @@ step_rate_generator.i: step_rate_generator.cpp.i
 
 # target to preprocess a source file
 step_rate_generator.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_rate_generator.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_rate_generator.cpp.i
 .PHONY : step_rate_generator.cpp.i
 
 step_rate_generator.s: step_rate_generator.cpp.s
@@ -2894,7 +2894,7 @@ step_rate_generator.s: step_rate_generator.cpp.s
 
 # target to generate assembly for a file
 step_rate_generator.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_rate_generator.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/step_rate_generator.cpp.s
 .PHONY : step_rate_generator.cpp.s
 
 tanh_rate.o: tanh_rate.cpp.o
@@ -2902,7 +2902,7 @@ tanh_rate.o: tanh_rate.cpp.o
 
 # target to build an object file
 tanh_rate.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tanh_rate.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tanh_rate.cpp.o
 .PHONY : tanh_rate.cpp.o
 
 tanh_rate.i: tanh_rate.cpp.i
@@ -2910,7 +2910,7 @@ tanh_rate.i: tanh_rate.cpp.i
 
 # target to preprocess a source file
 tanh_rate.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tanh_rate.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tanh_rate.cpp.i
 .PHONY : tanh_rate.cpp.i
 
 tanh_rate.s: tanh_rate.cpp.s
@@ -2918,7 +2918,7 @@ tanh_rate.s: tanh_rate.cpp.s
 
 # target to generate assembly for a file
 tanh_rate.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tanh_rate.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tanh_rate.cpp.s
 .PHONY : tanh_rate.cpp.s
 
 threshold_lin_rate.o: threshold_lin_rate.cpp.o
@@ -2926,7 +2926,7 @@ threshold_lin_rate.o: threshold_lin_rate.cpp.o
 
 # target to build an object file
 threshold_lin_rate.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/threshold_lin_rate.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/threshold_lin_rate.cpp.o
 .PHONY : threshold_lin_rate.cpp.o
 
 threshold_lin_rate.i: threshold_lin_rate.cpp.i
@@ -2934,7 +2934,7 @@ threshold_lin_rate.i: threshold_lin_rate.cpp.i
 
 # target to preprocess a source file
 threshold_lin_rate.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/threshold_lin_rate.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/threshold_lin_rate.cpp.i
 .PHONY : threshold_lin_rate.cpp.i
 
 threshold_lin_rate.s: threshold_lin_rate.cpp.s
@@ -2942,7 +2942,7 @@ threshold_lin_rate.s: threshold_lin_rate.cpp.s
 
 # target to generate assembly for a file
 threshold_lin_rate.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/threshold_lin_rate.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/threshold_lin_rate.cpp.s
 .PHONY : threshold_lin_rate.cpp.s
 
 tsodyks2_synapse.o: tsodyks2_synapse.cpp.o
@@ -2950,7 +2950,7 @@ tsodyks2_synapse.o: tsodyks2_synapse.cpp.o
 
 # target to build an object file
 tsodyks2_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks2_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks2_synapse.cpp.o
 .PHONY : tsodyks2_synapse.cpp.o
 
 tsodyks2_synapse.i: tsodyks2_synapse.cpp.i
@@ -2958,7 +2958,7 @@ tsodyks2_synapse.i: tsodyks2_synapse.cpp.i
 
 # target to preprocess a source file
 tsodyks2_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks2_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks2_synapse.cpp.i
 .PHONY : tsodyks2_synapse.cpp.i
 
 tsodyks2_synapse.s: tsodyks2_synapse.cpp.s
@@ -2966,7 +2966,7 @@ tsodyks2_synapse.s: tsodyks2_synapse.cpp.s
 
 # target to generate assembly for a file
 tsodyks2_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks2_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks2_synapse.cpp.s
 .PHONY : tsodyks2_synapse.cpp.s
 
 tsodyks_synapse.o: tsodyks_synapse.cpp.o
@@ -2974,7 +2974,7 @@ tsodyks_synapse.o: tsodyks_synapse.cpp.o
 
 # target to build an object file
 tsodyks_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse.cpp.o
 .PHONY : tsodyks_synapse.cpp.o
 
 tsodyks_synapse.i: tsodyks_synapse.cpp.i
@@ -2982,7 +2982,7 @@ tsodyks_synapse.i: tsodyks_synapse.cpp.i
 
 # target to preprocess a source file
 tsodyks_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse.cpp.i
 .PHONY : tsodyks_synapse.cpp.i
 
 tsodyks_synapse.s: tsodyks_synapse.cpp.s
@@ -2990,7 +2990,7 @@ tsodyks_synapse.s: tsodyks_synapse.cpp.s
 
 # target to generate assembly for a file
 tsodyks_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse.cpp.s
 .PHONY : tsodyks_synapse.cpp.s
 
 tsodyks_synapse_hom.o: tsodyks_synapse_hom.cpp.o
@@ -2998,7 +2998,7 @@ tsodyks_synapse_hom.o: tsodyks_synapse_hom.cpp.o
 
 # target to build an object file
 tsodyks_synapse_hom.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse_hom.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse_hom.cpp.o
 .PHONY : tsodyks_synapse_hom.cpp.o
 
 tsodyks_synapse_hom.i: tsodyks_synapse_hom.cpp.i
@@ -3006,7 +3006,7 @@ tsodyks_synapse_hom.i: tsodyks_synapse_hom.cpp.i
 
 # target to preprocess a source file
 tsodyks_synapse_hom.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse_hom.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse_hom.cpp.i
 .PHONY : tsodyks_synapse_hom.cpp.i
 
 tsodyks_synapse_hom.s: tsodyks_synapse_hom.cpp.s
@@ -3014,7 +3014,7 @@ tsodyks_synapse_hom.s: tsodyks_synapse_hom.cpp.s
 
 # target to generate assembly for a file
 tsodyks_synapse_hom.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse_hom.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/tsodyks_synapse_hom.cpp.s
 .PHONY : tsodyks_synapse_hom.cpp.s
 
 urbanczik_synapse.o: urbanczik_synapse.cpp.o
@@ -3022,7 +3022,7 @@ urbanczik_synapse.o: urbanczik_synapse.cpp.o
 
 # target to build an object file
 urbanczik_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/urbanczik_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/urbanczik_synapse.cpp.o
 .PHONY : urbanczik_synapse.cpp.o
 
 urbanczik_synapse.i: urbanczik_synapse.cpp.i
@@ -3030,7 +3030,7 @@ urbanczik_synapse.i: urbanczik_synapse.cpp.i
 
 # target to preprocess a source file
 urbanczik_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/urbanczik_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/urbanczik_synapse.cpp.i
 .PHONY : urbanczik_synapse.cpp.i
 
 urbanczik_synapse.s: urbanczik_synapse.cpp.s
@@ -3038,7 +3038,7 @@ urbanczik_synapse.s: urbanczik_synapse.cpp.s
 
 # target to generate assembly for a file
 urbanczik_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/urbanczik_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/urbanczik_synapse.cpp.s
 .PHONY : urbanczik_synapse.cpp.s
 
 vogels_sprekeler_synapse.o: vogels_sprekeler_synapse.cpp.o
@@ -3046,7 +3046,7 @@ vogels_sprekeler_synapse.o: vogels_sprekeler_synapse.cpp.o
 
 # target to build an object file
 vogels_sprekeler_synapse.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/vogels_sprekeler_synapse.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/vogels_sprekeler_synapse.cpp.o
 .PHONY : vogels_sprekeler_synapse.cpp.o
 
 vogels_sprekeler_synapse.i: vogels_sprekeler_synapse.cpp.i
@@ -3054,7 +3054,7 @@ vogels_sprekeler_synapse.i: vogels_sprekeler_synapse.cpp.i
 
 # target to preprocess a source file
 vogels_sprekeler_synapse.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/vogels_sprekeler_synapse.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/vogels_sprekeler_synapse.cpp.i
 .PHONY : vogels_sprekeler_synapse.cpp.i
 
 vogels_sprekeler_synapse.s: vogels_sprekeler_synapse.cpp.s
@@ -3062,7 +3062,7 @@ vogels_sprekeler_synapse.s: vogels_sprekeler_synapse.cpp.s
 
 # target to generate assembly for a file
 vogels_sprekeler_synapse.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/vogels_sprekeler_synapse.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/vogels_sprekeler_synapse.cpp.s
 .PHONY : vogels_sprekeler_synapse.cpp.s
 
 volume_transmitter.o: volume_transmitter.cpp.o
@@ -3070,7 +3070,7 @@ volume_transmitter.o: volume_transmitter.cpp.o
 
 # target to build an object file
 volume_transmitter.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/volume_transmitter.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/volume_transmitter.cpp.o
 .PHONY : volume_transmitter.cpp.o
 
 volume_transmitter.i: volume_transmitter.cpp.i
@@ -3078,7 +3078,7 @@ volume_transmitter.i: volume_transmitter.cpp.i
 
 # target to preprocess a source file
 volume_transmitter.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/volume_transmitter.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/volume_transmitter.cpp.i
 .PHONY : volume_transmitter.cpp.i
 
 volume_transmitter.s: volume_transmitter.cpp.s
@@ -3086,7 +3086,7 @@ volume_transmitter.s: volume_transmitter.cpp.s
 
 # target to generate assembly for a file
 volume_transmitter.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/volume_transmitter.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/volume_transmitter.cpp.s
 .PHONY : volume_transmitter.cpp.s
 
 weight_recorder.o: weight_recorder.cpp.o
@@ -3094,7 +3094,7 @@ weight_recorder.o: weight_recorder.cpp.o
 
 # target to build an object file
 weight_recorder.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/weight_recorder.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/weight_recorder.cpp.o
 .PHONY : weight_recorder.cpp.o
 
 weight_recorder.i: weight_recorder.cpp.i
@@ -3102,7 +3102,7 @@ weight_recorder.i: weight_recorder.cpp.i
 
 # target to preprocess a source file
 weight_recorder.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/weight_recorder.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/weight_recorder.cpp.i
 .PHONY : weight_recorder.cpp.i
 
 weight_recorder.s: weight_recorder.cpp.s
@@ -3110,7 +3110,7 @@ weight_recorder.s: weight_recorder.cpp.s
 
 # target to generate assembly for a file
 weight_recorder.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/weight_recorder.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/weight_recorder.cpp.s
 .PHONY : weight_recorder.cpp.s
 
 # Help Target
@@ -3504,6 +3504,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

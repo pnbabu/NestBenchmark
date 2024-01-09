@@ -1,6 +1,6 @@
 #! /bin/sh
 
-prefix="/home/lukkyguy/code/BachlorThesis/nest-install"
+prefix="/home/lukkyguy/code/NestBenchmark/nest-simulator-install"
 exec_prefix=${prefix}
 
 usage()
@@ -62,7 +62,7 @@ while test $# -gt 0; do
         usage 0
         ;;
     --includes)
-        echo " -I/home/lukkyguy/code/BachlorThesis/nest-install/include/nest -I/usr/include -I/usr/include -I/usr/include -I/usr/include "
+        echo " -I/home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest -I/usr/include -I/usr/include -I/usr/include -I/usr/include "
         ;;
     --cflags)
         echo " -std=c++11 -Wall -fopenmp -O2 -fdiagnostics-color=auto"

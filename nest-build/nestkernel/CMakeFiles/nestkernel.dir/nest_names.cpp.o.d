@@ -1,9 +1,9 @@
 nestkernel/CMakeFiles/nestkernel.dir/nest_names.cpp.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_names.cpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_names.cpp \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_names.h \
- /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/name.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_names.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.h \
  /usr/include/c++/11/cassert \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

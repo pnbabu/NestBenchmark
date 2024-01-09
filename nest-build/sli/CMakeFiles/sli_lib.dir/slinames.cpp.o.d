@@ -1,8 +1,8 @@
 sli/CMakeFiles/sli_lib.dir/slinames.cpp.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slinames.cpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slinames.cpp \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slinames.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/name.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slinames.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.h \
  /usr/include/c++/11/cassert \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

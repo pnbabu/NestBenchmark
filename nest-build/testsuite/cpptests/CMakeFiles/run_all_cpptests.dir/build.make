@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukkyguy/code/BachlorThesis/nest-simulator
+CMAKE_SOURCE_DIR = /home/lukkyguy/code/NestBenchmark/nest-simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukkyguy/code/BachlorThesis/nest-build
+CMAKE_BINARY_DIR = /home/lukkyguy/code/NestBenchmark/nest-build
 
 # Include any dependencies generated for this target.
 include testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/depend.make
@@ -70,18 +70,18 @@ include testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/progress.make
 include testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/flags.make
 
 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o: testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/flags.make
-testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o: /home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/cpptests/run_all.cpp
+testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o: /home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/cpptests/run_all.cpp
 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o: testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cpptests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o -MF CMakeFiles/run_all_cpptests.dir/run_all.cpp.o.d -o CMakeFiles/run_all_cpptests.dir/run_all.cpp.o -c /home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/cpptests/run_all.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o"
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cpptests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o -MF CMakeFiles/run_all_cpptests.dir/run_all.cpp.o.d -o CMakeFiles/run_all_cpptests.dir/run_all.cpp.o -c /home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/cpptests/run_all.cpp
 
 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run_all_cpptests.dir/run_all.cpp.i"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cpptests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/cpptests/run_all.cpp > CMakeFiles/run_all_cpptests.dir/run_all.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cpptests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/cpptests/run_all.cpp > CMakeFiles/run_all_cpptests.dir/run_all.cpp.i
 
 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run_all_cpptests.dir/run_all.cpp.s"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cpptests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/cpptests/run_all.cpp -o CMakeFiles/run_all_cpptests.dir/run_all.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cpptests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/cpptests/run_all.cpp -o CMakeFiles/run_all_cpptests.dir/run_all.cpp.s
 
 # Object files for target run_all_cpptests
 run_all_cpptests_OBJECTS = \
@@ -103,18 +103,18 @@ testsuite/cpptests/run_all_cpptests: /usr/lib/x86_64-linux-gnu/libgslcblas.so
 testsuite/cpptests/run_all_cpptests: /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so
 testsuite/cpptests/run_all_cpptests: /usr/lib/x86_64-linux-gnu/libpthread.a
 testsuite/cpptests/run_all_cpptests: testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable run_all_cpptests"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cpptests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run_all_cpptests.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable run_all_cpptests"
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cpptests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run_all_cpptests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build: testsuite/cpptests/run_all_cpptests
 .PHONY : testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build
 
 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/clean:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cpptests && $(CMAKE_COMMAND) -P CMakeFiles/run_all_cpptests.dir/cmake_clean.cmake
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cpptests && $(CMAKE_COMMAND) -P CMakeFiles/run_all_cpptests.dir/cmake_clean.cmake
 .PHONY : testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/clean
 
 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/depend:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukkyguy/code/BachlorThesis/nest-simulator /home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/cpptests /home/lukkyguy/code/BachlorThesis/nest-build /home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cpptests /home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukkyguy/code/NestBenchmark/nest-simulator /home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/cpptests /home/lukkyguy/code/NestBenchmark/nest-build /home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cpptests /home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/depend
 

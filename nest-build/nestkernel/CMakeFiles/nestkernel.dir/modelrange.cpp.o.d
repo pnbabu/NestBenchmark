@@ -1,8 +1,8 @@
 nestkernel/CMakeFiles/nestkernel.dir/modelrange.cpp.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/modelrange.cpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/modelrange.cpp \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/modelrange.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_types.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/modelrange.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_types.h \
  /usr/include/c++/11/cfloat \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -36,5 +36,5 @@ nestkernel/CMakeFiles/nestkernel.dir/modelrange.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h \
  /usr/include/c++/11/cstdint

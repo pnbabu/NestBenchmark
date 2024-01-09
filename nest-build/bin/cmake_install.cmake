@@ -1,8 +1,8 @@
-# Install script for directory: /home/lukkyguy/code/BachlorThesis/nest-simulator/bin
+# Install script for directory: /home/lukkyguy/code/NestBenchmark/nest-simulator/bin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/BachlorThesis/nest-install")
+  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,10 +44,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/bin/nest-server"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/bin/nest-server-mpi"
-    "/home/lukkyguy/code/BachlorThesis/nest-build/bin/nest-config"
-    "/home/lukkyguy/code/BachlorThesis/nest-build/bin/nest_vars.sh"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/bin/nest-server"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/bin/nest-server-mpi"
+    "/home/lukkyguy/code/NestBenchmark/nest-build/bin/nest-config"
+    "/home/lukkyguy/code/NestBenchmark/nest-build/bin/nest_vars.sh"
     )
 endif()
 

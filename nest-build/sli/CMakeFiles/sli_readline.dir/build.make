@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukkyguy/code/BachlorThesis/nest-simulator
+CMAKE_SOURCE_DIR = /home/lukkyguy/code/NestBenchmark/nest-simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukkyguy/code/BachlorThesis/nest-build
+CMAKE_BINARY_DIR = /home/lukkyguy/code/NestBenchmark/nest-build
 
 # Include any dependencies generated for this target.
 include sli/CMakeFiles/sli_readline.dir/depend.make
@@ -70,18 +70,18 @@ include sli/CMakeFiles/sli_readline.dir/progress.make
 include sli/CMakeFiles/sli_readline.dir/flags.make
 
 sli/CMakeFiles/sli_readline.dir/gnureadline.cc.o: sli/CMakeFiles/sli_readline.dir/flags.make
-sli/CMakeFiles/sli_readline.dir/gnureadline.cc.o: /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/gnureadline.cc
+sli/CMakeFiles/sli_readline.dir/gnureadline.cc.o: /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/gnureadline.cc
 sli/CMakeFiles/sli_readline.dir/gnureadline.cc.o: sli/CMakeFiles/sli_readline.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sli/CMakeFiles/sli_readline.dir/gnureadline.cc.o"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/sli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sli/CMakeFiles/sli_readline.dir/gnureadline.cc.o -MF CMakeFiles/sli_readline.dir/gnureadline.cc.o.d -o CMakeFiles/sli_readline.dir/gnureadline.cc.o -c /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/gnureadline.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sli/CMakeFiles/sli_readline.dir/gnureadline.cc.o"
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/sli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sli/CMakeFiles/sli_readline.dir/gnureadline.cc.o -MF CMakeFiles/sli_readline.dir/gnureadline.cc.o.d -o CMakeFiles/sli_readline.dir/gnureadline.cc.o -c /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/gnureadline.cc
 
 sli/CMakeFiles/sli_readline.dir/gnureadline.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sli_readline.dir/gnureadline.cc.i"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/sli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/gnureadline.cc > CMakeFiles/sli_readline.dir/gnureadline.cc.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/sli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/gnureadline.cc > CMakeFiles/sli_readline.dir/gnureadline.cc.i
 
 sli/CMakeFiles/sli_readline.dir/gnureadline.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sli_readline.dir/gnureadline.cc.s"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/sli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/gnureadline.cc -o CMakeFiles/sli_readline.dir/gnureadline.cc.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/sli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/gnureadline.cc -o CMakeFiles/sli_readline.dir/gnureadline.cc.s
 
 # Object files for target sli_readline
 sli_readline_OBJECTS = \
@@ -101,9 +101,9 @@ sli/libsli_readline.so.3.6.0-post0.dev0: /usr/lib/x86_64-linux-gnu/libgslcblas.s
 sli/libsli_readline.so.3.6.0-post0.dev0: /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so
 sli/libsli_readline.so.3.6.0-post0.dev0: /usr/lib/x86_64-linux-gnu/libpthread.a
 sli/libsli_readline.so.3.6.0-post0.dev0: sli/CMakeFiles/sli_readline.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libsli_readline.so"
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/sli && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sli_readline.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/sli && $(CMAKE_COMMAND) -E cmake_symlink_library libsli_readline.so.3.6.0-post0.dev0 libsli_readline.so.3 libsli_readline.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libsli_readline.so"
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/sli && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sli_readline.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/sli && $(CMAKE_COMMAND) -E cmake_symlink_library libsli_readline.so.3.6.0-post0.dev0 libsli_readline.so.3 libsli_readline.so
 
 sli/libsli_readline.so.3: sli/libsli_readline.so.3.6.0-post0.dev0
 	@$(CMAKE_COMMAND) -E touch_nocreate sli/libsli_readline.so.3
@@ -116,10 +116,10 @@ sli/CMakeFiles/sli_readline.dir/build: sli/libsli_readline.so
 .PHONY : sli/CMakeFiles/sli_readline.dir/build
 
 sli/CMakeFiles/sli_readline.dir/clean:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build/sli && $(CMAKE_COMMAND) -P CMakeFiles/sli_readline.dir/cmake_clean.cmake
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/sli && $(CMAKE_COMMAND) -P CMakeFiles/sli_readline.dir/cmake_clean.cmake
 .PHONY : sli/CMakeFiles/sli_readline.dir/clean
 
 sli/CMakeFiles/sli_readline.dir/depend:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukkyguy/code/BachlorThesis/nest-simulator /home/lukkyguy/code/BachlorThesis/nest-simulator/sli /home/lukkyguy/code/BachlorThesis/nest-build /home/lukkyguy/code/BachlorThesis/nest-build/sli /home/lukkyguy/code/BachlorThesis/nest-build/sli/CMakeFiles/sli_readline.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukkyguy/code/NestBenchmark/nest-simulator /home/lukkyguy/code/NestBenchmark/nest-simulator/sli /home/lukkyguy/code/NestBenchmark/nest-build /home/lukkyguy/code/NestBenchmark/nest-build/sli /home/lukkyguy/code/NestBenchmark/nest-build/sli/CMakeFiles/sli_readline.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sli/CMakeFiles/sli_readline.dir/depend
 

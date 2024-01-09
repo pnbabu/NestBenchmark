@@ -1,5 +1,5 @@
 pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o: \
- /home/lukkyguy/code/BachlorThesis/nest-build/pynest/pynestkernel.cxx \
+ /home/lukkyguy/code/NestBenchmark/nest-build/pynest/pynestkernel.cxx \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -279,7 +279,7 @@ pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/name.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.h \
  /usr/include/c++/11/cassert /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
@@ -293,24 +293,24 @@ pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/datum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slitype.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/name.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slifunction.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/datum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slitype.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slifunction.h \
  /usr/include/python3.10/token.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/namedatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/aggregatedatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/allocator.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/datum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/interpret.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/namedatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/aggregatedatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/allocator.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/datum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/interpret.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/list.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/sliactions.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slibuiltins.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slimodule.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/token.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sliactions.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slibuiltins.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slimodule.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/token.h \
  /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
@@ -319,45 +319,45 @@ pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o: \
  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
  /usr/include/c++/11/bits/unique_ptr.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tokenstack.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tarrayobj.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tokenstack.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tarrayobj.h \
  /usr/include/c++/11/cstddef \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tokenarray.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tokenarray.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/sliexceptions.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/booldatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/genericdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/integerdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/numericdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/doubledatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/stringdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/mask.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/numerics.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sliexceptions.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/booldatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/genericdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/integerdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/numericdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/doubledatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/stringdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/mask.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/numerics.h \
  /usr/include/c++/11/limits \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/exceptions.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_time.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/exceptions.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_time.h \
  /usr/include/c++/11/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_types.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_types.h \
  /usr/include/c++/11/climits \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/sliexceptions.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_names.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nestmodule.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/event.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sliexceptions.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_names.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nestmodule.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/event.h \
  /usr/include/c++/11/cstring \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/spike_data.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/target.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/static_assert.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/vp_manager.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/manager_interface.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/dictdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/dict.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/lockptrdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/lockptr.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/spike_data.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/target.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/static_assert.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/vp_manager.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/manager_interface.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/dictdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/dict.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/lockptrdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/lockptr.h \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
@@ -369,52 +369,52 @@ pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/generic_factory.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/ntree.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/generic_factory.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/ntree.h \
  /usr/include/c++/11/bitset /usr/include/c++/11/iterator \
  /usr/include/c++/11/bits/stream_iterator.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/position.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/position.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/thirdparty/compose.hpp \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/parameter.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/node_collection.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/arraydatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/random_generators.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/thirdparty/compose.hpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/parameter.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/node_collection.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/arraydatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/random_generators.h \
  /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/thirdparty/randutils.hpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/thirdparty/randutils.hpp \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/bits/parse_numbers.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/dictutils.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/arraydatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/dictdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/doubledatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/integerdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/namedatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tokenutils.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/dict.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/sharedptrdatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slifunction.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slimodule.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slitype.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/parameter.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/node_collection.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/connection_id.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_datums.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/connection_id.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/aggregatedatum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tokenstack.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/interpret.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nest/neststartup.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/enum_bitfield.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/logging.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/nestkernel/nest_datums.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/dictutils.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/arraydatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/dictdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/doubledatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/integerdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/namedatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tokenutils.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/dict.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sharedptrdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slifunction.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slimodule.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slitype.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/parameter.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/node_collection.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/connection_id.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_datums.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/connection_id.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/aggregatedatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tokenstack.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/interpret.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nest/neststartup.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/enum_bitfield.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/logging.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_datums.h \
  /usr/include/python3.10/pythread.h /usr/include/c++/11/atomic \
  /usr/include/python3.10/structmember.h /usr/include/python3.10/compile.h \
  /usr/include/python3.10/frameobject.h \

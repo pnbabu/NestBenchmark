@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukkyguy/code/BachlorThesis/nest-simulator
+CMAKE_SOURCE_DIR = /home/lukkyguy/code/NestBenchmark/nest-simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukkyguy/code/BachlorThesis/nest-build
+CMAKE_BINARY_DIR = /home/lukkyguy/code/NestBenchmark/nest-build
 
 # Utility rule file for installcheck.
 
@@ -67,8 +67,8 @@ include CMakeFiles/installcheck.dir/compiler_depend.make
 include CMakeFiles/installcheck.dir/progress.make
 
 CMakeFiles/installcheck:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Executing NEST's testsuite..."
-	/usr/bin/cmake -E env /home/lukkyguy/code/BachlorThesis/nest-install/share/nest/testsuite/do_tests.sh --prefix=/home/lukkyguy/code/BachlorThesis/nest-install --with-python=/usr/bin/python3.10
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Executing NEST's testsuite..."
+	/usr/bin/cmake -E env /home/lukkyguy/code/NestBenchmark/nest-simulator-install/share/nest/testsuite/do_tests.sh --prefix=/home/lukkyguy/code/NestBenchmark/nest-simulator-install --with-python=/usr/bin/python3.10
 
 installcheck: CMakeFiles/installcheck
 installcheck: CMakeFiles/installcheck.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/installcheck.dir/clean:
 .PHONY : CMakeFiles/installcheck.dir/clean
 
 CMakeFiles/installcheck.dir/depend:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukkyguy/code/BachlorThesis/nest-simulator /home/lukkyguy/code/BachlorThesis/nest-simulator /home/lukkyguy/code/BachlorThesis/nest-build /home/lukkyguy/code/BachlorThesis/nest-build /home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles/installcheck.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukkyguy/code/NestBenchmark/nest-simulator /home/lukkyguy/code/NestBenchmark/nest-simulator /home/lukkyguy/code/NestBenchmark/nest-build /home/lukkyguy/code/NestBenchmark/nest-build /home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles/installcheck.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/installcheck.dir/depend
 

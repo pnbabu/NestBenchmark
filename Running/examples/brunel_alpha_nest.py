@@ -68,6 +68,7 @@ import os
 # calibrate the synaptic weights.
 
 parser = argparse.ArgumentParser(description='Run a simulation with NEST')
+parser.add_argument('--benchmarkPath', type=str, default='', help='Path to the nest installation')
 parser.add_argument('--simulated_neuron', type=str, default='iaf_psc_alpha_neuron_Nestml', help='Name of the model to use')
 parser.add_argument('--network_scale', type=int, default=2500, help='Number of neurons to use')
 parser.add_argument('--threads', type=int, default=4, help='Number of threads to use')
@@ -358,6 +359,7 @@ print(f"Simulation time   : {sim_time:.2f} s")
 
 
 
+print("foo3")
 def convert_np_arrays_to_lists(obj):
     if isinstance(obj, dict):
         return {k: convert_np_arrays_to_lists(v) for k, v in obj.items()}
@@ -366,19 +368,21 @@ def convert_np_arrays_to_lists(obj):
     else:
         return obj
 
-status = nest.GetKernelStatus()
-status = convert_np_arrays_to_lists(status)
-#create the folder if it does not exist
+if args.benchmarkPath != "":
+    path = args.benchmarkPath
+    status = nest.GetKernelStatus()
+    status = convert_np_arrays_to_lists(status)
+    #create the folder if it does not exist
 
 
-status["stopwatches"] = {}
-stopwatch = nodes_ex.get('update_stopwatch')
-status["stopwatches"]["update"] = stopwatch
+    status["stopwatches"] = {}
+    stopwatch = nodes_ex.get('update_stopwatch')
+    status["stopwatches"]["update"] = stopwatch
 
-if not os.path.exists("timings"):
-    os.makedirs("timings")
-with open(f"timings/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}].json", "w") as f:
-    json.dump(status, f,indent=4)
+    if not os.path.exists(path):
+        os.makedirs(path)
+    with open(f"{path}/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].json", "w") as f:
+        json.dump(status, f,indent=4)
 
 #TODO: store image compare numerics
 nest.raster_plot.from_device(espikes, hist=True)

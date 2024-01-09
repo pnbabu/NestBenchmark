@@ -1,7 +1,7 @@
 sli/CMakeFiles/sli_lib.dir/charcode.cc.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/charcode.cc \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/charcode.cc \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/charcode.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/charcode.h \
  /usr/include/c++/11/cassert \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

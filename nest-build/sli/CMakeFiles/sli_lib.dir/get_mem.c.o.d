@@ -1,5 +1,5 @@
 sli/CMakeFiles/sli_lib.dir/get_mem.c.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/get_mem.c \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/get_mem.c \
  /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

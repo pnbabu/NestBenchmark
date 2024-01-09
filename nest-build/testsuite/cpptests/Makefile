@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukkyguy/code/BachlorThesis/nest-simulator
+CMAKE_SOURCE_DIR = /home/lukkyguy/code/NestBenchmark/nest-simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukkyguy/code/BachlorThesis/nest-build
+CMAKE_BINARY_DIR = /home/lukkyguy/code/NestBenchmark/nest-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles /home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cpptests//CMakeFiles/progress.marks
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/BachlorThesis/nest-build/CMakeFiles 0
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles /home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cpptests//CMakeFiles/progress.marks
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/clean
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/preinstall
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/preinstall
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/rule:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/rule
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/rule
 .PHONY : testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ run_all_cpptests: testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/rule
 
 # fast build rule for target.
 run_all_cpptests/fast:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build.make testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build.make testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build
 .PHONY : run_all_cpptests/fast
 
 run_all.o: run_all.cpp.o
@@ -190,7 +190,7 @@ run_all.o: run_all.cpp.o
 
 # target to build an object file
 run_all.cpp.o:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build.make testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build.make testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.o
 .PHONY : run_all.cpp.o
 
 run_all.i: run_all.cpp.i
@@ -198,7 +198,7 @@ run_all.i: run_all.cpp.i
 
 # target to preprocess a source file
 run_all.cpp.i:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build.make testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.i
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build.make testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.i
 .PHONY : run_all.cpp.i
 
 run_all.s: run_all.cpp.s
@@ -206,7 +206,7 @@ run_all.s: run_all.cpp.s
 
 # target to generate assembly for a file
 run_all.cpp.s:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(MAKE) $(MAKESILENT) -f testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build.make testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.s
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/build.make testsuite/cpptests/CMakeFiles/run_all_cpptests.dir/run_all.cpp.s
 .PHONY : run_all.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lukkyguy/code/BachlorThesis/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

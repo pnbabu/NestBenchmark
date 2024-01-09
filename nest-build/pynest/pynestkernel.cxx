@@ -3871,7 +3871,7 @@ static const char __pyx_k_NESTEngine___setstate_cython[] = "NESTEngine.__setstat
 static const char __pyx_k_SLILiteral___setstate_cython[] = "SLILiteral.__setstate_cython__";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
-static const char __pyx_k_home_lukkyguy_code_BachlorThesi[] = "/home/lukkyguy/code/BachlorThesis/nest-simulator/pynest/pynestkernel.pyx";
+static const char __pyx_k_home_lukkyguy_code_NestBenchmar[] = "/home/lukkyguy/code/NestBenchmark/nest-simulator/pynest/pynestkernel.pyx";
 static const char __pyx_k_sources_must_be_a_1_dimensional[] = "sources must be a 1-dimensional NumPy array of integers";
 static const char __pyx_k_targets_must_be_a_1_dimensional[] = "targets must be a 1-dimensional NumPy array of integers";
 static const char __pyx_k_weights_must_be_a_1_dimensional[] = "weights must be a 1-dimensional NumPy array";
@@ -4294,7 +4294,7 @@ typedef struct {
   PyObject *__pyx_n_s_getstate;
   PyObject *__pyx_kp_u_got;
   PyObject *__pyx_kp_u_got_differing_extents_in_dimensi;
-  PyObject *__pyx_kp_s_home_lukkyguy_code_BachlorThesi;
+  PyObject *__pyx_kp_s_home_lukkyguy_code_NestBenchmar;
   PyObject *__pyx_n_s_i;
   PyObject *__pyx_n_s_id;
   PyObject *__pyx_n_s_import;
@@ -4710,7 +4710,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_getstate);
   Py_CLEAR(clear_module_state->__pyx_kp_u_got);
   Py_CLEAR(clear_module_state->__pyx_kp_u_got_differing_extents_in_dimensi);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_home_lukkyguy_code_BachlorThesi);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_home_lukkyguy_code_NestBenchmar);
   Py_CLEAR(clear_module_state->__pyx_n_s_i);
   Py_CLEAR(clear_module_state->__pyx_n_s_id);
   Py_CLEAR(clear_module_state->__pyx_n_s_import);
@@ -5104,7 +5104,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_getstate);
   Py_VISIT(traverse_module_state->__pyx_kp_u_got);
   Py_VISIT(traverse_module_state->__pyx_kp_u_got_differing_extents_in_dimensi);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_home_lukkyguy_code_BachlorThesi);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_home_lukkyguy_code_NestBenchmar);
   Py_VISIT(traverse_module_state->__pyx_n_s_i);
   Py_VISIT(traverse_module_state->__pyx_n_s_id);
   Py_VISIT(traverse_module_state->__pyx_n_s_import);
@@ -5610,7 +5610,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_getstate __pyx_mstate_global->__pyx_n_s_getstate
 #define __pyx_kp_u_got __pyx_mstate_global->__pyx_kp_u_got
 #define __pyx_kp_u_got_differing_extents_in_dimensi __pyx_mstate_global->__pyx_kp_u_got_differing_extents_in_dimensi
-#define __pyx_kp_s_home_lukkyguy_code_BachlorThesi __pyx_mstate_global->__pyx_kp_s_home_lukkyguy_code_BachlorThesi
+#define __pyx_kp_s_home_lukkyguy_code_NestBenchmar __pyx_mstate_global->__pyx_kp_s_home_lukkyguy_code_NestBenchmar
 #define __pyx_n_s_i __pyx_mstate_global->__pyx_n_s_i
 #define __pyx_n_s_id __pyx_mstate_global->__pyx_n_s_id
 #define __pyx_n_s_import __pyx_mstate_global->__pyx_n_s_import
@@ -34518,7 +34518,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_getstate, __pyx_k_getstate, sizeof(__pyx_k_getstate), 0, 0, 1, 1},
     {&__pyx_kp_u_got, __pyx_k_got, sizeof(__pyx_k_got), 0, 1, 0, 0},
     {&__pyx_kp_u_got_differing_extents_in_dimensi, __pyx_k_got_differing_extents_in_dimensi, sizeof(__pyx_k_got_differing_extents_in_dimensi), 0, 1, 0, 0},
-    {&__pyx_kp_s_home_lukkyguy_code_BachlorThesi, __pyx_k_home_lukkyguy_code_BachlorThesi, sizeof(__pyx_k_home_lukkyguy_code_BachlorThesi), 0, 0, 1, 0},
+    {&__pyx_kp_s_home_lukkyguy_code_NestBenchmar, __pyx_k_home_lukkyguy_code_NestBenchmar, sizeof(__pyx_k_home_lukkyguy_code_NestBenchmar), 0, 0, 1, 0},
     {&__pyx_n_s_i, __pyx_k_i, sizeof(__pyx_k_i), 0, 0, 1, 1},
     {&__pyx_n_s_id, __pyx_k_id, sizeof(__pyx_k_id), 0, 0, 1, 1},
     {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
@@ -35045,7 +35045,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__44 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_comm); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__44);
   __Pyx_GIVEREF(__pyx_tuple__44);
-  __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_BachlorThesi, __pyx_n_s_set_communicator, 167, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 167, __pyx_L1_error)
+  __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_NestBenchmar, __pyx_n_s_set_communicator, 167, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 167, __pyx_L1_error)
 
   /* "pynestkernel.pyx":175
  *                             "NEST not compiled with MPI4PY")
@@ -35057,7 +35057,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__46 = PyTuple_Pack(12, __pyx_n_s_self, __pyx_n_s_argv, __pyx_n_s_modulepath, __pyx_n_s_argc, __pyx_n_s_argv_chars, __pyx_n_s_argv_bytes, __pyx_n_s_i, __pyx_n_s_argvi, __pyx_n_s_modulepath_bytes, __pyx_n_s_argvi, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__46);
   __Pyx_GIVEREF(__pyx_tuple__46);
-  __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_BachlorThesi, __pyx_n_s_init, 175, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_NestBenchmar, __pyx_n_s_init, 175, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 175, __pyx_L1_error)
 
   /* "pynestkernel.pyx":216
  *         return True
@@ -35069,7 +35069,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__48 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_cmd, __pyx_n_s_cmd_bytes); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__48);
   __Pyx_GIVEREF(__pyx_tuple__48);
-  __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_BachlorThesi, __pyx_n_s_run, 216, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_NestBenchmar, __pyx_n_s_run, 216, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) __PYX_ERR(0, 216, __pyx_L1_error)
 
   /* "pynestkernel.pyx":224
  *         self.pEngine.execute(cmd_bytes)
@@ -35081,7 +35081,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__50 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_obj); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__50);
   __Pyx_GIVEREF(__pyx_tuple__50);
-  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_BachlorThesi, __pyx_n_s_push, 224, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 224, __pyx_L1_error)
+  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_NestBenchmar, __pyx_n_s_push, 224, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 224, __pyx_L1_error)
 
   /* "pynestkernel.pyx":230
  *         self.pEngine.OStack.push(python_object_to_datum(obj))
@@ -35093,7 +35093,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__52 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_dat, __pyx_n_s_ret); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__52);
   __Pyx_GIVEREF(__pyx_tuple__52);
-  __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_BachlorThesi, __pyx_n_s_pop, 230, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_NestBenchmar, __pyx_n_s_pop, 230, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) __PYX_ERR(0, 230, __pyx_L1_error)
 
   /* "pynestkernel.pyx":246
  *         return ret
@@ -35105,7 +35105,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__54 = PyTuple_Pack(11, __pyx_n_s_self, __pyx_n_s_node_collection, __pyx_n_s_array, __pyx_n_s_array_long_mv, __pyx_n_s_array_long_ptr, __pyx_n_s_array_bool_mv, __pyx_n_s_array_bool_ptr, __pyx_n_s_nc_datum, __pyx_n_s_new_nc_datum, __pyx_n_s_e, __pyx_n_s_exceptionCls); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 246, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__54);
   __Pyx_GIVEREF(__pyx_tuple__54);
-  __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_BachlorThesi, __pyx_n_s_take_array_index, 246, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 246, __pyx_L1_error)
+  __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_NestBenchmar, __pyx_n_s_take_array_index, 246, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 246, __pyx_L1_error)
 
   /* "pynestkernel.pyx":284
  *             raise exceptionCls('take_array_index', '') from None
@@ -35117,7 +35117,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__56 = PyTuple_Pack(24, __pyx_n_s_self, __pyx_n_s_sources, __pyx_n_s_targets, __pyx_n_s_weights, __pyx_n_s_delays, __pyx_n_s_synapse_model, __pyx_n_s_syn_param_keys, __pyx_n_s_syn_param_values, __pyx_n_s_sources_mv, __pyx_n_s_sources_ptr, __pyx_n_s_targets_mv, __pyx_n_s_targets_ptr, __pyx_n_s_weights_mv, __pyx_n_s_weights_ptr, __pyx_n_s_delays_mv, __pyx_n_s_delays_ptr, __pyx_n_s_param_keys_ptr, __pyx_n_s_i, __pyx_n_s_key, __pyx_n_s_param_values_mv, __pyx_n_s_param_values_ptr, __pyx_n_s_syn_model_string, __pyx_n_s_e, __pyx_n_s_exceptionCls); if (unlikely(!__pyx_tuple__56)) __PYX_ERR(0, 284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__56);
   __Pyx_GIVEREF(__pyx_tuple__56);
-  __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(8, 0, 0, 24, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_BachlorThesi, __pyx_n_s_connect_arrays, 284, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 284, __pyx_L1_error)
+  __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(8, 0, 0, 24, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_lukkyguy_code_NestBenchmar, __pyx_n_s_connect_arrays, 284, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 284, __pyx_L1_error)
 
   /* "(tree fragment)":1
  * def __reduce_cython__(self):             # <<<<<<<<<<<<<<

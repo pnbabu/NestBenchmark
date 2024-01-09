@@ -1,8 +1,8 @@
-# Install script for directory: /home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite
+# Install script for directory: /home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/BachlorThesis/nest-install")
+  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,83 +44,83 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/selftests/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/selftests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/unittests/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/unittests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/unittests/sli2py_ignore/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/unittests/sli2py_ignore/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/regressiontests/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/regressiontests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/regressiontests/sli2py_ignore/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/regressiontests/sli2py_ignore/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/mpi_selftests/fail/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/mpi_selftests/fail/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/mpi_selftests/pass/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/mpi_selftests/pass/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/mpitests/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/mpitests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/musictests/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/musictests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cpptests/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cpptests/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nest/testsuite" TYPE DIRECTORY FILES
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/selftests"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/unittests"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/regressiontests"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/mpitests"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/mpi_selftests"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/musictests"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/cpptests"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/pytests"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/selftests"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/unittests"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/regressiontests"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/mpitests"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/mpi_selftests"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/musictests"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/cpptests"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/pytests"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nest/testsuite" TYPE PROGRAM FILES "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/do_tests.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nest/testsuite" TYPE PROGRAM FILES "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/do_tests.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/nest_indirect"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/nest_serial"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/nest_indirect"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/nest_serial"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nest/testsuite" TYPE FILE FILES
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/junit_xml.sh"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/run_test.sh"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/testsuite/summarize_tests.py"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/junit_xml.sh"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/run_test.sh"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/testsuite/summarize_tests.py"
     )
 endif()
 

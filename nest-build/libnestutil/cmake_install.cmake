@@ -1,8 +1,8 @@
-# Install script for directory: /home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil
+# Install script for directory: /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/BachlorThesis/nest-install")
+  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,22 +44,22 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nest" TYPE FILE FILES
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/beta_normalization_factor.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/block_vector.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/dict_util.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/enum_bitfield.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/iaf_propagator.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/iterator_pair.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/lockptr.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/logging_event.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/logging.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/numerics.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/regula_falsi.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/sort.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/stopwatch.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/string_utils.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/libnestutil/vector_util.h"
-    "/home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/beta_normalization_factor.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/block_vector.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/dict_util.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/enum_bitfield.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/iaf_propagator.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/iterator_pair.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/lockptr.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/logging_event.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/logging.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/numerics.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/regula_falsi.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/sort.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/stopwatch.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/string_utils.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/vector_util.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h"
     )
 endif()
 

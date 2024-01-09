@@ -1,7 +1,7 @@
 sli/CMakeFiles/sli_lib.dir/name.cc.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/name.cc \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.cc \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/name.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.h \
  /usr/include/c++/11/cassert \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

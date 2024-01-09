@@ -1,7 +1,7 @@
 sli/CMakeFiles/sli_lib.dir/tarrayobj.cc.o: \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tarrayobj.cc \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tarrayobj.cc \
  /usr/include/stdc-predef.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/tarrayobj.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/tarrayobj.h \
  /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -16,7 +16,7 @@ sli/CMakeFiles/sli_lib.dir/tarrayobj.cc.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/exception.h \
  /usr/include/c++/11/bits/hash_bytes.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/token.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/token.h \
  /usr/include/c++/11/iomanip /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h /usr/include/c++/11/bits/postypes.h \
@@ -166,10 +166,10 @@ sli/CMakeFiles/sli_lib.dir/tarrayobj.cc.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/config.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/datum.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slitype.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/name.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/datum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slitype.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/map \
@@ -178,4 +178,4 @@ sli/CMakeFiles/sli_lib.dir/tarrayobj.cc.o: \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/lukkyguy/code/BachlorThesis/nest-simulator/sli/slifunction.h
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slifunction.h

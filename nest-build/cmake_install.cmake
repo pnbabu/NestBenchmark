@@ -1,8 +1,8 @@
-# Install script for directory: /home/lukkyguy/code/BachlorThesis/nest-simulator
+# Install script for directory: /home/lukkyguy/code/NestBenchmark/nest-simulator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/BachlorThesis/nest-install")
+  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,73 +44,73 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/doc/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/doc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/bin/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/bin/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/examples/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/examples/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/build_support/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/build_support/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/lib/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/libnestutil/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/models/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/models/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/sli/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/sli/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/nest/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/nest/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/nestkernel/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/nestkernel/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/thirdparty/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/thirdparty/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/testsuite/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/testsuite/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lukkyguy/code/BachlorThesis/nest-build/pynest/cmake_install.cmake")
+  include("/home/lukkyguy/code/NestBenchmark/nest-build/pynest/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/nest" TYPE FILE FILES
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/LICENSE"
-    "/home/lukkyguy/code/BachlorThesis/nest-simulator/README.md"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/LICENSE"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/README.md"
     )
 endif()
 
@@ -122,5 +122,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lukkyguy/code/BachlorThesis/nest-build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lukkyguy/code/NestBenchmark/nest-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
