@@ -1,2 +1,9 @@
 nest-build/
 nest-simulator-install/
+
+/CMakeFiles/
+/CMakeCache.txt
+/CMakeScripts/
+/CMakeTmp/
+/Makefile
+/cmake_install.cmake

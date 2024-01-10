@@ -1,6 +1,6 @@
+#Install nestsimulator
 rm -rf nest-build
 rm -rf nest-simulator-install
-
 
 # Paths
 srcPath=$(pwd)/nest-simulator
@@ -18,3 +18,14 @@ make installcheck
 
 cd ..
 
+#install custom neurons
+cd Running/targer
+cmake
+make
+make install
+cd ../..
+
+#install nestml
+cd nestml
+python3 setup.py install
+cd ..
