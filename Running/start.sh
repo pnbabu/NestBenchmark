@@ -1,1 +1,2 @@
-source /home/lukkyguy/code/NestBenchmark/nest-simulator-install/bin/nest_vars.sh
+current_dir=$(dirname "$0")
+source "$current_dir/../nest-simulator-install/bin/nest_vars.sh"

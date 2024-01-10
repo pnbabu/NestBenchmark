@@ -8,12 +8,14 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import FuncFormatter
+import os
 
 parser = argparse.ArgumentParser(description='Run a Benchmark with NEST')
 parser.add_argument('--noRunSim', action="store_false", help='Run the Benchmark with NEST Simulator')
 
-PATHTOFILE = "/home/lukkyguy/code/NestBenchmark/Running/examples/brunel_alpha_nest.py"
-PATHTOSHFILE = "/home/lukkyguy/code/NestBenchmark/Running/start.sh"
+current_dir = os.path.dirname(os.path.abspath(__file__))
+PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
+PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
 #NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml","iaf_psc_alpha","iaf_psc_alpha_neuron_Nestml_Optimized"]
 NEURONMODELS = ["iaf_psc_alpha"]
