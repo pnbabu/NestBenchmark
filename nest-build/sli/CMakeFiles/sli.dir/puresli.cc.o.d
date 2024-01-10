@@ -155,25 +155,25 @@ sli/CMakeFiles/sli.dir/puresli.cc.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/gnureadline.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/interpret.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/list.tcc \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sliactions.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slibuiltins.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slitype.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/name.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/interpret.h \
- /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
- /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/bits/list.tcc \
- /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/sliactions.h \
- /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/slibuiltins.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/token.h \
  /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \

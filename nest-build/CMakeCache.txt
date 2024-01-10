@@ -301,9 +301,6 @@ LTDL_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 LTDL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libltdl.so
 
-//Path to a library.
-NCURSES_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libncurses.so
-
 //CXX compiler flags for OpenMP parallelization
 OpenMP_CXX_FLAGS:STRING=-fopenmp
 
@@ -333,12 +330,6 @@ PYTHON_ENABLE_MODULE_pynestkernel:BOOL=ON
 
 //Add module pynestkernel shared
 PYTHON_MODULE_pynestkernel_BUILD_SHARED:BOOL=ON
-
-//Path to a file.
-READLINE_INCLUDE_DIR:PATH=/usr/include
-
-//Path to a library.
-READLINE_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libreadline.so
 
 //Path to a program.
 SED:FILEPATH=/usr/bin/sed
@@ -464,14 +455,14 @@ with-openmp:BOOL=ON
 //Enable user defined optimizations [default=ON (uses '-O2')].
 // When OFF, no '-O' flag is passed to the compiler. Explicit compiler
 // flags can be given; separate multiple flags by ';'.
-with-optimize:STRING=ON
+with-optimize:STRING=-O3
 
 //Build PyNEST [default=ON].
 with-python:STRING=ON
 
 //Build with GNU Readline library [default=ON]. To set a specific
 // library, give the install path.
-with-readline:STRING=ON
+with-readline:STRING=OFF
 
 //Build with SIONlib [default=OFF]. Optionally give the directory
 // where sionlib is installed.
@@ -696,8 +687,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Python
 FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3.10][/usr/include/python3.10][cfound components: Interpreter Development.Module ][v3.10.12(3.8)]
-//Details about finding Readline
-FIND_PACKAGE_MESSAGE_DETAILS_Readline:INTERNAL=[/usr/lib/x86_64-linux-gnu/libreadline.so][/usr/lib/x86_64-linux-gnu/libncurses.so][/usr/include][v8.1()]
 //ADVANCED property for variable: GSL_CBLAS_LIBRARY
 GSL_CBLAS_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GSL_CBLAS_LIBRARY_DEBUG
@@ -793,8 +782,6 @@ LONG_LONG_SIZE:INTERNAL=8
 LTDL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LTDL_LIBRARY
 LTDL_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: NCURSES_LIBRARY
-NCURSES_LIBRARY-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
 OpenMP_COMPILE_RESULT_CXX_fopenmp:INTERNAL=TRUE
 //Result of TRY_COMPILE
@@ -827,10 +814,6 @@ PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 PYTHON_ENABLE_MODULE_pynestkernel-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_MODULE_pynestkernel_BUILD_SHARED
 PYTHON_MODULE_pynestkernel_BUILD_SHARED-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: READLINE_INCLUDE_DIR
-READLINE_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: READLINE_LIBRARY
-READLINE_LIBRARY-ADVANCED:INTERNAL=1
 //Result of TRY_RUN
 RUN_RESULT:INTERNAL=0
 //CHECK_TYPE_SIZE: sizeof(uint16_t)

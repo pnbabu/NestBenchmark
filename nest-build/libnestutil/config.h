@@ -29,10 +29,10 @@
 */
 
 #define NEST_VERSION "3.6.0-post0.dev0"
-#define NEST_VERSION_GIT "1"
-#define NEST_VERSION_GIT_HASH "a00568248a6ec8af51912e362f8ce3596ae9327a"
-#define NEST_VERSION_GIT_BRANCH "master"
-#define NEST_VERSION_GIT_REMOTE "origin"
+/* #undef NEST_VERSION_GIT */
+/* #undef NEST_VERSION_GIT_HASH */
+/* #undef NEST_VERSION_GIT_BRANCH */
+/* #undef NEST_VERSION_GIT_REMOTE */
 
 // TODO NEST_HOST and NEST_HOSTVENDOR not available with cmake
 #define NEST_HOST "x86_64-pc-linux"
@@ -136,7 +136,7 @@
 #define HAVE_OSTREAM 1
 
 /* Use GNU libreadline */
-#define HAVE_READLINE 1
+/* #undef HAVE_READLINE */
 
 /* define if the compiler ignores symbolic signal names in signal.h */
 /* #undef HAVE_SIGUSR_IGNORED */

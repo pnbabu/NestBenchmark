@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/lukkyguy/code/NestBenchmark/nest-simulator/thirdparty -I/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil -I/home/lukkyguy/code/NestBenchmark/nest-build/libnestutil -I/home/lukkyguy/code/NestBenchmark/nest-simulator/models -I/home/lukkyguy/code/NestBenchmark/nest-simulator/sli -I/home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel -I/home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/spatial
 
-CXX_FLAGS =  -std=c++11 -Wall -fopenmp -O2 -fdiagnostics-color=auto -fPIC -fopenmp
+CXX_FLAGS =  -std=c++11 -Wall -fopenmp -O3 -fdiagnostics-color=auto -fPIC -fopenmp
 
 # Custom options: nestkernel/CMakeFiles/nestkernel.dir/dynamicloader.cpp.o_OPTIONS = -O0
 

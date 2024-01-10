@@ -94,8 +94,6 @@ sli/libsli_readline.so.3.6.0-post0.dev0: sli/CMakeFiles/sli_readline.dir/gnuread
 sli/libsli_readline.so.3.6.0-post0.dev0: sli/CMakeFiles/sli_readline.dir/build.make
 sli/libsli_readline.so.3.6.0-post0.dev0: sli/libsli.so.3.6.0-post0.dev0
 sli/libsli_readline.so.3.6.0-post0.dev0: libnestutil/libnestutil.a
-sli/libsli_readline.so.3.6.0-post0.dev0: /usr/lib/x86_64-linux-gnu/libreadline.so
-sli/libsli_readline.so.3.6.0-post0.dev0: /usr/lib/x86_64-linux-gnu/libncurses.so
 sli/libsli_readline.so.3.6.0-post0.dev0: /usr/lib/x86_64-linux-gnu/libgsl.so
 sli/libsli_readline.so.3.6.0-post0.dev0: /usr/lib/x86_64-linux-gnu/libgslcblas.so
 sli/libsli_readline.so.3.6.0-post0.dev0: /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so

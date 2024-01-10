@@ -101,8 +101,6 @@ sli/sli: /usr/lib/x86_64-linux-gnu/libpthread.a
 sli/sli: libnestutil/libnestutil.a
 sli/sli: /usr/lib/x86_64-linux-gnu/libgsl.so
 sli/sli: /usr/lib/x86_64-linux-gnu/libgslcblas.so
-sli/sli: /usr/lib/x86_64-linux-gnu/libreadline.so
-sli/sli: /usr/lib/x86_64-linux-gnu/libncurses.so
 sli/sli: sli/CMakeFiles/sli.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sli"
 	cd /home/lukkyguy/code/NestBenchmark/nest-build/sli && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sli.dir/link.txt --verbose=$(VERBOSE)

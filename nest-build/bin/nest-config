@@ -62,13 +62,13 @@ while test $# -gt 0; do
         usage 0
         ;;
     --includes)
-        echo " -I/home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest -I/usr/include -I/usr/include -I/usr/include -I/usr/include "
+        echo " -I/home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest -I/usr/include -I/usr/include -I/usr/include "
         ;;
     --cflags)
-        echo " -std=c++11 -Wall -fopenmp -O2 -fdiagnostics-color=auto"
+        echo " -std=c++11 -Wall -fopenmp -O3 -fdiagnostics-color=auto"
         ;;
     --libs)
-        echo "-L$prefix/lib/nest -lnest -lsli -fopenmp /usr/lib/x86_64-linux-gnu/libltdl.so /usr/lib/x86_64-linux-gnu/libreadline.so /usr/lib/x86_64-linux-gnu/libncurses.so /usr/lib/x86_64-linux-gnu/libgsl.so /usr/lib/x86_64-linux-gnu/libgslcblas.so     "
+        echo "-L$prefix/lib/nest -lnest -lsli -fopenmp /usr/lib/x86_64-linux-gnu/libltdl.so  /usr/lib/x86_64-linux-gnu/libgsl.so /usr/lib/x86_64-linux-gnu/libgslcblas.so     "
         ;;
     --compiler)
         echo "/usr/bin/c++"

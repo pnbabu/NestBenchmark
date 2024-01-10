@@ -757,5 +757,4 @@ nest/CMakeFiles/nest.dir/neststartup.cpp.o: \
  /usr/include/gsl/gsl_sys.h /usr/include/gsl/gsl_inline.h \
  /usr/include/gsl/gsl_machine.h /usr/include/gsl/gsl_precision.h \
  /usr/include/gsl/gsl_types.h /usr/include/gsl/gsl_nan.h \
- /usr/include/gsl/gsl_pow_int.h /usr/include/gsl/gsl_minmax.h \
- /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/gnureadline.h
+ /usr/include/gsl/gsl_pow_int.h /usr/include/gsl/gsl_minmax.h

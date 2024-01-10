@@ -26,7 +26,8 @@ VERTICALNEWORKSCALE = NETWORKSCALES[-1]
 ITERATIONS=1
 DEBUG = True
 
-
+output_folder = os.path.join(os.path.dirname(__file__), '..', 'Output')
+    
 
 def start_Horizontal_Benchmark(iteration):
     combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath timings' ],"name":f"{neuronmodel},{networkscale}"} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
@@ -80,7 +81,8 @@ def plot_benchmark(data):
     plt.xlabel('Network Scale')
     plt.ylabel('Real Time Factor')
     plt.legend(neurons)
-    plt.savefig('output.png')
+    
+    plt.savefig(os.path.join(output_folder, 'output.png'))
 
     for neuron in data:
         plt.figure()
@@ -109,7 +111,7 @@ def plot_timedist(data):
         plt.gca().yaxis.set_major_formatter(formatter)
         plt.title(neuron)
         plt.legend()
-        plt.savefig(f'output_{neuron}.png')
+        plt.savefig(os.path.join(output_folder, f'output_{neuron}.png'))
 
 def plot_Custom(data):
     neuron = next(iter(data))
@@ -136,7 +138,7 @@ def plot_Custom(data):
         plt.ylabel('Time')
         plt.title(stopwatch)
         plt.legend(neurons)
-        plt.savefig(f'output_{stopwatch}.png')
+        plt.savefig(os.path.join(output_folder, f'output_{stopwatch}.png'))
     
         
 def plot_verticalScaling(verticaldata):
@@ -151,7 +153,7 @@ def plot_verticalScaling(verticaldata):
     plt.xlabel('Threads')
     plt.ylabel('Time')
     plt.legend(neurons)
-    plt.savefig('output_vertical.png')
+    plt.savefig(os.path.join(output_folder, 'output_vertical.png'))
 
 
             
@@ -173,10 +175,8 @@ def deleteJson():
 if __name__ == "__main__":
     args = parser.parse_args()
     runSim = args.noRunSim
-
-    
-    if os.path.exists("output.png"):
-        os.remove("output.png")
+        
+    os.makedirs(output_folder, exist_ok=True)
 
     if runSim:
         deleteJson()
