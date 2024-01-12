@@ -19,7 +19,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  Generated from NESTML at time: 2024-01-10 16:31:48.502388
+ *  Generated from NESTML at time: 2024-01-12 14:07:27.650592
  **/
 
 // C++ includes:
@@ -282,7 +282,7 @@ void iaf_psc_alpha_neuron_Nestml::pre_run_hook()
 
 void iaf_psc_alpha_neuron_Nestml::update(nest::Time const &origin, const long from, const long to)
 {
-  sw_stopwatch.start();
+  sw_update.start();
   const double __resolution = nest::Time::get_resolution().get_ms(); // do not remove, this is necessary for the resolution() function
 
 #ifdef DEBUG
@@ -395,7 +395,7 @@ void iaf_psc_alpha_neuron_Nestml::update(nest::Time const &origin, const long fr
     // voltage logging
     B_.logger_.record_data(origin.get_steps() + lag);
   }
-  sw_stopwatch.stop();
+  sw_update.stop();
 }
 
 // Do not move this function as inline to h-file. It depends on

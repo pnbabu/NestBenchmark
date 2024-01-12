@@ -440,8 +440,8 @@ pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o: \
  /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/enum_bitfield.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil/logging.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/nest_datums.h \
- /usr/include/python3.10/pythread.h /usr/include/python3.10/pystate.h \
+ /usr/include/python3.10/pythread.h /usr/include/c++/11/atomic \
+ /usr/include/python3.10/structmember.h /usr/include/python3.10/compile.h \
  /usr/include/python3.10/frameobject.h \
  /usr/include/python3.10/cpython/frameobject.h \
- /usr/include/python3.10/compile.h /usr/include/python3.10/traceback.h \
- /usr/include/python3.10/structmember.h
+ /usr/include/python3.10/traceback.h

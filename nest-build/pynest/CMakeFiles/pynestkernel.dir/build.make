@@ -72,7 +72,7 @@ include pynest/CMakeFiles/pynestkernel.dir/flags.make
 pynest/pynestkernel.cxx: /home/lukkyguy/code/NestBenchmark/nest-simulator/pynest/pynestkernel.pyx
 pynest/pynestkernel.cxx: /home/lukkyguy/code/NestBenchmark/nest-simulator/pynest/pynestkernel.pxd
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lukkyguy/code/NestBenchmark/nest-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Compiling Cython CXX source for pynestkernel..."
-	cd /home/lukkyguy/code/NestBenchmark/nest-build/pynest && /usr/bin/cython3 --cplus -I /usr/include -3 --output-file /home/lukkyguy/code/NestBenchmark/nest-build/pynest/pynestkernel.cxx /home/lukkyguy/code/NestBenchmark/nest-simulator/pynest/pynestkernel.pyx
+	cd /home/lukkyguy/code/NestBenchmark/nest-build/pynest && /home/lukkyguy/.local/bin/cython --cplus -I /usr/include -3 --output-file /home/lukkyguy/code/NestBenchmark/nest-build/pynest/pynestkernel.cxx /home/lukkyguy/code/NestBenchmark/nest-simulator/pynest/pynestkernel.pyx
 
 pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o: pynest/CMakeFiles/pynestkernel.dir/flags.make
 pynest/CMakeFiles/pynestkernel.dir/pynestkernel.cxx.o: pynest/pynestkernel.cxx

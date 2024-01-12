@@ -19,7 +19,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  Generated from NESTML at time: 2024-01-10 16:31:48.502388
+ *  Generated from NESTML at time: 2024-01-12 14:07:27.650592
  **/
 #ifndef IAF_PSC_ALPHA_NEURON_NESTML
 #define IAF_PSC_ALPHA_NEURON_NESTML
@@ -44,7 +44,6 @@
 
 // Includes from sli:
 #include "dictdatum.h"
-
 #include "stopwatch.h"
 
 namespace nest
@@ -528,7 +527,7 @@ private:
   void recompute_internal_variables(bool exclude_timestep = false);
 
 private:
-  nest::Stopwatch sw_stopwatch;
+  nest::Stopwatch sw_update;
   static const nest_port_t MIN_SPIKE_RECEPTOR = 0;
   static const nest_port_t PORT_NOT_AVAILABLE = -1;
 
@@ -901,7 +900,7 @@ inline void iaf_psc_alpha_neuron_Nestml::get_status(DictionaryDatum &__d) const
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_names::_I_kernel_inh__X__inh_spikes, get_I_kernel_inh__X__inh_spikes());
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_names::_I_kernel_inh__X__inh_spikes__d, get_I_kernel_inh__X__inh_spikes__d());
 
-  def<double>(__d, nest::names::update_stopwatch, sw_stopwatch.elapsed());
+  def<double>(__d, nest::names::update_stopwatch, sw_update.elapsed());
 
   ArchivingNode::get_status(__d);
 

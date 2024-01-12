@@ -208,19 +208,19 @@ nestmlmodule_module/fast:
 .PHONY : nestmlmodule_module/fast
 
 # target to build an object file
-iaf_psc_alpha_neuron_Nestml_Optimized.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nestmlmodule_module.dir/build.make CMakeFiles/nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o
-.PHONY : iaf_psc_alpha_neuron_Nestml_Optimized.o
+iaf_psc_alpha_neuron_Nestml.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nestmlmodule_module.dir/build.make CMakeFiles/nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o
+.PHONY : iaf_psc_alpha_neuron_Nestml.o
 
 # target to preprocess a source file
-iaf_psc_alpha_neuron_Nestml_Optimized.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nestmlmodule_module.dir/build.make CMakeFiles/nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.i
-.PHONY : iaf_psc_alpha_neuron_Nestml_Optimized.i
+iaf_psc_alpha_neuron_Nestml.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nestmlmodule_module.dir/build.make CMakeFiles/nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.i
+.PHONY : iaf_psc_alpha_neuron_Nestml.i
 
 # target to generate assembly for a file
-iaf_psc_alpha_neuron_Nestml_Optimized.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nestmlmodule_module.dir/build.make CMakeFiles/nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.s
-.PHONY : iaf_psc_alpha_neuron_Nestml_Optimized.s
+iaf_psc_alpha_neuron_Nestml.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nestmlmodule_module.dir/build.make CMakeFiles/nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.s
+.PHONY : iaf_psc_alpha_neuron_Nestml.s
 
 # target to build an object file
 nestmlmodule.o:
@@ -253,9 +253,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dist"
 	@echo "... nestmlmodule_module"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Optimized.o"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Optimized.i"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Optimized.s"
+	@echo "... iaf_psc_alpha_neuron_Nestml.o"
+	@echo "... iaf_psc_alpha_neuron_Nestml.i"
+	@echo "... iaf_psc_alpha_neuron_Nestml.s"
 	@echo "... nestmlmodule.o"
 	@echo "... nestmlmodule.i"
 	@echo "... nestmlmodule.s"
