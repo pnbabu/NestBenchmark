@@ -1,3 +1,5 @@
+module load Stages/2023 GCC CMake Boost GSL OpenMPI Python SciPy-Stack mpi4py GSL/2.7 libtool/.2.4.7  nano
+
 echo installing nestml-simulator
 
 #Install nestsimulator
@@ -23,7 +25,7 @@ cd ..
 echo installing nestml
 #install nestml
 cd nestml
-python3 pip install setup.py
+python3 -m pip install setup.py
 cd ..
 
 source nest-simulator-install/bin/nest_vars.sh

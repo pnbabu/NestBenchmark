@@ -832,6 +832,7 @@ CMakeFiles/nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o: iaf_psc_alpha_
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/ring_buffer.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/universal_data_logger.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
+  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h
 
 CMakeFiles/nestmlmodule_module.dir/nestmlmodule.o: nestmlmodule.cpp \
@@ -1678,6 +1679,7 @@ CMakeFiles/nestmlmodule_module.dir/nestmlmodule.o: nestmlmodule.cpp \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/universal_data_logger.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/recordables_map.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
+  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h
 
 

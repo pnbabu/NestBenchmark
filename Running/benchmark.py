@@ -17,32 +17,46 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
-NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml"
-                #,"iaf_psc_alpha"
-                ,"iaf_psc_alpha_neuron_Nestml_Optimized"]
+NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml_Optimized","iaf_psc_alpha_neuron_Nestml"
+                ,"iaf_psc_alpha"
+                ]
 #NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
-NETWORKSCALES = np.logspace(3, 3.5, 2, dtype=int)
-NUMTHREADS = 16
+NETWORKSCALES = np.logspace(3, 5, 10, dtype=int)
+NUMTHREADS = 32
 
-VERTICALTHREADS = np.power(2, np.arange(0, 5, 1, dtype=int))
+VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
 VERTICALNEWORKSCALE = NETWORKSCALES[-1]
-ITERATIONS=1
-DEBUG = True
+ITERATIONS=10
+DEBUG = False
 
 output_folder = os.path.join(os.path.dirname(__file__), '..', 'Output')
     
 
-def start_Horizontal_Benchmark(iteration):
-    combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath timings' ],"name":f"{neuronmodel},{networkscale}"} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
-    print(f"\033[93mHorizontal Benchmark {iteration}\033[0m")  # Print yellow text
+def start_Horizontal_Benchmark(iteration, checkMemory=False):
+    insert = "/usr/bin/time -f \'%M\'" if checkMemory else ""
+    combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && {insert} python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath timings' ],"name":f"{neuronmodel}","networksize":networkscale} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
+    print(f"\033[93mHorizontal Benchmark {iteration}\033[0m")
+    memoryDict = {}
     for combination in combinations:
-        print(f"\033[93m{combination['name']}\033[0m")  # Print yellow text
+        combined = combination["name"]+","+str(combination["networksize"])
+        print(f"\033[93m{combined}\033[0m")
+        result = None
         if DEBUG:
-            subprocess.run(combination["command"])
+            result = subprocess.run(combination["command"], capture_output=False, stderr=subprocess.PIPE)
         else:
-            subprocess.run(combination["command"], capture_output=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            result = subprocess.run(combination["command"], capture_output=False, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+        if result.returncode != 0:
+            print(f"\033[91m{combination['name']} failed\033[0m")
+            sys.exit(1)
+        if checkMemory:
+            memory = int(result.stderr)
+            print(f"\033[93mMemory: {memory}\033[0m")
+            memoryDict.setdefault(combination["name"], {}).setdefault(combination["networksize"], []).append(memory)
+
         deleteDat()
+    if checkMemory:
+        return memoryDict
 
 def start_Vertical_Benchmark(iteration):
     combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath verticaltimings'],"name":f"{neuronmodel},{threads}"} for neuronmodel in NEURONMODELS for threads in VERTICALTHREADS]
@@ -156,8 +170,31 @@ def plot_verticalScaling(verticaldata):
         plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
     plt.xlabel('Threads')
     plt.ylabel('Time')
+
+    plt.xscale('log')
+    plt.yscale('log')
+    formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+    plt.gca().yaxis.set_major_formatter(formatter)
+    
     plt.legend(neurons)
     plt.savefig(os.path.join(output_folder, 'output_vertical.png'))
+
+def plotMemory(memoryData):
+    for neuron, values in memoryData.items():
+        plt.figure()
+        x = sorted(values.keys())
+        y = np.array([np.mean([iteration_data for iteration_data in values[scale].values()]) for scale in x])
+        y_std = np.array([np.std([iteration_data for iteration_data in values[scale].values()]) for scale in x])
+        plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
+        plt.xlabel('Network Scale')
+        plt.ylabel('Memory(Bits)')
+        plt.xscale('log')
+        plt.yscale('log')
+        formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+        plt.gca().yaxis.set_major_formatter(formatter)
+        plt.title(neuron)
+        plt.savefig(os.path.join(output_folder, f'output_memory_{neuron}.png'))
+
 
 
             
@@ -181,11 +218,22 @@ if __name__ == "__main__":
     runSim = args.noRunSim
         
     os.makedirs(output_folder, exist_ok=True)
-
+    os.makedirs("timings", exist_ok=True)
+    os.makedirs("verticaltimings", exist_ok=True)
+    
+    memoryData = {}
     if runSim:
         deleteJson()
         for i in range(ITERATIONS):
-            start_Horizontal_Benchmark(i)
+            #start_Horizontal_Benchmark(i)
+            #start_Vertical_Benchmark(i)
+            data = start_Horizontal_Benchmark(i, checkMemory=True)
+            for name, size_data in data.items():
+                memoryData.setdefault(name, {})
+                for size, iteration_data in size_data.items():
+                    memoryData[name].setdefault(size, {})
+                    memoryData[name][size][i] = iteration_data[0]
+        plotMemory(memoryData)
 
     deleteDat()
     data = {}
@@ -200,9 +248,7 @@ if __name__ == "__main__":
     plot_benchmark(data)
     plot_timedist(data)
     plot_Custom(data)
-    if runSim:
-        for i in range(ITERATIONS):
-            start_Vertical_Benchmark(i)
+            
     verticaldata={}
     for filename in os.listdir("./verticaltimings"):
         if filename.endswith(".json"):

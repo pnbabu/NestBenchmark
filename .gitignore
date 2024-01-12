@@ -1,4 +1,8 @@
 nest-build/
 nest-simulator-install/
 
+CmakeCache.txt
+Running/timings/
+Running/verticaltimings/
+Output/
 
