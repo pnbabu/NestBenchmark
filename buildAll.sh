@@ -25,7 +25,7 @@ cd ..
 echo installing nestml
 #install nestml
 cd nestml
-python3 -m pip install setup.py
+python3 -m pip install .
 cd ..
 
 source nest-simulator-install/bin/nest_vars.sh
