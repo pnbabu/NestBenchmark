@@ -113,6 +113,7 @@ nest/nest: nestkernel/libnestkernel.a
 nest/nest: sli/libsli_readline.so.3.6.0-post0.dev0
 nest/nest: models/libmodels.a
 nest/nest: nestkernel/libnestkernel.a
+nest/nest: models/libmodels.a
 nest/nest: /usr/lib/x86_64-linux-gnu/libltdl.so
 nest/nest: sli/libsli.so.3.6.0-post0.dev0
 nest/nest: libnestutil/libnestutil.a

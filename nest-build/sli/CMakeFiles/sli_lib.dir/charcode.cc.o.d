@@ -13,7 +13,8 @@ sli/CMakeFiles/sli_lib.dir/charcode.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/assert.h /usr/include/c++/11/cstddef \
+ /usr/include/c++/11/pstl/pstl_config.h /usr/include/assert.h \
+ /usr/include/c++/11/cstddef \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \

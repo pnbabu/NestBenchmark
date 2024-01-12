@@ -441,6 +441,7 @@ nest::aeif_psc_alpha::pre_run_hook()
 void
 nest::aeif_psc_alpha::update( Time const& origin, const long from, const long to )
 {
+  sw_stopwatch.start();
   assert( State_::V_M == 0 );
 
   for ( long lag = from; lag < to; ++lag )
@@ -522,6 +523,7 @@ nest::aeif_psc_alpha::update( Time const& origin, const long from, const long to
     // log state data
     B_.logger_.record_data( origin.get_steps() + lag );
   }
+  sw_stopwatch.stop();
 }
 
 void

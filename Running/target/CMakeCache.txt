@@ -113,7 +113,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:STRING=/home/lukkyguy/code/BachlorThesis/nest-install
+CMAKE_INSTALL_PREFIX:STRING=/usr/local
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -239,6 +239,9 @@ EXECUTABLE_OUTPUT_PATH:PATH=
 //Single output directory for building all libraries.
 LIBRARY_OUTPUT_PATH:PATH=
 
+//Path to a program.
+NEST_CONFIG:FILEPATH=/usr/local/bin/nest-config
+
 //Value Computed by CMake
 nestmlmodule_BINARY_DIR:STATIC=/home/lukkyguy/code/NestBenchmark/Running/target
 
@@ -249,7 +252,7 @@ nestmlmodule_IS_TOP_LEVEL:STATIC=ON
 nestmlmodule_SOURCE_DIR:STATIC=/home/lukkyguy/code/NestBenchmark/Running/target
 
 //Specify the `nest-config` executable.
-with-nest:STRING=/home/lukkyguy/code/BachlorThesis/nest-install/bin/nest-config
+with-nest:STRING=OFF
 
 
 ########################
@@ -414,5 +417,5 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/home/lukkyguy/code/BachlorThesis/nest-install
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 

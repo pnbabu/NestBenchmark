@@ -95,6 +95,7 @@ testsuite/cpptests/run_all_cpptests: testsuite/cpptests/CMakeFiles/run_all_cppte
 testsuite/cpptests/run_all_cpptests: nestkernel/libnestkernel.a
 testsuite/cpptests/run_all_cpptests: models/libmodels.a
 testsuite/cpptests/run_all_cpptests: nestkernel/libnestkernel.a
+testsuite/cpptests/run_all_cpptests: models/libmodels.a
 testsuite/cpptests/run_all_cpptests: /usr/lib/x86_64-linux-gnu/libltdl.so
 testsuite/cpptests/run_all_cpptests: sli/libsli.so.3.6.0-post0.dev0
 testsuite/cpptests/run_all_cpptests: libnestutil/libnestutil.a

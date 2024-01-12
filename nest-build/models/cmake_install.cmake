@@ -44,8 +44,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nest" TYPE FILE FILES
-    "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/modelsmodule.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/models.h"
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/binary_neuron.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/weight_recorder.h"
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/cm_compartmentcurrents.h"
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/cm_tree.h"
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/rate_neuron_ipn.h"
@@ -114,6 +115,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/iaf_psc_exp_ps.h"
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/iaf_psc_exp_ps_lossless.h"
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/iaf_tum_2000.h"
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/ignore_and_fire.h"
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/izhikevich.h"
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/jonke_synapse.h"
     "/home/lukkyguy/code/NestBenchmark/nest-simulator/models/lin_rate.h"

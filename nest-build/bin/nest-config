@@ -65,7 +65,7 @@ while test $# -gt 0; do
         echo " -I/home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest -I/usr/include -I/usr/include -I/usr/include "
         ;;
     --cflags)
-        echo " -std=c++11 -Wall -fopenmp -O3 -fdiagnostics-color=auto"
+        echo " -std=c++17 -Wall -fopenmp -O3 -fdiagnostics-color=auto"
         ;;
     --libs)
         echo "-L$prefix/lib/nest -lnest -lsli -fopenmp /usr/lib/x86_64-linux-gnu/libltdl.so  /usr/lib/x86_64-linux-gnu/libgsl.so /usr/lib/x86_64-linux-gnu/libgslcblas.so     "

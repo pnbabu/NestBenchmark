@@ -19,12 +19,10 @@
  *  You should have received a copy of the GNU General Public License
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  Generated from NESTML at time: 2023-12-30 18:39:57.136970
+ *  Generated from NESTML at time: 2024-01-10 16:35:46.773796
  **/
 #ifndef IAF_PSC_ALPHA_NEURON_NESTML_OPTIMIZED
 #define IAF_PSC_ALPHA_NEURON_NESTML_OPTIMIZED
-
-#include "stopwatch.h"
 
 #ifndef HAVE_LIBLTDL
 #error "NEST was compiled without support for dynamic loading. Please install libltdl and recompile NEST."
@@ -47,6 +45,8 @@
 // Includes from sli:
 #include "dictdatum.h"
 
+#include "stopwatch.h"
+
 namespace nest
 {
   namespace iaf_psc_alpha_neuron_Nestml_Optimized_names
@@ -54,10 +54,10 @@ namespace nest
     const Name _V_m("V_m");
     const Name _refr_t("refr_t");
     const Name _is_refractory("is_refractory");
-    const Name _I_kernel_inh__X__inh_spikes("I_kernel_inh__X__inh_spikes");
-    const Name _I_kernel_inh__X__inh_spikes__d("I_kernel_inh__X__inh_spikes__d");
     const Name _I_kernel_exc__X__exc_spikes("I_kernel_exc__X__exc_spikes");
     const Name _I_kernel_exc__X__exc_spikes__d("I_kernel_exc__X__exc_spikes__d");
+    const Name _I_kernel_inh__X__inh_spikes("I_kernel_inh__X__inh_spikes");
+    const Name _I_kernel_inh__X__inh_spikes__d("I_kernel_inh__X__inh_spikes__d");
     const Name _C_m("C_m");
     const Name _tau_m("tau_m");
     const Name _tau_syn_inh("tau_syn_inh");
@@ -71,6 +71,7 @@ namespace nest
 }
 
 #include "nest_time.h"
+#include <nest/stopwatch.h>
 typedef size_t nest_port_t;
 typedef size_t nest_rport_t;
 
@@ -249,26 +250,6 @@ public:
     S_.is_refractory = __v;
   }
 
-  inline double get_I_kernel_inh__X__inh_spikes() const
-  {
-    return S_.I_kernel_inh__X__inh_spikes;
-  }
-
-  inline void set_I_kernel_inh__X__inh_spikes(const double __v)
-  {
-    S_.I_kernel_inh__X__inh_spikes = __v;
-  }
-
-  inline double get_I_kernel_inh__X__inh_spikes__d() const
-  {
-    return S_.I_kernel_inh__X__inh_spikes__d;
-  }
-
-  inline void set_I_kernel_inh__X__inh_spikes__d(const double __v)
-  {
-    S_.I_kernel_inh__X__inh_spikes__d = __v;
-  }
-
   inline double get_I_kernel_exc__X__exc_spikes() const
   {
     return S_.I_kernel_exc__X__exc_spikes;
@@ -287,6 +268,26 @@ public:
   inline void set_I_kernel_exc__X__exc_spikes__d(const double __v)
   {
     S_.I_kernel_exc__X__exc_spikes__d = __v;
+  }
+
+  inline double get_I_kernel_inh__X__inh_spikes() const
+  {
+    return S_.I_kernel_inh__X__inh_spikes;
+  }
+
+  inline void set_I_kernel_inh__X__inh_spikes(const double __v)
+  {
+    S_.I_kernel_inh__X__inh_spikes = __v;
+  }
+
+  inline double get_I_kernel_inh__X__inh_spikes__d() const
+  {
+    return S_.I_kernel_inh__X__inh_spikes__d;
+  }
+
+  inline void set_I_kernel_inh__X__inh_spikes__d(const double __v)
+  {
+    S_.I_kernel_inh__X__inh_spikes__d = __v;
   }
 
   // -------------------------------------------------------------------------
@@ -405,24 +406,6 @@ public:
   {
     V_.__P__V_m__V_m = __v;
   }
-  inline double get___P__V_m__I_kernel_inh__X__inh_spikes() const
-  {
-    return V_.__P__V_m__I_kernel_inh__X__inh_spikes;
-  }
-
-  inline void set___P__V_m__I_kernel_inh__X__inh_spikes(const double __v)
-  {
-    V_.__P__V_m__I_kernel_inh__X__inh_spikes = __v;
-  }
-  inline double get___P__V_m__I_kernel_inh__X__inh_spikes__d() const
-  {
-    return V_.__P__V_m__I_kernel_inh__X__inh_spikes__d;
-  }
-
-  inline void set___P__V_m__I_kernel_inh__X__inh_spikes__d(const double __v)
-  {
-    V_.__P__V_m__I_kernel_inh__X__inh_spikes__d = __v;
-  }
   inline double get___P__V_m__I_kernel_exc__X__exc_spikes() const
   {
     return V_.__P__V_m__I_kernel_exc__X__exc_spikes;
@@ -441,41 +424,23 @@ public:
   {
     V_.__P__V_m__I_kernel_exc__X__exc_spikes__d = __v;
   }
-  inline double get___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes() const
+  inline double get___P__V_m__I_kernel_inh__X__inh_spikes() const
   {
-    return V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes;
+    return V_.__P__V_m__I_kernel_inh__X__inh_spikes;
   }
 
-  inline void set___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes(const double __v)
+  inline void set___P__V_m__I_kernel_inh__X__inh_spikes(const double __v)
   {
-    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes = __v;
+    V_.__P__V_m__I_kernel_inh__X__inh_spikes = __v;
   }
-  inline double get___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d() const
+  inline double get___P__V_m__I_kernel_inh__X__inh_spikes__d() const
   {
-    return V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
-  }
-
-  inline void set___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d(const double __v)
-  {
-    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d = __v;
-  }
-  inline double get___P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes() const
-  {
-    return V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes;
+    return V_.__P__V_m__I_kernel_inh__X__inh_spikes__d;
   }
 
-  inline void set___P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes(const double __v)
+  inline void set___P__V_m__I_kernel_inh__X__inh_spikes__d(const double __v)
   {
-    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes = __v;
-  }
-  inline double get___P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d() const
-  {
-    return V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
-  }
-
-  inline void set___P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d(const double __v)
-  {
-    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d = __v;
+    V_.__P__V_m__I_kernel_inh__X__inh_spikes__d = __v;
   }
   inline double get___P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes() const
   {
@@ -513,6 +478,42 @@ public:
   {
     V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes__d = __v;
   }
+  inline double get___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes() const
+  {
+    return V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes;
+  }
+
+  inline void set___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes(const double __v)
+  {
+    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes = __v;
+  }
+  inline double get___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d() const
+  {
+    return V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
+  }
+
+  inline void set___P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d(const double __v)
+  {
+    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d = __v;
+  }
+  inline double get___P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes() const
+  {
+    return V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes;
+  }
+
+  inline void set___P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes(const double __v)
+  {
+    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes = __v;
+  }
+  inline double get___P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d() const
+  {
+    return V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
+  }
+
+  inline void set___P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d(const double __v)
+  {
+    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d = __v;
+  }
 
   // -------------------------------------------------------------------------
   //   Methods corresponding to event handlers
@@ -525,11 +526,10 @@ public:
 
 protected:
 private:
-  nest::Stopwatch sw_update;
-
   void recompute_internal_variables(bool exclude_timestep = false);
 
 private:
+  nest::Stopwatch sw_stopwatch;
   static const nest_port_t MIN_SPIKE_RECEPTOR = 0;
   static const nest_port_t PORT_NOT_AVAILABLE = -1;
 
@@ -643,10 +643,10 @@ private:
     //!  Refractory period timer
     double refr_t;
     bool is_refractory;
-    double I_kernel_inh__X__inh_spikes;
-    double I_kernel_inh__X__inh_spikes__d;
     double I_kernel_exc__X__exc_spikes;
     double I_kernel_exc__X__exc_spikes__d;
+    double I_kernel_inh__X__inh_spikes;
+    double I_kernel_inh__X__inh_spikes__d;
 
     State_();
   };
@@ -670,18 +670,18 @@ private:
   {
     double __h;
     double __P__V_m__V_m;
-    double __P__V_m__I_kernel_inh__X__inh_spikes;
-    double __P__V_m__I_kernel_inh__X__inh_spikes__d;
     double __P__V_m__I_kernel_exc__X__exc_spikes;
     double __P__V_m__I_kernel_exc__X__exc_spikes__d;
-    double __P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes;
-    double __P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
-    double __P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes;
-    double __P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
+    double __P__V_m__I_kernel_inh__X__inh_spikes;
+    double __P__V_m__I_kernel_inh__X__inh_spikes__d;
     double __P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes;
     double __P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes__d;
     double __P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes;
     double __P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes__d;
+    double __P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes;
+    double __P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
+    double __P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes;
+    double __P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
   };
 
   /**
@@ -882,9 +882,6 @@ inline nest_port_t iaf_psc_alpha_neuron_Nestml_Optimized::handles_test_event(nes
 
 inline void iaf_psc_alpha_neuron_Nestml_Optimized::get_status(DictionaryDatum &__d) const
 {
-
-  def<double>(__d, nest::names::update_stopwatch, sw_update.elapsed());
-
   // parameters
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_C_m, get_C_m());
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_tau_m, get_tau_m());
@@ -900,11 +897,12 @@ inline void iaf_psc_alpha_neuron_Nestml_Optimized::get_status(DictionaryDatum &_
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_V_m, get_V_m());
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_refr_t, get_refr_t());
   def<bool>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_is_refractory, get_is_refractory());
-  def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes, get_I_kernel_inh__X__inh_spikes());
-  def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes__d, get_I_kernel_inh__X__inh_spikes__d());
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_exc__X__exc_spikes, get_I_kernel_exc__X__exc_spikes());
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_exc__X__exc_spikes__d, get_I_kernel_exc__X__exc_spikes__d());
+  def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes, get_I_kernel_inh__X__inh_spikes());
+  def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes__d, get_I_kernel_inh__X__inh_spikes__d());
 
+  def<double>(__d, nest::names::update_stopwatch, sw_stopwatch.elapsed());
   ArchivingNode::get_status(__d);
 
   (*__d)[nest::names::recordables] = recordablesMap_.get_list();
@@ -939,14 +937,14 @@ inline void iaf_psc_alpha_neuron_Nestml_Optimized::set_status(const DictionaryDa
   nest::updateValueParam<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_refr_t, tmp_refr_t, this);
   bool tmp_is_refractory = get_is_refractory();
   nest::updateValueParam<bool>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_is_refractory, tmp_is_refractory, this);
-  double tmp_I_kernel_inh__X__inh_spikes = get_I_kernel_inh__X__inh_spikes();
-  nest::updateValueParam<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes, tmp_I_kernel_inh__X__inh_spikes, this);
-  double tmp_I_kernel_inh__X__inh_spikes__d = get_I_kernel_inh__X__inh_spikes__d();
-  nest::updateValueParam<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes__d, tmp_I_kernel_inh__X__inh_spikes__d, this);
   double tmp_I_kernel_exc__X__exc_spikes = get_I_kernel_exc__X__exc_spikes();
   nest::updateValueParam<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_exc__X__exc_spikes, tmp_I_kernel_exc__X__exc_spikes, this);
   double tmp_I_kernel_exc__X__exc_spikes__d = get_I_kernel_exc__X__exc_spikes__d();
   nest::updateValueParam<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_exc__X__exc_spikes__d, tmp_I_kernel_exc__X__exc_spikes__d, this);
+  double tmp_I_kernel_inh__X__inh_spikes = get_I_kernel_inh__X__inh_spikes();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes, tmp_I_kernel_inh__X__inh_spikes, this);
+  double tmp_I_kernel_inh__X__inh_spikes__d = get_I_kernel_inh__X__inh_spikes__d();
+  nest::updateValueParam<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes__d, tmp_I_kernel_inh__X__inh_spikes__d, this);
 
   // We now know that (ptmp, stmp) are consistent. We do not
   // write them back to (P_, S_) before we are also sure that
@@ -967,10 +965,10 @@ inline void iaf_psc_alpha_neuron_Nestml_Optimized::set_status(const DictionaryDa
   set_V_m(tmp_V_m);
   set_refr_t(tmp_refr_t);
   set_is_refractory(tmp_is_refractory);
-  set_I_kernel_inh__X__inh_spikes(tmp_I_kernel_inh__X__inh_spikes);
-  set_I_kernel_inh__X__inh_spikes__d(tmp_I_kernel_inh__X__inh_spikes__d);
   set_I_kernel_exc__X__exc_spikes(tmp_I_kernel_exc__X__exc_spikes);
   set_I_kernel_exc__X__exc_spikes__d(tmp_I_kernel_exc__X__exc_spikes__d);
+  set_I_kernel_inh__X__inh_spikes(tmp_I_kernel_inh__X__inh_spikes);
+  set_I_kernel_inh__X__inh_spikes__d(tmp_I_kernel_inh__X__inh_spikes__d);
 
   // recompute internal variables in case they are dependent on parameters or state that might have been updated in this call to set_status()
   recompute_internal_variables();

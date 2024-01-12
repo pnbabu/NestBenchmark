@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/lukkyguy/code/NestBenchmark/nest-simulator/thirdparty -I/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil -I/home/lukkyguy/code/NestBenchmark/nest-build/libnestutil
 
-CXX_FLAGS =  -std=c++11 -Wall -fopenmp -O3 -fdiagnostics-color=auto -fopenmp
+CXX_FLAGS =  -std=c++17 -Wall -fopenmp -O3 -fdiagnostics-color=auto -fopenmp
 

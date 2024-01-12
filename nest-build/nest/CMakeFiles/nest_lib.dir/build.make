@@ -96,6 +96,7 @@ nest/libnest.so.3.6.0-post0.dev0: libnestutil/libnestutil.a
 nest/libnest.so.3.6.0-post0.dev0: nestkernel/libnestkernel.a
 nest/libnest.so.3.6.0-post0.dev0: models/libmodels.a
 nest/libnest.so.3.6.0-post0.dev0: nestkernel/libnestkernel.a
+nest/libnest.so.3.6.0-post0.dev0: models/libmodels.a
 nest/libnest.so.3.6.0-post0.dev0: /usr/lib/x86_64-linux-gnu/libltdl.so
 nest/libnest.so.3.6.0-post0.dev0: sli/libsli.so.3.6.0-post0.dev0
 nest/libnest.so.3.6.0-post0.dev0: libnestutil/libnestutil.a

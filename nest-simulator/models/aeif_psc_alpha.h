@@ -42,6 +42,8 @@
 #include "ring_buffer.h"
 #include "universal_data_logger.h"
 
+#include "stopwatch.h"
+
 
 namespace nest
 {
@@ -215,6 +217,7 @@ public:
   void set_status( const DictionaryDatum& ) override;
 
 private:
+  Stopwatch sw_stopwatch;
   void init_buffers_() override;
   void pre_run_hook() override;
   void update( Time const&, const long, const long ) override;
@@ -427,6 +430,8 @@ aeif_psc_alpha::get_status( DictionaryDatum& d ) const
   P_.get( d );
   S_.get( d );
   ArchivingNode::get_status( d );
+
+  def< double >( d, names::update_stopwatch, sw_stopwatch.elapsed() );
 
   ( *d )[ names::recordables ] = recordablesMap_.get_list();
 }

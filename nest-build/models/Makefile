@@ -1649,6 +1649,30 @@ iaf_tum_2000.cpp.s:
 	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/iaf_tum_2000.cpp.s
 .PHONY : iaf_tum_2000.cpp.s
 
+ignore_and_fire.o: ignore_and_fire.cpp.o
+.PHONY : ignore_and_fire.o
+
+# target to build an object file
+ignore_and_fire.cpp.o:
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ignore_and_fire.cpp.o
+.PHONY : ignore_and_fire.cpp.o
+
+ignore_and_fire.i: ignore_and_fire.cpp.i
+.PHONY : ignore_and_fire.i
+
+# target to preprocess a source file
+ignore_and_fire.cpp.i:
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ignore_and_fire.cpp.i
+.PHONY : ignore_and_fire.cpp.i
+
+ignore_and_fire.s: ignore_and_fire.cpp.s
+.PHONY : ignore_and_fire.s
+
+# target to generate assembly for a file
+ignore_and_fire.cpp.s:
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/ignore_and_fire.cpp.s
+.PHONY : ignore_and_fire.cpp.s
+
 inhomogeneous_poisson_generator.o: inhomogeneous_poisson_generator.cpp.o
 .PHONY : inhomogeneous_poisson_generator.o
 
@@ -1817,29 +1841,29 @@ mip_generator.cpp.s:
 	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/mip_generator.cpp.s
 .PHONY : mip_generator.cpp.s
 
-modelsmodule.o: modelsmodule.cpp.o
-.PHONY : modelsmodule.o
+models.o: models.cpp.o
+.PHONY : models.o
 
 # target to build an object file
-modelsmodule.cpp.o:
-	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/modelsmodule.cpp.o
-.PHONY : modelsmodule.cpp.o
+models.cpp.o:
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/models.cpp.o
+.PHONY : models.cpp.o
 
-modelsmodule.i: modelsmodule.cpp.i
-.PHONY : modelsmodule.i
+models.i: models.cpp.i
+.PHONY : models.i
 
 # target to preprocess a source file
-modelsmodule.cpp.i:
-	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/modelsmodule.cpp.i
-.PHONY : modelsmodule.cpp.i
+models.cpp.i:
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/models.cpp.i
+.PHONY : models.cpp.i
 
-modelsmodule.s: modelsmodule.cpp.s
-.PHONY : modelsmodule.s
+models.s: models.cpp.s
+.PHONY : models.s
 
 # target to generate assembly for a file
-modelsmodule.cpp.s:
-	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/modelsmodule.cpp.s
-.PHONY : modelsmodule.cpp.s
+models.cpp.s:
+	cd /home/lukkyguy/code/NestBenchmark/nest-build && $(MAKE) $(MAKESILENT) -f models/CMakeFiles/models.dir/build.make models/CMakeFiles/models.dir/models.cpp.s
+.PHONY : models.cpp.s
 
 multimeter.o: multimeter.cpp.o
 .PHONY : multimeter.o
@@ -3310,6 +3334,9 @@ help:
 	@echo "... iaf_tum_2000.o"
 	@echo "... iaf_tum_2000.i"
 	@echo "... iaf_tum_2000.s"
+	@echo "... ignore_and_fire.o"
+	@echo "... ignore_and_fire.i"
+	@echo "... ignore_and_fire.s"
 	@echo "... inhomogeneous_poisson_generator.o"
 	@echo "... inhomogeneous_poisson_generator.i"
 	@echo "... inhomogeneous_poisson_generator.s"
@@ -3331,9 +3358,9 @@ help:
 	@echo "... mip_generator.o"
 	@echo "... mip_generator.i"
 	@echo "... mip_generator.s"
-	@echo "... modelsmodule.o"
-	@echo "... modelsmodule.i"
-	@echo "... modelsmodule.s"
+	@echo "... models.o"
+	@echo "... models.i"
+	@echo "... models.s"
 	@echo "... multimeter.o"
 	@echo "... multimeter.i"
 	@echo "... multimeter.s"

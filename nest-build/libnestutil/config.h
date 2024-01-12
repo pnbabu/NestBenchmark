@@ -29,10 +29,10 @@
 */
 
 #define NEST_VERSION "3.6.0-post0.dev0"
-/* #undef NEST_VERSION_GIT */
-/* #undef NEST_VERSION_GIT_HASH */
-/* #undef NEST_VERSION_GIT_BRANCH */
-/* #undef NEST_VERSION_GIT_REMOTE */
+#define NEST_VERSION_GIT "1"
+#define NEST_VERSION_GIT_HASH "c2a318846675dce4fa3eaa44784611001afc35f4"
+#define NEST_VERSION_GIT_BRANCH "master"
+#define NEST_VERSION_GIT_REMOTE "origin"
 
 // TODO NEST_HOST and NEST_HOSTVENDOR not available with cmake
 #define NEST_HOST "x86_64-pc-linux"

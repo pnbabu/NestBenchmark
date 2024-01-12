@@ -13,7 +13,7 @@ CXX_DEFINES = -Dsli_lib_EXPORTS
 
 CXX_INCLUDES = -I/home/lukkyguy/code/NestBenchmark/nest-simulator/thirdparty -I/home/lukkyguy/code/NestBenchmark/nest-simulator/libnestutil -I/home/lukkyguy/code/NestBenchmark/nest-build/libnestutil
 
-CXX_FLAGS =  -std=c++11 -Wall -fopenmp -O3 -fdiagnostics-color=auto -fPIC -fopenmp
+CXX_FLAGS =  -std=c++17 -Wall -fopenmp -O3 -fdiagnostics-color=auto -fPIC -fopenmp
 
 # Custom options: sli/CMakeFiles/sli_lib.dir/slistartup.cc.o_OPTIONS = -O0
 

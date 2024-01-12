@@ -17,8 +17,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
-#NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml","iaf_psc_alpha","iaf_psc_alpha_neuron_Nestml_Optimized"]
-NEURONMODELS = ["iaf_psc_alpha"]
+NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml","iaf_psc_alpha","iaf_psc_alpha_neuron_Nestml_Optimized"]
+#NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 NETWORKSCALES = np.logspace(3, 3.5, 2, dtype=int)
 NUMTHREADS = 16
@@ -33,9 +33,9 @@ output_folder = os.path.join(os.path.dirname(__file__), '..', 'Output')
 
 def start_Horizontal_Benchmark(iteration):
     combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath timings' ],"name":f"{neuronmodel},{networkscale}"} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
-    print(f"Horizontal Benchmark {iteration}")
+    print(f"\033[93mHorizontal Benchmark {iteration}\033[0m")  # Print yellow text
     for combination in combinations:
-        print(combination["name"])
+        print(f"\033[93m{combination['name']}\033[0m")  # Print yellow text
         if DEBUG:
             subprocess.run(combination["command"])
         else:

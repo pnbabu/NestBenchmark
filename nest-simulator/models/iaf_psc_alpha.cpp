@@ -38,6 +38,7 @@
 // Includes from sli:
 #include "dictutils.h"
 
+
 nest::RecordablesMap< nest::iaf_psc_alpha > nest::iaf_psc_alpha::recordablesMap_;
 
 namespace nest
@@ -306,6 +307,7 @@ iaf_psc_alpha::pre_run_hook()
 void
 iaf_psc_alpha::update( Time const& origin, const long from, const long to )
 {
+  sw_update.start();
   for ( long lag = from; lag < to; ++lag )
   {
     if ( S_.r_ == 0 )
@@ -369,6 +371,7 @@ iaf_psc_alpha::update( Time const& origin, const long from, const long to )
     // log state data
     B_.logger_.record_data( origin.get_steps() + lag );
   }
+  sw_update.stop();
 }
 
 void

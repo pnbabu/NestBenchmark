@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dnestmlmodule_module_EXPORTS
 
-CXX_INCLUDES = -I/home/lukkyguy/code/BachlorThesis/nest-install/include/nest
+CXX_INCLUDES = -I/usr/local/include/nest
 
 CXX_FLAGS = -fPIC  -std=c++11 -Wall -fopenmp -O2 -fdiagnostics-color=auto -DLTX_MODULE
 
