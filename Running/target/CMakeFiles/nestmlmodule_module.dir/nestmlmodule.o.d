@@ -770,4 +770,5 @@ CMakeFiles/nestmlmodule_module.dir/nestmlmodule.o: \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/universal_data_logger.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/recordables_map.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h

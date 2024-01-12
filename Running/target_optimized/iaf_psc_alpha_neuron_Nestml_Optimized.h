@@ -901,6 +901,7 @@ inline void iaf_psc_alpha_neuron_Nestml_Optimized::get_status(DictionaryDatum &_
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes__d, get_I_kernel_inh__X__inh_spikes__d());
 
   def<double>(__d, nest::names::update_stopwatch, sw_update.elapsed());
+
   ArchivingNode::get_status(__d);
 
   (*__d)[nest::names::recordables] = recordablesMap_.get_list();

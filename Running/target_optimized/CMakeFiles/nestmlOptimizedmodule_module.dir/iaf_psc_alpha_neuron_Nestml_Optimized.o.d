@@ -753,4 +753,5 @@ CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimize
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/ring_buffer.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/universal_data_logger.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h

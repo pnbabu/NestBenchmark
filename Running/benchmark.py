@@ -17,7 +17,9 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
-NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml","iaf_psc_alpha","iaf_psc_alpha_neuron_Nestml_Optimized"]
+NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml"
+                #,"iaf_psc_alpha"
+                ,"iaf_psc_alpha_neuron_Nestml_Optimized"]
 #NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 NETWORKSCALES = np.logspace(3, 3.5, 2, dtype=int)

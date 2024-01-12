@@ -206,6 +206,7 @@ nest.print_time = True
 nest.overwrite_files = True
 
 nest.Install("nestmlmodule")
+nest.Install("nestmlOptimizedmodule")
 print("Building network")
 
 ###############################################################################
