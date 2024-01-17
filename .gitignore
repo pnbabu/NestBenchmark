@@ -2,7 +2,8 @@ nest-build/
 nest-simulator-install/
 
 CmakeCache.txt
-Running/timings/
-Running/verticaltimings/
+Running/timings_strong_scaling/
+Running/timings_weak_scaling/
+Running/memory_data.json
 Output/
 

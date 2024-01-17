@@ -22,21 +22,25 @@ NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml_Optimized","iaf_psc_alpha_neuron_Ne
                 ]
 #NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
-NETWORKSCALES = np.logspace(3, 5, 10, dtype=int)
+NETWORKSCALES = np.logspace(3, 3.5, 2, dtype=int)
 NUMTHREADS = 32
+NEURONSPERSCALE = 5
 
 VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
 VERTICALNEWORKSCALE = NETWORKSCALES[-1]
-ITERATIONS=10
+ITERATIONS=2
 DEBUG = False
+
+STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
+WEAKSCALINGFOLDERNAME = "timings_weak_scaling" 
 
 output_folder = os.path.join(os.path.dirname(__file__), '..', 'Output')
     
 
-def start_Horizontal_Benchmark(iteration, checkMemory=False):
+def start_weak_scaling_Benchmark(iteration, checkMemory=False):
     insert = "/usr/bin/time -f \'%M\'" if checkMemory else ""
-    combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && {insert} python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath timings' ],"name":f"{neuronmodel}","networksize":networkscale} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
-    print(f"\033[93mHorizontal Benchmark {iteration}\033[0m")
+    combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && {insert} python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath {WEAKSCALINGFOLDERNAME}' ],"name":f"{neuronmodel}","networksize":networkscale} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
+    print(f"\033[93mWeak Scaling Benchmark {iteration}\033[0m")
     memoryDict = {}
     for combination in combinations:
         combined = combination["name"]+","+str(combination["networksize"])
@@ -58,21 +62,20 @@ def start_Horizontal_Benchmark(iteration, checkMemory=False):
     if checkMemory:
         return memoryDict
 
-def start_Vertical_Benchmark(iteration):
-    combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath verticaltimings'],"name":f"{neuronmodel},{threads}"} for neuronmodel in NEURONMODELS for threads in VERTICALTHREADS]
-    print(f"Vertical Benchmark {iteration}")
+def start_strong_scaling_Benchmark(iteration):
+    combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath {STRONGSCALINGFOLDERNAME}'],"name":f"{neuronmodel},{threads}"} for neuronmodel in NEURONMODELS for threads in VERTICALTHREADS]
+    print(f"Strong Scaling Benchmark {iteration}")
     for combination in combinations:
         print(combination["name"])
         subprocess.run(combination["command"], capture_output=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         deleteDat()
-
 
 def extract_value_from_filename(filename, key):
     pattern = fr"\[{key}=(.*?)\]"
     match = re.search(pattern, filename)
     return match.group(1) if match else None
 
-def plot_benchmark(data):
+def plot_weak_scaling(data):
     realTimeFactors = {}
     for neuron in data:
         realTimeFactors[neuron] = {}
@@ -93,21 +96,20 @@ def plot_benchmark(data):
 
     plt.xscale('log')
     plt.yscale('log')
-    formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
-    plt.gca().yaxis.set_major_formatter(formatter)
+    formatterY = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+    plt.gca().yaxis.set_major_formatter(formatterY)
+    formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
+    plt.gca().xaxis.set_major_formatter(formatterX)
 
     plt.xlabel('Network Scale')
     plt.ylabel('Real Time Factor')
     plt.legend(neurons)
     
-    plt.savefig(os.path.join(output_folder, 'output.png'))
+    plt.savefig(os.path.join(output_folder, 'weak_scaling.png'))
 
     for neuron in data:
         plt.figure()
         
-    
-
-
 def plot_timedist(data):
     for neuron, scales in data.items():
         plt.figure() 
@@ -127,6 +129,9 @@ def plot_timedist(data):
 
         formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
         plt.gca().yaxis.set_major_formatter(formatter)
+        formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
+        plt.gca().xaxis.set_major_formatter(formatterX)
+
         plt.title(neuron)
         plt.legend()
         plt.savefig(os.path.join(output_folder, f'output_{neuron}.png'))
@@ -151,22 +156,25 @@ def plot_Custom(data):
         plt.yscale('log')
         formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
         plt.gca().yaxis.set_major_formatter(formatter)
+        formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
+        plt.gca().xaxis.set_major_formatter(formatterX)
 
         plt.xlabel('Network Scale')
         plt.ylabel('Time')
         plt.title(stopwatch)
         plt.legend(neurons)
         plt.savefig(os.path.join(output_folder, f'output_{stopwatch}.png'))
-    
         
-def plot_verticalScaling(verticaldata):
+def plot_strong_scaling(verticaldata):
     plt.figure()
     neurons = []
     for neuron, values in verticaldata.items():
         neurons.append(neuron)
         x = sorted(values.keys())
-        y = np.array([np.mean([iteration_data['time_simulate'] for iteration_data in values[threads].values()]) for threads in x])
-        y_std = np.array([np.std([iteration_data['time_simulate'] for iteration_data in values[threads].values()]) for threads in x])
+        #Real Time Factor
+        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        
+        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
         plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
     plt.xlabel('Threads')
     plt.ylabel('Time')
@@ -177,86 +185,106 @@ def plot_verticalScaling(verticaldata):
     plt.gca().yaxis.set_major_formatter(formatter)
     
     plt.legend(neurons)
-    plt.savefig(os.path.join(output_folder, 'output_vertical.png'))
+    plt.savefig(os.path.join(output_folder, 'strong_scaling.png'))
+
+def format_bytes(x, _):
+    units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+    unit_index = 0
+    x /= 8
+
+    while x >= 1024 and unit_index < len(units) - 1:
+        x /= 1024
+        unit_index += 1
+    formatted_size = '{:.2f}'.format(x)
+    return f'{formatted_size} {units[unit_index]}'
 
 def plotMemory(memoryData):
+    plt.figure()
     for neuron, values in memoryData.items():
-        plt.figure()
         x = sorted(values.keys())
         y = np.array([np.mean([iteration_data for iteration_data in values[scale].values()]) for scale in x])
         y_std = np.array([np.std([iteration_data for iteration_data in values[scale].values()]) for scale in x])
         plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
-        plt.xlabel('Network Scale')
-        plt.ylabel('Memory(Bits)')
-        plt.xscale('log')
-        plt.yscale('log')
-        formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
-        plt.gca().yaxis.set_major_formatter(formatter)
-        plt.title(neuron)
-        plt.savefig(os.path.join(output_folder, f'output_memory_{neuron}.png'))
-
-
-
-            
+    
+    
+    plt.xlabel('Network Scale')
+    plt.ylabel('Memory')
+    plt.xscale('log')
+    plt.yscale('log')
+    
+    formatter = FuncFormatter(format_bytes)
+    plt.gca().yaxis.set_major_formatter(formatter)
+    """ formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
+    plt.gca().xaxis.set_major_formatter(formatterX) """
+    
+    plt.legend(memoryData.keys())
+    plt.savefig(os.path.join(output_folder, 'output_memory.png'))
+           
 def deleteDat():
     for filename in os.listdir("./"):
         if filename.endswith(".dat"):
             os.remove(f"./{filename}")
 
 def deleteJson():
-    for filename in os.listdir("./timings"):
+    for filename in os.listdir(f"./{WEAKSCALINGFOLDERNAME}"):
         if filename.endswith(".json"):
-            os.remove(f"./timings/{filename}")
-    for filename in os.listdir("./verticaltimings"):
+            os.remove(f"./{WEAKSCALINGFOLDERNAME}/{filename}")
+    for filename in os.listdir(f"./{STRONGSCALINGFOLDERNAME}"):
         if filename.endswith(".json"):
-            os.remove(f"./verticaltimings/{filename}")
+            os.remove(f"./{STRONGSCALINGFOLDERNAME}/{filename}")
             
-      
-
 if __name__ == "__main__":
     args = parser.parse_args()
     runSim = args.noRunSim
         
     os.makedirs(output_folder, exist_ok=True)
-    os.makedirs("timings", exist_ok=True)
-    os.makedirs("verticaltimings", exist_ok=True)
+    os.makedirs(WEAKSCALINGFOLDERNAME, exist_ok=True)
+    os.makedirs(STRONGSCALINGFOLDERNAME, exist_ok=True)
     
-    memoryData = {}
+    
     if runSim:
+        memoryData = {}
         deleteJson()
         for i in range(ITERATIONS):
-            #start_Horizontal_Benchmark(i)
-            #start_Vertical_Benchmark(i)
-            data = start_Horizontal_Benchmark(i, checkMemory=True)
+            start_strong_scaling_Benchmark(i)
+            start_weak_scaling_Benchmark(i)
+            data = start_weak_scaling_Benchmark(i, checkMemory=True)
             for name, size_data in data.items():
                 memoryData.setdefault(name, {})
                 for size, iteration_data in size_data.items():
-                    memoryData[name].setdefault(size, {})
-                    memoryData[name][size][i] = iteration_data[0]
-        plotMemory(memoryData)
+                    memoryData[name].setdefault(int(size), {})
+                    memoryData[name][int(size)][i] = iteration_data[0]
+        with open("memory_data.json", "w") as f:
+            json.dump(memoryData, f, indent=4)
+    memoryData = {}
+    
+    with open("memory_data.json", "r") as f:
+        memoryData = json.load(f)
+    
+    plotMemory(memoryData)
 
     deleteDat()
     data = {}
-    for filename in os.listdir("./timings"):
+    for filename in os.listdir(f"./{WEAKSCALINGFOLDERNAME}"):
         if filename.endswith(".json"):
             simulated_neuron = extract_value_from_filename(filename, "simulated_neuron")
             network_scale = int(extract_value_from_filename(filename, "network_scale"))
             iteration = int(extract_value_from_filename(filename, "iteration"))
-            with open(f"./timings/{filename}", "r") as f:
+            with open(f"./{WEAKSCALINGFOLDERNAME}/{filename}", "r") as f:
                 json_data = json.load(f)
                 data.setdefault(simulated_neuron, {}).setdefault(network_scale, {}).setdefault(iteration, json_data)
-    plot_benchmark(data)
+    plot_weak_scaling(data)
     plot_timedist(data)
     plot_Custom(data)
             
     verticaldata={}
-    for filename in os.listdir("./verticaltimings"):
+    for filename in os.listdir(f"./{STRONGSCALINGFOLDERNAME}"):
         if filename.endswith(".json"):
             simulated_neuron = extract_value_from_filename(filename, "simulated_neuron")
             iteration = int(extract_value_from_filename(filename, "iteration"))
             threads = int(extract_value_from_filename(filename, "threads"))
-            with open(f"./verticaltimings/{filename}", "r") as f:
+            with open(f"./{STRONGSCALINGFOLDERNAME}/{filename}", "r") as f:
                 json_data = json.load(f)
                 verticaldata.setdefault(simulated_neuron, {}).setdefault(threads, {}).setdefault(iteration, json_data)
-    plot_verticalScaling(verticaldata)
+    plot_strong_scaling(verticaldata)
 
