@@ -16,7 +16,7 @@ mkdir nest-simulator-install
 
 cd nest-build
 
-cmake -DCMAKE_INSTALL_PREFIX:PATH=$installPath $srcPath -Dwith-mpi=OFF -Dwith-optimize="-O3" -Dwith-readline=OFF -Dwith-detailed-timers=ON 
+cmake -DCMAKE_INSTALL_PREFIX:PATH=$installPath $srcPath -Dwith-mpi=ON -Dwith-optimize="-O3" -Dwith-readline=OFF -Dwith-detailed-timers=ON 
 make -j24 install
 
 

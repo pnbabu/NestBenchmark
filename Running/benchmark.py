@@ -22,7 +22,7 @@ NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml_Optimized","iaf_psc_alpha_neuron_Ne
                 ]
 #NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
-NETWORKSCALES = np.logspace(3, 4.3, 10, dtype=int)
+NETWORKSCALES = np.logspace(3, 4.5, 10, dtype=int)
 NUMTHREADS = 32
 NEURONSPERSCALE = 5
 
@@ -76,40 +76,29 @@ def extract_value_from_filename(filename, key):
     return match.group(1) if match else None
 
 def plot_weak_scaling(data):
-    realTimeFactors = {}
-    for neuron in data:
-        realTimeFactors[neuron] = {}
-        for scale in data[neuron]:
-            iterations = data[neuron][scale].keys()
-            realTimeFactors[neuron][scale] = [data[neuron][scale][iteration]["time_simulate"] / (data[neuron][scale][iteration]["biological_time"] / 1000) for iteration in iterations]
-
     plt.figure()
     neurons = []
-    for neuron, values in realTimeFactors.items():
+    for neuron, values in data.items():
         neurons.append(neuron)
-        items = sorted(values.items())
-        x, y = zip(*items)
-        y = np.array(y)  # convert y to a numpy array
-        y_mean = np.mean(y, axis=1)  # calculate mean for each network scale
-        y_std = np.std(y, axis=1)  # calculate standard deviation for each network scale
-        plt.errorbar(x, y_mean, yerr=y_std, fmt='-', ecolor='k', capsize=3)
+        x = sorted(values.keys(), key=lambda k: int(k))
+        #Real Time Factor
+        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        
+        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        x = [int(val) for val in x]
+        plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
+    
+    plt.xlabel('Neuron Count')
+    plt.ylabel('Real Time Factor')
 
     plt.xscale('log')
     plt.yscale('log')
-    formatterY = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
-    plt.gca().yaxis.set_major_formatter(formatterY)
-    formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
-    plt.gca().xaxis.set_major_formatter(formatterX)
-
-    plt.xlabel('Network Scale')
-    plt.ylabel('Real Time Factor')
-    plt.legend(neurons)
+    formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+    plt.gca().yaxis.set_major_formatter(formatter)
     
+    plt.legend(neurons) 
     plt.savefig(os.path.join(output_folder, 'weak_scaling.png'))
-
-    for neuron in data:
-        plt.figure()
-        
+     
 def plot_timedist(data):
     for neuron, scales in data.items():
         plt.figure() 
@@ -170,27 +159,28 @@ def plot_strong_scaling(verticaldata):
     neurons = []
     for neuron, values in verticaldata.items():
         neurons.append(neuron)
-        x = sorted(values.keys())
-        #Real Time Factor
+        x = sorted(values.keys(), key=lambda k: int(k))
+        # Real Time Factor
         y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
-        
         y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        x = [int(val) for val in x]
         plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
+        
     plt.xlabel('Threads')
-    plt.ylabel('Time')
+    plt.ylabel('Real Time Factor')
 
+    
+    
     plt.xscale('log')
     plt.yscale('log')
-    formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
-    plt.gca().yaxis.set_major_formatter(formatter)
-    
+
     plt.legend(neurons)
     plt.savefig(os.path.join(output_folder, 'strong_scaling.png'))
 
-def format_bytes(x, _):
+def format_bytes(x,_):
     units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
-    unit_index = 0
-    x /= 8
+    unit_index = 1  # Set unit_index to 1 for Kbytes
+
 
     while x >= 1024 and unit_index < len(units) - 1:
         x /= 1024
@@ -200,22 +190,27 @@ def format_bytes(x, _):
 
 def plotMemory(memoryData):
     plt.figure()
+    max_y = 0 
     for neuron, values in memoryData.items():
-        x = sorted(values.keys())
+        x = sorted(values.keys(), key=lambda k: int(k))
         y = np.array([np.mean([iteration_data for iteration_data in values[scale].values()]) for scale in x])
         y_std = np.array([np.std([iteration_data for iteration_data in values[scale].values()]) for scale in x])
+        x = [int(val) for val in x] 
         plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
-    
-    
+
+        if max(y) > max_y:
+            max_y = max(y)
+
+    plt.annotate(f'Max: {format_bytes(max_y,"")}', xy=(0.8, max_y), xytext=(8, 0), 
+                 xycoords=('axes fraction', 'data'), textcoords='offset points')
     plt.xlabel('Network Scale')
     plt.ylabel('Memory')
     plt.xscale('log')
     plt.yscale('log')
-    
     formatter = FuncFormatter(format_bytes)
     plt.gca().yaxis.set_major_formatter(formatter)
-    """ formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
-    plt.gca().xaxis.set_major_formatter(formatterX) """
+    formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
+    plt.gca().xaxis.set_major_formatter(formatterX)
     
     plt.legend(memoryData.keys())
     plt.savefig(os.path.join(output_folder, 'output_memory.png'))

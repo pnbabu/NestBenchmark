@@ -1,0 +1,1 @@
+python3 benchmark.py --noRunSim

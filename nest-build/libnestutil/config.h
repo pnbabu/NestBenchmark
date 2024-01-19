@@ -29,10 +29,10 @@
 */
 
 #define NEST_VERSION "3.6.0-post0.dev0"
-#define NEST_VERSION_GIT "1"
-#define NEST_VERSION_GIT_HASH "c2a318846675dce4fa3eaa44784611001afc35f4"
-#define NEST_VERSION_GIT_BRANCH "master"
-#define NEST_VERSION_GIT_REMOTE "origin"
+/* #undef NEST_VERSION_GIT */
+/* #undef NEST_VERSION_GIT_HASH */
+/* #undef NEST_VERSION_GIT_BRANCH */
+/* #undef NEST_VERSION_GIT_REMOTE */
 
 // TODO NEST_HOST and NEST_HOSTVENDOR not available with cmake
 #define NEST_HOST "x86_64-pc-linux"
@@ -40,10 +40,10 @@
 #define NEST_HOSTCPU "x86_64"
 #define NEST_HOSTVENDOR "pc"
 
-#define NEST_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install"
+#define NEST_INSTALL_PREFIX "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install"
 #define NEST_INSTALL_DATADIR "share/nest"
 #define NEST_INSTALL_DOCDIR "share/doc/nest"
-#define NEST_INSTALL_LIBDIR "lib/nest"
+#define NEST_INSTALL_LIBDIR "lib64/nest"
 
 #define MPIEXEC ""
 #define MPIEXEC_NUMPROC_FLAG ""
