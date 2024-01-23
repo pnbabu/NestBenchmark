@@ -241,6 +241,8 @@ public:
 
 private:
   Stopwatch sw_update;
+  Stopwatch sw_update1;
+  Stopwatch sw_update2;
   void init_buffers_() override;
   void pre_run_hook() override;
 
@@ -462,6 +464,8 @@ iaf_psc_alpha::get_status( DictionaryDatum& d ) const
   ArchivingNode::get_status( d );
 
   def< double >( d, names::update_stopwatch, sw_update.elapsed() );
+  def< double >( d, names::update_stopwatch1, sw_update1.elapsed() );
+  def< double >( d, names::update_stopwatch2, sw_update2.elapsed() );
   ( *d )[ names::recordables ] = recordablesMap_.get_list();
 }
 

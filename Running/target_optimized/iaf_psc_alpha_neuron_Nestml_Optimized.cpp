@@ -288,7 +288,7 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
 #ifdef DEBUG
   std::cout << "In iaf_psc_alpha_neuron_Nestml_Optimized::update: t = " << __resolution << std::endl;
 #endif
-
+  sw_update1.start();
   for (long lag = from; lag < to; ++lag)
   {
 
@@ -324,7 +324,7 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
     }
     else
     {
-
+      sw_update2.start();
       // start rendered code for integrate_odes()
 
       // analytic solver: integrating state variables (first step): V_m, I_kernel_exc__X__exc_spikes, I_kernel_exc__X__exc_spikes__d, I_kernel_inh__X__inh_spikes, I_kernel_inh__X__inh_spikes__d,
@@ -335,11 +335,13 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
       const double I_kernel_inh__X__inh_spikes__d__tmp = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
       // analytic solver: integrating state variables (second step): V_m, I_kernel_exc__X__exc_spikes, I_kernel_exc__X__exc_spikes__d, I_kernel_inh__X__inh_spikes, I_kernel_inh__X__inh_spikes__d,
       /* replace analytically solvable variables with precisely integrated values  */
+      // TODO: Why is this here they are set below again?
       S_.V_m = V_m__tmp;
       S_.I_kernel_exc__X__exc_spikes = I_kernel_exc__X__exc_spikes__tmp;
       S_.I_kernel_exc__X__exc_spikes__d = I_kernel_exc__X__exc_spikes__d__tmp;
       S_.I_kernel_inh__X__inh_spikes = I_kernel_inh__X__inh_spikes__tmp;
       S_.I_kernel_inh__X__inh_spikes__d = I_kernel_inh__X__inh_spikes__d__tmp;
+      sw_update2.stop();
     }
 
     /**
@@ -361,6 +363,7 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
      * spike updates due to convolutions
      **/
 
+    // TODO:the 0.001 and (1 / 1000.0) cancle each other out
     S_.I_kernel_exc__X__exc_spikes__d += ((0.001 * B_.spike_inputs_grid_sum_[EXC_SPIKES - MIN_SPIKE_RECEPTOR])) * (numerics::e / P_.tau_syn_exc) / (1 / 1000.0);
     S_.I_kernel_inh__X__inh_spikes__d += ((0.001 * B_.spike_inputs_grid_sum_[INH_SPIKES - MIN_SPIKE_RECEPTOR])) * (numerics::e / P_.tau_syn_inh) / (1 / 1000.0);
 
@@ -395,6 +398,7 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
     // voltage logging
     B_.logger_.record_data(origin.get_steps() + lag);
   }
+  sw_update1.stop();
   sw_update.stop();
 }
 

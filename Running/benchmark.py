@@ -52,6 +52,7 @@ def start_weak_scaling_Benchmark(iteration, checkMemory=False):
             result = subprocess.run(combination["command"], capture_output=False, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
         if result.returncode != 0:
             print(f"\033[91m{combination['name']} failed\033[0m")
+            print(f"\033[91m{result.stderr} failed\033[0m")
             sys.exit(1)
         if checkMemory:
             memory = int(result.stderr)
@@ -64,10 +65,14 @@ def start_weak_scaling_Benchmark(iteration, checkMemory=False):
 
 def start_strong_scaling_Benchmark(iteration):
     combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath {STRONGSCALINGFOLDERNAME}'],"name":f"{neuronmodel},{threads}"} for neuronmodel in NEURONMODELS for threads in VERTICALTHREADS]
-    print(f"Strong Scaling Benchmark {iteration}")
+    print(f"Strong Scaling Benchmark {iteration} with {VERTICALNEWORKSCALE} neurons")
     for combination in combinations:
         print(combination["name"])
-        subprocess.run(combination["command"], capture_output=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        result = subprocess.run(combination["command"], capture_output=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        if result.returncode != 0:
+            print(f"\033[91m{combination['name']} failed\033[0m")
+            print(f"\033[91m{result.stderr} failed\033[0m")
+            sys.exit(1)
         deleteDat()
 
 def extract_value_from_filename(filename, key):

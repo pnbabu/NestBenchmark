@@ -27,6 +27,8 @@ namespace nest
 namespace names
 {
 const Name update_stopwatch( "update_stopwatch" );
+const Name update_stopwatch1( "update_stopwatch1" );
+const Name update_stopwatch2( "update_stopwatch2" );
 const Name A_LTD( "A_LTD" );
 const Name A_LTD_const( "A_LTD_const" );
 const Name A_LTP( "A_LTP" );

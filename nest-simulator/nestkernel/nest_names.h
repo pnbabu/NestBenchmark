@@ -53,6 +53,8 @@ namespace nest
 namespace names
 {
 extern const Name update_stopwatch;
+extern const Name update_stopwatch_1;
+extern const Name update_stopwatch_2;
 extern const Name A_LTD;
 extern const Name A_LTD_const;
 extern const Name A_LTP;

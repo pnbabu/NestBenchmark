@@ -528,6 +528,8 @@ private:
 
 private:
   nest::Stopwatch sw_update;
+  nest::Stopwatch sw_update1;
+  nest::Stopwatch sw_update2;
   static const nest_port_t MIN_SPIKE_RECEPTOR = 0;
   static const nest_port_t PORT_NOT_AVAILABLE = -1;
 
@@ -901,6 +903,8 @@ inline void iaf_psc_alpha_neuron_Nestml_Optimized::get_status(DictionaryDatum &_
   def<double>(__d, nest::iaf_psc_alpha_neuron_Nestml_Optimized_names::_I_kernel_inh__X__inh_spikes__d, get_I_kernel_inh__X__inh_spikes__d());
 
   def<double>(__d, nest::names::update_stopwatch, sw_update.elapsed());
+  def<double>(__d, nest::names::update_stopwatch1, sw_update1.elapsed());
+  def<double>(__d, nest::names::update_stopwatch2, sw_update2.elapsed());
 
   ArchivingNode::get_status(__d);
 
