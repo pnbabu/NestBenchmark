@@ -36,27 +36,31 @@ STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
 WEAKSCALINGFOLDERNAME = "timings_weak_scaling" 
 
 output_folder = os.path.join(os.path.dirname(__file__), '..', 'Output')
-    
+
+def log(message):
+    print(message)
+    with open(os.path.join(output_folder,"log.txt"), "a") as f:
+        f.write(f"{message}\n")
 
 def start_weak_scaling_Benchmark(iteration, checkMemory=False):
     insert = "/usr/bin/time -f \'%M\'" if checkMemory else ""
     combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && {insert} python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath {WEAKSCALINGFOLDERNAME}' ],"name":f"{neuronmodel}","networksize":networkscale} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
-    print(f"\033[93mMemory Scaling Benchmark {iteration}\033[0m" if checkMemory else f"\033[93mWeak Scaling Benchmark {iteration}\033[0m")
+    log(f"\033[93mMemory Scaling Benchmark {iteration}\033[0m" if checkMemory else f"\033[93mWeak Scaling Benchmark {iteration}\033[0m")
     memoryDict = {}
     for combination in combinations:
         combined = combination["name"]+","+str(combination["networksize"])
-        print(f"\033[93m{combined}\033[0m" if DEBUG else combined)
+        log(f"\033[93m{combined}\033[0m" if DEBUG else combined)
         result = None
         if DEBUG:
             result = subprocess.run(combination["command"], capture_output=False, stderr=subprocess.PIPE)
         else:
             result = subprocess.run(combination["command"], capture_output=False, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
         if result.returncode != 0:
-            print(f"\033[91m{combination['name']} failed\033[0m")
-            print(f"\033[91m{result.stderr} failed\033[0m")
+            log(f"\033[91m{combination['name']} failed\033[0m")
+            log(f"\033[91m{result.stderr} failed\033[0m")
         if checkMemory:
             memory = int(result.stderr)
-            print(f"\033[93mMemory: {memory}\033[0m" if DEBUG else f"Memory: {memory}")
+            log(f"\033[93mMemory: {memory}\033[0m" if DEBUG else f"Memory: {memory}")
             memoryDict.setdefault(combination["name"], {}).setdefault(combination["networksize"], []).append(memory)
 
         deleteDat()
@@ -65,13 +69,13 @@ def start_weak_scaling_Benchmark(iteration, checkMemory=False):
 
 def start_strong_scaling_Benchmark(iteration):
     combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath {STRONGSCALINGFOLDERNAME}'],"name":f"{neuronmodel},{threads}"} for neuronmodel in NEURONMODELS for threads in VERTICALTHREADS]
-    print(f"Strong Scaling Benchmark {iteration} with {VERTICALNEWORKSCALE} neurons")
+    log(f"Strong Scaling Benchmark {iteration} with {VERTICALNEWORKSCALE} neurons")
     for combination in combinations:
-        print(combination["name"])
+        log(combination["name"])
         result = subprocess.run(combination["command"], capture_output=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         if result.returncode != 0:
-            print(f"\033[91m{combination['name']} failed\033[0m")
-            print(f"\033[91m{result.stderr} failed\033[0m")
+            log(f"\033[91m{combination['name']} failed\033[0m")
+            log(f"\033[91m{result.stderr} failed\033[0m")
         deleteDat()
 
 def extract_value_from_filename(filename, key):
@@ -261,7 +265,7 @@ if __name__ == "__main__":
         memoryData = json.load(f)
     
     plotMemory(memoryData)
-
+    log("Finished")
     deleteDat()
     data = {}
     for filename in os.listdir(f"./{WEAKSCALINGFOLDERNAME}"):
