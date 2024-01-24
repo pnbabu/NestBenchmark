@@ -33,3 +33,5 @@ echo installing custom neurons
 #install custom neurons
 
 source updateCustomNeurons.sh
+
+source run.sh

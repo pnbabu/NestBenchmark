@@ -22,7 +22,7 @@ NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml_Optimized","iaf_psc_alpha_neuron_Ne
                 ]
 #NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
-NETWORKSCALES = np.logspace(3, math.log10(40000), 10, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(30000), 10, dtype=int)
 NUMTHREADS = 32
 NEURONSPERSCALE = 5
 
