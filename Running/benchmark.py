@@ -54,7 +54,6 @@ def start_weak_scaling_Benchmark(iteration, checkMemory=False):
         if result.returncode != 0:
             print(f"\033[91m{combination['name']} failed\033[0m")
             print(f"\033[91m{result.stderr} failed\033[0m")
-            sys.exit(1)
         if checkMemory:
             memory = int(result.stderr)
             print(f"\033[93mMemory: {memory}\033[0m" if DEBUG else f"Memory: {memory}")
@@ -73,7 +72,6 @@ def start_strong_scaling_Benchmark(iteration):
         if result.returncode != 0:
             print(f"\033[91m{combination['name']} failed\033[0m")
             print(f"\033[91m{result.stderr} failed\033[0m")
-            sys.exit(1)
         deleteDat()
 
 def extract_value_from_filename(filename, key):
