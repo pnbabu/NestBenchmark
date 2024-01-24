@@ -26,7 +26,7 @@ NETWORKSCALES = np.logspace(3, math.log10(30000), 10, dtype=int)
 
 NEURONSPERSCALE = 5
 
-VERTICALTHREADS = np.power(2, np.arange(3, 6, 1, dtype=int))
+VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = NETWORKSCALES[-1]
 ITERATIONS=10
@@ -123,6 +123,8 @@ def plot_timedist(data):
         plt.errorbar(x, simulation_times, yerr=simulation_std, fmt='k', capsize=3)  
         plt.xlabel('Network Scale')
         plt.ylabel('Time')
+        plt.xscale('log')
+        plt.yscale('log')
 
         formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
         plt.gca().yaxis.set_major_formatter(formatter)

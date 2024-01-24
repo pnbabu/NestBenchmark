@@ -335,6 +335,7 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
       const double I_kernel_inh__X__inh_spikes__d__tmp = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
       // analytic solver: integrating state variables (second step): V_m, I_kernel_exc__X__exc_spikes, I_kernel_exc__X__exc_spikes__d, I_kernel_inh__X__inh_spikes, I_kernel_inh__X__inh_spikes__d,
       /* replace analytically solvable variables with precisely integrated values  */
+
       // TODO: Why is this here they are set below again?
       S_.V_m = V_m__tmp;
       S_.I_kernel_exc__X__exc_spikes = I_kernel_exc__X__exc_spikes__tmp;
