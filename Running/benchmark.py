@@ -22,7 +22,7 @@ NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml_Optimized","iaf_psc_alpha_neuron_Ne
                 ]
 #NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
-NETWORKSCALES = np.logspace(3, 4.5, 10, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(40000), 10, dtype=int)
 NUMTHREADS = 32
 NEURONSPERSCALE = 5
 
@@ -40,11 +40,11 @@ output_folder = os.path.join(os.path.dirname(__file__), '..', 'Output')
 def start_weak_scaling_Benchmark(iteration, checkMemory=False):
     insert = "/usr/bin/time -f \'%M\'" if checkMemory else ""
     combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && {insert} python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath {WEAKSCALINGFOLDERNAME}' ],"name":f"{neuronmodel}","networksize":networkscale} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
-    print(f"\033[93mWeak Scaling Benchmark {iteration}\033[0m")
+    print("\033[Memory Scaling Benchmark {iteration}\033[0m" if checkMemory else f"\033[93mWeak Scaling Benchmark {iteration}\033[0m")
     memoryDict = {}
     for combination in combinations:
         combined = combination["name"]+","+str(combination["networksize"])
-        print(f"\033[93m{combined}\033[0m")
+        print(f"\033[93m{combined}\033[0m" if DEBUG else combined)
         result = None
         if DEBUG:
             result = subprocess.run(combination["command"], capture_output=False, stderr=subprocess.PIPE)
@@ -56,7 +56,7 @@ def start_weak_scaling_Benchmark(iteration, checkMemory=False):
             sys.exit(1)
         if checkMemory:
             memory = int(result.stderr)
-            print(f"\033[93mMemory: {memory}\033[0m")
+            print(f"\033[93mMemory: {memory}\033[0m" if DEBUG else f"Memory: {memory}")
             memoryDict.setdefault(combination["name"], {}).setdefault(combination["networksize"], []).append(memory)
 
         deleteDat()
@@ -246,9 +246,9 @@ if __name__ == "__main__":
         memoryData = {}
         deleteJson()
         for i in range(ITERATIONS):
+            data = start_weak_scaling_Benchmark(i, checkMemory=True)
             start_strong_scaling_Benchmark(i)
             start_weak_scaling_Benchmark(i)
-            data = start_weak_scaling_Benchmark(i, checkMemory=True)
             for name, size_data in data.items():
                 memoryData.setdefault(name, {})
                 for size, iteration_data in size_data.items():
