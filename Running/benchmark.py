@@ -17,8 +17,9 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
+BASELINENEURON = "iaf_psc_alpha"
 NEURONMODELS = ["iaf_psc_alpha_neuron_Nestml_Optimized","iaf_psc_alpha_neuron_Nestml"
-                ,"iaf_psc_alpha"
+                ,BASELINENEURON
                 ]
 #NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
@@ -86,21 +87,26 @@ def extract_value_from_filename(filename, key):
 def plot_weak_scaling(data):
     plt.figure()
     neurons = []
+    referenceValues = data[BASELINENEURON]
     for neuron, values in data.items():
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
-        #Real Time Factor
+        # Real Time Factor
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
         y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
         
         y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
+        
         x = [int(val) for val in x]
-        plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
+        plt.errorbar(x, y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
     
     plt.xlabel('Neuron Count')
-    plt.ylabel('Real Time Factor')
+    plt.ylabel('Factor of Real Time')
 
     plt.xscale('log')
-    plt.yscale('log')
+
     formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
     plt.gca().yaxis.set_major_formatter(formatter)
     
@@ -144,15 +150,20 @@ def plot_Custom(data):
     for stopwatch in stopwatches:
         plt.figure()
         neurons = []
+        referenceValues = data[BASELINENEURON]
         for neuron, scales in data.items():
             neurons.append(neuron)
             x = sorted(scales.keys())
+            reference_y = np.array([np.mean([iteration_data['stopwatches'][stopwatch] for iteration_data in referenceValues[scale].values()]) for scale in x])
             y = np.array([np.mean([iteration_data['stopwatches'][stopwatch] for iteration_data in scales[scale].values()]) for scale in x])
+            y_factor = y / reference_y
             y_std = np.array([np.std([iteration_data['stopwatches'][stopwatch] for iteration_data in scales[scale].values()]) for scale in x])
-            plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
+            y_factor_std = y_std / reference_y
+            #plt.errorbar(x, y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
+            plt.plot(x, y_factor, '-')
 
         plt.xscale('log')
-        plt.yscale('log')
+        
         formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
         plt.gca().yaxis.set_major_formatter(formatter)
         formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
@@ -164,17 +175,21 @@ def plot_Custom(data):
         plt.legend(neurons)
         plt.savefig(os.path.join(output_folder, f'output_{stopwatch}.png'))
         
-def plot_strong_scaling(verticaldata):
+def plot_strong_scaling(data):
     plt.figure()
     neurons = []
-    for neuron, values in verticaldata.items():
+    referenceValues = data[BASELINENEURON]
+    for neuron, values in data.items():
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
         y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_factor = y / reference_y 
         y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_factor_std = y_std / reference_y 
         x = [int(val) for val in x]
-        plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
+        plt.errorbar(x, y=y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
         
     plt.xlabel('Threads')
     plt.ylabel('Real Time Factor')
@@ -182,7 +197,6 @@ def plot_strong_scaling(verticaldata):
     
     
     plt.xscale('log')
-    plt.yscale('log')
 
     plt.legend(neurons)
     plt.savefig(os.path.join(output_folder, 'strong_scaling.png'))

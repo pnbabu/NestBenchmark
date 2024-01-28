@@ -1,0 +1,1361 @@
+[93mMemory Scaling Benchmark 0[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 297332
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 433948
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 704632
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1276008
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2413908
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4807296
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9820292
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20381624
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42691760
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89957196
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 298580
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 442344
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 708360
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1266536
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2414300
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4807384
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9813568
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20369272
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42681000
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89923352
+iaf_psc_alpha,1000
+Memory: 293128
+iaf_psc_alpha,1459
+Memory: 428316
+iaf_psc_alpha,2129
+Memory: 696064
+iaf_psc_alpha,3107
+Memory: 1255272
+iaf_psc_alpha,4534
+Memory: 2402804
+iaf_psc_alpha,6616
+Memory: 4768972
+iaf_psc_alpha,9654
+Memory: 9760344
+iaf_psc_alpha,14088
+Memory: 20291284
+iaf_psc_alpha,20558
+Memory: 42557440
+iaf_psc_alpha,30000
+Memory: 89760844
+Strong Scaling Benchmark 0 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 0[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+[93mMemory Scaling Benchmark 1[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 300400
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 437328
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 708628
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1263768
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2413932
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4807216
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9820128
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20384428
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42693540
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89957224
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 296944
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 435644
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 707856
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1265812
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2414584
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4805744
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9821096
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20364548
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42664604
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89923264
+iaf_psc_alpha,1000
+Memory: 293544
+iaf_psc_alpha,1459
+Memory: 428044
+iaf_psc_alpha,2129
+Memory: 696032
+iaf_psc_alpha,3107
+Memory: 1250400
+iaf_psc_alpha,4534
+Memory: 2411856
+iaf_psc_alpha,6616
+Memory: 4769180
+iaf_psc_alpha,9654
+Memory: 9760400
+iaf_psc_alpha,14088
+Memory: 20292076
+iaf_psc_alpha,20558
+Memory: 42557460
+iaf_psc_alpha,30000
+Memory: 89752116
+Strong Scaling Benchmark 1 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 1[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+[93mMemory Scaling Benchmark 2[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 299052
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 433760
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 704804
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1263880
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2413868
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4807440
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9820236
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20381624
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42693480
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89977816
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 320132
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 436476
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 705976
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1267048
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2437212
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4804492
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9815392
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20369144
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42665968
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89924140
+iaf_psc_alpha,1000
+Memory: 294428
+iaf_psc_alpha,1459
+Memory: 427172
+iaf_psc_alpha,2129
+Memory: 698832
+iaf_psc_alpha,3107
+Memory: 1250136
+iaf_psc_alpha,4534
+Memory: 2388028
+iaf_psc_alpha,6616
+Memory: 4770432
+iaf_psc_alpha,9654
+Memory: 9763312
+iaf_psc_alpha,14088
+Memory: 20292384
+iaf_psc_alpha,20558
+Memory: 42558228
+iaf_psc_alpha,30000
+Memory: 89759484
+Strong Scaling Benchmark 2 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 2[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+[93mMemory Scaling Benchmark 3[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 296928
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 437108
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 704716
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1263996
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2413912
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4829892
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9820264
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20401928
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42691776
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89957344
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 319340
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 436084
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 708928
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1267352
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2414896
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4805752
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9816688
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20368800
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42671276
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89924848
+iaf_psc_alpha,1000
+Memory: 293000
+iaf_psc_alpha,1459
+Memory: 427948
+iaf_psc_alpha,2129
+Memory: 696672
+iaf_psc_alpha,3107
+Memory: 1271888
+iaf_psc_alpha,4534
+Memory: 2412372
+iaf_psc_alpha,6616
+Memory: 4769024
+iaf_psc_alpha,9654
+Memory: 9761156
+iaf_psc_alpha,14088
+Memory: 20307900
+iaf_psc_alpha,20558
+Memory: 42557552
+iaf_psc_alpha,30000
+Memory: 89752020
+Strong Scaling Benchmark 3 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 3[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+[93mMemory Scaling Benchmark 4[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 297028
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 435920
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 704724
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1263812
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2413880
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4807452
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9820224
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20381752
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42691764
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89957236
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 298640
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 457308
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 708900
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1265868
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2416136
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4805468
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9814840
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20368404
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42670960
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89926936
+iaf_psc_alpha,1000
+Memory: 294964
+iaf_psc_alpha,1459
+Memory: 427640
+iaf_psc_alpha,2129
+Memory: 697604
+iaf_psc_alpha,3107
+Memory: 1248660
+iaf_psc_alpha,4534
+Memory: 2388448
+iaf_psc_alpha,6616
+Memory: 4778832
+iaf_psc_alpha,9654
+Memory: 9762324
+iaf_psc_alpha,14088
+Memory: 20293908
+iaf_psc_alpha,20558
+Memory: 42557428
+iaf_psc_alpha,30000
+Memory: 89760344
+Strong Scaling Benchmark 4 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 4[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+[93mMemory Scaling Benchmark 5[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 299040
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 435588
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 706944
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1263088
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2413772
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4807292
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9842532
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20381740
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42691656
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89957372
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 298460
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 434716
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 707372
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1263796
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2413328
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4806284
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9815000
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20366892
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42670028
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89925376
+iaf_psc_alpha,1000
+Memory: 294748
+iaf_psc_alpha,1459
+Memory: 427876
+iaf_psc_alpha,2129
+Memory: 702952
+iaf_psc_alpha,3107
+Memory: 1272788
+iaf_psc_alpha,4534
+Memory: 2389512
+iaf_psc_alpha,6616
+Memory: 4768828
+iaf_psc_alpha,9654
+Memory: 9759092
+iaf_psc_alpha,14088
+Memory: 20314440
+iaf_psc_alpha,20558
+Memory: 42557768
+iaf_psc_alpha,30000
+Memory: 89750864
+Strong Scaling Benchmark 5 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 5[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+[93mMemory Scaling Benchmark 6[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 297032
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 433880
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 704804
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1264000
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2414012
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4807408
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9820264
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20381548
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42691880
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89957292
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 300152
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 436444
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 709276
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1267244
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2413544
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4805792
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9816692
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20366304
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42670180
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89944532
+iaf_psc_alpha,1000
+Memory: 293088
+iaf_psc_alpha,1459
+Memory: 427640
+iaf_psc_alpha,2129
+Memory: 698040
+iaf_psc_alpha,3107
+Memory: 1250464
+iaf_psc_alpha,4534
+Memory: 2389792
+iaf_psc_alpha,6616
+Memory: 4770112
+iaf_psc_alpha,9654
+Memory: 9761936
+iaf_psc_alpha,14088
+Memory: 20292188
+iaf_psc_alpha,20558
+Memory: 42557620
+iaf_psc_alpha,30000
+Memory: 89759956
+Strong Scaling Benchmark 6 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 6[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+[93mMemory Scaling Benchmark 7[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 298848
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 433856
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 704592
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1263924
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2413836
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4807292
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9820184
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20381708
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42691740
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89957332
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 299184
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 435084
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 707724
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1266400
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2414876
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4804956
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9836228
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20369744
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42669312
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89924344
+iaf_psc_alpha,1000
+Memory: 294212
+iaf_psc_alpha,1459
+Memory: 426580
+iaf_psc_alpha,2129
+Memory: 696520
+iaf_psc_alpha,3107
+Memory: 1248992
+iaf_psc_alpha,4534
+Memory: 2389860
+iaf_psc_alpha,6616
+Memory: 4769868
+iaf_psc_alpha,9654
+Memory: 9762192
+iaf_psc_alpha,14088
+Memory: 20292116
+iaf_psc_alpha,20558
+Memory: 42557912
+iaf_psc_alpha,30000
+Memory: 89764948
+Strong Scaling Benchmark 7 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 7[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+[93mMemory Scaling Benchmark 8[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 309384
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 433856
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 704680
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1263912
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2413664
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4807224
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9820408
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20381788
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42692704
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89957272
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 299780
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 457040
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 708636
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1268240
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2415280
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4806320
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9814256
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20368196
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42669996
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89923320
+iaf_psc_alpha,1000
+Memory: 293480
+iaf_psc_alpha,1459
+Memory: 428100
+iaf_psc_alpha,2129
+Memory: 699268
+iaf_psc_alpha,3107
+Memory: 1248568
+iaf_psc_alpha,4534
+Memory: 2389672
+iaf_psc_alpha,6616
+Memory: 4768576
+iaf_psc_alpha,9654
+Memory: 9767464
+iaf_psc_alpha,14088
+Memory: 20290940
+iaf_psc_alpha,20558
+Memory: 42558160
+iaf_psc_alpha,30000
+Memory: 89780580
+Strong Scaling Benchmark 8 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 8[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+[93mMemory Scaling Benchmark 9[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+Memory: 297124
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+Memory: 439904
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+Memory: 704704
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+Memory: 1264048
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+Memory: 2413868
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+Memory: 4807200
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+Memory: 9819244
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+Memory: 20403928
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+Memory: 42692668
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+Memory: 89956400
+iaf_psc_alpha_neuron_Nestml,1000
+Memory: 298980
+iaf_psc_alpha_neuron_Nestml,1459
+Memory: 436324
+iaf_psc_alpha_neuron_Nestml,2129
+Memory: 707408
+iaf_psc_alpha_neuron_Nestml,3107
+Memory: 1266288
+iaf_psc_alpha_neuron_Nestml,4534
+Memory: 2411944
+iaf_psc_alpha_neuron_Nestml,6616
+Memory: 4806124
+iaf_psc_alpha_neuron_Nestml,9654
+Memory: 9814968
+iaf_psc_alpha_neuron_Nestml,14088
+Memory: 20364728
+iaf_psc_alpha_neuron_Nestml,20558
+Memory: 42669840
+iaf_psc_alpha_neuron_Nestml,30000
+Memory: 89924452
+iaf_psc_alpha,1000
+Memory: 294884
+iaf_psc_alpha,1459
+Memory: 441720
+iaf_psc_alpha,2129
+Memory: 709000
+iaf_psc_alpha,3107
+Memory: 1249912
+iaf_psc_alpha,4534
+Memory: 2389272
+iaf_psc_alpha,6616
+Memory: 4768728
+iaf_psc_alpha,9654
+Memory: 9760516
+iaf_psc_alpha,14088
+Memory: 20292472
+iaf_psc_alpha,20558
+Memory: 42557304
+iaf_psc_alpha,30000
+Memory: 89762864
+Strong Scaling Benchmark 9 with 30000 neurons
+iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,2
+[91miaf_psc_alpha_neuron_Nestml_Optimized,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,4
+[91miaf_psc_alpha_neuron_Nestml_Optimized,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,8
+[91miaf_psc_alpha_neuron_Nestml_Optimized,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,16
+iaf_psc_alpha_neuron_Nestml_Optimized,32
+iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,2
+[91miaf_psc_alpha_neuron_Nestml,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,4
+[91miaf_psc_alpha_neuron_Nestml,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,8
+[91miaf_psc_alpha_neuron_Nestml,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha_neuron_Nestml,16
+iaf_psc_alpha_neuron_Nestml,32
+iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,2
+[91miaf_psc_alpha,2 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,4
+[91miaf_psc_alpha,4 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,8
+[91miaf_psc_alpha,8 failed[0m
+[91mNone failed[0m
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mWeak Scaling Benchmark 9[0m
+iaf_psc_alpha_neuron_Nestml_Optimized,1000
+iaf_psc_alpha_neuron_Nestml_Optimized,1459
+iaf_psc_alpha_neuron_Nestml_Optimized,2129
+iaf_psc_alpha_neuron_Nestml_Optimized,3107
+iaf_psc_alpha_neuron_Nestml_Optimized,4534
+iaf_psc_alpha_neuron_Nestml_Optimized,6616
+iaf_psc_alpha_neuron_Nestml_Optimized,9654
+iaf_psc_alpha_neuron_Nestml_Optimized,14088
+iaf_psc_alpha_neuron_Nestml_Optimized,20558
+iaf_psc_alpha_neuron_Nestml_Optimized,30000
+iaf_psc_alpha_neuron_Nestml,1000
+iaf_psc_alpha_neuron_Nestml,1459
+iaf_psc_alpha_neuron_Nestml,2129
+iaf_psc_alpha_neuron_Nestml,3107
+iaf_psc_alpha_neuron_Nestml,4534
+iaf_psc_alpha_neuron_Nestml,6616
+iaf_psc_alpha_neuron_Nestml,9654
+iaf_psc_alpha_neuron_Nestml,14088
+iaf_psc_alpha_neuron_Nestml,20558
+iaf_psc_alpha_neuron_Nestml,30000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1459
+iaf_psc_alpha,2129
+iaf_psc_alpha,3107
+iaf_psc_alpha,4534
+iaf_psc_alpha,6616
+iaf_psc_alpha,9654
+iaf_psc_alpha,14088
+iaf_psc_alpha,20558
+iaf_psc_alpha,30000
+Finished
+Finished
+Finished
+Finished
+Finished
+Finished
+Finished
+Finished
+Finished
+Finished
+Finished

@@ -153,19 +153,7 @@ tauSyn = 0.5  # synaptic time constant in ms
 tauMem = 20.0  # time constant of membrane potential in ms
 CMem = 250.0  # capacitance of membrane in in pF
 theta = 20.0  # membrane threshold potential in mV
-neuron_params = {}
-if args.simulated_neuron == "iaf_psc_alpha_neuron_Nestml":
-    neuron_params = {
-        "C_m": CMem,
-        "tau_m": tauMem,
-        "tau_syn_exc": tauSyn,
-        "tau_syn_inh": tauSyn,
-        "refr_T": 2.0,
-        "E_L": 0.0,
-        "V_reset": 0.0,
-        "V_m": 0.0,
-        "V_th": theta,
-    }
+neuron_params = {}    
 if args.simulated_neuron == "iaf_psc_alpha":
     neuron_params = {
         "C_m": CMem,
@@ -173,6 +161,18 @@ if args.simulated_neuron == "iaf_psc_alpha":
         "tau_syn_ex": tauSyn,
         "tau_syn_in": tauSyn,
         "t_ref": 2.0,
+        "E_L": 0.0,
+        "V_reset": 0.0,
+        "V_m": 0.0,
+        "V_th": theta,
+    }
+else:
+    neuron_params = {
+        "C_m": CMem,
+        "tau_m": tauMem,
+        "tau_syn_exc": tauSyn,
+        "tau_syn_inh": tauSyn,
+        "refr_T": 2.0,
         "E_L": 0.0,
         "V_reset": 0.0,
         "V_m": 0.0,
