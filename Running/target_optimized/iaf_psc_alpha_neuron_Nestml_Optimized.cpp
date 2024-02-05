@@ -324,8 +324,8 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
     }
     else
     {
-      sw_update2.start();
-      // start rendered code for integrate_odes()
+      // sw_update2.start();
+      //  start rendered code for integrate_odes()
 
       // analytic solver: integrating state variables (first step): V_m, I_kernel_exc__X__exc_spikes, I_kernel_exc__X__exc_spikes__d, I_kernel_inh__X__inh_spikes, I_kernel_inh__X__inh_spikes__d,
       const double V_m__tmp = (-P_.E_L) * V_.__P__V_m__V_m + P_.E_L + S_.I_kernel_exc__X__exc_spikes * V_.__P__V_m__I_kernel_exc__X__exc_spikes + S_.I_kernel_exc__X__exc_spikes__d * V_.__P__V_m__I_kernel_exc__X__exc_spikes__d + S_.I_kernel_inh__X__inh_spikes * V_.__P__V_m__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__V_m__I_kernel_inh__X__inh_spikes__d + S_.V_m * V_.__P__V_m__V_m - P_.I_e * V_.__P__V_m__V_m * P_.tau_m / P_.C_m + P_.I_e * P_.tau_m / P_.C_m - B_.I_stim_grid_sum_ * V_.__P__V_m__V_m * P_.tau_m / P_.C_m + B_.I_stim_grid_sum_ * P_.tau_m / P_.C_m;
@@ -342,7 +342,7 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
       S_.I_kernel_exc__X__exc_spikes__d = I_kernel_exc__X__exc_spikes__d__tmp;
       S_.I_kernel_inh__X__inh_spikes = I_kernel_inh__X__inh_spikes__tmp;
       S_.I_kernel_inh__X__inh_spikes__d = I_kernel_inh__X__inh_spikes__d__tmp;
-      sw_update2.stop();
+      // sw_update2.stop();
     }
 
     /**
