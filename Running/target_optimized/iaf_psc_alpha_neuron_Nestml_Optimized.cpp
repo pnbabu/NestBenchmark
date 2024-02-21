@@ -300,6 +300,7 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
 
     for (long i = 0; i < NUM_SPIKE_RECEPTORS; ++i)
     {
+      // TODO: What does this do its never used
       get_spike_inputs_grid_sum_()[i] = get_spike_inputs_()[i].get_value(lag);
       get_spike_input_received_grid_sum_()[i] = get_spike_input_received_()[i].get_value(lag);
     }
@@ -334,7 +335,7 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
       const double I_kernel_inh__X__inh_spikes__tmp = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
       const double I_kernel_inh__X__inh_spikes__d__tmp = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
       // analytic solver: integrating state variables (second step): V_m, I_kernel_exc__X__exc_spikes, I_kernel_exc__X__exc_spikes__d, I_kernel_inh__X__inh_spikes, I_kernel_inh__X__inh_spikes__d,
-      /* replace analytically solvable variables with precisely integrated values  */
+      /* replace analytically solvable variables with precisely integrated values */
 
       // TODO: Why is this here they are set below again?
       S_.V_m = V_m__tmp;
@@ -367,17 +368,20 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
     // TODO:the 0.001 and (1 / 1000.0) cancle each other out
     S_.I_kernel_exc__X__exc_spikes__d += ((0.001 * B_.spike_inputs_grid_sum_[EXC_SPIKES - MIN_SPIKE_RECEPTOR])) * (numerics::e / P_.tau_syn_exc) / (1 / 1000.0);
     S_.I_kernel_inh__X__inh_spikes__d += ((0.001 * B_.spike_inputs_grid_sum_[INH_SPIKES - MIN_SPIKE_RECEPTOR])) * (numerics::e / P_.tau_syn_inh) / (1 / 1000.0);
+
     /**
     constexpr int multiplier = 0.001 / 1000.0;
     S_.I_kernel_exc__X__exc_spikes__d += multiplier * B_.spike_inputs_grid_sum_[EXC_SPIKES - MIN_SPIKE_RECEPTOR] * (numerics::e / P_.tau_syn_exc);
     S_.I_kernel_inh__X__inh_spikes__d += multiplier * B_.spike_inputs_grid_sum_[INH_SPIKES - MIN_SPIKE_RECEPTOR] * (numerics::e / P_.tau_syn_inh);
     */
+
     /**
      * Begin NESTML generated code for the onCondition block(s)
      **/
 
     if (S_.V_m >= P_.V_th)
     {
+      // TODO: why is this used instead of a number of steps it takes
       S_.refr_t = P_.refr_T;
       S_.is_refractory = true;
       S_.V_m = P_.V_reset;
@@ -390,6 +394,7 @@ void iaf_psc_alpha_neuron_Nestml_Optimized::update(nest::Time const &origin, con
       nest::SpikeEvent se;
       nest::kernel().event_delivery_manager.send(*this, se, lag);
     }
+    // TODO:this can be skipped if refactory is calculated in steps
     if (S_.refr_t <= __resolution / 2)
     {
       S_.refr_t = 0;

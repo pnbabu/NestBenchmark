@@ -29,7 +29,7 @@ NEURONSPERSCALE = 5
 
 VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
 NUMTHREADS = VERTICALTHREADS[-1]
-VERTICALNEWORKSCALE = NETWORKSCALES[-1]
+VERTICALNEWORKSCALE = 10000
 ITERATIONS=10
 DEBUG = False
 
@@ -45,7 +45,7 @@ def log(message):
 
 def start_weak_scaling_Benchmark(iteration, checkMemory=False):
     insert = "/usr/bin/time -f \'%M\'" if checkMemory else ""
-    combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && {insert} python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath {WEAKSCALINGFOLDERNAME}' ],"name":f"{neuronmodel}","networksize":networkscale} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
+    combinations = [{"command":['bash', '-c', f'source {PATHTOSHFILE} && {insert} python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} --benchmarkPath {WEAKSCALINGFOLDERNAME if checkMemory else ""}' ],"name":f"{neuronmodel}","networksize":networkscale} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
     log(f"\033[93mMemory Scaling Benchmark {iteration}\033[0m" if checkMemory else f"\033[93mWeak Scaling Benchmark {iteration}\033[0m")
     memoryDict = {}
     for combination in combinations:
@@ -260,6 +260,7 @@ if __name__ == "__main__":
     os.makedirs(WEAKSCALINGFOLDERNAME, exist_ok=True)
     os.makedirs(STRONGSCALINGFOLDERNAME, exist_ok=True)
     
+    os.remove(os.path.join(output_folder, "log.txt"))
     
     if runSim:
         memoryData = {}
