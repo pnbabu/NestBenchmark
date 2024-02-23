@@ -262,6 +262,10 @@ if __name__ == "__main__":
     
     os.remove(os.path.join(output_folder, "log.txt"))
     
+    start_strong_scaling_Benchmark(0)
+    """ 
+
+
     if runSim:
         memoryData = {}
         deleteJson()
@@ -308,3 +312,4 @@ if __name__ == "__main__":
                 verticaldata.setdefault(simulated_neuron, {}).setdefault(threads, {}).setdefault(iteration, json_data)
     plot_strong_scaling(verticaldata)
 
+ """
