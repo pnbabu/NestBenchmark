@@ -42,6 +42,8 @@ set( MODULE_SOURCES
     
       iaf_psc_alpha_neuron_Nestml.cpp iaf_psc_alpha_neuron_Nestml.h
     
+      iaf_psc_alpha_neuron_Nestml.cpp iaf_psc_alpha_neuron_Nestml.h
+    
     )
 
 # 3) We require a header name like this:

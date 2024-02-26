@@ -1,7 +1,7 @@
 sli/CMakeFiles/sli_lib.dir/name.cc.o: \
- /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/sli/name.cc \
+ /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/sli/name.cc \
  /usr/include/stdc-predef.h \
- /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/sli/name.h \
+ /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/sli/name.h \
  /p/software/jusuf/stages/2023/software/GCCcore/11.3.0/include/c++/11.3.0/cassert \
  /p/software/jusuf/stages/2023/software/GCCcore/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /p/software/jusuf/stages/2023/software/GCCcore/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu/bits/os_defines.h \

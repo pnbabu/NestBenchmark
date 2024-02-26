@@ -1,0 +1,131 @@
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.6.0-post0.dev0
+ Built: Feb 26 2024 14:02:41
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Feb 26 16:45:48 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Feb 26 16:45:48 Install [Info]: 
+    loaded module nestmlOptimizedmodule
+
+Feb 26 16:45:48 Install [Info]: 
+    loaded module nestmlplasticmodule
+
+Feb 26 16:45:49 NodeManager::prepare_nodes [Info]: 
+    Preparing 7166 nodes for simulation.
+
+Feb 26 16:45:49 SimulationManager::run [Warning]: 
+    The requested simulation time is not an integer multiple of the minimal delay in the network. This may result in inconsistent results under the following conditions: (i) A network 
+    contains more than one source of randomness, e.g., two different poisson_generators, and (ii) Simulate is called repeatedly with simulation times that are not multiples of the minimal 
+    delay.
+
+Feb 26 16:45:49 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 7166
+    Simulation time (ms): 100
+    Number of OpenMP threads: 32
+    Not using MPI
+
+
+[   0% ] Model time: 0.0 ms, Real-time factor: 0.0000
+[   2% ] Model time: 1.5 ms, Real-time factor: 0.4693
+[   3% ] Model time: 3.0 ms, Real-time factor: 0.4730
+[   5% ] Model time: 4.5 ms, Real-time factor: 0.4542
+[   6% ] Model time: 6.0 ms, Real-time factor: 0.4380
+[   8% ] Model time: 7.5 ms, Real-time factor: 0.4312
+[   9% ] Model time: 9.0 ms, Real-time factor: 0.4262
+[  11% ] Model time: 10.5 ms, Real-time factor: 0.4205
+[  12% ] Model time: 12.0 ms, Real-time factor: 0.4187
+[  14% ] Model time: 13.5 ms, Real-time factor: 0.4164
+[  15% ] Model time: 15.0 ms, Real-time factor: 0.4273
+[  17% ] Model time: 16.5 ms, Real-time factor: 0.5001
+[  18% ] Model time: 18.0 ms, Real-time factor: 0.6869
+[  20% ] Model time: 19.5 ms, Real-time factor: 0.6835
+[  21% ] Model time: 21.0 ms, Real-time factor: 0.6598
+[  23% ] Model time: 22.5 ms, Real-time factor: 0.6476
+[  24% ] Model time: 24.0 ms, Real-time factor: 0.6525
+[  26% ] Model time: 25.5 ms, Real-time factor: 0.6721
+[  27% ] Model time: 27.0 ms, Real-time factor: 0.7127
+[  29% ] Model time: 28.5 ms, Real-time factor: 0.7528
+[  30% ] Model time: 30.0 ms, Real-time factor: 0.8054
+[  32% ] Model time: 31.5 ms, Real-time factor: 0.8423
+[  33% ] Model time: 33.0 ms, Real-time factor: 0.8411
+[  35% ] Model time: 34.5 ms, Real-time factor: 0.8302
+[  36% ] Model time: 36.0 ms, Real-time factor: 0.8204
+[  38% ] Model time: 37.5 ms, Real-time factor: 0.8122
+[  39% ] Model time: 39.0 ms, Real-time factor: 0.8235
+[  41% ] Model time: 40.5 ms, Real-time factor: 0.8358
+[  43% ] Model time: 42.0 ms, Real-time factor: 0.8371
+[  44% ] Model time: 43.5 ms, Real-time factor: 0.8360
+[  45% ] Model time: 45.0 ms, Real-time factor: 0.8449
+[  47% ] Model time: 46.5 ms, Real-time factor: 0.8537
+[  48% ] Model time: 48.0 ms, Real-time factor: 0.8648
+[  50% ] Model time: 49.5 ms, Real-time factor: 0.8818
+[  51% ] Model time: 51.0 ms, Real-time factor: 0.8912
+[  53% ] Model time: 52.5 ms, Real-time factor: 0.8878
+[  54% ] Model time: 54.0 ms, Real-time factor: 0.8861
+[  56% ] Model time: 55.5 ms, Real-time factor: 0.8785
+[  57% ] Model time: 57.0 ms, Real-time factor: 0.8741
+[  59% ] Model time: 58.5 ms, Real-time factor: 0.8706
+[  60% ] Model time: 60.0 ms, Real-time factor: 0.8721
+[  62% ] Model time: 61.5 ms, Real-time factor: 0.8729
+[  63% ] Model time: 63.0 ms, Real-time factor: 1.0946
+[  65% ] Model time: 64.5 ms, Real-time factor: 1.1079
+[  66% ] Model time: 66.0 ms, Real-time factor: 1.1180
+[  68% ] Model time: 67.5 ms, Real-time factor: 1.1079
+[  69% ] Model time: 69.0 ms, Real-time factor: 1.1003
+[  71% ] Model time: 70.5 ms, Real-time factor: 1.0955
+[  72% ] Model time: 72.0 ms, Real-time factor: 1.0914
+[  74% ] Model time: 73.5 ms, Real-time factor: 1.0883
+[  75% ] Model time: 75.0 ms, Real-time factor: 1.0883
+[  77% ] Model time: 76.5 ms, Real-time factor: 1.0801
+[  78% ] Model time: 78.0 ms, Real-time factor: 1.0718
+[  80% ] Model time: 79.5 ms, Real-time factor: 1.0670
+[  81% ] Model time: 81.0 ms, Real-time factor: 1.0579
+[  83% ] Model time: 82.5 ms, Real-time factor: 1.0508
+[  84% ] Model time: 84.0 ms, Real-time factor: 1.0486
+[  86% ] Model time: 85.5 ms, Real-time factor: 1.0464
+[  87% ] Model time: 87.0 ms, Real-time factor: 1.0425
+[  89% ] Model time: 88.5 ms, Real-time factor: 1.0328
+[  90% ] Model time: 90.0 ms, Real-time factor: 1.0233
+[  92% ] Model time: 91.5 ms, Real-time factor: 1.0174
+[  93% ] Model time: 93.0 ms, Real-time factor: 1.0133
+[  95% ] Model time: 94.5 ms, Real-time factor: 1.0104
+[  96% ] Model time: 96.0 ms, Real-time factor: 1.0110
+[  98% ] Model time: 97.5 ms, Real-time factor: 1.0118
+[  99% ] Model time: 99.0 ms, Real-time factor: 1.0095
+[ 100% ] Model time: 99.0 ms, Real-time factor: 1.0085
+
+Feb 26 16:45:49 SimulationManager::run [Info]: 
+    Simulation finished.
+foo
+foo1
+Number of neurons : 7070
+foo2
+Building network
+Connecting devices
+Using NEST built in STDP synapse
+Connecting network
+Excitatory connections
+Inhibitory connections
+Simulating
+Brunel network simulation (Python)
+Number of synapses: 4991420
+       Excitatory : 3994550
+       Inhibitory : 996870
+Excitatory rate   : 35.00 Hz
+Inhibitory rate   : 34.80 Hz
+Building time     : 0.53 s
+Simulation time   : 0.24 s
+foo3

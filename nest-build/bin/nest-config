@@ -1,6 +1,6 @@
 #! /bin/sh
 
-prefix="/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install"
+prefix="/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install"
 exec_prefix=${prefix}
 
 usage()
@@ -62,7 +62,7 @@ while test $# -gt 0; do
         usage 0
         ;;
     --includes)
-        echo " -I/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install/include/nest -I/p/software/jusuf/stages/2023/software/libtool/2.4.7-GCCcore-11.3.0/include -I/p/software/jusuf/stages/2023/software/GSL/2.7-GCCcore-11.3.0/include -I/p/software/jusuf/stages/2023/software/Boost/1.79.0-GCCcore-11.3.0/include "
+        echo " -I/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/include/nest -I/p/software/jusuf/stages/2023/software/libtool/2.4.7-GCCcore-11.3.0/include -I/p/software/jusuf/stages/2023/software/GSL/2.7-GCCcore-11.3.0/include -I/p/software/jusuf/stages/2023/software/Boost/1.79.0-GCCcore-11.3.0/include "
         ;;
     --cflags)
         echo " -std=c++17 -Wall -fopenmp -O3 -fdiagnostics-color=auto"

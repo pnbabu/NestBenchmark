@@ -1,8 +1,8 @@
-# Install script for directory: /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/testsuite/mpi_selftests/fail
+# Install script for directory: /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/testsuite/mpi_selftests/fail
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install")
+  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -1,0 +1,1697 @@
+desc: (none)
+cmd: python3 examples/brunel_alpha_nest.py
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=765239947
+mem_heap_B=7655990
+mem_heap_extra_B=85498
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1990997020
+mem_heap_B=9593827
+mem_heap_extra_B=104693
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2924389351
+mem_heap_B=11209433
+mem_heap_extra_B=141231
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=4208210031
+mem_heap_B=18814532
+mem_heap_extra_B=380812
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=5268833367
+mem_heap_B=66296871
+mem_heap_extra_B=1808649
+mem_stacks_B=0
+heap_tree=detailed
+n13: 66296871 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:99)
+  n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:572)
+   n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:1956)
+    n4: 16399545 0x4B5003F: _PyObject_Malloc (obmalloc.c:1949)
+     n1: 7029585 0x4B50564: UnknownInlinedFun (obmalloc.c:685)
+      n2: 7029585 0x4B50564: PyUnicode_New (unicodeobject.c:1463)
+       n1: 5095074 0x4B634D5: UnknownInlinedFun (unicodeobject.c:2463)
+        n1: 5095074 0x4B634D5: _PyUnicode_FromUCS1 (unicodeobject.c:2449)
+         n1: 5095074 0x4B61FD3: UnknownInlinedFun (unicodeobject.c:2534)
+          n2: 5095074 0x4B61FD3: r_object (marshal.c:1112)
+           n1: 4189861 0x4B62065: r_object (marshal.c:1174)
+            n2: 4189861 0x4B62476: r_object (marshal.c:1350)
+             n1: 3837163 0x4B62133: r_object (marshal.c:1174)
+              n3: 3837163 0x4B62476: r_object (marshal.c:1350)
+               n2: 2282558 0x4BDB697: read_object (marshal.c:1445)
+                n1: 2279462 0x4BEFCD0: UnknownInlinedFun (marshal.c:1754)
+                 n1: 2279462 0x4BEFCD0: marshal_loads (marshal.c.h:148)
+                  n1: 2279462 0x4B72971: cfunction_vectorcall_O (methodobject.c:516)
+                   n1: 2279462 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                    n1: 2279462 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                     n1: 2279462 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                      n1: 2279462 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                       n1: 2279462 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                        n1: 2279462 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                         n1: 2279462 0x4B689F4: UnknownInlinedFun (abstract.h:114)
+                          n1: 2279462 0x4B689F4: UnknownInlinedFun (abstract.h:123)
+                           n1: 2279462 0x4B689F4: UnknownInlinedFun (ceval.c:5867)
+                            n1: 2279462 0x4B689F4: _PyEval_EvalFrameDefault (ceval.c:4231)
+                             n1: 2279462 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                              n1: 2279462 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                               n1: 2279462 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                                n1: 2279462 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                                 n1: 2279462 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                                  n1: 2279462 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                                   n1: 2279462 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                    n1: 2279462 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                     n1: 2279462 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                                      n1: 2279462 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                                       n1: 2279462 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                                        n1: 2279462 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                                         n1: 2279462 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                          n1: 2279462 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                           n1: 2279462 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                            n1: 2279462 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                             n1: 2279462 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                              n1: 2279462 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                               n1: 2279462 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                n1: 2279462 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                 n1: 2279462 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                                  n1: 2279462 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                                   n1: 2279462 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                                    n1: 2279462 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                                     n1: 2279462 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                      n2: 2279462 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                       n1: 2235416 0x4B72B4D: UnknownInlinedFun (abstract.h:114)
+                                                        n1: 2235416 0x4B72B4D: object_vacall (call.c:734)
+                                                         n1: 2235416 0x4B7E1B1: _PyObject_CallMethodIdObjArgs (call.c:825)
+                                                          n1: 2235416 0x4B7D9BB: UnknownInlinedFun (import.c:1521)
+                                                           n3: 2235416 0x4B7D9BB: PyImport_ImportModuleLevelObject (import.c:1622)
+                                                            n1: 1467116 0x4B6BECA: UnknownInlinedFun (ceval.c:5992)
+                                                             n1: 1467116 0x4B6BECA: _PyEval_EvalFrameDefault (ceval.c:3695)
+                                                              n1: 1467116 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                               n1: 1467116 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                                n2: 1467116 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                                                 n1: 1433815 0x4BE35E8: UnknownInlinedFun (bltinmodule.c:1056)
+                                                                  n0: 1433815 0x4BE35E8: builtin_exec (bltinmodule.c.h:371)
+                                                                 n0: 33301 in 1 place, below massif's threshold (1.00%)
+                                                            n1: 765565 0x4B970C7: builtin___import__ (bltinmodule.c:272)
+                                                             n2: 765565 0x4B72EAD: cfunction_call (methodobject.c:543)
+                                                              n1: 759743 0x4B7A0A6: _PyObject_Call (call.c:305)
+                                                               n1: 759743 0x4B6D6A5: UnknownInlinedFun (ceval.c:5891)
+                                                                n0: 759743 0x4B6D6A5: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                                              n0: 5822 in 1 place, below massif's threshold (1.00%)
+                                                            n0: 2735 in 2 places, all below massif's threshold (1.00%)
+                                                       n0: 44046 in 1 place, below massif's threshold (1.00%)
+                n0: 3096 in 1 place, below massif's threshold (1.00%)
+               n1: 1524645 0x4B62133: r_object (marshal.c:1174)
+                n1: 1524645 0x4B62476: r_object (marshal.c:1350)
+                 n1: 1524645 0x4BDB697: read_object (marshal.c:1445)
+                  n1: 1524645 0x4BEFCD0: UnknownInlinedFun (marshal.c:1754)
+                   n1: 1524645 0x4BEFCD0: marshal_loads (marshal.c.h:148)
+                    n1: 1524645 0x4B72971: cfunction_vectorcall_O (methodobject.c:516)
+                     n1: 1524645 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                      n1: 1524645 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                       n1: 1524645 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                        n1: 1524645 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                         n1: 1524645 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                          n1: 1524645 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                           n1: 1524645 0x4B689F4: UnknownInlinedFun (abstract.h:114)
+                            n1: 1524645 0x4B689F4: UnknownInlinedFun (abstract.h:123)
+                             n1: 1524645 0x4B689F4: UnknownInlinedFun (ceval.c:5867)
+                              n1: 1524645 0x4B689F4: _PyEval_EvalFrameDefault (ceval.c:4231)
+                               n1: 1524645 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                n1: 1524645 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                 n1: 1524645 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                                  n1: 1524645 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                                   n1: 1524645 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                                    n1: 1524645 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                                     n1: 1524645 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                      n1: 1524645 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                       n1: 1524645 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                                        n1: 1524645 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                                         n1: 1524645 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                                          n1: 1524645 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                                           n1: 1524645 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                            n1: 1524645 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                             n1: 1524645 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                              n1: 1524645 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                               n1: 1524645 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                                n1: 1524645 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                                 n1: 1524645 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                  n1: 1524645 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                   n1: 1524645 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                                    n1: 1524645 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                                     n1: 1524645 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                                      n1: 1524645 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                                       n1: 1524645 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                        n2: 1524645 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                         n1: 1522469 0x4B72B4D: UnknownInlinedFun (abstract.h:114)
+                                                          n1: 1522469 0x4B72B4D: object_vacall (call.c:734)
+                                                           n1: 1522469 0x4B7E1B1: _PyObject_CallMethodIdObjArgs (call.c:825)
+                                                            n1: 1522469 0x4B7D9BB: UnknownInlinedFun (import.c:1521)
+                                                             n2: 1522469 0x4B7D9BB: PyImport_ImportModuleLevelObject (import.c:1622)
+                                                              n1: 1359439 0x4B6BECA: UnknownInlinedFun (ceval.c:5992)
+                                                               n1: 1359439 0x4B6BECA: _PyEval_EvalFrameDefault (ceval.c:3695)
+                                                                n1: 1359439 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                                 n0: 1359439 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                              n0: 163030 in 1 place, below massif's threshold (1.00%)
+                                                         n0: 2176 in 1 place, below massif's threshold (1.00%)
+               n0: 29960 in 4 places, all below massif's threshold (1.00%)
+             n0: 352698 in 8 places, all below massif's threshold (1.00%)
+           n0: 905213 in 6 places, all below massif's threshold (1.00%)
+       n0: 1934511 in 12 places, all below massif's threshold (1.00%)
+     n1: 4421144 0x4B52F9D: UnknownInlinedFun (obmalloc.c:685)
+      n2: 4421144 0x4B52F9D: new_keys_object (dictobject.c:600)
+       n3: 4380128 0x4B536FF: dictresize (dictobject.c:1242)
+        n1: 2758016 0x4B57522: UnknownInlinedFun (dictobject.c:1060)
+         n2: 2758016 0x4B57522: insertdict (dictobject.c:1103)
+          n0: 1780488 in 162 places, all below massif's threshold (1.00%)
+          n1: 977528 0x4B699A4: _PyEval_EvalFrameDefault (ceval.c:2770)
+           n1: 977528 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+            n2: 977528 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+             n2: 977528 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+              n1: 973112 0x4BE35E8: UnknownInlinedFun (bltinmodule.c:1056)
+               n1: 973112 0x4BE35E8: builtin_exec (bltinmodule.c.h:371)
+                n2: 973112 0x4B7346A: cfunction_vectorcall_FASTCALL (methodobject.c:430)
+                 n1: 968696 0x4B6D6A5: UnknownInlinedFun (ceval.c:5891)
+                  n1: 968696 0x4B6D6A5: _PyEval_EvalFrameDefault (ceval.c:4277)
+                   n1: 968696 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                    n1: 968696 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                     n1: 968696 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                      n1: 968696 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                       n1: 968696 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                        n1: 968696 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                         n1: 968696 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                          n1: 968696 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                           n1: 968696 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                            n1: 968696 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                             n1: 968696 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                              n1: 968696 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                               n1: 968696 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                n1: 968696 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                 n1: 968696 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                  n1: 968696 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                   n1: 968696 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                    n1: 968696 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                     n1: 968696 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                      n1: 968696 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                       n1: 968696 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                        n1: 968696 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                         n1: 968696 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                          n1: 968696 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                           n1: 968696 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                            n2: 968696 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                             n1: 957048 0x4B72B4D: UnknownInlinedFun (abstract.h:114)
+                                              n1: 957048 0x4B72B4D: object_vacall (call.c:734)
+                                               n1: 957048 0x4B7E1B1: _PyObject_CallMethodIdObjArgs (call.c:825)
+                                                n1: 957048 0x4B7D9BB: UnknownInlinedFun (import.c:1521)
+                                                 n2: 957048 0x4B7D9BB: PyImport_ImportModuleLevelObject (import.c:1622)
+                                                  n1: 737408 0x4B6BECA: UnknownInlinedFun (ceval.c:5992)
+                                                   n1: 737408 0x4B6BECA: _PyEval_EvalFrameDefault (ceval.c:3695)
+                                                    n1: 737408 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                     n2: 737408 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                      n2: 733992 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                                       n1: 719752 0x4BE35E8: UnknownInlinedFun (bltinmodule.c:1056)
+                                                        n1: 719752 0x4BE35E8: builtin_exec (bltinmodule.c.h:371)
+                                                         n1: 719752 0x4B7346A: cfunction_vectorcall_FASTCALL (methodobject.c:430)
+                                                          n1: 719752 0x4B6D6A5: UnknownInlinedFun (ceval.c:5891)
+                                                           n1: 719752 0x4B6D6A5: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                                            n1: 719752 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                             n1: 719752 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                              n1: 719752 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                                               n1: 719752 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                                                n1: 719752 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                                                 n0: 719752 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                                       n0: 14240 in 1 place, below massif's threshold (1.00%)
+                                                      n0: 3416 in 2 places, all below massif's threshold (1.00%)
+                                                  n0: 219640 in 6 places, all below massif's threshold (1.00%)
+                                             n0: 11648 in 1 place, below massif's threshold (1.00%)
+                 n0: 4416 in 1 place, below massif's threshold (1.00%)
+              n0: 4416 in 2 places, all below massif's threshold (1.00%)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 1567960 0x4B525AA: PyDict_SetDefault (dictobject.c:3067)
+         n2: 1310744 0x4B520F1: PyUnicode_InternInPlace (unicodeobject.c:15869)
+          n1: 1310744 0x4C04EF9: UnknownInlinedFun (sysmodule.c:909)
+           n1: 1310744 0x4C04EF9: sys_intern (sysmodule.c.h:238)
+            n1: 1310744 0x4B72971: cfunction_vectorcall_O (methodobject.c:516)
+             n1: 1310744 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+              n1: 1310744 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+               n1: 1310744 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                n1: 1310744 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                 n1: 1310744 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                  n1: 1310744 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                   n1: 1310744 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                    n1: 1310744 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                     n1: 1310744 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                      n1: 1310744 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                       n1: 1310744 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                        n1: 1310744 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                         n1: 1310744 0x4B79C50: UnknownInlinedFun (call.c:342)
+                          n1: 1310744 0x4B79C50: UnknownInlinedFun (abstract.h:114)
+                           n1: 1310744 0x4B79C50: method_vectorcall (classobject.c:53)
+                            n1: 1310744 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                             n1: 1310744 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                              n1: 1310744 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                               n1: 1310744 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                n1: 1310744 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                 n1: 1310744 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                  n1: 1310744 0x4B79C50: UnknownInlinedFun (call.c:342)
+                                   n1: 1310744 0x4B79C50: UnknownInlinedFun (abstract.h:114)
+                                    n1: 1310744 0x4B79C50: method_vectorcall (classobject.c:53)
+                                     n1: 1310744 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                      n1: 1310744 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                       n1: 1310744 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                        n1: 1310744 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                         n1: 1310744 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                          n1: 1310744 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                           n1: 1310744 0x4B6FA7C: UnknownInlinedFun (call.c:342)
+                                            n1: 1310744 0x4B6FA7C: _PyObject_FastCallDictTstate (call.c:142)
+                                             n1: 1310744 0x4BA8A77: UnknownInlinedFun (call.c:431)
+                                              n1: 1310744 0x4BA8A77: slot_tp_new (typeobject.c:7759)
+                                               n1: 1310744 0x4B70338: type_call (typeobject.c:1121)
+                                                n1: 1310744 0x4B7A0A6: _PyObject_Call (call.c:305)
+                                                 n1: 1310744 0x4B6A579: UnknownInlinedFun (call.c:317)
+                                                  n1: 1310744 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                                                   n1: 1310744 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                                    n1: 1310744 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                     n1: 1310744 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                      n1: 1310744 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                                       n1: 1310744 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                                        n1: 1310744 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                                         n1: 1310744 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                                          n1: 1310744 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                           n1: 1310744 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                            n1: 1310744 0x4BDBE8F: builtin___build_class__ (bltinmodule.c:216)
+                                                             n1: 1310744 0x4B6F599: cfunction_vectorcall_FASTCALL_KEYWORDS (methodobject.c:446)
+                                                              n1: 1310744 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                                               n1: 1310744 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                                                n1: 1310744 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                                                 n1: 1310744 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                                                  n1: 1310744 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                                   n1: 1310744 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                                    n0: 1310744 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+          n0: 0 in 4 places, all below massif's threshold (1.00%)
+         n0: 257216 in 9 places, all below massif's threshold (1.00%)
+        n0: 54152 in 1 place, below massif's threshold (1.00%)
+       n0: 41016 in 1 place, below massif's threshold (1.00%)
+     n0: 2625512 in 33 places, all below massif's threshold (1.00%)
+     n1: 2323304 0x4B50A02: UnknownInlinedFun (obmalloc.c:685)
+      n2: 2323304 0x4B50A02: _PyObject_GC_Alloc (gcmodule.c:2274)
+       n1: 2157024 0x4B56F5B: UnknownInlinedFun (gcmodule.c:2301)
+        n2: 2157024 0x4B56F5B: PyType_GenericAlloc (typeobject.c:1154)
+         n1: 1925760 0x4BDC313: UnknownInlinedFun (typeobject.c:2741)
+          n1: 1925760 0x4BDC313: UnknownInlinedFun (typeobject.c:3153)
+           n1: 1925760 0x4BDC313: UnknownInlinedFun (typeobject.c:3176)
+            n2: 1925760 0x4BDC313: type_new (typeobject.c:3325)
+             n2: 1676544 0x4B70338: type_call (typeobject.c:1121)
+              n2: 1657664 0x4B701AE: _PyObject_MakeTpCall (call.c:215)
+               n1: 1432048 0x4B6FBAA: _PyObject_FastCallDictTstate (call.c:142)
+                n1: 1432048 0x4BDBEC9: builtin___build_class__ (bltinmodule.c:224)
+                 n1: 1432048 0x4B6F599: cfunction_vectorcall_FASTCALL_KEYWORDS (methodobject.c:446)
+                  n1: 1432048 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                   n1: 1432048 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                    n1: 1432048 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                     n1: 1432048 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                      n1: 1432048 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                       n2: 1432048 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                        n2: 1296112 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                         n1: 1288560 0x4BE35E8: UnknownInlinedFun (bltinmodule.c:1056)
+                          n1: 1288560 0x4BE35E8: builtin_exec (bltinmodule.c.h:371)
+                           n2: 1288560 0x4B7346A: cfunction_vectorcall_FASTCALL (methodobject.c:430)
+                            n1: 1276288 0x4B6D6A5: UnknownInlinedFun (ceval.c:5891)
+                             n1: 1276288 0x4B6D6A5: _PyEval_EvalFrameDefault (ceval.c:4277)
+                              n1: 1276288 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                               n1: 1276288 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                n1: 1276288 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                 n1: 1276288 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                  n1: 1276288 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                   n1: 1276288 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                    n1: 1276288 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                     n1: 1276288 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                      n1: 1276288 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                                       n1: 1276288 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                                        n1: 1276288 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                                         n1: 1276288 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                                          n1: 1276288 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                           n1: 1276288 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                            n1: 1276288 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                             n1: 1276288 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                              n1: 1276288 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                               n1: 1276288 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                                n1: 1276288 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                 n1: 1276288 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                  n1: 1276288 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                                   n1: 1276288 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                                    n1: 1276288 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                                     n1: 1276288 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                                      n1: 1276288 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                       n2: 1276288 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                        n1: 1269680 0x4B72B4D: UnknownInlinedFun (abstract.h:114)
+                                                         n1: 1269680 0x4B72B4D: object_vacall (call.c:734)
+                                                          n1: 1269680 0x4B7E1B1: _PyObject_CallMethodIdObjArgs (call.c:825)
+                                                           n1: 1269680 0x4B7D9BB: UnknownInlinedFun (import.c:1521)
+                                                            n2: 1269680 0x4B7D9BB: PyImport_ImportModuleLevelObject (import.c:1622)
+                                                             n1: 904352 0x4B6BECA: UnknownInlinedFun (ceval.c:5992)
+                                                              n1: 904352 0x4B6BECA: _PyEval_EvalFrameDefault (ceval.c:3695)
+                                                               n1: 904352 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                                n1: 904352 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                                 n0: 904352 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                                             n0: 365328 in 2 places, all below massif's threshold (1.00%)
+                                                        n0: 6608 in 1 place, below massif's threshold (1.00%)
+                            n0: 12272 in 1 place, below massif's threshold (1.00%)
+                         n0: 7552 in 1 place, below massif's threshold (1.00%)
+                        n0: 135936 in 6 places, all below massif's threshold (1.00%)
+               n0: 225616 in 24 places, all below massif's threshold (1.00%)
+              n0: 18880 in 2 places, all below massif's threshold (1.00%)
+             n0: 249216 in 5 places, all below massif's threshold (1.00%)
+         n0: 231264 in 4 places, all below massif's threshold (1.00%)
+       n0: 166280 in 1 place, below massif's threshold (1.00%)
+ n2: 14026880 0x150E126E: std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >::_M_fill_insert(__gnu_cxx::__normal_iterator<nest::ConnectorBase**, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> > >, unsigned long, nest::ConnectorBase* const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n2: 14008960 0x150E0D15: nest::TargetTableDevices::resize_to_number_of_synapse_types() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 10506720 0xCA6DA75: gomp_thread_start (team.c:125)
+    n1: 10506720 0x559D1C9: start_thread (pthread_create.c:479)
+     n0: 10506720 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+   n1: 3502240 0xCA652A5: GOMP_parallel (parallel.c:178)
+    n2: 3502240 0x150E02ED: nest::TargetTableDevices::resize_to_number_of_synapse_types() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 3502240 0x1511E797: nest::ModelManager::copy_connection_model_(unsigned long, Name) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 3502240 0x1511FBA1: nest::ModelManager::copy_model(Name, Name, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+       n1: 3502240 0x1504CC52: nest::NestModule::CopyModel_l_l_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n1: 3502240 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+         n1: 3502240 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+          n1: 3502240 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+           n1: 3502240 0x4B67608: UnknownInlinedFun (abstract.h:114)
+            n1: 3502240 0x4B67608: UnknownInlinedFun (abstract.h:123)
+             n1: 3502240 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+              n1: 3502240 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+               n1: 3502240 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                n1: 3502240 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                 n1: 3502240 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                  n1: 3502240 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                   n1: 3502240 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                    n1: 3502240 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                     n1: 3502240 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                      n1: 3502240 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                       n1: 3502240 0x4B6A579: UnknownInlinedFun (call.c:317)
+                        n1: 3502240 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                         n1: 3502240 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                          n1: 3502240 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                           n1: 3502240 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                            n1: 3502240 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                             n1: 3502240 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                              n1: 3502240 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                               n1: 3502240 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                n1: 3502240 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                 n1: 3502240 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                  n1: 3502240 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                   n1: 3502240 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                    n1: 3502240 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                     n1: 3502240 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                      n1: 3502240 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                       n1: 3502240 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+                                        n1: 3502240 0x4BF9400: UnknownInlinedFun (main.c:353)
+                                         n1: 3502240 0x4BF9400: UnknownInlinedFun (main.c:372)
+                                          n1: 3502240 0x4BF9400: UnknownInlinedFun (main.c:587)
+                                           n1: 3502240 0x4BF9400: Py_RunMain (main.c:666)
+                                            n1: 3502240 0x4BCE7C8: Py_BytesMain (main.c:720)
+                                             n0: 3502240 0x59F3D84: (below main) (in /usr/lib64/libc-2.28.so)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 17920 in 1 place, below massif's threshold (1.00%)
+ n1: 9400000 0x1B514B20: ???
+  n2: 9400000 0x150D122C: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 7050000 0xCA6DA75: gomp_thread_start (team.c:125)
+    n1: 7050000 0x559D1C9: start_thread (pthread_create.c:479)
+     n0: 7050000 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+   n1: 2350000 0xCA652A5: GOMP_parallel (parallel.c:178)
+    n1: 2350000 0x150CCF5A: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 2350000 0x150CF34E: nest::NodeManager::add_node(unsigned long, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 2350000 0x1508985D: nest::create(Name const&, unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+       n1: 2350000 0x150549FC: nest::NestModule::Create_l_iFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n1: 2350000 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+         n1: 2350000 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+          n1: 2350000 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+           n1: 2350000 0x4B67608: UnknownInlinedFun (abstract.h:114)
+            n1: 2350000 0x4B67608: UnknownInlinedFun (abstract.h:123)
+             n1: 2350000 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+              n1: 2350000 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+               n1: 2350000 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                n1: 2350000 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                 n1: 2350000 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                  n1: 2350000 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                   n1: 2350000 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                    n1: 2350000 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                     n1: 2350000 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                      n1: 2350000 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                       n1: 2350000 0x4B7A1AC: PyVectorcall_Call (call.c:267)
+                        n1: 2350000 0x4B6A579: UnknownInlinedFun (call.c:317)
+                         n1: 2350000 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                          n1: 2350000 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                           n1: 2350000 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                            n1: 2350000 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                             n1: 2350000 0x4B689F4: UnknownInlinedFun (abstract.h:114)
+                              n1: 2350000 0x4B689F4: UnknownInlinedFun (abstract.h:123)
+                               n1: 2350000 0x4B689F4: UnknownInlinedFun (ceval.c:5867)
+                                n1: 2350000 0x4B689F4: _PyEval_EvalFrameDefault (ceval.c:4231)
+                                 n1: 2350000 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                  n1: 2350000 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                   n1: 2350000 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                    n1: 2350000 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                     n1: 2350000 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                      n1: 2350000 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                       n1: 2350000 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                        n1: 2350000 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+                                         n1: 2350000 0x4BF9400: UnknownInlinedFun (main.c:353)
+                                          n1: 2350000 0x4BF9400: UnknownInlinedFun (main.c:372)
+                                           n1: 2350000 0x4BF9400: UnknownInlinedFun (main.c:587)
+                                            n1: 2350000 0x4BF9400: Py_RunMain (main.c:666)
+                                             n1: 2350000 0x4BCE7C8: Py_BytesMain (main.c:720)
+                                              n0: 2350000 0x59F3D84: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 6466560 0x1512B719: std::_Deque_base<nest::histentry, std::allocator<nest::histentry> >::_M_initialize_map(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n2: 6433792 0x1512B4D6: nest::ArchivingNode::ArchivingNode() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 6400512 0x1B51B05E: ???
+    n1: 6400000 0x1B514B2F: ???
+     n2: 6400000 0x150D122C: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 4800000 0xCA6DA75: gomp_thread_start (team.c:125)
+       n1: 4800000 0x559D1C9: start_thread (pthread_create.c:479)
+        n0: 4800000 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+      n1: 1600000 0xCA652A5: GOMP_parallel (parallel.c:178)
+       n1: 1600000 0x150CCF5A: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n1: 1600000 0x150CF34E: nest::NodeManager::add_node(unsigned long, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 1600000 0x1508985D: nest::create(Name const&, unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+          n1: 1600000 0x150549FC: nest::NestModule::Create_l_iFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 1600000 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+            n1: 1600000 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+             n1: 1600000 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+              n1: 1600000 0x4B67608: UnknownInlinedFun (abstract.h:114)
+               n1: 1600000 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                n1: 1600000 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                 n1: 1600000 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                  n1: 1600000 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                   n1: 1600000 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                    n1: 1600000 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                     n1: 1600000 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                      n1: 1600000 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                       n1: 1600000 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                        n1: 1600000 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                         n1: 1600000 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                          n1: 1600000 0x4B7A1AC: PyVectorcall_Call (call.c:267)
+                           n1: 1600000 0x4B6A579: UnknownInlinedFun (call.c:317)
+                            n1: 1600000 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                             n1: 1600000 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                              n1: 1600000 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                               n1: 1600000 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                n1: 1600000 0x4B689F4: UnknownInlinedFun (abstract.h:114)
+                                 n1: 1600000 0x4B689F4: UnknownInlinedFun (abstract.h:123)
+                                  n1: 1600000 0x4B689F4: UnknownInlinedFun (ceval.c:5867)
+                                   n1: 1600000 0x4B689F4: _PyEval_EvalFrameDefault (ceval.c:4231)
+                                    n1: 1600000 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                     n1: 1600000 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                      n1: 1600000 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                       n1: 1600000 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                        n1: 1600000 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                         n1: 1600000 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                          n1: 1600000 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                           n1: 1600000 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+                                            n1: 1600000 0x4BF9400: UnknownInlinedFun (main.c:353)
+                                             n1: 1600000 0x4BF9400: UnknownInlinedFun (main.c:372)
+                                              n1: 1600000 0x4BF9400: UnknownInlinedFun (main.c:587)
+                                               n1: 1600000 0x4BF9400: Py_RunMain (main.c:666)
+                                                n0: 1600000 0x4BCE7C8: Py_BytesMain (main.c:720)
+    n0: 512 in 1 place, below massif's threshold (1.00%)
+   n0: 33280 in 64 places, all below massif's threshold (1.00%)
+  n0: 32768 in 1 place, below massif's threshold (1.00%)
+ n0: 5948407 in 1065 places, all below massif's threshold (1.00%)
+ n1: 3440640 0x152A9FE0: BlockVector<nest::static_synapse<nest::TargetIdentifierPtrRport> >::BlockVector() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 3440640 0x152AA224: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection_(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, nest::static_synapse<nest::TargetIdentifierPtrRport>&, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 3440640 0x152AA3F5: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 3276800 0x150A2EA3: nest::ConnectionManager::connect_to_device_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 3276800 0x150A4150: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 3276800 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+       n1: 3276800 0x1507C8D3: nest::AllToAllBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n2: 3276800 0x15080D32: nest::AllToAllBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 2490368 0xCA6DA75: gomp_thread_start (team.c:125)
+          n1: 2490368 0x559D1C9: start_thread (pthread_create.c:479)
+           n0: 2490368 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+         n1: 786432 0xCA652A5: GOMP_parallel (parallel.c:178)
+          n1: 786432 0x15079A7D: nest::AllToAllBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 786432 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+            n1: 786432 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+             n1: 786432 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+              n1: 786432 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+               n1: 786432 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+                n1: 786432 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+                 n1: 786432 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                  n1: 786432 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                   n1: 786432 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                    n1: 786432 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                     n1: 786432 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                      n1: 786432 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                       n1: 786432 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                        n1: 786432 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                         n1: 786432 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                          n1: 786432 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                           n1: 786432 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                            n1: 786432 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                             n1: 786432 0x4B7A1AC: PyVectorcall_Call (call.c:267)
+                              n1: 786432 0x4B6A579: UnknownInlinedFun (call.c:317)
+                               n1: 786432 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                                n1: 786432 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                 n1: 786432 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                  n1: 786432 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                   n1: 786432 0x4B689F4: UnknownInlinedFun (abstract.h:114)
+                                    n1: 786432 0x4B689F4: UnknownInlinedFun (abstract.h:123)
+                                     n1: 786432 0x4B689F4: UnknownInlinedFun (ceval.c:5867)
+                                      n1: 786432 0x4B689F4: _PyEval_EvalFrameDefault (ceval.c:4231)
+                                       n1: 786432 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                        n1: 786432 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                         n1: 786432 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                          n1: 786432 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                           n1: 786432 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                            n1: 786432 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                             n0: 786432 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+    n0: 163840 in 2 places, all below massif's threshold (1.00%)
+ n1: 2976160 0x158413BE: sli::pool::grow(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+  n0: 2976160 in 13 places, all below massif's threshold (1.00%)
+ n1: 2293760 0x150E88A1: std::vector<BlockVector<nest::Source>, std::allocator<BlockVector<nest::Source> > >::_M_default_append(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n2: 2293760 0x150A38D0: nest::ConnectionManager::resize_connections() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 2293760 0x1511E797: nest::ModelManager::copy_connection_model_(unsigned long, Name) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 2293760 0x1511FBA1: nest::ModelManager::copy_model(Name, Name, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 2293760 0x1504CC52: nest::NestModule::CopyModel_l_l_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 2293760 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+       n1: 2293760 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+        n1: 2293760 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+         n1: 2293760 0x4B67608: UnknownInlinedFun (abstract.h:114)
+          n1: 2293760 0x4B67608: UnknownInlinedFun (abstract.h:123)
+           n1: 2293760 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+            n1: 2293760 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+             n1: 2293760 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+              n1: 2293760 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+               n1: 2293760 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                n1: 2293760 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                 n1: 2293760 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                  n1: 2293760 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                   n1: 2293760 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                    n1: 2293760 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                     n1: 2293760 0x4B6A579: UnknownInlinedFun (call.c:317)
+                      n1: 2293760 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                       n1: 2293760 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                        n1: 2293760 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                         n1: 2293760 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                          n1: 2293760 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                           n1: 2293760 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                            n1: 2293760 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                             n1: 2293760 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                              n1: 2293760 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                               n1: 2293760 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                n1: 2293760 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                 n1: 2293760 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                  n1: 2293760 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                   n1: 2293760 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                    n1: 2293760 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                     n1: 2293760 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+                                      n1: 2293760 0x4BF9400: UnknownInlinedFun (main.c:353)
+                                       n1: 2293760 0x4BF9400: UnknownInlinedFun (main.c:372)
+                                        n1: 2293760 0x4BF9400: UnknownInlinedFun (main.c:587)
+                                         n1: 2293760 0x4BF9400: Py_RunMain (main.c:666)
+                                          n1: 2293760 0x4BCE7C8: Py_BytesMain (main.c:720)
+                                           n0: 2293760 0x59F3D84: (below main) (in /usr/lib64/libc-2.28.so)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1429744 0x158C53F5: TokenArrayObj::allocate(unsigned long, unsigned long, unsigned long, Token const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+  n2: 1013736 0x158C5AE9: TokenArrayObj::reserve(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+   n2: 1007200 0x1585E5FE: Parser::operator()(Token&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+    n1: 1006168 0x15891073: IparseFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+     n1: 1006168 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+      n1: 1006168 0x15859075: SLIInterpreter::startup() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+       n1: 1006168 0x14554016: __pyx_pw_12pynestkernel_10NESTEngine_7init(_object*, _object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+        n1: 1006168 0x4B7387A: method_vectorcall_VARARGS_KEYWORDS (descrobject.c:344)
+         n1: 1006168 0x4B67608: UnknownInlinedFun (abstract.h:114)
+          n1: 1006168 0x4B67608: UnknownInlinedFun (abstract.h:123)
+           n1: 1006168 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+            n1: 1006168 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+             n1: 1006168 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+              n1: 1006168 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+               n1: 1006168 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                n1: 1006168 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                 n1: 1006168 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                  n1: 1006168 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                   n1: 1006168 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                    n1: 1006168 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                     n1: 1006168 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                      n1: 1006168 0x4BE35E8: UnknownInlinedFun (bltinmodule.c:1056)
+                       n1: 1006168 0x4BE35E8: builtin_exec (bltinmodule.c.h:371)
+                        n1: 1006168 0x4B7346A: cfunction_vectorcall_FASTCALL (methodobject.c:430)
+                         n1: 1006168 0x4B6D6A5: UnknownInlinedFun (ceval.c:5891)
+                          n1: 1006168 0x4B6D6A5: _PyEval_EvalFrameDefault (ceval.c:4277)
+                           n1: 1006168 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                            n1: 1006168 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                             n1: 1006168 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                              n1: 1006168 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                               n1: 1006168 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                n1: 1006168 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                 n1: 1006168 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                  n1: 1006168 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                   n1: 1006168 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                                    n1: 1006168 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                                     n1: 1006168 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                                      n1: 1006168 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                                       n1: 1006168 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                        n1: 1006168 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                         n1: 1006168 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                          n1: 1006168 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                           n1: 1006168 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                            n1: 1006168 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                             n1: 1006168 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                              n1: 1006168 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                               n1: 1006168 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                                n1: 1006168 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                                 n1: 1006168 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                                  n1: 1006168 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                                   n1: 1006168 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                    n1: 1006168 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                     n1: 1006168 0x4B72B4D: UnknownInlinedFun (abstract.h:114)
+                                                      n1: 1006168 0x4B72B4D: object_vacall (call.c:734)
+                                                       n1: 1006168 0x4B7E1B1: _PyObject_CallMethodIdObjArgs (call.c:825)
+                                                        n1: 1006168 0x4B7D9BB: UnknownInlinedFun (import.c:1521)
+                                                         n1: 1006168 0x4B7D9BB: PyImport_ImportModuleLevelObject (import.c:1622)
+                                                          n1: 1006168 0x4B6BECA: UnknownInlinedFun (ceval.c:5992)
+                                                           n1: 1006168 0x4B6BECA: _PyEval_EvalFrameDefault (ceval.c:3695)
+                                                            n1: 1006168 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                             n0: 1006168 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+    n0: 1032 in 1 place, below massif's threshold (1.00%)
+   n0: 6536 in 13 places, all below massif's threshold (1.00%)
+  n0: 416008 in 5 places, all below massif's threshold (1.00%)
+ n1: 1119751 0x4B76487: UnknownInlinedFun (obmalloc.c:2315)
+  n1: 1119751 0x4B76487: UnknownInlinedFun (obmalloc.c:703)
+   n1: 1119751 0x4B76487: resize_compact (unicodeobject.c:1079)
+    n0: 1119751 in 5 places, all below massif's threshold (1.00%)
+ n1: 1004064 0x155D32BC: nest::RingBuffer::RingBuffer() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n0: 1004064 in 248 places, all below massif's threshold (1.00%)
+ n1: 983040 0x152A99EA: void std::vector<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > >, std::allocator<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > > > >::emplace_back<int const&>(int const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 983040 0x152AA25B: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection_(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, nest::static_synapse<nest::TargetIdentifierPtrRport>&, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 983040 0x152AA3F5: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 851968 0x150A3A65: nest::ConnectionManager::connect_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 851968 0x150A4180: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 851968 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+       n1: 851968 0x1507D117: nest::FixedInDegreeBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n1: 851968 0x150822D2: nest::FixedInDegreeBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 851968 0xCA652A5: GOMP_parallel (parallel.c:178)
+          n1: 851968 0x15079B3D: nest::FixedInDegreeBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 851968 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+            n1: 851968 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+             n1: 851968 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+              n1: 851968 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+               n1: 851968 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+                n1: 851968 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+                 n1: 851968 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                  n1: 851968 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                   n1: 851968 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                    n1: 851968 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                     n1: 851968 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                      n1: 851968 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                       n1: 851968 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                        n1: 851968 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                         n1: 851968 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                          n1: 851968 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                           n1: 851968 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                            n1: 851968 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                             n1: 851968 0x4B6A579: UnknownInlinedFun (call.c:317)
+                              n1: 851968 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                               n1: 851968 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                n1: 851968 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                 n1: 851968 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                  n1: 851968 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                   n1: 851968 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                    n1: 851968 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                     n1: 851968 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                      n1: 851968 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                       n1: 851968 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                        n1: 851968 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                         n1: 851968 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                          n1: 851968 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                           n1: 851968 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                            n1: 851968 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                             n0: 851968 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+    n0: 131072 in 1 place, below massif's threshold (1.00%)
+ n2: 808320 0x1512B6E8: std::_Deque_base<nest::histentry, std::allocator<nest::histentry> >::_M_initialize_map(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n2: 804224 0x1512B4D6: nest::ArchivingNode::ArchivingNode() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 800064 0x1B51B05E: ???
+    n1: 800000 0x1B514B2F: ???
+     n1: 800000 0x150D122C: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n0: 800000 in 2 places, all below massif's threshold (1.00%)
+    n0: 64 in 1 place, below massif's threshold (1.00%)
+   n0: 4160 in 64 places, all below massif's threshold (1.00%)
+  n0: 4096 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=6343007216
+mem_heap_B=103370791
+mem_heap_extra_B=1823105
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=7126158257
+mem_heap_B=130449751
+mem_heap_extra_B=1833665
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=8048285379
+mem_heap_B=162271575
+mem_heap_extra_B=1846081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=9275843933
+mem_heap_B=204714383
+mem_heap_extra_B=1862625
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=10091086013
+mem_heap_B=232870287
+mem_heap_extra_B=1873609
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=11327065995
+mem_heap_B=275493071
+mem_heap_extra_B=1890249
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=12134969370
+mem_heap_B=303411407
+mem_heap_extra_B=1901121
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=13004791582
+mem_heap_B=333500623
+mem_heap_extra_B=1912841
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=14255843202
+mem_heap_B=376549583
+mem_heap_extra_B=1929657
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=15668629527
+mem_heap_B=425341135
+mem_heap_extra_B=1948673
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=16593160169
+mem_heap_B=457265359
+mem_heap_extra_B=1961105
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=17451928835
+mem_heap_B=486797519
+mem_heap_extra_B=1972641
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=18137533885
+mem_heap_B=510439631
+mem_heap_extra_B=1981881
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=19060879143
+mem_heap_B=542363855
+mem_heap_extra_B=1994313
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=19740249550
+mem_heap_B=565752015
+mem_heap_extra_B=2003449
+mem_stacks_B=0
+heap_tree=detailed
+n7: 565752015 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 398458880 0x152A99EA: void std::vector<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > >, std::allocator<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > > > >::emplace_back<int const&>(int const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 398458880 0x152AA25B: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection_(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, nest::static_synapse<nest::TargetIdentifierPtrRport>&, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 398458880 0x152AA3F5: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 398327808 0x150A3A65: nest::ConnectionManager::connect_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 398327808 0x150A4180: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 398327808 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+       n1: 398327808 0x1507D117: nest::FixedInDegreeBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n2: 398327808 0x150822D2: nest::FixedInDegreeBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 298745856 0xCA6DA75: gomp_thread_start (team.c:125)
+          n1: 298745856 0x559D1C9: start_thread (pthread_create.c:479)
+           n0: 298745856 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+         n1: 99581952 0xCA652A5: GOMP_parallel (parallel.c:178)
+          n1: 99581952 0x15079B3D: nest::FixedInDegreeBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 99581952 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+            n1: 99581952 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+             n1: 99581952 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+              n1: 99581952 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+               n1: 99581952 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+                n1: 99581952 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+                 n1: 99581952 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                  n1: 99581952 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                   n1: 99581952 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                    n1: 99581952 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                     n1: 99581952 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                      n1: 99581952 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                       n1: 99581952 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                        n1: 99581952 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                         n1: 99581952 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                          n1: 99581952 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                           n1: 99581952 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                            n1: 99581952 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                             n1: 99581952 0x4B6A579: UnknownInlinedFun (call.c:317)
+                              n1: 99581952 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                               n1: 99581952 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                n1: 99581952 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                 n1: 99581952 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                  n1: 99581952 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                   n1: 99581952 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                    n1: 99581952 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                     n1: 99581952 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                      n1: 99581952 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                       n1: 99581952 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                        n1: 99581952 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                         n1: 99581952 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                          n1: 99581952 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                           n1: 99581952 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                            n1: 99581952 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                             n0: 99581952 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+    n0: 131072 in 1 place, below massif's threshold (1.00%)
+ n1: 99581952 0x150A3C84: nest::ConnectionManager::connect_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 99581952 0x150A4180: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 99581952 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 99581952 0x1507D117: nest::FixedInDegreeBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n2: 99581952 0x150822D2: nest::FixedInDegreeBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 74686464 0xCA6DA75: gomp_thread_start (team.c:125)
+       n1: 74686464 0x559D1C9: start_thread (pthread_create.c:479)
+        n0: 74686464 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+      n1: 24895488 0xCA652A5: GOMP_parallel (parallel.c:178)
+       n1: 24895488 0x15079B3D: nest::FixedInDegreeBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n1: 24895488 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 24895488 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+          n1: 24895488 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 24895488 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+            n1: 24895488 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+             n1: 24895488 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+              n1: 24895488 0x4B67608: UnknownInlinedFun (abstract.h:114)
+               n1: 24895488 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                n1: 24895488 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                 n1: 24895488 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                  n1: 24895488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                   n1: 24895488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                    n1: 24895488 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                     n1: 24895488 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                      n1: 24895488 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                       n1: 24895488 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                        n1: 24895488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                         n1: 24895488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                          n1: 24895488 0x4B6A579: UnknownInlinedFun (call.c:317)
+                           n1: 24895488 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                            n1: 24895488 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                             n1: 24895488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                              n1: 24895488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                               n1: 24895488 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                n1: 24895488 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                 n1: 24895488 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                  n1: 24895488 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                   n1: 24895488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                    n1: 24895488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                     n1: 24895488 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                      n1: 24895488 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                       n1: 24895488 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                        n1: 24895488 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                         n1: 24895488 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                          n1: 24895488 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+                                           n1: 24895488 0x4BF9400: UnknownInlinedFun (main.c:353)
+                                            n1: 24895488 0x4BF9400: UnknownInlinedFun (main.c:372)
+                                             n1: 24895488 0x4BF9400: UnknownInlinedFun (main.c:587)
+                                              n1: 24895488 0x4BF9400: Py_RunMain (main.c:666)
+                                               n1: 24895488 0x4BCE7C8: Py_BytesMain (main.c:720)
+                                                n0: 24895488 0x59F3D84: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 21418198 in 1071 places, all below massif's threshold (1.00%)
+ n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:99)
+  n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:572)
+   n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:1956)
+    n2: 16399545 0x4B5003F: _PyObject_Malloc (obmalloc.c:1949)
+     n0: 9369960 in 35 places, all below massif's threshold (1.00%)
+     n1: 7029585 0x4B50564: UnknownInlinedFun (obmalloc.c:685)
+      n1: 7029585 0x4B50564: PyUnicode_New (unicodeobject.c:1463)
+       n0: 7029585 in 13 places, all below massif's threshold (1.00%)
+ n2: 14026880 0x150E126E: std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >::_M_fill_insert(__gnu_cxx::__normal_iterator<nest::ConnectorBase**, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> > >, unsigned long, nest::ConnectorBase* const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n2: 14008960 0x150E0D15: nest::TargetTableDevices::resize_to_number_of_synapse_types() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 10506720 0xCA6DA75: gomp_thread_start (team.c:125)
+    n1: 10506720 0x559D1C9: start_thread (pthread_create.c:479)
+     n0: 10506720 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+   n0: 3502240 in 1 place, below massif's threshold (1.00%)
+  n0: 17920 in 1 place, below massif's threshold (1.00%)
+ n1: 9400000 0x1B514B20: ???
+  n2: 9400000 0x150D122C: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 7050000 0xCA6DA75: gomp_thread_start (team.c:125)
+    n1: 7050000 0x559D1C9: start_thread (pthread_create.c:479)
+     n0: 7050000 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+   n0: 2350000 in 1 place, below massif's threshold (1.00%)
+ n2: 6466560 0x1512B719: std::_Deque_base<nest::histentry, std::allocator<nest::histentry> >::_M_initialize_map(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n2: 6433792 0x1512B4D6: nest::ArchivingNode::ArchivingNode() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 6400512 0x1B51B05E: ???
+    n1: 6400000 0x1B514B2F: ???
+     n1: 6400000 0x150D122C: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n0: 6400000 in 2 places, all below massif's threshold (1.00%)
+    n0: 512 in 1 place, below massif's threshold (1.00%)
+   n0: 33280 in 64 places, all below massif's threshold (1.00%)
+  n0: 32768 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=20829584001
+mem_heap_B=603015295
+mem_heap_extra_B=2017993
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=21989703692
+mem_heap_B=642807839
+mem_heap_extra_B=2033513
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=23454904505
+mem_heap_B=704859083
+mem_heap_extra_B=2051917
+mem_stacks_B=0
+heap_tree=detailed
+n7: 704859083 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 497025024 0x152A99EA: void std::vector<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > >, std::allocator<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > > > >::emplace_back<int const&>(int const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 497025024 0x152AA25B: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection_(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, nest::static_synapse<nest::TargetIdentifierPtrRport>&, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 497025024 0x152AA3F5: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 496893952 0x150A3A65: nest::ConnectionManager::connect_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 496893952 0x150A4180: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 496893952 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+       n1: 496893952 0x1507D117: nest::FixedInDegreeBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n2: 496893952 0x150822D2: nest::FixedInDegreeBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 372670464 0xCA6DA75: gomp_thread_start (team.c:125)
+          n1: 372670464 0x559D1C9: start_thread (pthread_create.c:479)
+           n0: 372670464 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+         n1: 124223488 0xCA652A5: GOMP_parallel (parallel.c:178)
+          n1: 124223488 0x15079B3D: nest::FixedInDegreeBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 124223488 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+            n1: 124223488 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+             n1: 124223488 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+              n1: 124223488 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+               n1: 124223488 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+                n1: 124223488 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+                 n1: 124223488 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                  n1: 124223488 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                   n1: 124223488 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                    n1: 124223488 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                     n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                      n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                       n1: 124223488 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                        n1: 124223488 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                         n1: 124223488 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                          n1: 124223488 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                           n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                            n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                             n1: 124223488 0x4B6A579: UnknownInlinedFun (call.c:317)
+                              n1: 124223488 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                               n1: 124223488 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                 n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                  n1: 124223488 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                   n1: 124223488 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                    n1: 124223488 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                     n1: 124223488 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                      n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                       n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                        n1: 124223488 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                         n1: 124223488 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                          n1: 124223488 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                           n1: 124223488 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                            n1: 124223488 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                             n0: 124223488 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+    n0: 131072 in 1 place, below massif's threshold (1.00%)
+ n1: 124223488 0x150A3C84: nest::ConnectionManager::connect_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 124223488 0x150A4180: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 124223488 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 124223488 0x1507D117: nest::FixedInDegreeBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n2: 124223488 0x150822D2: nest::FixedInDegreeBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 93167616 0xCA6DA75: gomp_thread_start (team.c:125)
+       n1: 93167616 0x559D1C9: start_thread (pthread_create.c:479)
+        n0: 93167616 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+      n1: 31055872 0xCA652A5: GOMP_parallel (parallel.c:178)
+       n1: 31055872 0x15079B3D: nest::FixedInDegreeBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n1: 31055872 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 31055872 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+          n1: 31055872 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 31055872 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+            n1: 31055872 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+             n1: 31055872 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+              n1: 31055872 0x4B67608: UnknownInlinedFun (abstract.h:114)
+               n1: 31055872 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                n1: 31055872 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                 n1: 31055872 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                  n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                   n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                    n1: 31055872 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                     n1: 31055872 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                      n1: 31055872 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                       n1: 31055872 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                        n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                         n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                          n1: 31055872 0x4B6A579: UnknownInlinedFun (call.c:317)
+                           n1: 31055872 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                            n1: 31055872 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                             n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                              n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                               n1: 31055872 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                n1: 31055872 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                 n1: 31055872 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                  n1: 31055872 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                   n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                    n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                     n1: 31055872 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                      n1: 31055872 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                       n1: 31055872 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                        n1: 31055872 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                         n1: 31055872 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                          n1: 31055872 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+                                           n1: 31055872 0x4BF9400: UnknownInlinedFun (main.c:353)
+                                            n1: 31055872 0x4BF9400: UnknownInlinedFun (main.c:372)
+                                             n1: 31055872 0x4BF9400: UnknownInlinedFun (main.c:587)
+                                              n1: 31055872 0x4BF9400: Py_RunMain (main.c:666)
+                                               n1: 31055872 0x4BCE7C8: Py_BytesMain (main.c:720)
+                                                n0: 31055872 0x59F3D84: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 31841682 in 1077 places, all below massif's threshold (1.00%)
+ n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:99)
+  n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:572)
+   n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:1956)
+    n1: 16399545 0x4B5003F: _PyObject_Malloc (obmalloc.c:1949)
+     n0: 16399545 in 36 places, all below massif's threshold (1.00%)
+ n2: 14026880 0x150E126E: std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >::_M_fill_insert(__gnu_cxx::__normal_iterator<nest::ConnectorBase**, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> > >, unsigned long, nest::ConnectorBase* const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n2: 14008960 0x150E0D15: nest::TargetTableDevices::resize_to_number_of_synapse_types() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 10506720 0xCA6DA75: gomp_thread_start (team.c:125)
+    n1: 10506720 0x559D1C9: start_thread (pthread_create.c:479)
+     n0: 10506720 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+   n0: 3502240 in 1 place, below massif's threshold (1.00%)
+  n0: 17920 in 1 place, below massif's threshold (1.00%)
+ n2: 11942464 0x155D32BC: nest::RingBuffer::RingBuffer() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 11932800 0x154BC66F: std::vector<nest::RingBuffer, std::allocator<nest::RingBuffer> >::_M_default_append(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n0: 11932800 in 2 places, all below massif's threshold (1.00%)
+  n0: 9664 in 248 places, all below massif's threshold (1.00%)
+ n1: 9400000 0x1B514B20: ???
+  n1: 9400000 0x150D122C: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n0: 9400000 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=24358449637
+mem_heap_B=705017483
+mem_heap_extra_B=2051917
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=25116277724
+mem_heap_B=705031307
+mem_heap_extra_B=2051949
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=25879691839
+mem_heap_B=705031307
+mem_heap_extra_B=2051949
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=27248367529
+mem_heap_B=706458323
+mem_heap_extra_B=2281245
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=30116035316
+mem_heap_B=729872543
+mem_heap_extra_B=2381513
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=30832665980
+mem_heap_B=729442544
+mem_heap_extra_B=2481264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=32054252378
+mem_heap_B=729457552
+mem_heap_extra_B=2481840
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=33020501201
+mem_heap_B=729537108
+mem_heap_extra_B=2481764
+mem_stacks_B=0
+heap_tree=detailed
+n8: 729537108 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 497025024 0x152A99EA: void std::vector<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > >, std::allocator<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > > > >::emplace_back<int const&>(int const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 497025024 0x152AA25B: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection_(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, nest::static_synapse<nest::TargetIdentifierPtrRport>&, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 497025024 0x152AA3F5: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 496893952 0x150A3A65: nest::ConnectionManager::connect_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 496893952 0x150A4180: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 496893952 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+       n1: 496893952 0x1507D117: nest::FixedInDegreeBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n2: 496893952 0x150822D2: nest::FixedInDegreeBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 372670464 0xCA6DA75: gomp_thread_start (team.c:125)
+          n1: 372670464 0x559D1C9: start_thread (pthread_create.c:479)
+           n0: 372670464 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+         n1: 124223488 0xCA652A5: GOMP_parallel (parallel.c:178)
+          n1: 124223488 0x15079B3D: nest::FixedInDegreeBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 124223488 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+            n1: 124223488 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+             n1: 124223488 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+              n1: 124223488 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+               n1: 124223488 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+                n1: 124223488 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+                 n1: 124223488 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                  n1: 124223488 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                   n1: 124223488 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                    n1: 124223488 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                     n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                      n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                       n1: 124223488 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                        n1: 124223488 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                         n1: 124223488 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                          n1: 124223488 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                           n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                            n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                             n1: 124223488 0x4B6A579: UnknownInlinedFun (call.c:317)
+                              n1: 124223488 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                               n1: 124223488 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                 n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                  n1: 124223488 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                   n1: 124223488 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                    n1: 124223488 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                     n1: 124223488 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                      n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                       n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                        n1: 124223488 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                         n1: 124223488 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                          n1: 124223488 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                           n1: 124223488 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                            n1: 124223488 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                             n0: 124223488 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+    n0: 131072 in 1 place, below massif's threshold (1.00%)
+ n1: 124223488 0x150A3C84: nest::ConnectionManager::connect_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 124223488 0x150A4180: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 124223488 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 124223488 0x1507D117: nest::FixedInDegreeBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n2: 124223488 0x150822D2: nest::FixedInDegreeBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 93167616 0xCA6DA75: gomp_thread_start (team.c:125)
+       n1: 93167616 0x559D1C9: start_thread (pthread_create.c:479)
+        n0: 93167616 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+      n1: 31055872 0xCA652A5: GOMP_parallel (parallel.c:178)
+       n1: 31055872 0x15079B3D: nest::FixedInDegreeBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n1: 31055872 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 31055872 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+          n1: 31055872 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 31055872 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+            n1: 31055872 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+             n1: 31055872 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+              n1: 31055872 0x4B67608: UnknownInlinedFun (abstract.h:114)
+               n1: 31055872 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                n1: 31055872 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                 n1: 31055872 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                  n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                   n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                    n1: 31055872 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                     n1: 31055872 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                      n1: 31055872 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                       n1: 31055872 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                        n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                         n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                          n1: 31055872 0x4B6A579: UnknownInlinedFun (call.c:317)
+                           n1: 31055872 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                            n1: 31055872 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                             n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                              n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                               n1: 31055872 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                n1: 31055872 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                 n1: 31055872 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                  n1: 31055872 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                   n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                    n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                     n1: 31055872 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                      n1: 31055872 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                       n1: 31055872 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                        n1: 31055872 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                         n1: 31055872 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                          n1: 31055872 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+                                           n1: 31055872 0x4BF9400: UnknownInlinedFun (main.c:353)
+                                            n1: 31055872 0x4BF9400: UnknownInlinedFun (main.c:372)
+                                             n1: 31055872 0x4BF9400: UnknownInlinedFun (main.c:587)
+                                              n1: 31055872 0x4BF9400: Py_RunMain (main.c:666)
+                                               n1: 31055872 0x4BCE7C8: Py_BytesMain (main.c:720)
+                                                n0: 31055872 0x59F3D84: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 34844187 in 1101 places, all below massif's threshold (1.00%)
+ n2: 21613920 0x150AAAE7: std::vector<std::vector<unsigned long, std::allocator<unsigned long> >, std::allocator<std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_default_append(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 21613824 0x150DF0B2: nest::TargetTable::prepare(int) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 21613824 0x150C41D2: nest::EventDeliveryManager::gather_target_data(int) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 16210368 0x15095EDF: nest::SimulationManager::update_connection_infrastructure(int) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 16210368 0x1509625F: nest::SimulationManager::prepare() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 16210368 0xCA6DA75: gomp_thread_start (team.c:125)
+       n1: 16210368 0x559D1C9: start_thread (pthread_create.c:479)
+        n0: 16210368 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+    n0: 5403456 in 1 place, below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:99)
+  n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:572)
+   n1: 16399545 0x4B5003F: UnknownInlinedFun (obmalloc.c:1956)
+    n1: 16399545 0x4B5003F: _PyObject_Malloc (obmalloc.c:1949)
+     n0: 16399545 in 36 places, all below massif's threshold (1.00%)
+ n2: 14026880 0x150E126E: std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >::_M_fill_insert(__gnu_cxx::__normal_iterator<nest::ConnectorBase**, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> > >, unsigned long, nest::ConnectorBase* const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n2: 14008960 0x150E0D15: nest::TargetTableDevices::resize_to_number_of_synapse_types() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 10506720 0xCA6DA75: gomp_thread_start (team.c:125)
+    n1: 10506720 0x559D1C9: start_thread (pthread_create.c:479)
+     n0: 10506720 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+   n0: 3502240 in 1 place, below massif's threshold (1.00%)
+  n0: 17920 in 1 place, below massif's threshold (1.00%)
+ n2: 12004064 0x155D32BC: nest::RingBuffer::RingBuffer() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 12000000 0x154BC66F: std::vector<nest::RingBuffer, std::allocator<nest::RingBuffer> >::_M_default_append(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n0: 12000000 in 2 places, all below massif's threshold (1.00%)
+  n0: 4064 in 248 places, all below massif's threshold (1.00%)
+ n1: 9400000 0x1B514B20: ???
+  n1: 9400000 0x150D122C: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n0: 9400000 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=34056580697
+mem_heap_B=729650232
+mem_heap_extra_B=2481784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=34701426127
+mem_heap_B=729650224
+mem_heap_extra_B=2481744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=35578826696
+mem_heap_B=729650232
+mem_heap_extra_B=2481784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=36369341571
+mem_heap_B=729650224
+mem_heap_extra_B=2481744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=37692845213
+mem_heap_B=729650232
+mem_heap_extra_B=2481784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=38441085343
+mem_heap_B=729650224
+mem_heap_extra_B=2481744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=39274604941
+mem_heap_B=729650232
+mem_heap_extra_B=2481784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=40427985334
+mem_heap_B=729650224
+mem_heap_extra_B=2481744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=41536757060
+mem_heap_B=729650232
+mem_heap_extra_B=2481784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=42437034827
+mem_heap_B=729650232
+mem_heap_extra_B=2481784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=43787178611
+mem_heap_B=729650232
+mem_heap_extra_B=2481784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=44879401339
+mem_heap_B=729650224
+mem_heap_extra_B=2481744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=46145868108
+mem_heap_B=729650352
+mem_heap_extra_B=2481800
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=47437444338
+mem_heap_B=729650232
+mem_heap_extra_B=2481784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=48564976253
+mem_heap_B=729650232
+mem_heap_extra_B=2481784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=49327105472
+mem_heap_B=729650224
+mem_heap_extra_B=2481744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=50491648381
+mem_heap_B=746376145
+mem_heap_extra_B=2485599
+mem_stacks_B=0
+heap_tree=peak
+n8: 746376145 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 497025024 0x152A99EA: void std::vector<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > >, std::allocator<std::vector<nest::static_synapse<nest::TargetIdentifierPtrRport>, std::allocator<nest::static_synapse<nest::TargetIdentifierPtrRport> > > > >::emplace_back<int const&>(int const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 497025024 0x152AA25B: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection_(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, nest::static_synapse<nest::TargetIdentifierPtrRport>&, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 497025024 0x152AA3F5: nest::GenericConnectorModel<nest::static_synapse<nest::TargetIdentifierPtrRport> >::add_connection(nest::Node&, nest::Node&, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >&, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 496893952 0x150A3A65: nest::ConnectionManager::connect_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 496893952 0x150A4180: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 496893952 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+       n1: 496893952 0x1507D117: nest::FixedInDegreeBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n2: 496893952 0x150822D2: nest::FixedInDegreeBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 372670464 0xCA6DA75: gomp_thread_start (team.c:125)
+          n1: 372670464 0x559D1C9: start_thread (pthread_create.c:479)
+           n0: 372670464 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+         n1: 124223488 0xCA652A5: GOMP_parallel (parallel.c:178)
+          n1: 124223488 0x15079B3D: nest::FixedInDegreeBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 124223488 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+            n1: 124223488 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+             n1: 124223488 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+              n1: 124223488 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+               n1: 124223488 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+                n1: 124223488 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+                 n1: 124223488 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                  n1: 124223488 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                   n1: 124223488 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                    n1: 124223488 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                     n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                      n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                       n1: 124223488 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                        n1: 124223488 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                         n1: 124223488 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                          n1: 124223488 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                           n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                            n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                             n1: 124223488 0x4B6A579: UnknownInlinedFun (call.c:317)
+                              n1: 124223488 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                               n1: 124223488 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                 n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                  n1: 124223488 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                   n1: 124223488 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                    n1: 124223488 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                     n1: 124223488 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                      n1: 124223488 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                       n1: 124223488 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                        n1: 124223488 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                         n1: 124223488 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                          n1: 124223488 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                           n1: 124223488 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                            n1: 124223488 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                             n0: 124223488 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+    n0: 131072 in 1 place, below massif's threshold (1.00%)
+ n1: 124223488 0x150A3C84: nest::ConnectionManager::connect_(nest::Node&, nest::Node&, unsigned long, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 124223488 0x150A4180: nest::ConnectionManager::connect(unsigned long, nest::Node*, int, unsigned int, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, double, double) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 124223488 0x1507C51B: nest::ConnBuilder::single_connect_(unsigned long, nest::Node&, int, nest::BaseRandomGenerator*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 124223488 0x1507D117: nest::FixedInDegreeBuilder::inner_connect_(int, nest::BaseRandomGenerator*, nest::Node*, unsigned long, bool, long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n2: 124223488 0x150822D2: nest::FixedInDegreeBuilder::connect_() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 93167616 0xCA6DA75: gomp_thread_start (team.c:125)
+       n1: 93167616 0x559D1C9: start_thread (pthread_create.c:479)
+        n0: 93167616 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+      n1: 31055872 0xCA652A5: GOMP_parallel (parallel.c:178)
+       n1: 31055872 0x15079B3D: nest::FixedInDegreeBuilder::connect_() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+        n1: 31055872 0x1507B438: nest::ConnBuilder::connect() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+         n1: 31055872 0x150A5BF3: nest::ConnectionManager::connect(std::shared_ptr<nest::NodeCollection>, std::shared_ptr<nest::NodeCollection>, lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> const&, std::vector<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype>, std::allocator<lockPTRDatum<Dictionary, &SLIInterpreter::Dictionarytype> > > const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+          n1: 31055872 0x15055727: nest::NestModule::Connect_g_g_D_DFunction::execute(SLIInterpreter*) const (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+           n1: 31055872 0x15858F79: SLIInterpreter::execute_(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libsli.so.master)
+            n1: 31055872 0x1454C9A9: __pyx_pw_12pynestkernel_10NESTEngine_9run(_object*, _object*) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/pynestkernel.so)
+             n1: 31055872 0x4B78D05: method_vectorcall_O (descrobject.c:460)
+              n1: 31055872 0x4B67608: UnknownInlinedFun (abstract.h:114)
+               n1: 31055872 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                n1: 31055872 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                 n1: 31055872 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                  n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                   n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                    n1: 31055872 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                     n1: 31055872 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                      n1: 31055872 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                       n1: 31055872 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                        n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                         n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                          n1: 31055872 0x4B6A579: UnknownInlinedFun (call.c:317)
+                           n1: 31055872 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                            n1: 31055872 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                             n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                              n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                               n1: 31055872 0x4B6802F: UnknownInlinedFun (abstract.h:114)
+                                n1: 31055872 0x4B6802F: UnknownInlinedFun (abstract.h:123)
+                                 n1: 31055872 0x4B6802F: UnknownInlinedFun (ceval.c:5867)
+                                  n1: 31055872 0x4B6802F: _PyEval_EvalFrameDefault (ceval.c:4181)
+                                   n1: 31055872 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                    n1: 31055872 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                     n1: 31055872 0x4BDBBFA: PyEval_EvalCode (ceval.c:1134)
+                                      n1: 31055872 0x4BED2F3: run_eval_code_obj (pythonrun.c:1291)
+                                       n1: 31055872 0x4BE8E95: run_mod (pythonrun.c:1312)
+                                        n1: 31055872 0x4ADDE7F: pyrun_file (pythonrun.c:1208)
+                                         n1: 31055872 0x4ADD60E: _PyRun_SimpleFileObject (pythonrun.c:456)
+                                          n1: 31055872 0x4ADF1A8: _PyRun_AnyFileObject (pythonrun.c:90)
+                                           n1: 31055872 0x4BF9400: UnknownInlinedFun (main.c:353)
+                                            n1: 31055872 0x4BF9400: UnknownInlinedFun (main.c:372)
+                                             n1: 31055872 0x4BF9400: UnknownInlinedFun (main.c:587)
+                                              n1: 31055872 0x4BF9400: Py_RunMain (main.c:666)
+                                               n1: 31055872 0x4BCE7C8: Py_BytesMain (main.c:720)
+                                                n0: 31055872 0x59F3D84: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 34885112 in 1109 places, all below massif's threshold (1.00%)
+ n1: 33197657 0x4B5003F: UnknownInlinedFun (obmalloc.c:99)
+  n1: 33197657 0x4B5003F: UnknownInlinedFun (obmalloc.c:572)
+   n1: 33197657 0x4B5003F: UnknownInlinedFun (obmalloc.c:1956)
+    n2: 33197657 0x4B5003F: _PyObject_Malloc (obmalloc.c:1949)
+     n2: 16780288 0x4BEE458: _buffered_init (bufferedio.c:732)
+      n1: 16778240 0x4BEE348: UnknownInlinedFun (bufferedio.c:1447)
+       n1: 16778240 0x4BEE348: _io_BufferedReader___init__ (bufferedio.c.h:435)
+        n1: 16778240 0x4B7043A: type_call (typeobject.c:1133)
+         n1: 16778240 0x4B701AE: _PyObject_MakeTpCall (call.c:215)
+          n1: 16778240 0x4B5DD22: UnknownInlinedFun (abstract.h:112)
+           n1: 16778240 0x4B5DD22: UnknownInlinedFun (abstract.h:99)
+            n1: 16778240 0x4B5DD22: _PyObject_CallFunctionVa (call.c:485)
+             n1: 16778240 0x4BE4A9B: _PyObject_CallFunction_SizeT (call.c:539)
+              n1: 16778240 0x4BED93F: UnknownInlinedFun (_iomodule.c:465)
+               n1: 16778240 0x4BED93F: _io_open (_iomodule.c.h:269)
+                n2: 16778240 0x4B6F599: cfunction_vectorcall_FASTCALL_KEYWORDS (methodobject.c:446)
+                 n1: 16777216 0x4B689F4: UnknownInlinedFun (abstract.h:114)
+                  n1: 16777216 0x4B689F4: UnknownInlinedFun (abstract.h:123)
+                   n1: 16777216 0x4B689F4: UnknownInlinedFun (ceval.c:5867)
+                    n2: 16777216 0x4B689F4: _PyEval_EvalFrameDefault (ceval.c:4231)
+                     n1: 16777216 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                      n1: 16777216 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                       n1: 16777216 0x4B689F4: UnknownInlinedFun (abstract.h:114)
+                        n1: 16777216 0x4B689F4: UnknownInlinedFun (abstract.h:123)
+                         n1: 16777216 0x4B689F4: UnknownInlinedFun (ceval.c:5867)
+                          n1: 16777216 0x4B689F4: _PyEval_EvalFrameDefault (ceval.c:4231)
+                           n1: 16777216 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                            n1: 16777216 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                             n1: 16777216 0x4B67608: UnknownInlinedFun (abstract.h:114)
+                              n1: 16777216 0x4B67608: UnknownInlinedFun (abstract.h:123)
+                               n1: 16777216 0x4B67608: UnknownInlinedFun (ceval.c:5867)
+                                n1: 16777216 0x4B67608: _PyEval_EvalFrameDefault (ceval.c:4198)
+                                 n1: 16777216 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                  n1: 16777216 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                   n1: 16777216 0x4B6FAD8: _PyObject_FastCallDictTstate (call.c:153)
+                                    n1: 16777216 0x4B78304: UnknownInlinedFun (call.c:431)
+                                     n1: 16777216 0x4B78304: slot_tp_init (typeobject.c:7729)
+                                      n1: 16777216 0x4B7043A: type_call (typeobject.c:1133)
+                                       n1: 16777216 0x4B7A0A6: _PyObject_Call (call.c:305)
+                                        n1: 16777216 0x4B6A579: UnknownInlinedFun (call.c:317)
+                                         n1: 16777216 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                                          n1: 16777216 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                           n1: 16777216 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                            n1: 16777216 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                             n1: 16777216 0x4B6720F: UnknownInlinedFun (abstract.h:114)
+                                              n1: 16777216 0x4B6720F: UnknownInlinedFun (abstract.h:123)
+                                               n1: 16777216 0x4B6720F: UnknownInlinedFun (ceval.c:5867)
+                                                n1: 16777216 0x4B6720F: _PyEval_EvalFrameDefault (ceval.c:4213)
+                                                 n1: 16777216 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                  n1: 16777216 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                   n1: 16777216 0x4B7A1AC: PyVectorcall_Call (call.c:267)
+                                                    n1: 16777216 0x4B6A579: UnknownInlinedFun (call.c:317)
+                                                     n1: 16777216 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                                                      n1: 16777216 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                                                       n1: 16777216 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                        n1: 16777216 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                         n1: 16777216 0x4B689F4: UnknownInlinedFun (abstract.h:114)
+                                                          n1: 16777216 0x4B689F4: UnknownInlinedFun (abstract.h:123)
+                                                           n1: 16777216 0x4B689F4: UnknownInlinedFun (ceval.c:5867)
+                                                            n1: 16777216 0x4B689F4: _PyEval_EvalFrameDefault (ceval.c:4231)
+                                                             n1: 16777216 0x4B6601A: UnknownInlinedFun (pycore_ceval.h:46)
+                                                              n1: 16777216 0x4B6601A: _PyEval_Vector (ceval.c:5065)
+                                                               n1: 16777216 0x4B7A1AC: PyVectorcall_Call (call.c:267)
+                                                                n1: 16777216 0x4B6A579: UnknownInlinedFun (call.c:317)
+                                                                 n1: 16777216 0x4B6A579: UnknownInlinedFun (ceval.c:5919)
+                                                                  n0: 16777216 0x4B6A579: _PyEval_EvalFrameDefault (ceval.c:4277)
+                     n0: 0 in 1 place, below massif's threshold (1.00%)
+                 n0: 1024 in 2 places, all below massif's threshold (1.00%)
+      n0: 2048 in 1 place, below massif's threshold (1.00%)
+     n0: 16417369 in 35 places, all below massif's threshold (1.00%)
+ n2: 21613920 0x150AAAE7: std::vector<std::vector<unsigned long, std::allocator<unsigned long> >, std::allocator<std::vector<unsigned long, std::allocator<unsigned long> > > >::_M_default_append(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 21613824 0x150DF0B2: nest::TargetTable::prepare(int) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n2: 21613824 0x150C41D2: nest::EventDeliveryManager::gather_target_data(int) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+    n1: 16210368 0x15095EDF: nest::SimulationManager::update_connection_infrastructure(int) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+     n1: 16210368 0x1509625F: nest::SimulationManager::prepare() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+      n1: 16210368 0xCA6DA75: gomp_thread_start (team.c:125)
+       n1: 16210368 0x559D1C9: start_thread (pthread_create.c:479)
+        n0: 16210368 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+    n0: 5403456 in 1 place, below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n2: 14026880 0x150E126E: std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> >::_M_fill_insert(__gnu_cxx::__normal_iterator<nest::ConnectorBase**, std::vector<nest::ConnectorBase*, std::allocator<nest::ConnectorBase*> > >, unsigned long, nest::ConnectorBase* const&) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n2: 14008960 0x150E0D15: nest::TargetTableDevices::resize_to_number_of_synapse_types() [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n1: 10506720 0xCA6DA75: gomp_thread_start (team.c:125)
+    n1: 10506720 0x559D1C9: start_thread (pthread_create.c:479)
+     n0: 10506720 0x59F2E72: clone (in /usr/lib64/libc-2.28.so)
+   n0: 3502240 in 1 place, below massif's threshold (1.00%)
+  n0: 17920 in 1 place, below massif's threshold (1.00%)
+ n2: 12004064 0x155D32BC: nest::RingBuffer::RingBuffer() (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+  n1: 12000000 0x154BC66F: std::vector<nest::RingBuffer, std::allocator<nest::RingBuffer> >::_M_default_append(unsigned long) (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n0: 12000000 in 2 places, all below massif's threshold (1.00%)
+  n0: 4064 in 248 places, all below massif's threshold (1.00%)
+ n1: 9400000 0x1B514B20: ???
+  n1: 9400000 0x150D122C: nest::NodeManager::add_neurons_(nest::Model&, unsigned long, unsigned long, std::shared_ptr<nest::NodeCollection>) [clone ._omp_fn.0] (in /p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/nest/libnest.so.master)
+   n0: 9400000 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=50570736478
+mem_heap_B=729847566
+mem_heap_extra_B=2487090
+mem_stacks_B=0
+heap_tree=empty

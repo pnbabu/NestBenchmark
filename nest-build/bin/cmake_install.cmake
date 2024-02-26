@@ -1,8 +1,8 @@
-# Install script for directory: /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/bin
+# Install script for directory: /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/bin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install")
+  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,10 +44,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES
-    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/bin/nest-server"
-    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/bin/nest-server-mpi"
-    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/bin/nest-config"
-    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/bin/nest_vars.sh"
+    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/bin/nest-server"
+    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/bin/nest-server-mpi"
+    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/bin/nest-config"
+    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/bin/nest_vars.sh"
     )
 endif()
 

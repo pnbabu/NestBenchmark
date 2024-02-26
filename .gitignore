@@ -1,4 +1,4 @@
-nest-build/
+nest-build/**
 nest-simulator-install/
 
 CmakeCache.txt

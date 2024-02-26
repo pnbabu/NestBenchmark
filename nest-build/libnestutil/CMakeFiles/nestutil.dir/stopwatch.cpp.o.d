@@ -1,7 +1,7 @@
 libnestutil/CMakeFiles/nestutil.dir/stopwatch.cpp.o: \
- /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/libnestutil/stopwatch.cpp \
+ /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/libnestutil/stopwatch.cpp \
  /usr/include/stdc-predef.h \
- /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/libnestutil/stopwatch.h \
+ /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/libnestutil/stopwatch.h \
  /usr/include/sys/time.h /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \

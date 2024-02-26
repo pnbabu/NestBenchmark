@@ -1,0 +1,25 @@
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: master@b905eb91b
+ Built: Dec 20 2023 11:38:56
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Feb 26 14:35:46 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Feb 26 14:35:46 Install [Info]: 
+    loaded module nestmlmodule
+foo
+foo1
+Number of neurons : 7295
+foo2

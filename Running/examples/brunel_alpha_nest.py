@@ -205,8 +205,12 @@ nest.resolution = dt
 nest.print_time = True
 nest.overwrite_files = True
 
-nest.Install("nestmlmodule")
+try:
+ nest.Install("nestmlmodule")
+except:
+ pass
 nest.Install("nestmlOptimizedmodule")
+nest.Install("nestmlplasticmodule")
 print("Building network")
 
 ###############################################################################
@@ -243,7 +247,20 @@ print("Connecting devices")
 # the excitatory and one for the inhibitory connections giving the
 # previously defined weights and equal delays.
 
-nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})
+if "lastic" in modelName:
+    # use plastic synapses
+    print("Using NESTML STDP synapse")
+    nest.CopyModel("stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
+else:
+    # use static synapses
+    print("Using NEST built in STDP synapse")
+    nest.CopyModel("stdp_synapse", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
+    #nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})
+
+
+nest.CopyModel("static_synapse", "excitatory_static", {"weight": J_ex, "delay": delay})
+
+
 nest.CopyModel("static_synapse", "inhibitory", {"weight": J_in, "delay": delay})
 
 #################################################################################
@@ -254,8 +271,8 @@ nest.CopyModel("static_synapse", "inhibitory", {"weight": J_in, "delay": delay})
 # via ``syn_spec`` which expects a dictionary when defining multiple variables or
 # a string when simply using a pre-defined synapse.
 
-nest.Connect(noise, nodes_ex, syn_spec="excitatory")
-nest.Connect(noise, nodes_in, syn_spec="excitatory")
+nest.Connect(noise, nodes_ex, syn_spec="excitatory_static")
+nest.Connect(noise, nodes_in, syn_spec="excitatory_static")
 
 ###############################################################################
 # Connecting the first ``N_rec`` nodes of the excitatory and inhibitory
@@ -263,8 +280,11 @@ nest.Connect(noise, nodes_in, syn_spec="excitatory")
 # Here the same shortcut for the specification of the synapse as defined
 # above is used.
 
-nest.Connect(nodes_ex[:N_rec], espikes, syn_spec="excitatory")
-nest.Connect(nodes_in[:N_rec], ispikes, syn_spec="excitatory")
+
+
+
+nest.Connect(nodes_ex[:N_rec], espikes, syn_spec="excitatory_static")
+nest.Connect(nodes_in[:N_rec], ispikes, syn_spec="excitatory_static")
 
 print("Connecting network")
 

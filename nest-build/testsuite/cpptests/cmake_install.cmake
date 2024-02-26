@@ -1,8 +1,8 @@
-# Install script for directory: /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/testsuite/cpptests
+# Install script for directory: /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/testsuite/cpptests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install")
+  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/run_all_cpptests"
          RPATH "\$ORIGIN/../lib64/nest:\$ORIGIN/../../lib64/nest:\$ORIGIN/../../../nest")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/testsuite/cpptests/run_all_cpptests")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/testsuite/cpptests/run_all_cpptests")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/run_all_cpptests" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/run_all_cpptests")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/run_all_cpptests"
-         OLD_RPATH "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/sli:::::::::::::"
+         OLD_RPATH "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/sli::::::::::"
          NEW_RPATH "\$ORIGIN/../lib64/nest:\$ORIGIN/../../lib64/nest:\$ORIGIN/../../../nest")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/run_all_cpptests")

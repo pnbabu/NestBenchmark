@@ -1,8 +1,8 @@
-# Install script for directory: /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/thirdparty
+# Install script for directory: /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/thirdparty
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install")
+  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,12 +44,12 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nest" TYPE FILE FILES
-    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/thirdparty/compose.hpp"
-    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/thirdparty/randutils.hpp"
+    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/thirdparty/compose.hpp"
+    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/thirdparty/randutils.hpp"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nest/Random123" TYPE DIRECTORY FILES "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/thirdparty/Random123/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nest/Random123" TYPE DIRECTORY FILES "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/thirdparty/Random123/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 

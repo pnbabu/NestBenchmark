@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/p/home/jusers/linssen1/jusuf/NestBenchmark/Running/examples/brunel_alpha_nest.py", line 209, in <module>
+    nest.Install("nestmlOptimizedmodule")
+  File "/p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/ll_api.py", line 229, in stack_checker_func
+    return f(*args, **kwargs)
+  File "/p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/lib/hl_api_simulation.py", line 328, in Install
+    return sr("(%s) Install" % module_name)
+  File "/p/home/jusers/linssen1/jusuf/nest-simulator-install/lib64/python3.10/site-packages/nest/ll_api.py", line 115, in catching_sli_run
+    raise exceptionCls(commandname, message)
+nest.lib.hl_api_exceptions.NESTErrors.DynamicModuleManagementError: DynamicModuleManagementError in SLI function Install: Module 'nestmlOptimizedmodule' could not be opened.
+The dynamic loader returned the following error: 'file not found'.
+
+Please check LD_LIBRARY_PATH (OSX: DYLD_LIBRARY_PATH)!

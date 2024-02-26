@@ -1,8 +1,8 @@
-# Install script for directory: /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/nest
+# Install script for directory: /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/nest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install")
+  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/nest"
          RPATH "\$ORIGIN/../lib64/nest:\$ORIGIN/../../lib64/nest:\$ORIGIN/../../../nest")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/nest/nest")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/nest/nest")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/nest" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/nest")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/nest"
-         OLD_RPATH "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/sli:::::::::::::"
+         OLD_RPATH "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/sli::::::::::"
          NEW_RPATH "\$ORIGIN/../lib64/nest:\$ORIGIN/../../lib64/nest:\$ORIGIN/../../../nest")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/nest")
@@ -75,8 +75,8 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/nest" TYPE SHARED_LIBRARY FILES
-    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/nest/libnest.so.3.6.0-post0.dev0"
-    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/nest/libnest.so.3"
+    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/nest/libnest.so.3.6.0-post0.dev0"
+    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/nest/libnest.so.3"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/libnest.so.3.6.0-post0.dev0"
@@ -86,7 +86,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
        NOT IS_SYMLINK "${file}")
       file(RPATH_CHANGE
            FILE "${file}"
-           OLD_RPATH "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/sli:::::::::::::"
+           OLD_RPATH "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/sli::::::::::"
            NEW_RPATH "\$ORIGIN/../lib64/nest:\$ORIGIN/../../lib64/nest:\$ORIGIN/../../../nest")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/strip" "${file}")
@@ -102,12 +102,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/libnest.so"
          RPATH "\$ORIGIN/../lib64/nest:\$ORIGIN/../../lib64/nest:\$ORIGIN/../../../nest")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/nest" TYPE SHARED_LIBRARY FILES "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/nest/libnest.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/nest" TYPE SHARED_LIBRARY FILES "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/nest/libnest.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/libnest.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/libnest.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/libnest.so"
-         OLD_RPATH "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/sli:::::::::::::"
+         OLD_RPATH "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/sli::::::::::"
          NEW_RPATH "\$ORIGIN/../lib64/nest:\$ORIGIN/../../lib64/nest:\$ORIGIN/../../../nest")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/libnest.so")
@@ -116,6 +116,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nest" TYPE FILE FILES "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/nest/neststartup.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nest" TYPE FILE FILES "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/nest/neststartup.h")
 endif()
 
