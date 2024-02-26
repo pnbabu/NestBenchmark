@@ -1,15 +1,25 @@
-Strong Scaling Benchmark 0 with 1000 neurons
+Strong Scaling Benchmark 0 with 10000 neurons
 iaf_psc_alpha_neuron_Nestml_Optimized,1
+[91miaf_psc_alpha_neuron_Nestml_Optimized,1 failed[0m
+[91mNone failed[0m
 iaf_psc_alpha_neuron_Nestml_Optimized,2
 iaf_psc_alpha_neuron_Nestml_Optimized,4
 iaf_psc_alpha_neuron_Nestml_Optimized,8
 iaf_psc_alpha_neuron_Nestml_Optimized,16
 iaf_psc_alpha_neuron_Nestml_Optimized,32
 iaf_psc_alpha_neuron_Nestml,1
+[91miaf_psc_alpha_neuron_Nestml,1 failed[0m
+[91mNone failed[0m
 iaf_psc_alpha_neuron_Nestml,2
 iaf_psc_alpha_neuron_Nestml,4
 iaf_psc_alpha_neuron_Nestml,8
 iaf_psc_alpha_neuron_Nestml,16
 iaf_psc_alpha_neuron_Nestml,32
 iaf_psc_alpha,1
+[91miaf_psc_alpha,1 failed[0m
+[91mNone failed[0m
 iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
