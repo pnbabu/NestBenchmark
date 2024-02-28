@@ -115,7 +115,7 @@ startbuild = time.time()
 # Assigning the simulation parameters to variables.
 
 dt = 0.1  # the resolution in ms
-simtime = 100.0  # Simulation time in ms
+simtime = 1000.0  # Simulation time in ms
 delay = 1.5  # synaptic delay in ms
 
 ###############################################################################
@@ -140,8 +140,11 @@ N_rec = 50  # record from 50 neurons
 ###############################################################################
 # Definition of connectivity parameters
 
-CE = int(epsilon * NE)  # number of excitatory synapses per neuron
-CI = int(epsilon * NI)  # number of inhibitory synapses per neuron
+CE = int(epsilon * NE / (order/2500))  # number of excitatory synapses per neuron
+CI = int(epsilon * NI / (order/2500))  # number of inhibitory synapses per neuron
+
+#CE = int(epsilon * NE)  # number of excitatory synapses per neuron
+#CI = int(epsilon * NI)  # number of inhibitory synapses per neuron
 C_tot = int(CI + CE)  # total number of synapses per neuron
 
 ###############################################################################
@@ -365,6 +368,8 @@ sim_time = endsimulate - endbuild
 # Printing the network properties, firing rates and building times.
 
 print("Brunel network simulation (Python)")
+print(f"                CE: {CE}")
+print(f"                CI: {CI}")
 print(f"Number of synapses: {num_synapses}")
 print(f"       Excitatory : {num_synapses_ex}")
 print(f"       Inhibitory : {num_synapses_in}")

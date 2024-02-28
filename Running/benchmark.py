@@ -26,11 +26,12 @@ NEURONMODELS = [
                 ]
 #NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
-NETWORKSCALES = np.logspace(3, math.log10(2000), 3, dtype=int)  # XXXXXXXXXXXX: was 10 and 30000
+NETWORKSCALES = np.logspace(3, math.log10(20000), 3, dtype=int)  # XXXXXXXXXXXX: was 10 and 30000
 
 NEURONSPERSCALE = 5
 
-VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
+#VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
+VERTICALTHREADS = [1, 8, 32] # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = 10000
 ITERATIONS=1 # XXXXXXXXXXXX: was 10
@@ -128,8 +129,8 @@ def plot_weak_scaling(data):
         y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
         y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
         
-        x = [int(val) for val in x]
-        plt.errorbar(x, y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
+        x = np.array([int(val) for val in x], dtype=int)
+        plt.errorbar(x * NEURONSPERSCALE, y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
     
     plt.xlabel('Neuron Count')
     plt.ylabel('Factor of Real Time')
@@ -145,18 +146,18 @@ def plot_weak_scaling(data):
 def plot_timedist(data):
     for neuron, scales in data.items():
         plt.figure() 
-        x = sorted(scales.keys())
+        x = np.array(sorted(scales.keys()), dtype=int)
         simulation_times = [np.mean([iteration_data['time_simulate'] for iteration_data in scales[scale].values()]) for scale in x]
         simulation_std = [np.std([iteration_data['time_simulate'] for iteration_data in scales[scale].values()]) for scale in x]
         building_times = [np.mean([iteration_data['time_construction_connect'] for iteration_data in scales[scale].values()]) for scale in x]
         building_std = [np.std([iteration_data['time_construction_connect'] for iteration_data in scales[scale].values()]) for scale in x]
         total_times = [sim + build for sim, build in zip(simulation_times, building_times)]
         total_std = [sim_std + build_std for sim_std, build_std in zip(simulation_std, building_std)]
-        plt.fill_between(x, total_times, label=f'{neuron} building')
-        plt.fill_between(x, simulation_times, label=f'{neuron} simulation')
-        plt.errorbar(x, total_times, yerr=total_std, fmt='k', capsize=3) 
-        plt.errorbar(x, simulation_times, yerr=simulation_std, fmt='k', capsize=3)  
-        plt.xlabel('Network Scale')
+        plt.fill_between(x * NEURONSPERSCALE, total_times, label=f'{neuron} building')
+        plt.fill_between(x * NEURONSPERSCALE, simulation_times, label=f'{neuron} simulation')
+        plt.errorbar(x * NEURONSPERSCALE, total_times, yerr=total_std, fmt='k', capsize=3) 
+        plt.errorbar(x * NEURONSPERSCALE, simulation_times, yerr=simulation_std, fmt='k', capsize=3)  
+        plt.xlabel('Neuron count')
         plt.ylabel('Time')
         plt.xscale('log')
         plt.yscale('log')
@@ -182,23 +183,23 @@ def plot_Custom(data):
         referenceValues = data[BASELINENEURON]
         for neuron, scales in data.items():
             neurons.append(neuron)
-            x = sorted(scales.keys())
+            x = np.array(sorted(scales.keys()))
             reference_y = np.array([np.mean([iteration_data['stopwatches'][stopwatch] for iteration_data in referenceValues[scale].values()]) for scale in x])
             y = np.array([np.mean([iteration_data['stopwatches'][stopwatch] for iteration_data in scales[scale].values()]) for scale in x])
             y_factor = y / reference_y
             y_std = np.array([np.std([iteration_data['stopwatches'][stopwatch] for iteration_data in scales[scale].values()]) for scale in x])
             y_factor_std = y_std / reference_y
-            #plt.errorbar(x, y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
-            plt.plot(x, y_factor, '-')
+            #plt.errorbar(x * NEURONSPERSCALE, y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
+            plt.plot(x * NEURONSPERSCALE, y_factor, '-')
 
         plt.xscale('log')
         
         formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
         plt.gca().yaxis.set_major_formatter(formatter)
-        formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
+        formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x))
         plt.gca().xaxis.set_major_formatter(formatterX)
 
-        plt.xlabel('Network Scale')
+        plt.xlabel('Neuron Count')
         plt.ylabel('Time')
         plt.title(stopwatch)
         plt.legend(neurons)
@@ -248,15 +249,15 @@ def plotMemory(memoryData):
         x = sorted(values.keys(), key=lambda k: int(k))
         y = np.array([np.mean([iteration_data for iteration_data in values[scale].values()]) for scale in x])
         y_std = np.array([np.std([iteration_data for iteration_data in values[scale].values()]) for scale in x])
-        x = [int(val) for val in x] 
-        plt.errorbar(x, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
+        x = np.array([int(val) for val in x])
+        plt.errorbar(x * NEURONSPERSCALE, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
 
         if max(y) > max_y:
             max_y = max(y)
 
     plt.annotate(f'Max: {format_bytes(max_y,"")}', xy=(0.8, max_y), xytext=(8, 0), 
                  xycoords=('axes fraction', 'data'), textcoords='offset points')
-    plt.xlabel('Network Scale')
+    plt.xlabel('Neuron Count')
     plt.ylabel('Memory')
     plt.xscale('log')
     plt.yscale('log')
@@ -291,15 +292,12 @@ if __name__ == "__main__":
     
     os.remove(os.path.join(output_folder, "log.txt"))
     
-    #start_strong_scaling_Benchmark(0)
-
-
     if runSim:
         memoryData = {}
         deleteJson()
         for i in range(ITERATIONS):
             start_weak_scaling_Benchmark(i)
-            #start_strong_scaling_Benchmark(i)
+            start_strong_scaling_Benchmark(i)
             
             data = start_weak_scaling_Benchmark(i, checkMemory=True)
             for name, size_data in data.items():

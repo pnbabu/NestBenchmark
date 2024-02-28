@@ -1,18 +1,1 @@
-[93mWeak Scaling Benchmark 0[0m
-[93miaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic,1000[0m
-[93miaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic,1414[0m
-[93miaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic,2000[0m
-[93miaf_psc_alpha_neuron_Nestml,1000[0m
-[93miaf_psc_alpha_neuron_Nestml,1414[0m
-[93miaf_psc_alpha_neuron_Nestml,2000[0m
-[93miaf_psc_alpha,1000[0m
-[93miaf_psc_alpha,1414[0m
-[93miaf_psc_alpha,2000[0m
-[93mMemory Scaling Benchmark 0[0m
-[93miaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic,1000[0m
-[93mMemory: 487136[0m
-[93miaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic,1414[0m
-[93mMemory: 801680[0m
-[93miaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic,2000[0m
-[93mMemory: 1431508[0m
-[93miaf_psc_alpha_neuron_Nestml,1000[0m
+Finished
