@@ -653,14 +653,20 @@ public:
 
     t.register_stdp_connection( t_lastspike_ - get_delay(), get_delay() );
   }
-
 {%- if not (nest_version.startswith("v2") or nest_version.startswith("v3.0") or nest_version.startswith("v3.1") or nest_version.startswith("v3.2") or nest_version.startswith("v3.3") or nest_version.startswith("v3.4")) %}
+{%-   if not (nest_version.startswith("v3.5") or nest_version.startswith("v3.6")) %}
+  bool
+  send( Event& e, const size_t tid, const {{synapseName}}CommonSynapseProperties& cp )
+{%-   else %}
   void
   send( Event& e, const size_t tid, const {{synapseName}}CommonSynapseProperties& cp )
+{%-   endif %}
 {%- else %}
   void
+  bool
   send( Event& e, const thread tid, const {{synapseName}}CommonSynapseProperties& cp )
 {%- endif %}
+
   {
     const double __resolution = nest::Time::get_resolution().get_ms();  // do not remove, this is necessary for the resolution() function
 

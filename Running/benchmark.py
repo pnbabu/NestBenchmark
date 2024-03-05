@@ -8,7 +8,7 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import FuncFormatter
-import os
+
 
 parser = argparse.ArgumentParser(description='Run a Benchmark with NEST')
 parser.add_argument('--noRunSim', action="store_false",
@@ -18,6 +18,14 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
+store = {
+        "neurons": [
+            "iaf_psc_exp_neuron_Nestml_Optimized",
+            "iaf_psc_exp_neuron_Nestml",
+        ],
+        "baseline": "iaf_psc_exp",
+        "plastic": True,
+    },
 
 BENCHMARKS = [
     {
@@ -25,28 +33,32 @@ BENCHMARKS = [
             "iaf_psc_alpha_neuron_Nestml_Optimized",
             "iaf_psc_alpha_neuron_Nestml",
         ],
-        "baseline": "iaf_psc_alpha", },
+        "baseline": "iaf_psc_alpha", 
+        "name": "Basic",
+    },
+    
     {
         "neurons": [
             "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic",
             "iaf_psc_alpha_neuron_Nestml_Plastic",
         ],
         "baseline": "iaf_psc_alpha",
-    }
+        "name": "Plastic",
+    },
 ]
 
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(20000), 3, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(30000), 3, dtype=int)
 
 NEURONSPERSCALE = 5
 
 # VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
-VERTICALTHREADS = [1, 8, 32]  # XXXXXXXXXXXXXXX: more resolution
+VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
-VERTICALNEWORKSCALE = 10000
-ITERATIONS = 1  # XXXXXXXXXXXX: was 10
+VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
+ITERATIONS = 20  # XXXXXXXXXXXX: was 10
 DEBUG = True
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
@@ -61,11 +73,11 @@ def log(message):
         f.write(f"{message}\n")
 
 
-def start_weak_scaling_Benchmark(iteration, neurons, baseline, checkMemory=False):
+def start_weak_scaling_Benchmark(iteration, neurons, name, checkMemory=False):
     insert = "/usr/bin/time -f \'%M\'" if checkMemory else ""
     # benchmarkPathStr = '--benchmarkPath ' + WEAKSCALINGFOLDERNAME + "_mem" if checkMemory else ""
     benchmarkPathStr = '--benchmarkPath ' + \
-        f"{baseline}/{WEAKSCALINGFOLDERNAME}" if not checkMemory else ""
+        f"{name}/{WEAKSCALINGFOLDERNAME}" if not checkMemory else ""
     combinations = [{"command": ['bash', '-c', f'source {PATHTOSHFILE} && {insert} python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} {benchmarkPathStr}'],
                      "name": f"{neuronmodel}", "networksize": networkscale} for neuronmodel in neurons for networkscale in NETWORKSCALES]
 
@@ -104,8 +116,8 @@ def start_weak_scaling_Benchmark(iteration, neurons, baseline, checkMemory=False
         return memoryDict
 
 
-def start_strong_scaling_Benchmark(iteration, neurons, baseline):
-    combinations = [{"command": ['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath {baseline}/{STRONGSCALINGFOLDERNAME}'],
+def start_strong_scaling_Benchmark(iteration, neurons, name):
+    combinations = [{"command": ['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath {name}/{STRONGSCALINGFOLDERNAME}'],
                      "name": f"{neuronmodel},{threads}"} for neuronmodel in neurons for threads in VERTICALTHREADS]
     log(f"Strong Scaling Benchmark {iteration} with {VERTICALNEWORKSCALE} neurons")
     for combination in combinations:
@@ -140,7 +152,7 @@ def extract_value_from_filename(filename, key):
     return match.group(1) if match else None
 
 
-def plot_weak_scaling(data, baseline, relative=False):
+def plot_weak_scaling(data, baseline,name, relative=False):
     plt.figure()
     neurons = []
     referenceValues = data[baseline]
@@ -167,7 +179,7 @@ def plot_weak_scaling(data, baseline, relative=False):
                      yerr=y_std, fmt='-', ecolor='k', capsize=3)
 
     plt.xlabel('Neuron Count')
-    plt.ylabel("Relative" if relative else "" + "Real Time Factor ")
+    plt.ylabel(("Relative " if relative else "") + "Real Time Factor ")
 
     plt.xscale('log')
 
@@ -179,11 +191,11 @@ def plot_weak_scaling(data, baseline, relative=False):
     plt.gca().xaxis.set_major_formatter(formatterX)
 
     plt.legend(neurons)
-    name = "relative" if relative else "" + "weak_scaling.png"
-    plt.savefig(os.path.join(output_folder, f"{baseline}/{name}"))
+    path = ("relative_" if relative else "") + "weak_scaling.png"
+    plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
 
-def plot_timedist(data, baseline):
+def plot_timedist(data, baseline, name):
     for neuron, scales in data.items():
         plt.figure()
         x = np.array(sorted(scales.keys()), dtype=int)
@@ -221,10 +233,10 @@ def plot_timedist(data, baseline):
         plt.title(neuron)
         plt.legend()
         plt.savefig(os.path.join(output_folder,
-                    f'{baseline}/output_{neuron}.png'))
+                    f'{name}/output_{neuron}.png'))
 
 
-def plot_Custom(data, baseline, relative=False):
+def plot_Custom(data, baseline,name, relative=False):
     neuron = next(iter(data))
     size = next(iter(data[neuron]))
     entry = data[neuron][size]
@@ -258,14 +270,14 @@ def plot_Custom(data, baseline, relative=False):
         plt.gca().xaxis.set_major_formatter(formatterX)
 
         plt.xlabel('Neuron Count')
-        plt.ylabel("relative" if relative else "" + 'Time')
+        plt.ylabel(("relative" if relative else "") + 'Time')
         plt.title(stopwatch)
         plt.legend(neurons)
-        name = "relative_" if relative else "" + "output_" + stopwatch + ".png"
-        plt.savefig(os.path.join(output_folder, f"{baseline}/{name}"))
+        path = ("relative_" if relative else "") + "output_" + stopwatch + ".png"
+        plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
 
-def plot_strong_scaling(data, baseline, relative=False):
+def plot_strong_scaling(data, baseline,name, relative=False):
     plt.figure()
     neurons = []
     referenceValues = data[baseline]
@@ -287,14 +299,13 @@ def plot_strong_scaling(data, baseline, relative=False):
         plt.errorbar(x, y=y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
 
     plt.xlabel('Threads')
-    plt.ylabel("Relative" if relative else "" + "Real Time Factor ")
+    plt.ylabel(("Relative" if relative else "") + "Real Time Factor ")
 
     plt.xscale('log')
 
     plt.legend(neurons)
-    name = "relative_" if relative else "" + "strong_scaling.png"
-    plt.savefig(os.path.join(output_folder, f"{baseline}/{name}"))
-
+    path = ("relative_" if relative else "") + "strong_scaling.png"
+    plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
 def format_bytes(x, _):
     units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
@@ -307,7 +318,7 @@ def format_bytes(x, _):
     return f'{formatted_size} {units[unit_index]}'
 
 
-def plotMemory(memoryData, baseline):
+def plotMemory(memoryData, baseline, name):
     plt.figure()
     max_y = 0
     for neuron, values in memoryData.items():
@@ -336,7 +347,7 @@ def plotMemory(memoryData, baseline):
     plt.gca().xaxis.set_major_formatter(formatterX)
 
     plt.legend(memoryData.keys())
-    plt.savefig(os.path.join(output_folder, f'{baseline}/output_memory.png'))
+    plt.savefig(os.path.join(output_folder, f'{name}/output_memory.png'))
 
 
 def deleteDat():
@@ -345,83 +356,91 @@ def deleteDat():
             os.remove(f"./{filename}")
 
 
-def deleteJson(baseline):
-    for filename in os.listdir(f"./{baseline}/{WEAKSCALINGFOLDERNAME}"):
+def deleteJson(name):
+    for filename in os.listdir(f"./{name}/{WEAKSCALINGFOLDERNAME}"):
         if filename.endswith(".json"):
-            os.remove(f"./{baseline}/{WEAKSCALINGFOLDERNAME}/{filename}")
-    for filename in os.listdir(f"./{baseline}/{STRONGSCALINGFOLDERNAME}"):
+            os.remove(f"./{name}/{WEAKSCALINGFOLDERNAME}/{filename}")
+    for filename in os.listdir(f"./{name}/{STRONGSCALINGFOLDERNAME}"):
         if filename.endswith(".json"):
-            os.remove(f"./{baseline}/{STRONGSCALINGFOLDERNAME}/{filename}")
+            os.remove(f"./{name}/{STRONGSCALINGFOLDERNAME}/{filename}")
 
 
-def runBenchmark(neurons, baseline):
+def runBenchmark(neurons, baseline, name):
     args = parser.parse_args()
     runSim = args.noRunSim
 
-    neurons = neurons.append(baseline)
-
+    allNeurons = neurons.copy()
+    allNeurons.append(baseline)
+    print(allNeurons)
     os.makedirs(output_folder, exist_ok=True)
-    os.makedirs(f"{baseline}/{WEAKSCALINGFOLDERNAME}", exist_ok=True)
-    os.makedirs(f"{baseline}/{STRONGSCALINGFOLDERNAME}", exist_ok=True)
+    os.makedirs(f"{output_folder}/{name}", exist_ok=True)
+    os.makedirs(f"{name}/{WEAKSCALINGFOLDERNAME}", exist_ok=True)
+    os.makedirs(f"{name}/{STRONGSCALINGFOLDERNAME}", exist_ok=True)
 
-    os.remove(os.path.join(output_folder, "log.txt"))
 
     if runSim:
         memoryData = {}
-        deleteJson()
+        deleteJson(name)
         for i in range(ITERATIONS):
-            start_weak_scaling_Benchmark(i, neurons, baseline)
-            start_strong_scaling_Benchmark(i, neurons, baseline)
+            start_weak_scaling_Benchmark(i, allNeurons, name)
+            start_strong_scaling_Benchmark(i, allNeurons, name)
 
             data = start_weak_scaling_Benchmark(
-                i, neurons, baseline, checkMemory=True)
-            for name, size_data in data.items():
-                memoryData.setdefault(name, {})
+                i, allNeurons, name, checkMemory=True)
+            for n, size_data in data.items():
+                memoryData.setdefault(n, {})
                 for size, iteration_data in size_data.items():
-                    memoryData[name].setdefault(int(size), {})
-                    memoryData[name][int(size)][i] = iteration_data[0]
-        with open("memory_data.json", "w") as f:
+                    memoryData[n].setdefault(int(size), {})
+                    memoryData[n][int(size)][i] = iteration_data[0]
+                    
+        memory_data_file = f"./{name}/memory_data.json"
+        with open(memory_data_file, "w") as f:
             json.dump(memoryData, f, indent=4)
+
     memoryData = {}
 
-    with open("memory_data.json", "r") as f:
+    with open(f"./{name}/memory_data.json", "r") as f:
         memoryData = json.load(f)
 
-    plotMemory(memoryData)
+    plotMemory(memoryData, baseline, name)
     log("Finished")
     deleteDat()
     data = {}
-    for filename in os.listdir(f"./{baseline}/{WEAKSCALINGFOLDERNAME}"):
+    for filename in os.listdir(f"./{name}/{WEAKSCALINGFOLDERNAME}"):
         if filename.endswith(".json"):
             simulated_neuron = extract_value_from_filename(
                 filename, "simulated_neuron")
             network_scale = int(extract_value_from_filename(
                 filename, "network_scale"))
             iteration = int(extract_value_from_filename(filename, "iteration"))
-            with open(f"./{WEAKSCALINGFOLDERNAME}/{filename}", "r") as f:
+            with open(f"./{name}/{WEAKSCALINGFOLDERNAME}/{filename}", "r") as f:
                 json_data = json.load(f)
                 data.setdefault(simulated_neuron, {}).setdefault(
                     network_scale, {}).setdefault(iteration, json_data)
-    plot_weak_scaling(data, baseline)
-    plot_weak_scaling(data, baseline, relative=True)
-    plot_timedist(data, baseline)
-    plot_Custom(data, baseline)
+    plot_weak_scaling(data, baseline, name)
+    plot_weak_scaling(data, baseline,name, relative=True)
+    plot_timedist(data, baseline, name)
+    plot_Custom(data, baseline, name)
 
     verticaldata = {}
-    for filename in os.listdir(f"./{baseline}/{STRONGSCALINGFOLDERNAME}"):
+    for filename in os.listdir(f"./{name}/{STRONGSCALINGFOLDERNAME}"):
         if filename.endswith(".json"):
             simulated_neuron = extract_value_from_filename(
                 filename, "simulated_neuron")
             iteration = int(extract_value_from_filename(filename, "iteration"))
             threads = int(extract_value_from_filename(filename, "threads"))
-            with open(f"./{STRONGSCALINGFOLDERNAME}/{filename}", "r") as f:
+            with open(f"./{name}/{STRONGSCALINGFOLDERNAME}/{filename}", "r") as f:
                 json_data = json.load(f)
                 verticaldata.setdefault(simulated_neuron, {}).setdefault(
                     threads, {}).setdefault(iteration, json_data)
-    plot_strong_scaling(verticaldata)
-    plot_strong_scaling(verticaldata, relative=True)
+    plot_strong_scaling(verticaldata,baseline=baseline, name=name)
+    plot_strong_scaling(verticaldata,baseline=baseline,name=name,relative=True)
 
 
 if __name__ == "__main__":
+    try:
+        os.remove(os.path.join(output_folder, "log.txt"))
+    except FileNotFoundError:
+        pass
     for benchmark in BENCHMARKS:
-        runBenchmark(benchmark["neurons"], benchmark["baseline"])
+        runBenchmark(benchmark["neurons"], benchmark["baseline"], benchmark["name"])

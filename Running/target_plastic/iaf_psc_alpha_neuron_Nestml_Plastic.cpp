@@ -19,7 +19,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  Generated from NESTML at time: 2024-02-26 14:19:01.113672
+ *  Generated from NESTML at time: 2024-03-04 13:36:38.759813
 **/
 
 // C++ includes:

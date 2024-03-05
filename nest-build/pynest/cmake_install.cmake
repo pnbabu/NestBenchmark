@@ -1,8 +1,8 @@
-# Install script for directory: /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/pynest
+# Install script for directory: /home/lukkyguy/code/NestBenchmark/nest-simulator/pynest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install")
+  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -39,45 +39,45 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/python3.10/site-packages/nest/;/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/python3.10/site-packages/nest/")
+   "/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/python3.10/site-packages/nest/;/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/python3.10/site-packages/nest/")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/python3.10/site-packages/nest" TYPE DIRECTORY FILES
-    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/pynest/nest/"
-    "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/pynest/nest/"
+  file(INSTALL DESTINATION "/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/python3.10/site-packages/nest" TYPE DIRECTORY FILES
+    "/home/lukkyguy/code/NestBenchmark/nest-simulator/pynest/nest/"
+    "/home/lukkyguy/code/NestBenchmark/nest-build/pynest/nest/"
     REGEX "/versionchecker\\.py\\.in$" EXCLUDE)
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python3.10/site-packages/nest/pynestkernel.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python3.10/site-packages/nest/pynestkernel.so")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/nest/pynestkernel.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/nest/pynestkernel.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python3.10/site-packages/nest/pynestkernel.so"
-         RPATH "\$ORIGIN/../lib64/nest:\$ORIGIN/../../lib64/nest:\$ORIGIN/../../../nest")
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/nest/pynestkernel.so"
+         RPATH "\$ORIGIN/../lib/nest:\$ORIGIN/../../lib/nest:\$ORIGIN/../../../nest")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python3.10/site-packages/nest" TYPE MODULE FILES "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/pynest/pynestkernel.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python3.10/site-packages/nest/pynestkernel.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python3.10/site-packages/nest/pynestkernel.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/nest" TYPE MODULE FILES "/home/lukkyguy/code/NestBenchmark/nest-build/pynest/pynestkernel.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/nest/pynestkernel.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/nest/pynestkernel.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python3.10/site-packages/nest/pynestkernel.so"
-         OLD_RPATH "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/nest:/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/sli:"
-         NEW_RPATH "\$ORIGIN/../lib64/nest:\$ORIGIN/../../lib64/nest:\$ORIGIN/../../../nest")
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/nest/pynestkernel.so"
+         OLD_RPATH "/home/lukkyguy/code/NestBenchmark/nest-build/nest:/home/lukkyguy/code/NestBenchmark/nest-build/sli:"
+         NEW_RPATH "\$ORIGIN/../lib/nest:\$ORIGIN/../../lib/nest:\$ORIGIN/../../../nest")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python3.10/site-packages/nest/pynestkernel.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/nest/pynestkernel.so")
     endif()
   endif()
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/nest/examples/pynest" TYPE DIRECTORY FILES "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/pynest/examples/")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/nest/examples/pynest" TYPE DIRECTORY FILES "/home/lukkyguy/code/NestBenchmark/nest-simulator/pynest/examples/")
 endif()
 

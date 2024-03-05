@@ -250,16 +250,16 @@ print("Connecting devices")
 # the excitatory and one for the inhibitory connections giving the
 # previously defined weights and equal delays.
 
-if "lastic" in modelName:
+if modelName == "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic":
     # use plastic synapses
     print("Using NESTML STDP synapse")
     nest.CopyModel("stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
-else:
+elif "plastic" in modelName:
     # use static synapses
     print("Using NEST built in STDP synapse")
-    nest.CopyModel("stdp_synapse", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
-    #nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})
-
+    nest.CopyModel("stdp_synapse", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.}) 
+else:
+    nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})
 
 nest.CopyModel("static_synapse", "excitatory_static", {"weight": J_ex, "delay": delay})
 
@@ -404,6 +404,7 @@ if args.benchmarkPath != "":
     status["stopwatches"] = {}
     stopwatch = nodes_ex.get('update_stopwatch')
     status["stopwatches"]["update"] = stopwatch
+    status["exidatoryrate"] = rate_ex
 
     if not os.path.exists(path):
         os.makedirs(path)

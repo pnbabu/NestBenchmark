@@ -1,5 +1,5 @@
 nestkernel/CMakeFiles/nestkernel.dir/music_rate_in_handler.cpp.o: \
- /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/nestkernel/music_rate_in_handler.cpp \
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/music_rate_in_handler.cpp \
  /usr/include/stdc-predef.h \
- /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator/nestkernel/music_rate_in_handler.h \
- /p/home/jusers/linssen1/jusuf/NestBenchmark/nest-build/libnestutil/config.h
+ /home/lukkyguy/code/NestBenchmark/nest-simulator/nestkernel/music_rate_in_handler.h \
+ /home/lukkyguy/code/NestBenchmark/nest-build/libnestutil/config.h

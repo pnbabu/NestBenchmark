@@ -19,7 +19,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  2024-02-26 14:18:20.304200
+ *  2024-03-04 13:36:10.674327
  */
 
 #ifndef NESTMLOPTIMIZEDMODULE_H
