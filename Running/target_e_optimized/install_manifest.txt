@@ -1,1 +1,1 @@
-/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/EnestmlOptimizedmodule.so
+/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/nest/EnestmlOptimizedmodule.so

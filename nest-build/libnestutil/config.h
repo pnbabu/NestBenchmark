@@ -40,10 +40,10 @@
 #define NEST_HOSTCPU "x86_64"
 #define NEST_HOSTVENDOR "pc"
 
-#define NEST_INSTALL_PREFIX "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install"
+#define NEST_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install"
 #define NEST_INSTALL_DATADIR "share/nest"
 #define NEST_INSTALL_DOCDIR "share/doc/nest"
-#define NEST_INSTALL_LIBDIR "lib64/nest"
+#define NEST_INSTALL_LIBDIR "lib/nest"
 
 #define MPIEXEC ""
 #define MPIEXEC_NUMPROC_FLAG ""

@@ -3,7 +3,7 @@
   Copyright (C) 2004 The NEST Initiative
 
  Version: 3.6.0-post0.dev0
- Built: Mar  5 2024 21:43:57
+ Built: Mar  5 2024 22:21:06
 
  This program is provided AS IS and comes with
  NO WARRANTY. See the file LICENSE for details.
@@ -14,16 +14,16 @@
  Type 'nest.help()' to find out more about NEST.
 
 
-Mar 05 22:03:44 SimulationManager::set_status [Info]: 
+Mar 05 22:24:26 SimulationManager::set_status [Info]: 
     Temporal resolution changed from 0.1 to 0.1 ms.
 
-Mar 05 22:03:45 Install [Info]: 
+Mar 05 22:24:26 Install [Info]: 
     loaded module nestmlOptimizedmodule
 
-Mar 05 22:03:45 Install [Info]: 
+Mar 05 22:24:26 Install [Info]: 
     loaded module nestmlplasticmodule
 foo
 foo1
-Number of neurons : 50000
+Number of neurons : 10000
 foo2
 Building network

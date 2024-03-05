@@ -1,6 +1,6 @@
 source nest-simulator-install/bin/nest_vars.sh
 
-for dir in Running/target_*; do
+for dir in Running/target*; do
     if [ -d "$dir" ]; then
         cd "$dir"
         rm -rf CMakeCache.txt CMakeFiles

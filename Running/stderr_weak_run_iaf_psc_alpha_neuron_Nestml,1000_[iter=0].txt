@@ -1,12 +1,12 @@
 Traceback (most recent call last):
-  File "/p/home/jusers/koll1/jusuf/NestBenchmark/Running/examples/brunel_alpha_nest.py", line 228, in <module>
+  File "/home/lukkyguy/code/NestBenchmark/Running/examples/brunel_alpha_nest.py", line 228, in <module>
     nodes_ex = nest.Create(modelName, NE, params=neuron_params)
-  File "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install/lib64/python3.10/site-packages/nest/ll_api.py", line 216, in stack_checker_func
+  File "/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/python3.10/site-packages/nest/ll_api.py", line 216, in stack_checker_func
     return f(*args, **kwargs)
-  File "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install/lib64/python3.10/site-packages/nest/lib/hl_api_nodes.py", line 143, in Create
+  File "/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/python3.10/site-packages/nest/lib/hl_api_nodes.py", line 143, in Create
     sr(cmd)
-  File "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install/lib64/python3.10/site-packages/nest/ll_api.py", line 103, in catching_sli_run
+  File "/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/python3.10/site-packages/nest/ll_api.py", line 103, in catching_sli_run
     raise exceptionCls(commandname, message)
 nest.lib.hl_api_exceptions.NESTErrors.UnknownComponent: UnknownComponent in SLI function GetDefaults_l: /iaf_psc_alpha_neuron_Nestml is not a known component.
 Command exited with non-zero status 1
-146228
+216268
