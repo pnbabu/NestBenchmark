@@ -1,10 +1,6 @@
 sli/CMakeFiles/sli_lib.dir/get_mem.c.o: \
- /home/lukkyguy/code/NestBenchmark/nest-simulator/sli/get_mem.c \
+ /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/sli/get_mem.c \
  /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
- /usr/include/features-time64.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/timesize.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h

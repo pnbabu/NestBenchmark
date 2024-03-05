@@ -1,1 +1,1 @@
-/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/nest/nestmlplasticmodule.so
+/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/nestmlplasticmodule.so
