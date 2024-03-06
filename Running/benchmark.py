@@ -47,10 +47,17 @@ BENCHMARKS = [
     },
 ]
 
+legend = {
+                "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML syn",
+                #"iaf_psc_alpha_neuron_Nestml_Optimized",
+                "iaf_psc_alpha_neuron_Nestml":"NESTML neur, NEST syn",
+                "iaf_psc_alpha" : "NEST neur + syn",
+}
+
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(30000), 3, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(20000), 5, dtype=int)
 
 NEURONSPERSCALE = 5
 
@@ -58,7 +65,7 @@ NEURONSPERSCALE = 5
 VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
-ITERATIONS = 20  # XXXXXXXXXXXX: was 10
+ITERATIONS = 10  # XXXXXXXXXXXX: was 10
 DEBUG = True
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
@@ -176,10 +183,10 @@ def plot_weak_scaling(data, baseline,name, relative=False):
 
         x = np.array([int(val) for val in x], dtype=int)
         plt.errorbar(x * NEURONSPERSCALE, y,
-                     yerr=y_std, fmt='-', ecolor='k', capsize=3)
+                     yerr=y_std, lable = legend[neuron], fmt='-', ecolor='k', capsize=3)
 
-    plt.xlabel('Neuron Count')
-    plt.ylabel(("Relative " if relative else "") + "Real Time Factor ")
+    plt.xlabel('Neuron count')
+    plt.ylabel(f'Wall clock time {"(ratio)" if relative else ""}')
 
     plt.xscale('log')
 
@@ -190,7 +197,7 @@ def plot_weak_scaling(data, baseline,name, relative=False):
         lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
     plt.gca().xaxis.set_major_formatter(formatterX)
 
-    plt.legend(neurons)
+    plt.legend()
     path = ("relative_" if relative else "") + "weak_scaling.png"
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
@@ -224,10 +231,10 @@ def plot_timedist(data, baseline, name):
         plt.xscale('log')
         plt.yscale('log')
 
-        formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+        formatter = FuncFormatter(lambda y, _: '{:.1g}'.format(y))
         plt.gca().yaxis.set_major_formatter(formatter)
         formatterX = FuncFormatter(
-            lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
+            lambda x, _: '{:.1g}'.format(x * NEURONSPERSCALE))
         plt.gca().xaxis.set_major_formatter(formatterX)
 
         plt.title(neuron)
@@ -260,17 +267,17 @@ def plot_Custom(data, baseline,name, relative=False):
             if relative:
                 y_std = y_std / reference_y
             # plt.errorbar(x * NEURONSPERSCALE, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
-            plt.plot(x * NEURONSPERSCALE, y, '-')
+            plt.plot(x * NEURONSPERSCALE, y, '-',lable=legend[neuron])
 
         plt.xscale('log')
 
-        formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+        formatter = FuncFormatter(lambda y, _: '{:.1g}'.format(y))
         plt.gca().yaxis.set_major_formatter(formatter)
-        formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x))
+        formatterX = FuncFormatter(lambda x, _: '{:.1g}'.format(x))
         plt.gca().xaxis.set_major_formatter(formatterX)
 
-        plt.xlabel('Neuron Count')
-        plt.ylabel(("relative" if relative else "") + 'Time')
+        plt.xlabel('Neuron count')
+        plt.ylabel(("relative " if relative else "") + 'Time')
         plt.title(stopwatch)
         plt.legend(neurons)
         path = ("relative_" if relative else "") + "output_" + stopwatch + ".png"
@@ -296,14 +303,14 @@ def plot_strong_scaling(data, baseline,name, relative=False):
         if relative:
             y_std = y_std / reference_y
         x = [int(val) for val in x]
-        plt.errorbar(x, y=y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
+        plt.errorbar(x, y=y, yerr=y_std, fmt='-', ecolor='k', capsize=3, label=legend[neuron])
 
     plt.xlabel('Threads')
-    plt.ylabel(("Relative" if relative else "") + "Real Time Factor ")
+    plt.ylabel(f'Wall clock time {"(ratio)" if relative else ""}')
 
     plt.xscale('log')
 
-    plt.legend(neurons)
+    plt.legend()
     path = ("relative_" if relative else "") + "strong_scaling.png"
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
@@ -336,7 +343,7 @@ def plotMemory(memoryData, baseline, name):
 
     plt.annotate(f'Max: {format_bytes(max_y,"")}', xy=(0.8, max_y), xytext=(8, 0),
                  xycoords=('axes fraction', 'data'), textcoords='offset points')
-    plt.xlabel('Neuron Count')
+    plt.xlabel('Neuron count')
     plt.ylabel('Memory')
     plt.xscale('log')
     plt.yscale('log')
