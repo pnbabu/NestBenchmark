@@ -24,9 +24,22 @@ NEURONMODELS = [
                 "iaf_psc_alpha_neuron_Nestml",
                 BASELINENEURON
                 ]
+
+
+legend = {
+                "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML syn",
+                #"iaf_psc_alpha_neuron_Nestml_Optimized",
+                "iaf_psc_alpha_neuron_Nestml":"NESTML neur, NEST syn",
+                BASELINENEURON : "NEST neur + syn"
+}
+
+
+
+
+
 #NEURONMODELS = ["iaf_psc_alpha"]
 #NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
-NETWORKSCALES = np.logspace(3, math.log10(20000), 3, dtype=int)  # XXXXXXXXXXXX: was 10 and 30000
+NETWORKSCALES = np.logspace(3, math.log10(20000), 5, dtype=int)  # XXXXXXXXXXXX: was 10 and 30000
 
 NEURONSPERSCALE = 5
 
@@ -34,7 +47,7 @@ NEURONSPERSCALE = 5
 VERTICALTHREADS = [1, 8, 32] # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = 10000
-ITERATIONS=1 # XXXXXXXXXXXX: was 10
+ITERATIONS = 3 # XXXXXXXXXXXX: was 10
 DEBUG = True
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
@@ -124,24 +137,57 @@ def plot_weak_scaling(data):
         # Real Time Factor
         reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
         y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
-        y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
+        y_factor = reference_y/y  # Calculate the factor of y in comparison to the reference value
         
         y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
-        y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
+        y_factor_std = y_std/ reference_y  # Calculate the standard deviation of the factor
         
         x = np.array([int(val) for val in x], dtype=int)
-        plt.errorbar(x * NEURONSPERSCALE, y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
+        plt.errorbar(x * NEURONSPERSCALE, y_factor, yerr=y_factor_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
     
-    plt.xlabel('Neuron Count')
-    plt.ylabel('Factor of Real Time')
+    plt.xlabel('Neuron count')
+    plt.ylabel('Wall clock time (ratio)')
 
     plt.xscale('log')
 
-    formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
-    plt.gca().yaxis.set_major_formatter(formatter)
     
-    plt.legend(neurons) 
+    plt.legend() 
+    plt.savefig(os.path.join(output_folder, 'weak_scaling_rel.png'))
+
+
+
+
+    plt.figure()
+    neurons = []
+    referenceValues = data[BASELINENEURON]
+    for neuron, values in data.items():
+        neurons.append(neuron)
+        x = sorted(values.keys(), key=lambda k: int(k))
+        # Real Time Factor
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_factor = reference_y / y  # Calculate the factor of y in comparison to the reference value
+        #y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
+        
+        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        #y_factor_std = reference_y / y_std  # Calculate the standard deviation of the factor
+        y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
+        
+        x = np.array([int(val) for val in x], dtype=int)
+        plt.errorbar(x * NEURONSPERSCALE, y, yerr=y_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
+    
+    plt.xlabel('Neuron count')
+    plt.ylabel('Wall clock time (ratio)')
+
+    plt.xscale('log')
+
+    #formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+    #plt.gca().yaxis.set_major_formatter(formatter)
+    
+    plt.legend()
     plt.savefig(os.path.join(output_folder, 'weak_scaling.png'))
+
+
      
 def plot_timedist(data):
     for neuron, scales in data.items():
@@ -190,22 +236,47 @@ def plot_Custom(data):
             y_std = np.array([np.std([iteration_data['stopwatches'][stopwatch] for iteration_data in scales[scale].values()]) for scale in x])
             y_factor_std = y_std / reference_y
             #plt.errorbar(x * NEURONSPERSCALE, y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
-            plt.plot(x * NEURONSPERSCALE, y_factor, '-')
+            plt.plot(x * NEURONSPERSCALE, y_factor, '-', label=legend[neuron])
 
         plt.xscale('log')
         
-        formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+        formatter = FuncFormatter(lambda y, _: '{:.1g}'.format(y))
         plt.gca().yaxis.set_major_formatter(formatter)
-        formatterX = FuncFormatter(lambda x, _: '{:.16g}'.format(x))
+        formatterX = FuncFormatter(lambda x, _: '{:.1g}'.format(x))
         plt.gca().xaxis.set_major_formatter(formatterX)
 
-        plt.xlabel('Neuron Count')
+        plt.xlabel('Neuron count')
         plt.ylabel('Time')
         plt.title(stopwatch)
-        plt.legend(neurons)
+        plt.legend()
         plt.savefig(os.path.join(output_folder, f'output_{stopwatch}.png'))
         
 def plot_strong_scaling(data):
+    plt.figure()
+    neurons = []
+    referenceValues = data[BASELINENEURON]
+    for neuron, values in data.items():
+        neurons.append(neuron)
+        x = sorted(values.keys(), key=lambda k: int(k))
+        # Real Time Factor
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_factor = reference_y / y
+        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_factor_std = y_std / reference_y 
+        x = [int(val) for val in x]
+        plt.errorbar(x, y=y_factor, yerr=y_factor_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
+        
+    plt.xlabel('Threads')
+    plt.ylabel('Wall clock time (ratio)')
+    
+    plt.xscale('log')
+
+    plt.legend()
+    plt.savefig(os.path.join(output_folder, 'strong_scaling_rel.png'))
+
+
+
     plt.figure()
     neurons = []
     referenceValues = data[BASELINENEURON]
@@ -219,17 +290,17 @@ def plot_strong_scaling(data):
         y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
         y_factor_std = y_std / reference_y 
         x = [int(val) for val in x]
-        plt.errorbar(x, y=y_factor, yerr=y_factor_std, fmt='-', ecolor='k', capsize=3)
+        plt.errorbar(x, y=y, yerr=y_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
         
     plt.xlabel('Threads')
-    plt.ylabel('Real Time Factor')
-
-    
+    plt.ylabel('Wall clock time (ratio)')
     
     plt.xscale('log')
 
-    plt.legend(neurons)
+    plt.legend()
     plt.savefig(os.path.join(output_folder, 'strong_scaling.png'))
+
+
 
 def format_bytes(x,_):
     units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
@@ -257,7 +328,7 @@ def plotMemory(memoryData):
 
     plt.annotate(f'Max: {format_bytes(max_y,"")}', xy=(0.8, max_y), xytext=(8, 0), 
                  xycoords=('axes fraction', 'data'), textcoords='offset points')
-    plt.xlabel('Neuron Count')
+    plt.xlabel('Neuron count')
     plt.ylabel('Memory')
     plt.xscale('log')
     plt.yscale('log')
