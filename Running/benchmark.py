@@ -58,7 +58,7 @@ legend = {
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(2000), 3, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(10000), 3, dtype=int)
 
 NEURONSPERSCALE = 5
 
@@ -66,7 +66,7 @@ NEURONSPERSCALE = 5
 VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
-ITERATIONS = 1  # XXXXXXXXXXXX: was 10
+ITERATIONS = 10  # XXXXXXXXXXXX: was 10
 DEBUG = True
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
