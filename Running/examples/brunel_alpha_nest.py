@@ -411,6 +411,6 @@ if args.benchmarkPath != "":
     with open(f"{path}/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].json", "w") as f:
         json.dump(status, f,indent=4)
 
-nest.raster_plot.from_device(espikes, hist=True)
-plt.savefig(f"{path}/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].png")
-plt.close()
+    nest.raster_plot.from_device(espikes, hist=True)
+    plt.savefig(f"{path}/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].png")
+    plt.close()

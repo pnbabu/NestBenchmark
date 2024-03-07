@@ -48,16 +48,17 @@ BENCHMARKS = [
 ]
 
 legend = {
-                "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML syn",
-                #"iaf_psc_alpha_neuron_Nestml_Optimized",
-                "iaf_psc_alpha_neuron_Nestml":"NESTML neur, NEST syn",
-                "iaf_psc_alpha" : "NEST neur + syn",
+                "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML plas-syn",
+                "iaf_psc_alpha_neuron_Nestml_Optimized" : "NESTML neur opt, stat-syn",
+                "iaf_psc_alpha_neuron_Nestml_Plastic" : "NESTML neur, plas-syn",
+                "iaf_psc_alpha_neuron_Nestml":"NESTML neur, stat-syn",
+                "iaf_psc_alpha" : "neur, stat-syn",
 }
 
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(20000), 5, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(2000), 3, dtype=int)
 
 NEURONSPERSCALE = 5
 
@@ -65,7 +66,7 @@ NEURONSPERSCALE = 5
 VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
-ITERATIONS = 10  # XXXXXXXXXXXX: was 10
+ITERATIONS = 1  # XXXXXXXXXXXX: was 10
 DEBUG = True
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
@@ -183,7 +184,7 @@ def plot_weak_scaling(data, baseline,name, relative=False):
 
         x = np.array([int(val) for val in x], dtype=int)
         plt.errorbar(x * NEURONSPERSCALE, y,
-                     yerr=y_std, lable = legend[neuron], fmt='-', ecolor='k', capsize=3)
+                     yerr=y_std, fmt='-', ecolor='k', capsize=3)
 
     plt.xlabel('Neuron count')
     plt.ylabel(f'Wall clock time {"(ratio)" if relative else ""}')
@@ -197,7 +198,7 @@ def plot_weak_scaling(data, baseline,name, relative=False):
         lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
     plt.gca().xaxis.set_major_formatter(formatterX)
 
-    plt.legend()
+    plt.legend([legend[neuron] for neuron in neurons])
     path = ("relative_" if relative else "") + "weak_scaling.png"
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
@@ -267,7 +268,7 @@ def plot_Custom(data, baseline,name, relative=False):
             if relative:
                 y_std = y_std / reference_y
             # plt.errorbar(x * NEURONSPERSCALE, y, yerr=y_std, fmt='-', ecolor='k', capsize=3)
-            plt.plot(x * NEURONSPERSCALE, y, '-',lable=legend[neuron])
+            plt.plot(x * NEURONSPERSCALE, y, '-')
 
         plt.xscale('log')
 
@@ -279,7 +280,7 @@ def plot_Custom(data, baseline,name, relative=False):
         plt.xlabel('Neuron count')
         plt.ylabel(("relative " if relative else "") + 'Time')
         plt.title(stopwatch)
-        plt.legend(neurons)
+        plt.legend(legend[neuron] for neuron in neurons)
         path = ("relative_" if relative else "") + "output_" + stopwatch + ".png"
         plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
