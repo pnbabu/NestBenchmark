@@ -1,8 +1,8 @@
-# Install script for directory: /home/lukkyguy/code/NestBenchmark/nest-simulator/bin
+# Install script for directory: /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/bin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lukkyguy/code/NestBenchmark/nest-simulator-install")
+  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -39,15 +39,15 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES
-    "/home/lukkyguy/code/NestBenchmark/nest-simulator/bin/nest-server"
-    "/home/lukkyguy/code/NestBenchmark/nest-simulator/bin/nest-server-mpi"
-    "/home/lukkyguy/code/NestBenchmark/nest-build/bin/nest-config"
-    "/home/lukkyguy/code/NestBenchmark/nest-build/bin/nest_vars.sh"
+    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/bin/nest-server"
+    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator/bin/nest-server-mpi"
+    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/bin/nest-config"
+    "/p/home/jusers/koll1/jusuf/NestBenchmark/nest-build/bin/nest_vars.sh"
     )
 endif()
 
