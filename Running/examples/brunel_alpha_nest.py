@@ -76,7 +76,6 @@ parser.add_argument('--iteration', type=int, help='iteration number used for the
 
 args = parser.parse_args()
 
-print("foo")
 def LambertWm1(x):
     # Using scipy to mimic the gsl_sf_lambert_Wm1 function.
     return sp.lambertw(x, k=-1 if x < 0 else 0).real
@@ -101,8 +100,6 @@ def ComputePSPnorm(tauMem, CMem, tauSyn):
 nest.ResetKernel()
 nest.local_num_threads = parser.parse_args().threads
 
-
-print("foo1")
 
 ###############################################################################
 # Assigning the current time to a variable in order to determine the build
@@ -220,7 +217,6 @@ J_in = -g * J_ex  # amplitude of inhibitory postsynaptic current
 # membrane potential around its threshold, the external firing rate and the
 # rate of the poisson generator which is multiplied by the in-degree CE and
 # converted to Hz by multiplication by 1000.
-print("foo2")
 
 nu_th = (theta * CMem) / (J_ex * CE * np.exp(1) * tauMem * tauSyn)
 nu_ex = eta * nu_th
@@ -259,6 +255,8 @@ nodes_in = nest.Create(modelName, NI, params=neuron_params)
 noise = nest.Create("poisson_generator", params={"rate": p_rate})
 espikes = nest.Create("spike_recorder")
 ispikes = nest.Create("spike_recorder")
+
+e_mm = nest.Create("multimeter", params={"record_from": ["V_m"]})
 
 ###############################################################################
 # Configuration of the spike recorders recording excitatory and inhibitory
@@ -318,6 +316,7 @@ nest.Connect(noise, nodes_in, syn_spec="excitatory_static")
 
 
 
+nest.Connect(e_mm, nodes_ex[0], syn_spec="excitatory_static")
 
 nest.Connect(nodes_ex[:N_rec], espikes, syn_spec="excitatory_static")
 nest.Connect(nodes_in[:N_rec], ispikes, syn_spec="excitatory_static")
@@ -418,7 +417,6 @@ print(f"Simulation time   : {sim_time:.2f} s")
 
 
 
-print("foo3")
 def convert_np_arrays_to_lists(obj):
     if isinstance(obj, dict):
         return {k: convert_np_arrays_to_lists(v) for k, v in obj.items()}
@@ -446,3 +444,14 @@ if args.benchmarkPath != "":
     nest.raster_plot.from_device(espikes, hist=True)
     plt.savefig(f"{path}/raster_plot_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].png")
     plt.close()
+
+
+
+    fig, ax = plt.subplots()
+    ax.plot(e_mm.get()["events"]["times"], e_mm.get()["events"]["V_m"])
+    plt.savefig(f"{path}/V_m_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].png")
+    plt.close()
+
+
+
+
