@@ -655,10 +655,10 @@ public:
   }
 
 {%- if not (nest_version.startswith("v2") or nest_version.startswith("v3.0") or nest_version.startswith("v3.1") or nest_version.startswith("v3.2") or nest_version.startswith("v3.3") or nest_version.startswith("v3.4")) %}
-  void
+  bool
   send( Event& e, const size_t tid, const {{synapseName}}CommonSynapseProperties& cp )
 {%- else %}
-  void
+  bool
   send( Event& e, const thread tid, const {{synapseName}}CommonSynapseProperties& cp )
 {%- endif %}
   {
@@ -844,6 +844,8 @@ public:
     **/
 
     t_lastspike_ = __t_spike;
+
+return true;
   }
 
   void get_status( DictionaryDatum& d ) const;

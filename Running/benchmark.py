@@ -17,6 +17,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
+"""
+# for iaf_psc_alpha neurons
 BASELINENEURON = "iaf_psc_alpha"
 NEURONMODELS = [
                 "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic",
@@ -25,14 +27,30 @@ NEURONMODELS = [
                 BASELINENEURON
                 ]
 
-
 legend = {
                 "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML syn",
                 #"iaf_psc_alpha_neuron_Nestml_Optimized",
                 "iaf_psc_alpha_neuron_Nestml":"NESTML neur, NEST syn",
                 BASELINENEURON : "NEST neur + syn"
 }
+"""
 
+
+# for aeif_psc_alpha neurons
+BASELINENEURON = "aeif_psc_alpha"
+NEURONMODELS = [
+                "aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic",
+                #"iaf_psc_alpha_neuron_Nestml_Optimized",
+                "aeif_psc_alpha_neuron_Nestml",
+                BASELINENEURON
+                ]
+
+legend = {
+                "aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML syn",
+                #"iaf_psc_alpha_neuron_Nestml_Optimized",
+                "aeif_psc_alpha_neuron_Nestml":"NESTML neur, NEST syn",
+                BASELINENEURON : "NEST neur + syn"
+}
 
 
 
@@ -44,10 +62,10 @@ NETWORKSCALES = np.logspace(3, math.log10(20000), 5, dtype=int)  # XXXXXXXXXXXX:
 NEURONSPERSCALE = 5
 
 #VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
-VERTICALTHREADS = [1, 8, 32] # XXXXXXXXXXXXXXX: more resolution
+VERTICALTHREADS = [1, 2, 4, 8, 16, 32, 64, 128] # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = 10000
-ITERATIONS = 3 # XXXXXXXXXXXX: was 10
+ITERATIONS = 2 # XXXXXXXXXXXX: was 10
 DEBUG = True
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
