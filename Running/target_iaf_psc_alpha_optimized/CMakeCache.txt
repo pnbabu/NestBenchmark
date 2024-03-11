@@ -95,7 +95,7 @@ CMAKE_INSTALL_INFODIR:PATH=
 
 //object code libraries (lib/nest or lib64/nest or lib/<multiarch-tuple>/nest
 // on Debian)
-CMAKE_INSTALL_LIBDIR:STRING=lib/nest
+CMAKE_INSTALL_LIBDIR:STRING=/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/nest
 
 //Program executables (libexec)
 CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
@@ -113,7 +113,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:STRING=/home/lukkyguy/code/NestBenchmark/nest-simulator-install
+CMAKE_INSTALL_PREFIX:PATH=/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/nest
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -239,9 +239,6 @@ EXECUTABLE_OUTPUT_PATH:PATH=
 //Single output directory for building all libraries.
 LIBRARY_OUTPUT_PATH:PATH=
 
-//Path to a program.
-NEST_CONFIG:FILEPATH=/home/lukkyguy/code/NestBenchmark/nest-simulator-install/bin/nest-config
-
 //Value Computed by CMake
 iaf_psc_alpha_nestmlOptimizedmodule_BINARY_DIR:STATIC=/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_optimized
 
@@ -252,7 +249,7 @@ iaf_psc_alpha_nestmlOptimizedmodule_IS_TOP_LEVEL:STATIC=ON
 iaf_psc_alpha_nestmlOptimizedmodule_SOURCE_DIR:STATIC=/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_optimized
 
 //Specify the `nest-config` executable.
-with-nest:STRING=OFF
+with-nest:STRING=/home/lukkyguy/code/NestBenchmark/nest-simulator-install/bin/nest-config
 
 
 ########################
@@ -417,5 +414,5 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/home/lukkyguy/code/NestBenchmark/nest-simulator-install
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/nest
 

@@ -19,7 +19,7 @@
 *  You should have received a copy of the GNU General Public License
 *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
 *
-*  2024-03-11 15:32:12.662273
+*  2024-03-11 16:28:41.111603
 */
 
 // Includes from nestkernel:

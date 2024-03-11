@@ -1,0 +1,15 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/aeif_psc_alpha_nestmlplasticOptimizedmodule_module.dir/aeif_psc_alpha_nestmlplasticOptimizedmodule.o"
+  "CMakeFiles/aeif_psc_alpha_nestmlplasticOptimizedmodule_module.dir/aeif_psc_alpha_nestmlplasticOptimizedmodule.o.d"
+  "CMakeFiles/aeif_psc_alpha_nestmlplasticOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic_Optimized.o"
+  "CMakeFiles/aeif_psc_alpha_nestmlplasticOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic_Optimized.o.d"
+  "CMakeFiles/aeif_psc_alpha_nestmlplasticOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.o"
+  "CMakeFiles/aeif_psc_alpha_nestmlplasticOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.o.d"
+  "aeif_psc_alpha_nestmlplasticOptimizedmodule.pdb"
+  "aeif_psc_alpha_nestmlplasticOptimizedmodule.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/aeif_psc_alpha_nestmlplasticOptimizedmodule_module.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

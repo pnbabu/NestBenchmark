@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator
-# Build directory: /p/home/jusers/koll1/jusuf/NestBenchmark/nest-build
+# Source directory: /home/lukkyguy/code/NestBenchmark/nest-simulator
+# Build directory: /home/lukkyguy/code/NestBenchmark/nest-build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

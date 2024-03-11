@@ -19,7 +19,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  Generated from NESTML at time: 2024-03-11 15:32:02.353723
+ *  Generated from NESTML at time: 2024-03-11 16:28:30.919444
 **/
 #ifndef IAF_PSC_ALPHA_NEURON_NESTML
 #define IAF_PSC_ALPHA_NEURON_NESTML

@@ -19,7 +19,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  Generated from NESTML at time: 2024-03-11 15:32:51.858982
+ *  Generated from NESTML at time: 2024-03-11 16:29:20.052092
 **/
 
 // C++ includes:
@@ -57,10 +57,10 @@ template <> void RecordablesMap<iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__w
    insert_(iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized_names::_V_m, &iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::get_V_m);
    insert_(iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized_names::_refr_t, &iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::get_refr_t);
    insert_(iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized_names::_post_trace__for_stdp_synapse_Nestml_Plastic_Optimized, &iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::get_post_trace__for_stdp_synapse_Nestml_Plastic_Optimized);
-   insert_(iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized_names::_I_kernel_inh__X__inh_spikes, &iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::get_I_kernel_inh__X__inh_spikes);
-   insert_(iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized_names::_I_kernel_inh__X__inh_spikes__d, &iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::get_I_kernel_inh__X__inh_spikes__d);
    insert_(iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized_names::_I_kernel_exc__X__exc_spikes, &iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::get_I_kernel_exc__X__exc_spikes);
    insert_(iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized_names::_I_kernel_exc__X__exc_spikes__d, &iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::get_I_kernel_exc__X__exc_spikes__d);
+   insert_(iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized_names::_I_kernel_inh__X__inh_spikes, &iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::get_I_kernel_inh__X__inh_spikes);
+   insert_(iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized_names::_I_kernel_inh__X__inh_spikes__d, &iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::get_I_kernel_inh__X__inh_spikes__d);
 
     // Add vector variables  
   }
@@ -145,27 +145,27 @@ iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_
   S_.refr_t = __n.S_.refr_t;
   S_.is_refractory = __n.S_.is_refractory;
   S_.post_trace__for_stdp_synapse_Nestml_Plastic_Optimized = __n.S_.post_trace__for_stdp_synapse_Nestml_Plastic_Optimized;
-  S_.I_kernel_inh__X__inh_spikes = __n.S_.I_kernel_inh__X__inh_spikes;
-  S_.I_kernel_inh__X__inh_spikes__d = __n.S_.I_kernel_inh__X__inh_spikes__d;
   S_.I_kernel_exc__X__exc_spikes = __n.S_.I_kernel_exc__X__exc_spikes;
   S_.I_kernel_exc__X__exc_spikes__d = __n.S_.I_kernel_exc__X__exc_spikes__d;
+  S_.I_kernel_inh__X__inh_spikes = __n.S_.I_kernel_inh__X__inh_spikes;
+  S_.I_kernel_inh__X__inh_spikes__d = __n.S_.I_kernel_inh__X__inh_spikes__d;
 
   // copy internals V_
   V_.__h = __n.V_.__h;
   V_.__P__V_m__V_m = __n.V_.__P__V_m__V_m;
-  V_.__P__V_m__I_kernel_inh__X__inh_spikes = __n.V_.__P__V_m__I_kernel_inh__X__inh_spikes;
-  V_.__P__V_m__I_kernel_inh__X__inh_spikes__d = __n.V_.__P__V_m__I_kernel_inh__X__inh_spikes__d;
   V_.__P__V_m__I_kernel_exc__X__exc_spikes = __n.V_.__P__V_m__I_kernel_exc__X__exc_spikes;
   V_.__P__V_m__I_kernel_exc__X__exc_spikes__d = __n.V_.__P__V_m__I_kernel_exc__X__exc_spikes__d;
+  V_.__P__V_m__I_kernel_inh__X__inh_spikes = __n.V_.__P__V_m__I_kernel_inh__X__inh_spikes;
+  V_.__P__V_m__I_kernel_inh__X__inh_spikes__d = __n.V_.__P__V_m__I_kernel_inh__X__inh_spikes__d;
   V_.__P__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized = __n.V_.__P__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized;
-  V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes = __n.V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes;
-  V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d = __n.V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
-  V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes = __n.V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes;
-  V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d = __n.V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
   V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes = __n.V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes;
   V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes__d = __n.V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes__d;
   V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes = __n.V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes;
   V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes__d = __n.V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes__d;
+  V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes = __n.V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes;
+  V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d = __n.V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
+  V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes = __n.V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes;
+  V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d = __n.V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
   n_incoming_ = __n.n_incoming_;
   max_delay_ = __n.max_delay_;
   last_spike_ = __n.last_spike_;
@@ -220,10 +220,10 @@ void iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Pla
   S_.refr_t = 0; // as ms
   S_.is_refractory = false; // as boolean
   S_.post_trace__for_stdp_synapse_Nestml_Plastic_Optimized = 0.0; // as real
-  S_.I_kernel_inh__X__inh_spikes = 0; // as real
-  S_.I_kernel_inh__X__inh_spikes__d = 0; // as 1 / s
   S_.I_kernel_exc__X__exc_spikes = 0; // as real
   S_.I_kernel_exc__X__exc_spikes__d = 0; // as 1 / s
+  S_.I_kernel_inh__X__inh_spikes = 0; // as real
+  S_.I_kernel_inh__X__inh_spikes__d = 0; // as 1 / s
   // state variables for archiving state for paired synapse
   n_incoming_ = 0;
   max_delay_ = 0;
@@ -262,36 +262,36 @@ void iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Pla
   if (exclude_timestep)
   {    
     V_.__P__V_m__V_m = 1.0 * std::exp((-V_.__h) / P_.tau_m); // as real
-    V_.__P__V_m__I_kernel_inh__X__inh_spikes = P_.tau_m * (0.25 * V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) - 0.25 * V_.__h * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) + 0.5 * P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) - 0.5 * P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_syn_inh) - 0.25 * pow(P_.tau_syn_inh, 2) * std::exp(V_.__h / P_.tau_m) + 0.25 * pow(P_.tau_syn_inh, 2) * std::exp(V_.__h / P_.tau_syn_inh)) * std::exp((-V_.__h) / P_.tau_syn_inh - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_inh + 0.25 * pow(P_.tau_syn_inh, 2))); // as real
-    V_.__P__V_m__I_kernel_inh__X__inh_spikes__d = 0.25 * P_.tau_m * P_.tau_syn_inh * (V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) - V_.__h * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) + P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) - P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_syn_inh)) * std::exp((-V_.__h) / P_.tau_syn_inh - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_inh + 0.25 * pow(P_.tau_syn_inh, 2))); // as real
     V_.__P__V_m__I_kernel_exc__X__exc_spikes = P_.tau_m * ((-0.25) * V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) + 0.25 * V_.__h * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_m) - 0.5 * P_.tau_m * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_m) + 0.5 * P_.tau_m * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_syn_exc) + 0.25 * pow(P_.tau_syn_exc, 2) * std::exp(V_.__h / P_.tau_m) - 0.25 * pow(P_.tau_syn_exc, 2) * std::exp(V_.__h / P_.tau_syn_exc)) * std::exp((-V_.__h) / P_.tau_syn_exc - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_exc + 0.25 * pow(P_.tau_syn_exc, 2))); // as real
     V_.__P__V_m__I_kernel_exc__X__exc_spikes__d = 0.25 * P_.tau_m * P_.tau_syn_exc * ((-V_.__h) * P_.tau_m * std::exp(V_.__h / P_.tau_m) + V_.__h * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_m) - P_.tau_m * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_m) + P_.tau_m * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_syn_exc)) * std::exp((-V_.__h) / P_.tau_syn_exc - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_exc + 0.25 * pow(P_.tau_syn_exc, 2))); // as real
+    V_.__P__V_m__I_kernel_inh__X__inh_spikes = P_.tau_m * (0.25 * V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) - 0.25 * V_.__h * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) + 0.5 * P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) - 0.5 * P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_syn_inh) - 0.25 * pow(P_.tau_syn_inh, 2) * std::exp(V_.__h / P_.tau_m) + 0.25 * pow(P_.tau_syn_inh, 2) * std::exp(V_.__h / P_.tau_syn_inh)) * std::exp((-V_.__h) / P_.tau_syn_inh - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_inh + 0.25 * pow(P_.tau_syn_inh, 2))); // as real
+    V_.__P__V_m__I_kernel_inh__X__inh_spikes__d = 0.25 * P_.tau_m * P_.tau_syn_inh * (V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) - V_.__h * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) + P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) - P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_syn_inh)) * std::exp((-V_.__h) / P_.tau_syn_inh - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_inh + 0.25 * pow(P_.tau_syn_inh, 2))); // as real
     V_.__P__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized = 1.0 * std::exp((-V_.__h) / P_.tau_tr_post__for_stdp_synapse_Nestml_Plastic_Optimized); // as real
-    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes = 1.0 * (V_.__h + P_.tau_syn_inh) * std::exp((-V_.__h) / P_.tau_syn_inh) / P_.tau_syn_inh; // as real
-    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d = 1.0 * V_.__h * std::exp((-V_.__h) / P_.tau_syn_inh); // as real
-    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes = (-1.0) * V_.__h * std::exp((-V_.__h) / P_.tau_syn_inh) / pow(P_.tau_syn_inh, 2); // as real
-    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d = ((-1.0) * V_.__h + P_.tau_syn_inh) * std::exp((-V_.__h) / P_.tau_syn_inh) / P_.tau_syn_inh; // as real
     V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes = 1.0 * (V_.__h + P_.tau_syn_exc) * std::exp((-V_.__h) / P_.tau_syn_exc) / P_.tau_syn_exc; // as real
     V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes__d = 1.0 * V_.__h * std::exp((-V_.__h) / P_.tau_syn_exc); // as real
     V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes = (-1.0) * V_.__h * std::exp((-V_.__h) / P_.tau_syn_exc) / pow(P_.tau_syn_exc, 2); // as real
     V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes__d = 1.0 * ((-V_.__h) + P_.tau_syn_exc) * std::exp((-V_.__h) / P_.tau_syn_exc) / P_.tau_syn_exc; // as real
+    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes = 1.0 * (V_.__h + P_.tau_syn_inh) * std::exp((-V_.__h) / P_.tau_syn_inh) / P_.tau_syn_inh; // as real
+    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d = 1.0 * V_.__h * std::exp((-V_.__h) / P_.tau_syn_inh); // as real
+    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes = (-1.0) * V_.__h * std::exp((-V_.__h) / P_.tau_syn_inh) / pow(P_.tau_syn_inh, 2); // as real
+    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d = 1.0 * ((-V_.__h) + P_.tau_syn_inh) * std::exp((-V_.__h) / P_.tau_syn_inh) / P_.tau_syn_inh; // as real
   }
   else {    
     V_.__h = __resolution; // as ms
     V_.__P__V_m__V_m = 1.0 * std::exp((-V_.__h) / P_.tau_m); // as real
-    V_.__P__V_m__I_kernel_inh__X__inh_spikes = P_.tau_m * (0.25 * V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) - 0.25 * V_.__h * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) + 0.5 * P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) - 0.5 * P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_syn_inh) - 0.25 * pow(P_.tau_syn_inh, 2) * std::exp(V_.__h / P_.tau_m) + 0.25 * pow(P_.tau_syn_inh, 2) * std::exp(V_.__h / P_.tau_syn_inh)) * std::exp((-V_.__h) / P_.tau_syn_inh - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_inh + 0.25 * pow(P_.tau_syn_inh, 2))); // as real
-    V_.__P__V_m__I_kernel_inh__X__inh_spikes__d = 0.25 * P_.tau_m * P_.tau_syn_inh * (V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) - V_.__h * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) + P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) - P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_syn_inh)) * std::exp((-V_.__h) / P_.tau_syn_inh - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_inh + 0.25 * pow(P_.tau_syn_inh, 2))); // as real
     V_.__P__V_m__I_kernel_exc__X__exc_spikes = P_.tau_m * ((-0.25) * V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) + 0.25 * V_.__h * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_m) - 0.5 * P_.tau_m * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_m) + 0.5 * P_.tau_m * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_syn_exc) + 0.25 * pow(P_.tau_syn_exc, 2) * std::exp(V_.__h / P_.tau_m) - 0.25 * pow(P_.tau_syn_exc, 2) * std::exp(V_.__h / P_.tau_syn_exc)) * std::exp((-V_.__h) / P_.tau_syn_exc - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_exc + 0.25 * pow(P_.tau_syn_exc, 2))); // as real
     V_.__P__V_m__I_kernel_exc__X__exc_spikes__d = 0.25 * P_.tau_m * P_.tau_syn_exc * ((-V_.__h) * P_.tau_m * std::exp(V_.__h / P_.tau_m) + V_.__h * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_m) - P_.tau_m * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_m) + P_.tau_m * P_.tau_syn_exc * std::exp(V_.__h / P_.tau_syn_exc)) * std::exp((-V_.__h) / P_.tau_syn_exc - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_exc + 0.25 * pow(P_.tau_syn_exc, 2))); // as real
+    V_.__P__V_m__I_kernel_inh__X__inh_spikes = P_.tau_m * (0.25 * V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) - 0.25 * V_.__h * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) + 0.5 * P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) - 0.5 * P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_syn_inh) - 0.25 * pow(P_.tau_syn_inh, 2) * std::exp(V_.__h / P_.tau_m) + 0.25 * pow(P_.tau_syn_inh, 2) * std::exp(V_.__h / P_.tau_syn_inh)) * std::exp((-V_.__h) / P_.tau_syn_inh - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_inh + 0.25 * pow(P_.tau_syn_inh, 2))); // as real
+    V_.__P__V_m__I_kernel_inh__X__inh_spikes__d = 0.25 * P_.tau_m * P_.tau_syn_inh * (V_.__h * P_.tau_m * std::exp(V_.__h / P_.tau_m) - V_.__h * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) + P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_m) - P_.tau_m * P_.tau_syn_inh * std::exp(V_.__h / P_.tau_syn_inh)) * std::exp((-V_.__h) / P_.tau_syn_inh - V_.__h / P_.tau_m) / (P_.C_m * (0.25 * pow(P_.tau_m, 2) - 0.5 * P_.tau_m * P_.tau_syn_inh + 0.25 * pow(P_.tau_syn_inh, 2))); // as real
     V_.__P__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized = 1.0 * std::exp((-V_.__h) / P_.tau_tr_post__for_stdp_synapse_Nestml_Plastic_Optimized); // as real
-    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes = 1.0 * (V_.__h + P_.tau_syn_inh) * std::exp((-V_.__h) / P_.tau_syn_inh) / P_.tau_syn_inh; // as real
-    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d = 1.0 * V_.__h * std::exp((-V_.__h) / P_.tau_syn_inh); // as real
-    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes = (-1.0) * V_.__h * std::exp((-V_.__h) / P_.tau_syn_inh) / pow(P_.tau_syn_inh, 2); // as real
-    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d = ((-1.0) * V_.__h + P_.tau_syn_inh) * std::exp((-V_.__h) / P_.tau_syn_inh) / P_.tau_syn_inh; // as real
     V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes = 1.0 * (V_.__h + P_.tau_syn_exc) * std::exp((-V_.__h) / P_.tau_syn_exc) / P_.tau_syn_exc; // as real
     V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes__d = 1.0 * V_.__h * std::exp((-V_.__h) / P_.tau_syn_exc); // as real
     V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes = (-1.0) * V_.__h * std::exp((-V_.__h) / P_.tau_syn_exc) / pow(P_.tau_syn_exc, 2); // as real
     V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes__d = 1.0 * ((-V_.__h) + P_.tau_syn_exc) * std::exp((-V_.__h) / P_.tau_syn_exc) / P_.tau_syn_exc; // as real
+    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes = 1.0 * (V_.__h + P_.tau_syn_inh) * std::exp((-V_.__h) / P_.tau_syn_inh) / P_.tau_syn_inh; // as real
+    V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d = 1.0 * V_.__h * std::exp((-V_.__h) / P_.tau_syn_inh); // as real
+    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes = (-1.0) * V_.__h * std::exp((-V_.__h) / P_.tau_syn_inh) / pow(P_.tau_syn_inh, 2); // as real
+    V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d = 1.0 * ((-V_.__h) + P_.tau_syn_inh) * std::exp((-V_.__h) / P_.tau_syn_inh) / P_.tau_syn_inh; // as real
   }
 }
 void iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized::pre_run_hook()
@@ -346,10 +346,10 @@ void iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Pla
      *
      * step 1: regardless of whether and how integrate_odes() will be called, update variables due to convolutions
     **/
-const double I_kernel_inh__X__inh_spikes__tmp_ = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
-const double I_kernel_inh__X__inh_spikes__d__tmp_ = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
 const double I_kernel_exc__X__exc_spikes__tmp_ = S_.I_kernel_exc__X__exc_spikes * V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes + S_.I_kernel_exc__X__exc_spikes__d * V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes__d;
 const double I_kernel_exc__X__exc_spikes__d__tmp_ = S_.I_kernel_exc__X__exc_spikes * V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes + S_.I_kernel_exc__X__exc_spikes__d * V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes__d;
+const double I_kernel_inh__X__inh_spikes__tmp_ = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
+const double I_kernel_inh__X__inh_spikes__d__tmp_ = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
 
 
     /**
@@ -366,20 +366,20 @@ const double I_kernel_exc__X__exc_spikes__d__tmp_ = S_.I_kernel_exc__X__exc_spik
         // start rendered code for integrate_odes()
 
 
-        // analytic solver: integrating state variables (first step): V_m, I_kernel_inh__X__inh_spikes, I_kernel_inh__X__inh_spikes__d, I_kernel_exc__X__exc_spikes, I_kernel_exc__X__exc_spikes__d, post_trace__for_stdp_synapse_Nestml_Plastic_Optimized, 
+        // analytic solver: integrating state variables (first step): V_m, I_kernel_exc__X__exc_spikes, I_kernel_exc__X__exc_spikes__d, I_kernel_inh__X__inh_spikes, I_kernel_inh__X__inh_spikes__d, post_trace__for_stdp_synapse_Nestml_Plastic_Optimized, 
         const double V_m__tmp = (-P_.E_L) * V_.__P__V_m__V_m + P_.E_L + S_.I_kernel_exc__X__exc_spikes * V_.__P__V_m__I_kernel_exc__X__exc_spikes + S_.I_kernel_exc__X__exc_spikes__d * V_.__P__V_m__I_kernel_exc__X__exc_spikes__d + S_.I_kernel_inh__X__inh_spikes * V_.__P__V_m__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__V_m__I_kernel_inh__X__inh_spikes__d + S_.V_m * V_.__P__V_m__V_m - P_.I_e * V_.__P__V_m__V_m * P_.tau_m / P_.C_m + P_.I_e * P_.tau_m / P_.C_m - B_.I_stim_grid_sum_ * V_.__P__V_m__V_m * P_.tau_m / P_.C_m + B_.I_stim_grid_sum_ * P_.tau_m / P_.C_m;
-        const double I_kernel_inh__X__inh_spikes__tmp = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
-        const double I_kernel_inh__X__inh_spikes__d__tmp = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
         const double I_kernel_exc__X__exc_spikes__tmp = S_.I_kernel_exc__X__exc_spikes * V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes + S_.I_kernel_exc__X__exc_spikes__d * V_.__P__I_kernel_exc__X__exc_spikes__I_kernel_exc__X__exc_spikes__d;
         const double I_kernel_exc__X__exc_spikes__d__tmp = S_.I_kernel_exc__X__exc_spikes * V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes + S_.I_kernel_exc__X__exc_spikes__d * V_.__P__I_kernel_exc__X__exc_spikes__d__I_kernel_exc__X__exc_spikes__d;
+        const double I_kernel_inh__X__inh_spikes__tmp = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__I_kernel_inh__X__inh_spikes__d;
+        const double I_kernel_inh__X__inh_spikes__d__tmp = S_.I_kernel_inh__X__inh_spikes * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes + S_.I_kernel_inh__X__inh_spikes__d * V_.__P__I_kernel_inh__X__inh_spikes__d__I_kernel_inh__X__inh_spikes__d;
         const double post_trace__for_stdp_synapse_Nestml_Plastic_Optimized__tmp = V_.__P__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized__post_trace__for_stdp_synapse_Nestml_Plastic_Optimized * S_.post_trace__for_stdp_synapse_Nestml_Plastic_Optimized;
-        // analytic solver: integrating state variables (second step): V_m, I_kernel_inh__X__inh_spikes, I_kernel_inh__X__inh_spikes__d, I_kernel_exc__X__exc_spikes, I_kernel_exc__X__exc_spikes__d, post_trace__for_stdp_synapse_Nestml_Plastic_Optimized, 
+        // analytic solver: integrating state variables (second step): V_m, I_kernel_exc__X__exc_spikes, I_kernel_exc__X__exc_spikes__d, I_kernel_inh__X__inh_spikes, I_kernel_inh__X__inh_spikes__d, post_trace__for_stdp_synapse_Nestml_Plastic_Optimized, 
         /* replace analytically solvable variables with precisely integrated values  */
         S_.V_m = V_m__tmp;
-        S_.I_kernel_inh__X__inh_spikes = I_kernel_inh__X__inh_spikes__tmp;
-        S_.I_kernel_inh__X__inh_spikes__d = I_kernel_inh__X__inh_spikes__d__tmp;
         S_.I_kernel_exc__X__exc_spikes = I_kernel_exc__X__exc_spikes__tmp;
         S_.I_kernel_exc__X__exc_spikes__d = I_kernel_exc__X__exc_spikes__d__tmp;
+        S_.I_kernel_inh__X__inh_spikes = I_kernel_inh__X__inh_spikes__tmp;
+        S_.I_kernel_inh__X__inh_spikes__d = I_kernel_inh__X__inh_spikes__d__tmp;
         S_.post_trace__for_stdp_synapse_Nestml_Plastic_Optimized = post_trace__for_stdp_synapse_Nestml_Plastic_Optimized__tmp;
     }
 
@@ -394,18 +394,18 @@ const double I_kernel_exc__X__exc_spikes__d__tmp_ = S_.I_kernel_exc__X__exc_spik
      * step 2: regardless of whether and how integrate_odes() was called, update variables due to convolutions. Set to the updated values at the end of the timestep.
     **/
 
-    S_.I_kernel_inh__X__inh_spikes = I_kernel_inh__X__inh_spikes__tmp_;
-    S_.I_kernel_inh__X__inh_spikes__d = I_kernel_inh__X__inh_spikes__d__tmp_;
     S_.I_kernel_exc__X__exc_spikes = I_kernel_exc__X__exc_spikes__tmp_;
     S_.I_kernel_exc__X__exc_spikes__d = I_kernel_exc__X__exc_spikes__d__tmp_;
+    S_.I_kernel_inh__X__inh_spikes = I_kernel_inh__X__inh_spikes__tmp_;
+    S_.I_kernel_inh__X__inh_spikes__d = I_kernel_inh__X__inh_spikes__d__tmp_;
 
 
     /**
      * spike updates due to convolutions
     **/
 
-    S_.I_kernel_inh__X__inh_spikes__d += ((0.001 * B_.spike_inputs_grid_sum_[INH_SPIKES - MIN_SPIKE_RECEPTOR])) * (numerics::e / P_.tau_syn_inh) / (1 / 1000.0);
     S_.I_kernel_exc__X__exc_spikes__d += ((0.001 * B_.spike_inputs_grid_sum_[EXC_SPIKES - MIN_SPIKE_RECEPTOR])) * (numerics::e / P_.tau_syn_exc) / (1 / 1000.0);
+    S_.I_kernel_inh__X__inh_spikes__d += ((0.001 * B_.spike_inputs_grid_sum_[INH_SPIKES - MIN_SPIKE_RECEPTOR])) * (numerics::e / P_.tau_syn_inh) / (1 / 1000.0);
 
     /**
      * Begin NESTML generated code for the onCondition block(s)

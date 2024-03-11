@@ -28,6 +28,7 @@ extras/syntax-highlighting/visual-code/nestml/package.json
 extras/syntax-highlighting/visual-code/nestml/syntaxes/nestml.tmLanguage.json
 models/neurons/aeif_cond_alpha_neuron.nestml
 models/neurons/aeif_cond_exp_neuron.nestml
+models/neurons/aeif_psc_alpha_neuron.nestml
 models/neurons/hh_cond_exp_destexhe_neuron.nestml
 models/neurons/hh_cond_exp_traub_neuron.nestml
 models/neurons/hh_moto_5ht_neuron.nestml

@@ -1,6 +1,6 @@
 #! /bin/sh
 
-prefix="/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install"
+prefix="/home/lukkyguy/code/NestBenchmark/nest-simulator-install"
 exec_prefix=${prefix}
 
 usage()
@@ -62,28 +62,28 @@ while test $# -gt 0; do
         usage 0
         ;;
     --includes)
-        echo " -I/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install/include/nest -I/p/software/jusuf/stages/2023/software/libtool/2.4.7-GCCcore-11.3.0/include -I/p/software/jusuf/stages/2023/software/GSL/2.7-GCCcore-11.3.0/include -I/p/software/jusuf/stages/2023/software/Boost/1.79.0-GCCcore-11.3.0/include "
+        echo " -I/home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest -I/usr/include -I/usr/include -I/usr/include "
         ;;
     --cflags)
         echo " -std=c++17 -Wall -fopenmp -O3 -fdiagnostics-color=auto"
         ;;
     --libs)
-        echo "-L$prefix/lib64/nest -lnest -lsli -fopenmp /p/software/jusuf/stages/2023/software/libtool/2.4.7-GCCcore-11.3.0/lib/libltdl.so  /p/software/jusuf/stages/2023/software/GSL/2.7-GCCcore-11.3.0/lib/libgsl.so /p/software/jusuf/stages/2023/software/GSL/2.7-GCCcore-11.3.0/lib/libgslcblas.so     "
+        echo "-L$prefix/lib/nest -lnest -lsli -fopenmp /usr/lib/x86_64-linux-gnu/libltdl.so  /usr/lib/x86_64-linux-gnu/libgsl.so /usr/lib/x86_64-linux-gnu/libgslcblas.so     "
         ;;
     --compiler)
-        echo "/p/software/jusuf/stages/2023/software/GCCcore/11.3.0/bin/c++"
+        echo "/usr/bin/c++"
         ;;
     --compiler-name)
         echo "GNU"
         ;;
     --compiler-version)
-        echo "11.3.0"
+        echo "11.4.0"
         ;;
     --python-executable)
-        echo "/p/software/jusuf/stages/2023/software/Python/3.10.4-GCCcore-11.3.0/bin/python3.10"
+        echo "/usr/bin/python3.10"
         ;;
     --python-version)
-        echo "3.10.4"
+        echo "3.10.12"
         ;;
 
     --static-libraries)
@@ -96,7 +96,7 @@ while test $# -gt 0; do
         echo "share/nest"
         ;;
     --libdir)
-        echo "lib64"
+        echo "lib"
         ;;
     *)
         usage

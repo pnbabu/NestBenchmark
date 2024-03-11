@@ -238,7 +238,8 @@ nest.print_time = True
 nest.overwrite_files = True
 
 # Basic
-neuron = args.simulated_neuron.split("_neuron_")[0]
+neuron = args.simulated_neuron.split("_neuron")[0]
+
 nest.Install(f"{neuron}_nestmlmodule")
 nest.Install(f"{neuron}_nestmlOptimizedmodule")
 nest.Install(f"{neuron}_nestmlplasticmodule")
