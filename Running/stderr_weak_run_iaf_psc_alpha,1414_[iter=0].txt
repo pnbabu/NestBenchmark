@@ -1,1 +1,4 @@
-570772
+Traceback (most recent call last):
+  File "/home/lukkyguy/code/NestBenchmark/Running/examples/brunel_alpha_nest.py", line 241, in <module>
+    nest.install(f"{args.simulated_neuron}_nestmlmodule")
+AttributeError: module 'nest' has no attribute 'install'. Did you mean: 'Install'?

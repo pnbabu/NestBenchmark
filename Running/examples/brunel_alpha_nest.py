@@ -169,7 +169,7 @@ if args.simulated_neuron == "iaf_psc_alpha":
         "V_m": 0.0,
         "V_th": theta,
     }
-else:
+elif args.simulated_neuron.startswith("iaf_psc_alpha") and "NESTML" in args.simulated_neuron.upper():
     neuron_params = {
         "C_m": CMem,
         "tau_m": tauMem,
@@ -181,6 +181,35 @@ else:
         "V_m": 0.0,
         "V_th": theta,
     }
+elif args.simulated_neuron == "aeif_psc_alpha":
+    neuron_params = {
+        "C_m": CMem,
+        "g_L": CMem / tauMem,
+        "tau_syn_ex": tauSyn,
+        "tau_syn_in": tauSyn,
+        "t_ref": 2.0,
+        "E_L": 0.0,
+        "V_reset": 0.0,
+        "V_m": 0.0,
+        "V_th": theta,
+        "V_peak": theta
+    }
+elif args.simulated_neuron.startswith("aeif_psc_alpha") and "NESTML" in args.simulated_neuron.upper():
+    neuron_params = {
+        "C_m": CMem,
+        "g_L": CMem / tauMem,
+        "tau_syn_exc": tauSyn,
+        "tau_syn_inh": tauSyn,
+        "refr_T": 2.0,
+        "E_L": 0.0,
+        "V_reset": 0.0,
+        "V_m": 0.0,
+        "V_th": theta,
+        "V_peak": theta
+    }
+else:
+    assert False, "Unknown neuron model: " + str(args.simulated_neuron)
+
 J = 0.1  # postsynaptic amplitude in mV
 J_unit = ComputePSPnorm(tauMem, CMem, tauSyn)
 J_ex = J / J_unit  # amplitude of excitatory postsynaptic current
@@ -208,12 +237,12 @@ nest.resolution = dt
 nest.print_time = True
 nest.overwrite_files = True
 
-try:
- nest.Install("nestmlmodule")
-except:
- pass
-nest.Install("nestmlOptimizedmodule")
-nest.Install("nestmlplasticmodule")
+# Basic
+neuron = args.simulated_neuron.split("_neuron_")[0]
+nest.Install(f"{neuron}_nestmlmodule")
+nest.Install(f"{neuron}_nestmlOptimizedmodule")
+nest.Install(f"{neuron}_nestmlplasticmodule")
+nest.Install(f"{neuron}_nestmlplasticOptimizedmodule")
 print("Building network")
 
 ###############################################################################
@@ -250,19 +279,16 @@ print("Connecting devices")
 # the excitatory and one for the inhibitory connections giving the
 # previously defined weights and equal delays.
 
-if modelName == "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic":
+if "__with_stdp_synapse_Nestml_Plastic" in modelName:
     # use plastic synapses
-    print("Using NESTML STDP synapse")
-    nest.CopyModel("stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
+    neuronName = modelName.split("__")[0]
+    nest.CopyModel(f"stdp_synapse_Nestml_Plastic__with_{neuronName}", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
 elif "plastic" in modelName:
     # use static synapses
     print("Using NEST built in STDP synapse")
     nest.CopyModel("stdp_synapse", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.}) 
 else:
     nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})
-
-nest.CopyModel("static_synapse", "excitatory_static", {"weight": J_ex, "delay": delay})
-
 
 nest.CopyModel("static_synapse", "inhibitory", {"weight": J_in, "delay": delay})
 
@@ -412,5 +438,5 @@ if args.benchmarkPath != "":
         json.dump(status, f,indent=4)
 
     nest.raster_plot.from_device(espikes, hist=True)
-    plt.savefig(f"{path}/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].png")
+    plt.savefig(f"{path}/img_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].png")
     plt.close()

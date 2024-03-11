@@ -18,33 +18,29 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
-store = {
-        "neurons": [
-            "iaf_psc_exp_neuron_Nestml_Optimized",
-            "iaf_psc_exp_neuron_Nestml",
-        ],
-        "baseline": "iaf_psc_exp",
-        "plastic": True,
-    },
+NEURONS = ["iaf_psc_alpha", "aeif_psc_alpha"]
 
 BENCHMARKS = [
     {
         "neurons": [
-            "iaf_psc_alpha_neuron_Nestml_Optimized",
-            "iaf_psc_alpha_neuron_Nestml",
+            f"{neuron}_neuron_Nestml_Optimized",
+            f"{neuron}_neuron_Nestml",
         ],
-        "baseline": "iaf_psc_alpha", 
-        "name": "Basic",
-    },
-    
+        "baseline": neuron,
+        "name": neuron,
+    }
+    for neuron in NEURONS
+] + [
     {
         "neurons": [
-            "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic",
-            "iaf_psc_alpha_neuron_Nestml_Plastic",
+            f"{neuron}_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic",
+            f"{neuron}_neuron_Nestml_Plastic_Optimized_with_stdp_synapse_Nestml_Plastic_Optimized",
+            f"{neuron}_neuron_Nestml_Plastic",
         ],
-        "baseline": "iaf_psc_alpha",
-        "name": "Plastic",
-    },
+        "baseline": neuron,
+        "name": neuron+"_plastic",
+    }
+    for neuron in NEURONS
 ]
 
 legend = {
@@ -58,7 +54,7 @@ legend = {
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(10000), 10, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(2000), 3, dtype=int)
 
 NEURONSPERSCALE = 5
 
@@ -66,8 +62,8 @@ NEURONSPERSCALE = 5
 VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
-ITERATIONS = 20  # XXXXXXXXXXXX: was 10
-DEBUG = True
+ITERATIONS = 1  # XXXXXXXXXXXX: was 10
+DEBUG = False
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
 WEAKSCALINGFOLDERNAME = "timings_weak_scaling"
@@ -98,7 +94,7 @@ def start_weak_scaling_Benchmark(iteration, neurons, name, checkMemory=False):
         result = subprocess.run(
             combination["command"], text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-        if result.stdout:
+        if result.stdout and DEBUG:
             fname = "stdout_weak_run_" + combined + \
                 "_[iter=" + str(iteration) + "].txt"
             with open(fname, "w") as f:
@@ -123,7 +119,6 @@ def start_weak_scaling_Benchmark(iteration, neurons, name, checkMemory=False):
     if checkMemory:
         return memoryDict
 
-
 def start_strong_scaling_Benchmark(iteration, neurons, name):
     combinations = [{"command": ['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath {name}/{STRONGSCALINGFOLDERNAME}'],
                      "name": f"{neuronmodel},{threads}"} for neuronmodel in neurons for threads in VERTICALTHREADS]
@@ -136,7 +131,7 @@ def start_strong_scaling_Benchmark(iteration, neurons, name):
         result = subprocess.run(
             combination["command"], text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-        if result.stdout:
+        if result.stdout and DEBUG:
             fname = "stdout_strong_run_" + combined + \
                 "_[iter=" + str(iteration) + "].txt"
             with open(fname, "w") as f:
@@ -202,7 +197,6 @@ def plot_weak_scaling(data, baseline,name, relative=False):
     path = ("relative_" if relative else "") + "weak_scaling.png"
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
-
 def plot_timedist(data, baseline, name):
     for neuron, scales in data.items():
         plt.figure()
@@ -242,7 +236,6 @@ def plot_timedist(data, baseline, name):
         plt.legend()
         plt.savefig(os.path.join(output_folder,
                     f'{name}/output_{neuron}.png'))
-
 
 def plot_Custom(data, baseline,name, relative=False):
     neuron = next(iter(data))
@@ -284,7 +277,6 @@ def plot_Custom(data, baseline,name, relative=False):
         path = ("relative_" if relative else "") + "output_" + stopwatch + ".png"
         plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
-
 def plot_strong_scaling(data, baseline,name, relative=False):
     plt.figure()
     neurons = []
@@ -325,7 +317,6 @@ def format_bytes(x, _):
     formatted_size = '{:.2f}'.format(x)
     return f'{formatted_size} {units[unit_index]}'
 
-
 def plotMemory(memoryData, baseline, name):
     plt.figure()
     max_y = 0
@@ -357,6 +348,9 @@ def plotMemory(memoryData, baseline, name):
     plt.legend(memoryData.keys())
     plt.savefig(os.path.join(output_folder, f'{name}/output_memory.png'))
 
+def plot_firing_rate(data,name):
+    #TODO: implement
+    pass
 
 def deleteDat():
     for filename in os.listdir("./"):
