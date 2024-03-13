@@ -154,8 +154,14 @@ def plot_weak_scaling(data):
     for neuron, values in data.items():
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
-        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
-        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        print("Time_simulate:")
+        for threads in x:
+            _ = [print(iteration_data['time_simulate']) for iteration_data in values[threads].values()]
+        print("biological_time:")
+        for threads in x:
+            _ = [print(iteration_data['biological_time']) for iteration_data in values[threads].values()]
+        y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
 
         x = np.array([int(val) for val in x], dtype=int)
         plt.errorbar(x * NEURONSPERSCALE, y, yerr=y_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
@@ -176,11 +182,11 @@ def plot_weak_scaling(data):
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
-        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
-        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
         y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
         
-        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
         y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
         
         x = np.array([int(val) for val in x], dtype=int)
@@ -205,11 +211,11 @@ def plot_weak_scaling(data):
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
-        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
-        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
         y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
         
-        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
         #y_factor_std = reference_y / y_std  # Calculate the standard deviation of the factor
         y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
         
@@ -300,8 +306,8 @@ def plot_strong_scaling(data):
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
-        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
-        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
         x = [int(val) for val in x]
         plt.errorbar(x, y=y, yerr=y_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
         
@@ -322,10 +328,10 @@ def plot_strong_scaling(data):
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
-        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
-        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
         y_factor = y / reference_y
-        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
         y_factor_std = y_std / reference_y 
         x = [int(val) for val in x]
         plt.errorbar(x, y=y_factor, yerr=y_factor_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
@@ -348,10 +354,10 @@ def plot_strong_scaling(data):
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
-        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
-        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
         y_factor = y / reference_y 
-        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/(iteration_data["biological_time"]/1000) for iteration_data in values[threads].values()]) for threads in x])
         y_factor_std = y_std / reference_y 
         x = [int(val) for val in x]
         plt.errorbar(x, y=y, yerr=y_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
