@@ -17,7 +17,6 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
-"""
 # for iaf_psc_alpha neurons
 BASELINENEURON = "iaf_psc_alpha"
 NEURONMODELS = [
@@ -48,9 +47,10 @@ NEURONMODELS = [
 legend = {
                 "aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML syn",
                 #"iaf_psc_alpha_neuron_Nestml_Optimized",
-                "aeif_psc_alpha_neuron_Nestml":"NESTML neur, NEST syn",
+                "aeif_psc_alpha_neuron_Nestml": "NESTML neur, NEST syn",
                 BASELINENEURON : "NEST neur + syn"
 }
+"""
 
 
 
@@ -140,12 +140,35 @@ def start_strong_scaling_Benchmark(iteration):
             log(f"\033[91m{result.stderr} failed\033[0m")
         deleteDat()
 
+
 def extract_value_from_filename(filename, key):
     pattern = fr"\[{key}=(.*?)\]"
     match = re.search(pattern, filename)
     return match.group(1) if match else None
 
+
 def plot_weak_scaling(data):
+    plt.figure()
+    neurons = []
+    referenceValues = data[BASELINENEURON]
+    for neuron, values in data.items():
+        neurons.append(neuron)
+        x = sorted(values.keys(), key=lambda k: int(k))
+        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+
+        x = np.array([int(val) for val in x], dtype=int)
+        plt.errorbar(x * NEURONSPERSCALE, y, yerr=y_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
+    
+    plt.xlabel('Neuron count')
+    plt.ylabel('Wall clock time (s)')
+    plt.xscale('log')
+    plt.legend() 
+    plt.savefig(os.path.join(output_folder, 'weak_scaling_abs.png'))
+
+
+
+
     plt.figure()
     neurons = []
     referenceValues = data[BASELINENEURON]
@@ -155,10 +178,10 @@ def plot_weak_scaling(data):
         # Real Time Factor
         reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
         y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
-        y_factor = reference_y/y  # Calculate the factor of y in comparison to the reference value
+        y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
         
         y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
-        y_factor_std = y_std/ reference_y  # Calculate the standard deviation of the factor
+        y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
         
         x = np.array([int(val) for val in x], dtype=int)
         plt.errorbar(x * NEURONSPERSCALE, y_factor, yerr=y_factor_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
@@ -184,8 +207,7 @@ def plot_weak_scaling(data):
         # Real Time Factor
         reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
         y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
-        y_factor = reference_y / y  # Calculate the factor of y in comparison to the reference value
-        #y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
+        y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
         
         y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
         #y_factor_std = reference_y / y_std  # Calculate the standard deviation of the factor
@@ -269,7 +291,30 @@ def plot_Custom(data):
         plt.legend()
         plt.savefig(os.path.join(output_folder, f'output_{stopwatch}.png'))
         
+
 def plot_strong_scaling(data):
+    plt.figure()
+    neurons = []
+    referenceValues = data[BASELINENEURON]
+    for neuron, values in data.items():
+        neurons.append(neuron)
+        x = sorted(values.keys(), key=lambda k: int(k))
+        # Real Time Factor
+        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
+        x = [int(val) for val in x]
+        plt.errorbar(x, y=y, yerr=y_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
+        
+    plt.xlabel('Threads')
+    plt.ylabel('Wall clock time (s)')
+    plt.xscale('log')
+
+    plt.legend()
+    plt.savefig(os.path.join(output_folder, 'strong_scaling_abs.png'))
+
+
+
+
     plt.figure()
     neurons = []
     referenceValues = data[BASELINENEURON]
@@ -279,7 +324,7 @@ def plot_strong_scaling(data):
         # Real Time Factor
         reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
         y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
-        y_factor = reference_y / y
+        y_factor = y / reference_y
         y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"]/1000 for iteration_data in values[threads].values()]) for threads in x])
         y_factor_std = y_std / reference_y 
         x = [int(val) for val in x]
@@ -292,6 +337,7 @@ def plot_strong_scaling(data):
 
     plt.legend()
     plt.savefig(os.path.join(output_folder, 'strong_scaling_rel.png'))
+
 
 
 
