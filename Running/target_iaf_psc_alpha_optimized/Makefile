@@ -223,19 +223,19 @@ iaf_psc_alpha_nestmlOptimizedmodule.s:
 .PHONY : iaf_psc_alpha_nestmlOptimizedmodule.s
 
 # target to build an object file
-iaf_psc_alpha_neuron_Nestml_Optimized.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o
-.PHONY : iaf_psc_alpha_neuron_Nestml_Optimized.o
+iaf_psc_alpha_neuron_NESTML_Optimized.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Optimized.o
+.PHONY : iaf_psc_alpha_neuron_NESTML_Optimized.o
 
 # target to preprocess a source file
-iaf_psc_alpha_neuron_Nestml_Optimized.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.i
-.PHONY : iaf_psc_alpha_neuron_Nestml_Optimized.i
+iaf_psc_alpha_neuron_NESTML_Optimized.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Optimized.i
+.PHONY : iaf_psc_alpha_neuron_NESTML_Optimized.i
 
 # target to generate assembly for a file
-iaf_psc_alpha_neuron_Nestml_Optimized.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.s
-.PHONY : iaf_psc_alpha_neuron_Nestml_Optimized.s
+iaf_psc_alpha_neuron_NESTML_Optimized.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Optimized.s
+.PHONY : iaf_psc_alpha_neuron_NESTML_Optimized.s
 
 # Help Target
 help:
@@ -256,9 +256,9 @@ help:
 	@echo "... iaf_psc_alpha_nestmlOptimizedmodule.o"
 	@echo "... iaf_psc_alpha_nestmlOptimizedmodule.i"
 	@echo "... iaf_psc_alpha_nestmlOptimizedmodule.s"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Optimized.o"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Optimized.i"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Optimized.s"
+	@echo "... iaf_psc_alpha_neuron_NESTML_Optimized.o"
+	@echo "... iaf_psc_alpha_neuron_NESTML_Optimized.i"
+	@echo "... iaf_psc_alpha_neuron_NESTML_Optimized.s"
 .PHONY : help
 
 

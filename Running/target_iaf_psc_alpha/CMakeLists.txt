@@ -40,9 +40,7 @@ set( MODULE_NAME ${SHORT_NAME} )
 set( MODULE_SOURCES
     iaf_psc_alpha_nestmlmodule.h iaf_psc_alpha_nestmlmodule.cpp
     
-      iaf_psc_alpha_neuron_Nestml.cpp iaf_psc_alpha_neuron_Nestml.h
-    
-      iaf_psc_alpha_neuron_Nestml.cpp iaf_psc_alpha_neuron_Nestml.h
+      iaf_psc_alpha_neuron_NESTML.cpp iaf_psc_alpha_neuron_NESTML.h
     
     )
 

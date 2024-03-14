@@ -828,7 +828,7 @@ CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_nestmlmodule.o: i
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/connector_model_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/genericmodel_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/model_manager_impl.h \
-  iaf_psc_alpha_neuron_Nestml.h \
+  iaf_psc_alpha_neuron_NESTML.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h \
@@ -848,7 +848,7 @@ CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_nestmlmodule.o: i
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h
 
-CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o: iaf_psc_alpha_neuron_Nestml.cpp \
+CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o: iaf_psc_alpha_neuron_NESTML.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/11/limits \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -1662,7 +1662,7 @@ CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o: 
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/doubledatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/integerdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/lockptrdatum.h \
-  iaf_psc_alpha_neuron_Nestml.h \
+  iaf_psc_alpha_neuron_NESTML.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h \
@@ -1686,8 +1686,6 @@ CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o: 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/event_delivery_manager_impl.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/universal_data_logger_impl.h:
-
-iaf_psc_alpha_neuron_Nestml.cpp:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dict_util.h:
 
@@ -1831,6 +1829,8 @@ iaf_psc_alpha_neuron_Nestml.cpp:
 
 /usr/include/boost/type_traits/is_base_of.hpp:
 
+iaf_psc_alpha_neuron_NESTML.h:
+
 /usr/include/boost/type_traits/is_base_and_derived.hpp:
 
 /usr/include/boost/type_traits/has_virtual_destructor.hpp:
@@ -1950,8 +1950,6 @@ iaf_psc_alpha_nestmlmodule.h:
 /usr/include/boost/type_traits/detail/mp_defer.hpp:
 
 /usr/include/boost/type_traits/decay.hpp:
-
-iaf_psc_alpha_neuron_Nestml.h:
 
 /usr/include/boost/type_traits/common_type.hpp:
 
@@ -2878,6 +2876,8 @@ iaf_psc_alpha_nestmlmodule.cpp:
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/boost/preprocessor/detail/is_binary.hpp:
+
+iaf_psc_alpha_neuron_NESTML.cpp:
 
 /usr/include/c++/11/bits/align.h:
 

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_nestmlOptimizedmodule.o"
   "CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_nestmlOptimizedmodule.o.d"
-  "CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o"
-  "CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o.d"
+  "CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Optimized.o"
+  "CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Optimized.o.d"
   "iaf_psc_alpha_nestmlOptimizedmodule.pdb"
   "iaf_psc_alpha_nestmlOptimizedmodule.so"
 )

@@ -828,7 +828,7 @@ CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_nestmlmodule.o:
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/connector_model_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/genericmodel_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/model_manager_impl.h \
-  aeif_psc_alpha_neuron_Nestml.h \
+  aeif_psc_alpha_neuron_NESTML.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /usr/include/gsl/gsl_errno.h \
@@ -901,7 +901,7 @@ CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_nestmlmodule.o:
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h
 
-CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_Nestml.o: aeif_psc_alpha_neuron_Nestml.cpp \
+CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_NESTML.o: aeif_psc_alpha_neuron_NESTML.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/11/limits \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -1715,7 +1715,7 @@ CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_Nestml.o
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/doubledatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/integerdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/lockptrdatum.h \
-  aeif_psc_alpha_neuron_Nestml.h \
+  aeif_psc_alpha_neuron_NESTML.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /usr/include/gsl/gsl_errno.h \
@@ -1793,7 +1793,7 @@ CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_Nestml.o
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/universal_data_logger_impl.h:
 
-aeif_psc_alpha_neuron_Nestml.cpp:
+aeif_psc_alpha_neuron_NESTML.cpp:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dict_util.h:
 
@@ -3199,8 +3199,6 @@ aeif_psc_alpha_nestmlmodule.cpp:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/numericdatum.h:
 
-aeif_psc_alpha_neuron_Nestml.h:
-
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/genericdatum.h:
 
 /usr/include/boost/range/range_fwd.hpp:
@@ -3408,6 +3406,8 @@ aeif_psc_alpha_neuron_Nestml.h:
 /usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/boost/preprocessor/control/iif.hpp:
+
+aeif_psc_alpha_neuron_NESTML.h:
 
 /usr/include/boost/preprocessor/logical/bool.hpp:
 

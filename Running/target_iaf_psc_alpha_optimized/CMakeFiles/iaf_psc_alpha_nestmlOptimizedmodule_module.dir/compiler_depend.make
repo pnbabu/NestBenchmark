@@ -828,7 +828,7 @@ CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_nestmlOp
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/connector_model_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/genericmodel_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/model_manager_impl.h \
-  iaf_psc_alpha_neuron_Nestml_Optimized.h \
+  iaf_psc_alpha_neuron_NESTML_Optimized.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h \
@@ -848,7 +848,7 @@ CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_nestmlOp
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h
 
-CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o: iaf_psc_alpha_neuron_Nestml_Optimized.cpp \
+CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Optimized.o: iaf_psc_alpha_neuron_NESTML_Optimized.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/11/limits \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -1662,7 +1662,7 @@ CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_N
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/doubledatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/integerdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/lockptrdatum.h \
-  iaf_psc_alpha_neuron_Nestml_Optimized.h \
+  iaf_psc_alpha_neuron_NESTML_Optimized.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h \
@@ -1687,8 +1687,6 @@ CMakeFiles/iaf_psc_alpha_nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_N
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/universal_data_logger_impl.h:
 
-iaf_psc_alpha_neuron_Nestml_Optimized.cpp:
-
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dict_util.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/weight_recorder.h:
@@ -1697,11 +1695,13 @@ iaf_psc_alpha_neuron_Nestml_Optimized.cpp:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h:
 
-iaf_psc_alpha_neuron_Nestml_Optimized.h:
+iaf_psc_alpha_neuron_NESTML_Optimized.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_impl.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/string_utils.h:
+
+iaf_psc_alpha_neuron_NESTML_Optimized.cpp:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/model_manager_impl.h:
 

@@ -828,7 +828,7 @@ CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_n
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/connector_model_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/genericmodel_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/model_manager_impl.h \
-  iaf_psc_alpha_neuron_Nestml_Plastic_Optimized.h \
+  iaf_psc_alpha_neuron_NESTML_Plastic_Optimized.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h \
@@ -847,13 +847,13 @@ CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_n
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/recordables_map.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h \
-  iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.h \
-  stdp_synapse_Nestml_Plastic_Optimized__with_iaf_psc_alpha_neuron_Nestml_Plastic_Optimized.h \
+  iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized.h \
+  stdp_synapse_NESTML_Plastic_Optimized__with_iaf_psc_alpha_neuron_NESTML_Plastic_Optimized.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/common_synapse_properties.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/connector_model.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictutils.h
 
-CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic_Optimized.o: iaf_psc_alpha_neuron_Nestml_Plastic_Optimized.cpp \
+CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic_Optimized.o: iaf_psc_alpha_neuron_NESTML_Plastic_Optimized.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/11/limits \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -1667,7 +1667,7 @@ CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_n
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/doubledatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/integerdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/lockptrdatum.h \
-  iaf_psc_alpha_neuron_Nestml_Plastic_Optimized.h \
+  iaf_psc_alpha_neuron_NESTML_Plastic_Optimized.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h \
@@ -1687,7 +1687,7 @@ CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_n
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h
 
-CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.o: iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.cpp \
+CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized.o: iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/11/limits \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -2501,7 +2501,7 @@ CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_n
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/doubledatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/integerdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/lockptrdatum.h \
-  iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.h \
+  iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h \
@@ -2521,18 +2521,12 @@ CMakeFiles/iaf_psc_alpha_nestmlplasticOptimizedmodule_module.dir/iaf_psc_alpha_n
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h
 
-
-iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.cpp:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/event_delivery_manager_impl.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/universal_data_logger_impl.h:
 
-iaf_psc_alpha_neuron_Nestml_Plastic_Optimized.cpp:
-
-stdp_synapse_Nestml_Plastic_Optimized__with_iaf_psc_alpha_neuron_Nestml_Plastic_Optimized.h:
-
-iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.h:
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dict_util.h:
 
@@ -2541,6 +2535,8 @@ iaf_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/synaptic_element.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h:
+
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_impl.h:
 
@@ -2689,6 +2685,8 @@ iaf_psc_alpha_nestmlplasticOptimizedmodule.h:
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/event_delivery_manager.h:
 
 /usr/include/boost/type_traits/has_trivial_move_constructor.hpp:
+
+stdp_synapse_NESTML_Plastic_Optimized__with_iaf_psc_alpha_neuron_NESTML_Plastic_Optimized.h:
 
 /usr/include/boost/type_traits/has_trivial_move_assign.hpp:
 
@@ -2912,6 +2910,8 @@ iaf_psc_alpha_nestmlplasticOptimizedmodule.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
 
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized.cpp:
+
 /usr/include/boost/type_traits/conjunction.hpp:
 
 /usr/include/c++/11/bits/stl_list.h:
@@ -2989,8 +2989,6 @@ iaf_psc_alpha_nestmlplasticOptimizedmodule.h:
 /usr/include/c++/11/cstddef:
 
 /usr/include/boost/config/detail/suffix.hpp:
-
-iaf_psc_alpha_neuron_Nestml_Plastic_Optimized.h:
 
 /usr/include/boost/type_traits/is_integral.hpp:
 
@@ -3763,6 +3761,8 @@ iaf_psc_alpha_nestmlplasticOptimizedmodule.cpp:
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
+
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized.cpp:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/conn_builder.h:
 

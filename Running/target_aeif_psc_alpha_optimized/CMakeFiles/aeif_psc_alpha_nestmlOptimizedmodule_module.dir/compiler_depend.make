@@ -828,7 +828,7 @@ CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_nestml
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/connector_model_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/genericmodel_impl.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/model_manager_impl.h \
-  aeif_psc_alpha_neuron_Nestml_Optimized.h \
+  aeif_psc_alpha_neuron_NESTML_Optimized.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /usr/include/gsl/gsl_errno.h \
@@ -901,7 +901,7 @@ CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_nestml
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h
 
-CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o: aeif_psc_alpha_neuron_Nestml_Optimized.cpp \
+CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o: aeif_psc_alpha_neuron_NESTML_Optimized.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/11/limits \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -1715,7 +1715,7 @@ CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/doubledatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/integerdatum.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/lockptrdatum.h \
-  aeif_psc_alpha_neuron_Nestml_Optimized.h \
+  aeif_psc_alpha_neuron_NESTML_Optimized.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
   /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
   /usr/include/gsl/gsl_errno.h \
@@ -1835,6 +1835,10 @@ CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron
 
 /usr/include/gsl/gsl_cblas.h:
 
+/home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h:
+
+/usr/include/gsl/gsl_blas_types.h:
+
 /usr/include/gsl/gsl_vector_complex.h:
 
 /usr/include/gsl/gsl_block_long_double.h:
@@ -1848,12 +1852,6 @@ CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron
 /usr/include/gsl/gsl_matrix.h:
 
 /usr/include/gsl/gsl_types.h:
-
-/home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h:
-
-/usr/include/gsl/gsl_blas_types.h:
-
-aeif_psc_alpha_neuron_Nestml_Optimized.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_impl.h:
 
@@ -2294,6 +2292,8 @@ aeif_psc_alpha_nestmlOptimizedmodule.h:
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
+
+aeif_psc_alpha_neuron_NESTML_Optimized.cpp:
 
 /usr/include/string.h:
 
@@ -2783,8 +2783,6 @@ aeif_psc_alpha_nestmlOptimizedmodule.h:
 
 /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/connection_id.h:
 
-aeif_psc_alpha_neuron_Nestml_Optimized.cpp:
-
 /usr/include/features.h:
 
 /usr/include/asm-generic/errno-base.h:
@@ -2890,6 +2888,8 @@ aeif_psc_alpha_neuron_Nestml_Optimized.cpp:
 /usr/include/boost/type_traits/is_scoped_enum.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+aeif_psc_alpha_neuron_NESTML_Optimized.h:
 
 /usr/include/boost/type_traits/integral_constant.hpp:
 

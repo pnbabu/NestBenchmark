@@ -18,13 +18,13 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
-NEURONS = ["iaf_psc_alpha", "aeif_psc_alpha"]
+NEURONS = ["aeif_psc_alpha","iaf_psc_alpha"]
 
 BENCHMARKS = [
     {
         "neurons": [
-            f"{neuron}_neuron_Nestml_Optimized",
-            f"{neuron}_neuron_Nestml",
+            f"{neuron}_neuron_NESTML_Optimized",
+            f"{neuron}_neuron_NESTML",
         ],
         "baseline": neuron,
         "name": neuron,
@@ -33,9 +33,9 @@ BENCHMARKS = [
 ] + [
     {
         "neurons": [
-            f"{neuron}_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic",
-            f"{neuron}_neuron_Nestml_Plastic_Optimized_with_stdp_synapse_Nestml_Plastic_Optimized",
-            f"{neuron}_neuron_Nestml_Plastic",
+            f"{neuron}_neuron_NESTML_Plastic__with_stdp_synapse_Nestml_Plastic",
+            f"{neuron}_neuron_NESTML_Plastic_Optimized_with_stdp_synapse_Nestml_Plastic_Optimized",
+            f"{neuron}_neuron_NESTML_Plastic",
         ],
         "baseline": neuron,
         "name": neuron+"_plastic",
@@ -44,17 +44,22 @@ BENCHMARKS = [
 ]
 
 legend = {
-                "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML plas-syn",
-                "iaf_psc_alpha_neuron_Nestml_Optimized" : "NESTML neur opt, stat-syn",
-                "iaf_psc_alpha_neuron_Nestml_Plastic" : "NESTML neur, plas-syn",
-                "iaf_psc_alpha_neuron_Nestml":"NESTML neur, stat-syn",
+                "iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML plas-syn",
+                "iaf_psc_alpha_neuron_NESTML_Optimized" : "NESTML neur opt, stat-syn",
+                "iaf_psc_alpha_neuron_NESTML_Plastic" : "NESTML neur, plas-syn",
+                "iaf_psc_alpha_neuron_NESTML":"NESTML neur, stat-syn",
                 "iaf_psc_alpha" : "neur, stat-syn",
+                "aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML exp neur, NESTML plas-syn",
+                "aeif_psc_alpha_neuron_NESTML_Optimized" : "NESTML exp neur opt, stat-syn",
+                "aeif_psc_alpha_neuron_NESTML_Plastic" : "NESTML exp neur, plas-syn",
+                "aeif_psc_alpha_neuron_NESTML":"NESTML exp neur, stat-syn",
+                "aeif_psc_alpha" : "exp neur, stat-syn",
 }
 
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(2000), 3, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(10000), 3, dtype=int)
 
 NEURONSPERSCALE = 5
 
@@ -62,7 +67,7 @@ NEURONSPERSCALE = 5
 VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
-ITERATIONS = 1  # XXXXXXXXXXXX: was 10
+ITERATIONS = 10  # XXXXXXXXXXXX: was 10
 DEBUG = False
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
@@ -348,9 +353,36 @@ def plotMemory(memoryData, baseline, name):
     plt.legend(memoryData.keys())
     plt.savefig(os.path.join(output_folder, f'{name}/output_memory.png'))
 
-def plot_firing_rate(data,name):
-    #TODO: implement
-    pass
+def plot_firing_rate(data,name,baseline,relative=False):
+    plt.figure()
+    neurons = []
+    referenceValues = data[baseline]
+    for neuron, values in data.items():
+        neurons.append(neuron)
+        x = sorted(values.keys(), key=lambda k: int(k))
+        # Real Time Factor
+        reference_y = np.array([np.mean([iteration_data['exidatoryrate']for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['exidatoryrate'] for iteration_data in values[threads].values()]) for threads in x])
+        if relative:
+            y = y / reference_y
+        y_std = np.array([np.std([iteration_data['exidatoryrate'] for iteration_data in values[threads].values()]) for threads in x])
+        if relative:
+            y_std = y_std / reference_y
+        x = [int(val) for val in x]
+        plt.errorbar(x, y=y, yerr=y_std, fmt='-', ecolor='k', capsize=3, label=legend[neuron])
+
+    plt.xlabel('Neuron count')
+    plt.ylabel(f'Firing Rate {"(ratio)" if relative else ""}')
+    formatterX = FuncFormatter(
+            lambda x, _: '{:.1g}'.format(x * NEURONSPERSCALE))
+    plt.xscale('log')
+
+    plt.gca().xaxis.set_major_formatter(formatterX)
+
+
+    plt.legend()
+    path = ("relative_" if relative else "") + "firing_rate.png"
+    plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
 
 def deleteDat():
     for filename in os.listdir("./"):
@@ -423,6 +455,8 @@ def runBenchmark(neurons, baseline, name):
     plot_weak_scaling(data, baseline,name, relative=True)
     plot_timedist(data, baseline, name)
     plot_Custom(data, baseline, name)
+    plot_firing_rate(data,name,baseline,relative=False)
+    plot_firing_rate(data,name,baseline,relative=True)
 
     verticaldata = {}
     for filename in os.listdir(f"./{name}/{STRONGSCALINGFOLDERNAME}"):

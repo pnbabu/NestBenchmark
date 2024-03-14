@@ -9,8 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/iaf_psc_alpha_nestmlplasticmodule.cpp" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_nestmlplasticmodule.o" "gcc" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_nestmlplasticmodule.o.d"
-  "/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/iaf_psc_alpha_neuron_Nestml_Plastic.cpp" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic.o" "gcc" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic.o.d"
-  "/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.cpp" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o" "gcc" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o.d"
+  "/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/iaf_psc_alpha_neuron_NESTML_Plastic.cpp" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic.o" "gcc" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic.o.d"
+  "/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.cpp" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o" "gcc" "CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o.d"
   )
 
 # Targets to which this target links.

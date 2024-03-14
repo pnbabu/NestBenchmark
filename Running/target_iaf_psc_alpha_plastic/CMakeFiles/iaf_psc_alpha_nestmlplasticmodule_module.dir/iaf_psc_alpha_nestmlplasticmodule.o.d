@@ -753,7 +753,7 @@ CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_nestmlplas
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/connector_model_impl.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/genericmodel_impl.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/model_manager_impl.h \
- /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/iaf_psc_alpha_neuron_Nestml_Plastic.h \
+ /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/iaf_psc_alpha_neuron_NESTML_Plastic.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/stopwatch.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/config.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/archiving_node.h \
@@ -772,8 +772,8 @@ CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_nestmlplas
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/recordables_map.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictdatum.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/nest_time.h \
- /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.h \
- /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic.h \
+ /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.h \
+ /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha_plastic/stdp_synapse_NESTML_Plastic__with_iaf_psc_alpha_neuron_NESTML_Plastic.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/common_synapse_properties.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/connector_model.h \
  /home/lukkyguy/code/NestBenchmark/nest-simulator-install/include/nest/dictutils.h

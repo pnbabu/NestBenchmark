@@ -19,7 +19,7 @@
 *  You should have received a copy of the GNU General Public License
 *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
 *
-*  2024-03-11 16:28:59.374835
+*  2024-03-13 22:50:35.376936
 */
 
 // Includes from nestkernel:
@@ -44,12 +44,12 @@
 #include "iaf_psc_alpha_nestmlplasticmodule.h"
 
 
-#include "iaf_psc_alpha_neuron_Nestml_Plastic.h"
+#include "iaf_psc_alpha_neuron_NESTML_Plastic.h"
 
-#include "iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.h"
+#include "iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.h"
 
 
-#include "stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic.h"
+#include "stdp_synapse_NESTML_Plastic__with_iaf_psc_alpha_neuron_NESTML_Plastic.h"
 
 // -- Interface to dynamic module loader ---------------------------------------
 
@@ -104,9 +104,9 @@ void
 iaf_psc_alpha_nestmlplasticmodule::init( SLIInterpreter* i )
 {
     // register neurons
-    nest::kernel().model_manager.register_node_model<iaf_psc_alpha_neuron_Nestml_Plastic>("iaf_psc_alpha_neuron_Nestml_Plastic");
-    nest::kernel().model_manager.register_node_model<iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic>("iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic");
+    nest::kernel().model_manager.register_node_model<iaf_psc_alpha_neuron_NESTML_Plastic>("iaf_psc_alpha_neuron_NESTML_Plastic");
+    nest::kernel().model_manager.register_node_model<iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic>("iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic");
 
     // register synapses
-    nest::register_connection_model< nest::stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic >( "stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic" );
+    nest::register_connection_model< nest::stdp_synapse_NESTML_Plastic__with_iaf_psc_alpha_neuron_NESTML_Plastic >( "stdp_synapse_NESTML_Plastic__with_iaf_psc_alpha_neuron_NESTML_Plastic" );
 } // iaf_psc_alpha_nestmlplasticmodule::init()

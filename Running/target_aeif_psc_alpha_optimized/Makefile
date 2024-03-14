@@ -223,19 +223,19 @@ aeif_psc_alpha_nestmlOptimizedmodule.s:
 .PHONY : aeif_psc_alpha_nestmlOptimizedmodule.s
 
 # target to build an object file
-aeif_psc_alpha_neuron_Nestml_Optimized.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o
-.PHONY : aeif_psc_alpha_neuron_Nestml_Optimized.o
+aeif_psc_alpha_neuron_NESTML_Optimized.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o
+.PHONY : aeif_psc_alpha_neuron_NESTML_Optimized.o
 
 # target to preprocess a source file
-aeif_psc_alpha_neuron_Nestml_Optimized.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.i
-.PHONY : aeif_psc_alpha_neuron_Nestml_Optimized.i
+aeif_psc_alpha_neuron_NESTML_Optimized.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.i
+.PHONY : aeif_psc_alpha_neuron_NESTML_Optimized.i
 
 # target to generate assembly for a file
-aeif_psc_alpha_neuron_Nestml_Optimized.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.s
-.PHONY : aeif_psc_alpha_neuron_Nestml_Optimized.s
+aeif_psc_alpha_neuron_NESTML_Optimized.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.s
+.PHONY : aeif_psc_alpha_neuron_NESTML_Optimized.s
 
 # Help Target
 help:
@@ -256,9 +256,9 @@ help:
 	@echo "... aeif_psc_alpha_nestmlOptimizedmodule.o"
 	@echo "... aeif_psc_alpha_nestmlOptimizedmodule.i"
 	@echo "... aeif_psc_alpha_nestmlOptimizedmodule.s"
-	@echo "... aeif_psc_alpha_neuron_Nestml_Optimized.o"
-	@echo "... aeif_psc_alpha_neuron_Nestml_Optimized.i"
-	@echo "... aeif_psc_alpha_neuron_Nestml_Optimized.s"
+	@echo "... aeif_psc_alpha_neuron_NESTML_Optimized.o"
+	@echo "... aeif_psc_alpha_neuron_NESTML_Optimized.i"
+	@echo "... aeif_psc_alpha_neuron_NESTML_Optimized.s"
 .PHONY : help
 
 

@@ -240,6 +240,7 @@ nest.overwrite_files = True
 # Basic
 neuron = args.simulated_neuron.split("_neuron")[0]
 
+
 nest.Install(f"{neuron}_nestmlmodule")
 nest.Install(f"{neuron}_nestmlOptimizedmodule")
 nest.Install(f"{neuron}_nestmlplasticmodule")
@@ -289,8 +290,9 @@ elif "plastic" in modelName:
     print("Using NEST built in STDP synapse")
     nest.CopyModel("stdp_synapse", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.}) 
 else:
-    nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})
+    nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})    
 
+nest.CopyModel("static_synapse", "excitatory_static", {"weight": J_ex, "delay": delay})
 nest.CopyModel("static_synapse", "inhibitory", {"weight": J_in, "delay": delay})
 
 #################################################################################

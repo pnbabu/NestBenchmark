@@ -83,46 +83,46 @@ CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_nestmlpl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_nestmlplasticmodule.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_nestmlplasticmodule.cpp -o CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_nestmlplasticmodule.s
 
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.o: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/flags.make
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.o: aeif_psc_alpha_neuron_Nestml_Plastic.cpp
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.o: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.o -MF CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.o.d -o CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.o -c /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_Nestml_Plastic.cpp
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.o: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/flags.make
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.o: aeif_psc_alpha_neuron_NESTML_Plastic.cpp
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.o: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.o -MF CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.o.d -o CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.o -c /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_NESTML_Plastic.cpp
 
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_Nestml_Plastic.cpp > CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.i
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_NESTML_Plastic.cpp > CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.i
 
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_Nestml_Plastic.cpp -o CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.s
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_NESTML_Plastic.cpp -o CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.s
 
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/flags.make
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o: aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.cpp
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o -MF CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o.d -o CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o -c /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.cpp
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/flags.make
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o: aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.cpp
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o -MF CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o.d -o CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o -c /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.cpp
 
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.cpp > CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.i
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.cpp > CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.i
 
-CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.cpp -o CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.s
+CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.cpp -o CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.s
 
 # Object files for target aeif_psc_alpha_nestmlplasticmodule_module
 aeif_psc_alpha_nestmlplasticmodule_module_OBJECTS = \
 "CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_nestmlplasticmodule.o" \
-"CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.o" \
-"CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o"
+"CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.o" \
+"CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o"
 
 # External object files for target aeif_psc_alpha_nestmlplasticmodule_module
 aeif_psc_alpha_nestmlplasticmodule_module_EXTERNAL_OBJECTS =
 
 aeif_psc_alpha_nestmlplasticmodule.so: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_nestmlplasticmodule.o
-aeif_psc_alpha_nestmlplasticmodule.so: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic.o
-aeif_psc_alpha_nestmlplasticmodule.so: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o
+aeif_psc_alpha_nestmlplasticmodule.so: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic.o
+aeif_psc_alpha_nestmlplasticmodule.so: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o
 aeif_psc_alpha_nestmlplasticmodule.so: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/build.make
 aeif_psc_alpha_nestmlplasticmodule.so: CMakeFiles/aeif_psc_alpha_nestmlplasticmodule_module.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_plastic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared module aeif_psc_alpha_nestmlplasticmodule.so"

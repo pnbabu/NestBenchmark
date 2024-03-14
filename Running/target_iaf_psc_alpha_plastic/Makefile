@@ -223,34 +223,34 @@ iaf_psc_alpha_nestmlplasticmodule.s:
 .PHONY : iaf_psc_alpha_nestmlplasticmodule.s
 
 # target to build an object file
-iaf_psc_alpha_neuron_Nestml_Plastic.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic.o
-.PHONY : iaf_psc_alpha_neuron_Nestml_Plastic.o
+iaf_psc_alpha_neuron_NESTML_Plastic.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic.o
+.PHONY : iaf_psc_alpha_neuron_NESTML_Plastic.o
 
 # target to preprocess a source file
-iaf_psc_alpha_neuron_Nestml_Plastic.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic.i
-.PHONY : iaf_psc_alpha_neuron_Nestml_Plastic.i
+iaf_psc_alpha_neuron_NESTML_Plastic.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic.i
+.PHONY : iaf_psc_alpha_neuron_NESTML_Plastic.i
 
 # target to generate assembly for a file
-iaf_psc_alpha_neuron_Nestml_Plastic.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic.s
-.PHONY : iaf_psc_alpha_neuron_Nestml_Plastic.s
+iaf_psc_alpha_neuron_NESTML_Plastic.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic.s
+.PHONY : iaf_psc_alpha_neuron_NESTML_Plastic.s
 
 # target to build an object file
-iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o
-.PHONY : iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o
+.PHONY : iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o
 
 # target to preprocess a source file
-iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.i
-.PHONY : iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.i
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.i
+.PHONY : iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.i
 
 # target to generate assembly for a file
-iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.s
-.PHONY : iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.s
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlplasticmodule_module.dir/iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.s
+.PHONY : iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.s
 
 # Help Target
 help:
@@ -271,12 +271,12 @@ help:
 	@echo "... iaf_psc_alpha_nestmlplasticmodule.o"
 	@echo "... iaf_psc_alpha_nestmlplasticmodule.i"
 	@echo "... iaf_psc_alpha_nestmlplasticmodule.s"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Plastic.o"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Plastic.i"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Plastic.s"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.o"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.i"
-	@echo "... iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic.s"
+	@echo "... iaf_psc_alpha_neuron_NESTML_Plastic.o"
+	@echo "... iaf_psc_alpha_neuron_NESTML_Plastic.i"
+	@echo "... iaf_psc_alpha_neuron_NESTML_Plastic.s"
+	@echo "... iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.o"
+	@echo "... iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.i"
+	@echo "... iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic.s"
 .PHONY : help
 
 

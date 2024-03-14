@@ -83,30 +83,30 @@ CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_nestmlmodule.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_nestmlmodule.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/iaf_psc_alpha_nestmlmodule.cpp -o CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_nestmlmodule.s
 
-CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o: CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/flags.make
-CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o: iaf_psc_alpha_neuron_Nestml.cpp
-CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o: CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o -MF CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o.d -o CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o -c /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/iaf_psc_alpha_neuron_Nestml.cpp
+CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o: CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/flags.make
+CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o: iaf_psc_alpha_neuron_NESTML.cpp
+CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o: CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o -MF CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o.d -o CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o -c /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/iaf_psc_alpha_neuron_NESTML.cpp
 
-CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/iaf_psc_alpha_neuron_Nestml.cpp > CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.i
+CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/iaf_psc_alpha_neuron_NESTML.cpp > CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.i
 
-CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/iaf_psc_alpha_neuron_Nestml.cpp -o CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.s
+CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/iaf_psc_alpha_neuron_NESTML.cpp -o CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.s
 
 # Object files for target iaf_psc_alpha_nestmlmodule_module
 iaf_psc_alpha_nestmlmodule_module_OBJECTS = \
 "CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_nestmlmodule.o" \
-"CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o"
+"CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o"
 
 # External object files for target iaf_psc_alpha_nestmlmodule_module
 iaf_psc_alpha_nestmlmodule_module_EXTERNAL_OBJECTS =
 
 iaf_psc_alpha_nestmlmodule.so: CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_nestmlmodule.o
-iaf_psc_alpha_nestmlmodule.so: CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o
+iaf_psc_alpha_nestmlmodule.so: CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o
 iaf_psc_alpha_nestmlmodule.so: CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/build.make
 iaf_psc_alpha_nestmlmodule.so: CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_iaf_psc_alpha/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module iaf_psc_alpha_nestmlmodule.so"

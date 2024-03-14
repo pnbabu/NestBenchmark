@@ -40,7 +40,7 @@ set( MODULE_NAME ${SHORT_NAME} )
 set( MODULE_SOURCES
     iaf_psc_alpha_nestmlOptimizedmodule.h iaf_psc_alpha_nestmlOptimizedmodule.cpp
     
-      iaf_psc_alpha_neuron_Nestml_Optimized.cpp iaf_psc_alpha_neuron_Nestml_Optimized.h
+      iaf_psc_alpha_neuron_NESTML_Optimized.cpp iaf_psc_alpha_neuron_NESTML_Optimized.h
     
     )
 

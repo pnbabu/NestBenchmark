@@ -19,7 +19,7 @@
 *  You should have received a copy of the GNU General Public License
 *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
 *
-*  2024-03-11 16:30:15.258852
+*  2024-03-13 22:51:44.920505
 */
 
 // Includes from nestkernel:
@@ -44,12 +44,12 @@
 #include "aeif_psc_alpha_nestmlplasticOptimizedmodule.h"
 
 
-#include "aeif_psc_alpha_neuron_Nestml_Plastic_Optimized.h"
+#include "aeif_psc_alpha_neuron_NESTML_Plastic_Optimized.h"
 
-#include "aeif_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.h"
+#include "aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized.h"
 
 
-#include "stdp_synapse_Nestml_Plastic_Optimized__with_aeif_psc_alpha_neuron_Nestml_Plastic_Optimized.h"
+#include "stdp_synapse_NESTML_Plastic_Optimized__with_aeif_psc_alpha_neuron_NESTML_Plastic_Optimized.h"
 
 // -- Interface to dynamic module loader ---------------------------------------
 
@@ -104,9 +104,9 @@ void
 aeif_psc_alpha_nestmlplasticOptimizedmodule::init( SLIInterpreter* i )
 {
     // register neurons
-    nest::kernel().model_manager.register_node_model<aeif_psc_alpha_neuron_Nestml_Plastic_Optimized>("aeif_psc_alpha_neuron_Nestml_Plastic_Optimized");
-    nest::kernel().model_manager.register_node_model<aeif_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized>("aeif_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized");
+    nest::kernel().model_manager.register_node_model<aeif_psc_alpha_neuron_NESTML_Plastic_Optimized>("aeif_psc_alpha_neuron_NESTML_Plastic_Optimized");
+    nest::kernel().model_manager.register_node_model<aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized>("aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized");
 
     // register synapses
-    nest::register_connection_model< nest::stdp_synapse_Nestml_Plastic_Optimized__with_aeif_psc_alpha_neuron_Nestml_Plastic_Optimized >( "stdp_synapse_Nestml_Plastic_Optimized__with_aeif_psc_alpha_neuron_Nestml_Plastic_Optimized" );
+    nest::register_connection_model< nest::stdp_synapse_NESTML_Plastic_Optimized__with_aeif_psc_alpha_neuron_NESTML_Plastic_Optimized >( "stdp_synapse_NESTML_Plastic_Optimized__with_aeif_psc_alpha_neuron_NESTML_Plastic_Optimized" );
 } // aeif_psc_alpha_nestmlplasticOptimizedmodule::init()

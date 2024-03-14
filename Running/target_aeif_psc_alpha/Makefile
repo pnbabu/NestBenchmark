@@ -223,19 +223,19 @@ aeif_psc_alpha_nestmlmodule.s:
 .PHONY : aeif_psc_alpha_nestmlmodule.s
 
 # target to build an object file
-aeif_psc_alpha_neuron_Nestml.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_Nestml.o
-.PHONY : aeif_psc_alpha_neuron_Nestml.o
+aeif_psc_alpha_neuron_NESTML.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_NESTML.o
+.PHONY : aeif_psc_alpha_neuron_NESTML.o
 
 # target to preprocess a source file
-aeif_psc_alpha_neuron_Nestml.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_Nestml.i
-.PHONY : aeif_psc_alpha_neuron_Nestml.i
+aeif_psc_alpha_neuron_NESTML.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_NESTML.i
+.PHONY : aeif_psc_alpha_neuron_NESTML.i
 
 # target to generate assembly for a file
-aeif_psc_alpha_neuron_Nestml.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_Nestml.s
-.PHONY : aeif_psc_alpha_neuron_Nestml.s
+aeif_psc_alpha_neuron_NESTML.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/aeif_psc_alpha_nestmlmodule_module.dir/aeif_psc_alpha_neuron_NESTML.s
+.PHONY : aeif_psc_alpha_neuron_NESTML.s
 
 # Help Target
 help:
@@ -256,9 +256,9 @@ help:
 	@echo "... aeif_psc_alpha_nestmlmodule.o"
 	@echo "... aeif_psc_alpha_nestmlmodule.i"
 	@echo "... aeif_psc_alpha_nestmlmodule.s"
-	@echo "... aeif_psc_alpha_neuron_Nestml.o"
-	@echo "... aeif_psc_alpha_neuron_Nestml.i"
-	@echo "... aeif_psc_alpha_neuron_Nestml.s"
+	@echo "... aeif_psc_alpha_neuron_NESTML.o"
+	@echo "... aeif_psc_alpha_neuron_NESTML.i"
+	@echo "... aeif_psc_alpha_neuron_NESTML.s"
 .PHONY : help
 
 

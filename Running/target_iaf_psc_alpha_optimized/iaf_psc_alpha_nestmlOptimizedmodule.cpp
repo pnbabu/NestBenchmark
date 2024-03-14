@@ -19,7 +19,7 @@
 *  You should have received a copy of the GNU General Public License
 *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
 *
-*  2024-03-11 16:28:41.111603
+*  2024-03-13 22:50:16.768438
 */
 
 // Includes from nestkernel:
@@ -44,7 +44,7 @@
 #include "iaf_psc_alpha_nestmlOptimizedmodule.h"
 
 
-#include "iaf_psc_alpha_neuron_Nestml_Optimized.h"
+#include "iaf_psc_alpha_neuron_NESTML_Optimized.h"
 
 
 // -- Interface to dynamic module loader ---------------------------------------
@@ -100,5 +100,5 @@ void
 iaf_psc_alpha_nestmlOptimizedmodule::init( SLIInterpreter* i )
 {
     // register neurons
-    nest::kernel().model_manager.register_node_model<iaf_psc_alpha_neuron_Nestml_Optimized>("iaf_psc_alpha_neuron_Nestml_Optimized");
+    nest::kernel().model_manager.register_node_model<iaf_psc_alpha_neuron_NESTML_Optimized>("iaf_psc_alpha_neuron_NESTML_Optimized");
 } // iaf_psc_alpha_nestmlOptimizedmodule::init()

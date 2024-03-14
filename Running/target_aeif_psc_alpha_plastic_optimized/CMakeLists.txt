@@ -40,9 +40,9 @@ set( MODULE_NAME ${SHORT_NAME} )
 set( MODULE_SOURCES
     aeif_psc_alpha_nestmlplasticOptimizedmodule.h aeif_psc_alpha_nestmlplasticOptimizedmodule.cpp
     
-      aeif_psc_alpha_neuron_Nestml_Plastic_Optimized.cpp aeif_psc_alpha_neuron_Nestml_Plastic_Optimized.h
+      aeif_psc_alpha_neuron_NESTML_Plastic_Optimized.cpp aeif_psc_alpha_neuron_NESTML_Plastic_Optimized.h
     
-      aeif_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.cpp aeif_psc_alpha_neuron_Nestml_Plastic_Optimized__with_stdp_synapse_Nestml_Plastic_Optimized.h
+      aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized.cpp aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized.h
     
     )
 

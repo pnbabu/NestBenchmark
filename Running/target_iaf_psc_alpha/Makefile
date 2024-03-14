@@ -223,19 +223,19 @@ iaf_psc_alpha_nestmlmodule.s:
 .PHONY : iaf_psc_alpha_nestmlmodule.s
 
 # target to build an object file
-iaf_psc_alpha_neuron_Nestml.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.o
-.PHONY : iaf_psc_alpha_neuron_Nestml.o
+iaf_psc_alpha_neuron_NESTML.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.o
+.PHONY : iaf_psc_alpha_neuron_NESTML.o
 
 # target to preprocess a source file
-iaf_psc_alpha_neuron_Nestml.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.i
-.PHONY : iaf_psc_alpha_neuron_Nestml.i
+iaf_psc_alpha_neuron_NESTML.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.i
+.PHONY : iaf_psc_alpha_neuron_NESTML.i
 
 # target to generate assembly for a file
-iaf_psc_alpha_neuron_Nestml.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_Nestml.s
-.PHONY : iaf_psc_alpha_neuron_Nestml.s
+iaf_psc_alpha_neuron_NESTML.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/build.make CMakeFiles/iaf_psc_alpha_nestmlmodule_module.dir/iaf_psc_alpha_neuron_NESTML.s
+.PHONY : iaf_psc_alpha_neuron_NESTML.s
 
 # Help Target
 help:
@@ -256,9 +256,9 @@ help:
 	@echo "... iaf_psc_alpha_nestmlmodule.o"
 	@echo "... iaf_psc_alpha_nestmlmodule.i"
 	@echo "... iaf_psc_alpha_nestmlmodule.s"
-	@echo "... iaf_psc_alpha_neuron_Nestml.o"
-	@echo "... iaf_psc_alpha_neuron_Nestml.i"
-	@echo "... iaf_psc_alpha_neuron_Nestml.s"
+	@echo "... iaf_psc_alpha_neuron_NESTML.o"
+	@echo "... iaf_psc_alpha_neuron_NESTML.i"
+	@echo "... iaf_psc_alpha_neuron_NESTML.s"
 .PHONY : help
 
 

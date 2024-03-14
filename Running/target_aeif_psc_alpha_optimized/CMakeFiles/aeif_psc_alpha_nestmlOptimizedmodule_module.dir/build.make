@@ -83,30 +83,30 @@ CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_nestml
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_nestmlOptimizedmodule.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/aeif_psc_alpha_nestmlOptimizedmodule.cpp -o CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_nestmlOptimizedmodule.s
 
-CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o: CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/flags.make
-CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o: aeif_psc_alpha_neuron_Nestml_Optimized.cpp
-CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o: CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o -MF CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o.d -o CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o -c /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/aeif_psc_alpha_neuron_Nestml_Optimized.cpp
+CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o: CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/flags.make
+CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o: aeif_psc_alpha_neuron_NESTML_Optimized.cpp
+CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o: CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o -MF CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o.d -o CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o -c /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/aeif_psc_alpha_neuron_NESTML_Optimized.cpp
 
-CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/aeif_psc_alpha_neuron_Nestml_Optimized.cpp > CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.i
+CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/aeif_psc_alpha_neuron_NESTML_Optimized.cpp > CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.i
 
-CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/aeif_psc_alpha_neuron_Nestml_Optimized.cpp -o CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.s
+CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/aeif_psc_alpha_neuron_NESTML_Optimized.cpp -o CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.s
 
 # Object files for target aeif_psc_alpha_nestmlOptimizedmodule_module
 aeif_psc_alpha_nestmlOptimizedmodule_module_OBJECTS = \
 "CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_nestmlOptimizedmodule.o" \
-"CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o"
+"CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o"
 
 # External object files for target aeif_psc_alpha_nestmlOptimizedmodule_module
 aeif_psc_alpha_nestmlOptimizedmodule_module_EXTERNAL_OBJECTS =
 
 aeif_psc_alpha_nestmlOptimizedmodule.so: CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_nestmlOptimizedmodule.o
-aeif_psc_alpha_nestmlOptimizedmodule.so: CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o
+aeif_psc_alpha_nestmlOptimizedmodule.so: CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_NESTML_Optimized.o
 aeif_psc_alpha_nestmlOptimizedmodule.so: CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/build.make
 aeif_psc_alpha_nestmlOptimizedmodule.so: CMakeFiles/aeif_psc_alpha_nestmlOptimizedmodule_module.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukkyguy/code/NestBenchmark/Running/target_aeif_psc_alpha_optimized/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module aeif_psc_alpha_nestmlOptimizedmodule.so"
