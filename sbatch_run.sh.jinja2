@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=nestml_benchmark
+#SBATCH --account=slns
+#SBATCH --partition=dc-cpu
+#SBATCH --time=01:00:00
+#SBATCH --nodes={{nodes}}
+#SBATCH --ntasks-per-node={{ntasks_per_node}}
+#SBATCH --cpus-per-task={{cpus_per_task}}
+#SBATCH --hint=nomultithread
+#SBTACH --exclusive
+#SBATCH --output=run_simulation_{{combination["simulated_neuron"]}}_{{nodes}}_{{combination["iteration"]}}_%j.out
+#SBATCH --error=run_simulation_{{combination["simulated_neuron"]}}_{{nodes}}_{{combination["iteration"]}}_%j.err
+
+
+{# export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK #}
+export OMP_PROC_BIND=TRUE
+
+
+# On some systems, MPI is run by SLURM
+# srun python3 /p/project/cslns/babu1/NestBenchmark/Running/benchmark.py
+
+srun python3 Running/examples/brunel_alpha_nest.py --simulated_neuron {{combination["simulated_neuron"]}} --network_scale {{combination["network_scale"]}} --nodes {{ combination["nodes"] }} --threads {{combination["threads"]}}  --iteration {{combination["iteration"]}} --benchmarkPath {{combination["benchmarkPath"]}}

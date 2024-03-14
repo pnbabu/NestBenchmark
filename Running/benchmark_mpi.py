@@ -5,7 +5,9 @@ import os
 import re
 import json
 import math
+from time import sleep
 import matplotlib.pyplot as plt
+from jinja2 import Environment, FileSystemLoader
 import numpy as np
 from matplotlib.ticker import FuncFormatter
 import os
@@ -52,24 +54,31 @@ legend = {
 }
 """
 
-
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
-# NETWORKSCALES = np.logspace(3, math.log10(20000), 5, dtype=int)  # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = [100]
+NETWORKSCALES = np.logspace(3, math.log10(20000), 5, dtype=int)  # XXXXXXXXXXXX: was 10 and 30000
+
 NEURONSPERSCALE = 5
 
 # VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
-VERTICALTHREADS = [1, 2, 4, 8, 16, 32, 64, 128]  # XXXXXXXXXXXXXXX: more resolution
+# VERTICALTHREADS = [1, 2, 4, 8, 16, 32, 64, 128]  # XXXXXXXXXXXXXXX: more resolution
+VERTICALTHREADS = [2, 4, 8, 16, 32, 64, 128]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = 10000
-ITERATIONS = 1  # XXXXXXXXXXXX: was 10
+ITERATIONS = 2  # XXXXXXXXXXXX: was 10
 DEBUG = True
+
+# MPI scaling
+# MPI_STRONG_SCALES = np.logspace(1, math.log2(64), num=6, base=2, dtype=int)
+MPI_STRONG_SCALES = [2]
+MPI_STRONG_SCALE_NEURONS = NETWORKSCALES[-1]
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
 WEAKSCALINGFOLDERNAME = "timings_weak_scaling"
 
-output_folder = os.path.join(os.path.dirname(__file__), '..', 'Output')
+STRONGSCALINGMPIFOLDERNAME = "timings_strong_scaling_mpi"
+
+output_folder = os.path.join(os.path.dirname(__file__), '..', 'Output_MPI')
 
 
 def log(message):
@@ -78,39 +87,92 @@ def log(message):
         f.write(f"{message}\n")
 
 
+def render_sbatch_template(combination, filename):
+    template = setup_template_env()
+    namespace = {}
+    namespace["nodes"] = combination["nodes"]  # number of nodes
+    namespace["ntasks_per_node"] = 2
+    namespace["cpus_per_task"] = int(combination["threads"] / 2)
+    namespace["combination"] = combination
+    file = template.render(namespace)
+    log("Rendering template: " + template.filename)
+
+    log("Rendered template file name: " + filename)
+    with open(filename, "w+") as f:
+        f.write(str(file))
+
+
+def start_strong_scaling_benchmark_mpi(iteration):
+    dirname = os.path.join(output_folder, STRONGSCALINGMPIFOLDERNAME)
+    combinations = [
+        {
+            "nodes": compute_nodes,
+            "simulated_neuron": neuronmodel,
+            "network_scale": MPI_STRONG_SCALE_NEURONS,
+            "threads": NUMTHREADS,
+            "iteration": iteration,
+            "benchmarkPath": dirname
+        } for neuronmodel in NEURONMODELS for compute_nodes in MPI_STRONG_SCALES]
+    for combination in combinations:
+        print("RUNNING FOR " + str(combination))
+        combined = combination["simulated_neuron"] + "," + str(combination["nodes"])
+        log(f"\033[93m{combined}\033[0m" if DEBUG else combined)
+
+        filename = "sbatch_run_" + combination["simulated_neuron"] + "_" + str(combination["nodes"]) + "_[iter=" + str(iteration) + "].sh"
+        filename = os.path.join(dirname, "sbatch", filename)
+        # Create the sbatch file
+        render_sbatch_template(combination, filename)
+        command = ["sbatch", f"{filename}"]
+        result = subprocess.run(command, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        # deleteDat()
+
+
 def start_weak_scaling_Benchmark(iteration, checkMemory=False):
     insert = "/usr/bin/time -f \'%M\'" if checkMemory else ""
-    # benchmarkPathStr = '--benchmarkPath ' + WEAKSCALINGFOLDERNAME + "_mem" if checkMemory else ""
-    benchmarkPathStr = '--benchmarkPath ' + WEAKSCALINGFOLDERNAME if not checkMemory else ""
-    combinations = [{"command":
-                     ['bash', '-c', f'source {PATHTOSHFILE} && {insert} python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {networkscale} --threads {NUMTHREADS} --iteration {iteration} {benchmarkPathStr}'],
-                     "name": f"{neuronmodel}", "networksize": networkscale} for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
+    dirname = os.path.join(output_folder, WEAKSCALINGFOLDERNAME)
+    benchmarkPathStr = dirname if not checkMemory else ""
+    combinations = [
+        {
+            "simulated_neuron": neuronmodel,
+            "network_scale": networkscale,
+            "threads": NUMTHREADS,
+            "iteration": iteration,
+            "benchmarkPath": benchmarkPathStr
+        } for neuronmodel in NEURONMODELS for networkscale in NETWORKSCALES]
 
     log(f"\033[93mMemory Scaling Benchmark {iteration}\033[0m" if checkMemory else f"\033[93mWeak Scaling Benchmark {iteration}\033[0m")
     memoryDict = {}
     for combination in combinations:
         print("RUNNING FOR " + str(combination))
-        combined = combination["name"] + "," + str(combination["networksize"])
+        combined = combination["simulated_neuron"] + "," + str(combination["network_scale"])
         log(f"\033[93m{combined}\033[0m" if DEBUG else combined)
-        result = subprocess.run(combination["command"], text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+        filename = "sbatch_run_" + combination["simulated_neuron"] + "_" + str(combination["network_scale"]) + "_[iter=" + str(iteration) + "].sh"
+        filename = os.path.join(dirname, "sbatch", filename)
+        # Create the sbatch file
+        render_sbatch_template(combination, filename)
+        command = ["sbatch", f"{filename}"]
+        result = subprocess.run(command, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         if result.stdout:
             fname = "stdout_weak_run_" + combined + "_[iter=" + str(iteration) + "].txt"
+            fname = os.path.join(dirname, fname)
             with open(fname, "w") as f:
                 f.write(result.stdout)
 
         if result.stderr:
             fname = "stderr_weak_run_" + combined + "_[iter=" + str(iteration) + "].txt"
+            fname = os.path.join(dirname, fname)
             with open(fname, "w") as f:
                 f.write(result.stderr)
 
         if result.returncode != 0:
-            log(f"\033[91m{combination['name']} failed\033[0m")
+            log(f"\033[91m{combination['simulated_neuron']} failed\033[0m")
             log(f"\033[91m{result.stderr} failed\033[0m")
         if checkMemory:
             memory = int(result.stderr)
             log(f"\033[93mMemory: {memory}\033[0m" if DEBUG else f"Memory: {memory}")
-            memoryDict.setdefault(combination["name"], {}).setdefault(combination["networksize"], []).append(memory)
+            memoryDict.setdefault(combination["simulated_neuron"], {}).setdefault(combination["network_scale"], []).append(memory)
 
         deleteDat()
     if checkMemory:
@@ -118,27 +180,44 @@ def start_weak_scaling_Benchmark(iteration, checkMemory=False):
 
 
 def start_strong_scaling_Benchmark(iteration):
-    combinations = [{"command": ['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath {STRONGSCALINGFOLDERNAME}'], "name": f"{neuronmodel},{threads}"} for neuronmodel in NEURONMODELS for threads in VERTICALTHREADS]
+    # combinations = [{"command": ['bash', '-c', f'source {PATHTOSHFILE} && python3 {PATHTOFILE} --simulated_neuron {neuronmodel} --network_scale {VERTICALNEWORKSCALE} --threads {threads} --iteration {iteration} --benchmarkPath {STRONGSCALINGFOLDERNAME}'], "name": f"{neuronmodel},{threads}"} for neuronmodel in NEURONMODELS for threads in VERTICALTHREADS]
+    dirname = os.path.join(output_folder, STRONGSCALINGFOLDERNAME)
+    combinations = [
+        {
+            "simulated_neuron": neuronmodel,
+            "network_scale": VERTICALNEWORKSCALE,
+            "threads": threads,
+            "iteration": iteration,
+            "benchmarkPath": dirname
+        } for neuronmodel in NEURONMODELS for threads in VERTICALTHREADS]
     log(f"Strong Scaling Benchmark {iteration} with {VERTICALNEWORKSCALE} neurons")
+
     for combination in combinations:
-        log(combination["name"])
+        log(combination["simulated_neuron"])
 
-        combined = combination["name"]
+        combined = combination["simulated_neuron"]
 
-        result = subprocess.run(combination["command"], text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        filename = "sbatch_run_" + combination["simulated_neuron"] + "_" + str(combination["threads"]) + "_[iter=" + str(iteration) + "].sh"
+        filename = os.path.join(dirname, "sbatch", filename)
+        # Create the sbatch file
+        render_sbatch_template(combination, filename)
+        command = ["sbatch", f"{filename}"]
+        result = subprocess.run(command, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         if result.stdout:
             fname = "stdout_strong_run_" + combined + "_[iter=" + str(iteration) + "].txt"
+            fname = os.path.join(dirname, fname)
             with open(fname, "w") as f:
                 f.write(result.stdout)
 
         if result.stderr:
             fname = "stderr_strong_run_" + combined + "_[iter=" + str(iteration) + "].txt"
+            fname = os.path.join(dirname, fname)
             with open(fname, "w") as f:
                 f.write(result.stderr)
 
         if result.returncode != 0:
-            log(f"\033[91m{combination['name']} failed\033[0m")
+            log(f"\033[91m{combination['simulated_neuron']} failed\033[0m")
             log(f"\033[91m{result.stderr} failed\033[0m")
         deleteDat()
 
@@ -147,6 +226,89 @@ def extract_value_from_filename(filename, key):
     pattern = fr"\[{key}=(.*?)\]"
     match = re.search(pattern, filename)
     return match.group(1) if match else None
+
+
+def plot_strong_scaling_mpi(data):
+    plt.figure()
+    neurons = []
+    referenceValues = data[BASELINENEURON]
+    for neuron, values in data.items():
+        neurons.append(neuron)
+        x = sorted(values.keys(), key=lambda k: int(k))
+        print("Time_simulate:")
+        for threads in x:
+            _ = [print(iteration_data['time_simulate']) for iteration_data in values[threads].values()]
+        print("biological_time:")
+        for threads in x:
+            _ = [print(iteration_data['biological_time']) for iteration_data in values[threads].values()]
+        y = np.array([np.mean([iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in values[threads].values()]) for threads in x])
+
+        x = np.array([int(val) for val in x], dtype=int)
+        plt.errorbar(x, y, yerr=y_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
+
+    plt.xlabel('Number of nodes')
+    plt.ylabel('Wall clock time (s)')
+    plt.xscale('log')
+    plt.xticks(MPI_STRONG_SCALES, MPI_STRONG_SCALES)
+    plt.legend()
+    plt.savefig(os.path.join(output_folder, 'strong_scaling_mpi_abs.png'))
+
+    plt.figure()
+    neurons = []
+    referenceValues = data[BASELINENEURON]
+    for neuron, values in data.items():
+        neurons.append(neuron)
+        x = sorted(values.keys(), key=lambda k: int(k))
+        # Real Time Factor
+        reference_y = np.array([np.mean([iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in values[threads].values()]) for threads in x])
+        y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
+
+        y_std = np.array([np.std([iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in values[threads].values()]) for threads in x])
+        y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
+
+        x = np.array([int(val) for val in x], dtype=int)
+        plt.errorbar(x, y_factor, yerr=y_factor_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
+
+    plt.xlabel('Number of nodes')
+    plt.ylabel('Wall clock time (ratio)')
+
+    plt.xscale('log')
+    plt.xticks(MPI_STRONG_SCALES, MPI_STRONG_SCALES)
+
+    plt.legend()
+    plt.savefig(os.path.join(output_folder, 'strong_scaling_mpi_rel.png'))
+
+    plt.figure()
+    neurons = []
+    referenceValues = data[BASELINENEURON]
+    for neuron, values in data.items():
+        neurons.append(neuron)
+        x = sorted(values.keys(), key=lambda k: int(k))
+        # Real Time Factor
+        reference_y = np.array([np.mean([iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in values[threads].values()]) for threads in x])
+        y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
+
+        y_std = np.array([np.std([iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in values[threads].values()]) for threads in x])
+        # y_factor_std = reference_y / y_std  # Calculate the standard deviation of the factor
+        y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
+
+        x = np.array([int(val) for val in x], dtype=int)
+        plt.errorbar(x, y, yerr=y_std, label=legend[neuron], fmt='-', ecolor='k', capsize=3)
+
+    plt.xlabel('Number of nodes')
+    plt.ylabel('Wall clock time (s)')
+
+    plt.xscale('log')
+    plt.xticks(MPI_STRONG_SCALES, MPI_STRONG_SCALES)
+
+    # formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
+    # plt.gca().yaxis.set_major_formatter(formatter)
+
+    plt.legend()
+    plt.savefig(os.path.join(output_folder, 'strong_scaling_mpi.png'))
 
 
 def plot_weak_scaling(data):
@@ -292,30 +454,6 @@ def plot_Custom(data):
         plt.legend()
         plt.savefig(os.path.join(output_folder, f'output_{stopwatch}.png'))
 
-def plot_weights(data):
-    plt.figure()
-    referenceValues = data[BASELINENEURON]
-    y_min = 999
-    y_max = -1
-    for neuron, values in data.items():
-        
-        # Analyze the weights
-        wr_data = data[neuron][NETWORKSCALES[0]][ITERATIONS-1]["weight_recorder"]
-        sender_nodes_ex = wr_data["senders"]
-        weights_nodes_ex = wr_data["weights"]
-        y_min = min(y_min, min(weights_nodes_ex))
-        y_max = max(y_max, max(weights_nodes_ex))
-        times = wr_data["times"]
-        plt.plot(times, weights_nodes_ex, label=legend[neuron])
-
-    print(y_min)
-    print(y_max)
-    plt.xlabel("Time")
-    plt.ylabel("Weights")
-    plt.ylim(y_min, y_max)
-    plt.legend()
-    plt.savefig(os.path.join(output_folder, "weight_dist.png"))
-
 
 def plot_strong_scaling(data):
     plt.figure()
@@ -430,12 +568,31 @@ def deleteDat():
 
 
 def deleteJson():
-    for filename in os.listdir(f"./{WEAKSCALINGFOLDERNAME}"):
+    for filename in os.listdir(os.path.join(output_folder, WEAKSCALINGFOLDERNAME)):
         if filename.endswith(".json"):
-            os.remove(f"./{WEAKSCALINGFOLDERNAME}/{filename}")
-    for filename in os.listdir(f"./{STRONGSCALINGFOLDERNAME}"):
+            os.remove(os.path.join(output_folder, WEAKSCALINGFOLDERNAME, filename))
+    for filename in os.listdir(os.path.join(output_folder, STRONGSCALINGFOLDERNAME)):
         if filename.endswith(".json"):
-            os.remove(f"./{STRONGSCALINGFOLDERNAME}/{filename}")
+            os.remove(os.path.join(output_folder, STRONGSCALINGFOLDERNAME, filename))
+
+
+def setup_template_env():
+    template_file = "sbatch_run.sh.jinja2"
+    template_dir = os.path.realpath(os.path.join(os.path.dirname(__file__), os.pardir))
+    env = Environment(loader=FileSystemLoader(template_dir))
+    template = env.get_template(template_file)
+    return template
+
+
+def check_for_completion():
+    command = ["squeue", "--me"]
+    while True:
+        result = subprocess.run(command, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        nlines = len(result.stdout.splitlines())
+        log("Checking for running jobs. Number of jobs running: " + str(nlines - 1))
+        if nlines == 1:  # the column headers in the output counts to one line
+            break
+        sleep(10.)
 
 
 if __name__ == "__main__":
@@ -443,19 +600,28 @@ if __name__ == "__main__":
     runSim = args.noRunSim
 
     os.makedirs(output_folder, exist_ok=True)
-    os.makedirs(WEAKSCALINGFOLDERNAME, exist_ok=True)
-    os.makedirs(STRONGSCALINGFOLDERNAME, exist_ok=True)
+    os.makedirs(os.path.join(output_folder, WEAKSCALINGFOLDERNAME), exist_ok=True)
+    os.makedirs(os.path.join(output_folder, STRONGSCALINGFOLDERNAME), exist_ok=True)
+    os.makedirs(os.path.join(output_folder, STRONGSCALINGMPIFOLDERNAME), exist_ok=True)
 
-    os.remove(os.path.join(output_folder, "log.txt"))
+    # create dirs for sbatch scripts
+    os.makedirs(os.path.join(output_folder, WEAKSCALINGFOLDERNAME, "sbatch"), exist_ok=True)
+    os.makedirs(os.path.join(output_folder, STRONGSCALINGFOLDERNAME, "sbatch"), exist_ok=True)
+    os.makedirs(os.path.join(output_folder, STRONGSCALINGMPIFOLDERNAME, "sbatch"), exist_ok=True)
+
+    if os.path.isfile(os.path.join(output_folder, "log.txt")):
+        os.remove(os.path.join(output_folder, "log.txt"))
 
     if runSim:
         memoryData = {}
         deleteJson()
+        deleteDat()
         for i in range(ITERATIONS):
-            start_weak_scaling_Benchmark(i)
+            # start_weak_scaling_Benchmark(i)
             # start_strong_scaling_Benchmark(i)
+            start_strong_scaling_benchmark_mpi(i)
 
-    #         data = start_weak_scaling_Benchmark(i, checkMemory=True)
+        # data = start_weak_scaling_Benchmark(i, checkMemory=True)
     #         for name, size_data in data.items():
     #             memoryData.setdefault(name, {})
     #             for size, iteration_data in size_data.items():
@@ -469,31 +635,43 @@ if __name__ == "__main__":
     #     memoryData = json.load(f)
 
     # plotMemory(memoryData)
+    check_for_completion()
     log("Finished")
-    deleteDat()
-    data = {}
-    for filename in os.listdir(f"./{WEAKSCALINGFOLDERNAME}"):
-        if filename.endswith(".json"):
-            simulated_neuron = extract_value_from_filename(filename, "simulated_neuron")
-            network_scale = int(extract_value_from_filename(filename, "network_scale"))
-            iteration = int(extract_value_from_filename(filename, "iteration"))
-            with open(f"./{WEAKSCALINGFOLDERNAME}/{filename}", "r") as f:
-                json_data = json.load(f)
-                data.setdefault(simulated_neuron, {}).setdefault(network_scale, {}).setdefault(iteration, json_data)
-    plot_weights(data)
-    # with open("data.json", "w") as f:
-    #     json.dump(data, f)
+    # deleteDat()
+    # data = {}
+    # for filename in os.listdir(os.path.join(output_folder, WEAKSCALINGFOLDERNAME)):
+    #     if filename.endswith(".json"):
+    #         simulated_neuron = extract_value_from_filename(filename, "simulated_neuron")
+    #         network_scale = int(extract_value_from_filename(filename, "network_scale"))
+    #         iteration = int(extract_value_from_filename(filename, "iteration"))
+    #         with open(os.path.join(output_folder, WEAKSCALINGFOLDERNAME, filename), "r") as f:
+    #             json_data = json.load(f)
+    #             data.setdefault(simulated_neuron, {}).setdefault(network_scale, {}).setdefault(iteration, json_data)
     # plot_weak_scaling(data)
     # plot_timedist(data)
-    # plot_Custom(data)
+    # # plot_Custom(data)
 
     # verticaldata = {}
-    # for filename in os.listdir(f"./{STRONGSCALINGFOLDERNAME}"):
+    # for filename in os.listdir(os.path.join(output_folder, STRONGSCALINGFOLDERNAME)):
     #     if filename.endswith(".json"):
     #         simulated_neuron = extract_value_from_filename(filename, "simulated_neuron")
     #         iteration = int(extract_value_from_filename(filename, "iteration"))
     #         threads = int(extract_value_from_filename(filename, "threads"))
-    #         with open(f"./{STRONGSCALINGFOLDERNAME}/{filename}", "r") as f:
+    #         with open(os.path.join(output_folder, STRONGSCALINGFOLDERNAME, filename), "r") as f:
     #             json_data = json.load(f)
     #             verticaldata.setdefault(simulated_neuron, {}).setdefault(threads, {}).setdefault(iteration, json_data)
     # plot_strong_scaling(verticaldata)
+
+    data = {}
+    for filename in os.listdir(os.path.join(output_folder, STRONGSCALINGMPIFOLDERNAME)):
+        if filename.endswith(".json"):
+            simulated_neuron = extract_value_from_filename(filename, "simulated_neuron")
+            nodes = int(extract_value_from_filename(filename, "nodes"))
+            iteration = int(extract_value_from_filename(filename, "iteration"))
+            with open(os.path.join(output_folder, STRONGSCALINGMPIFOLDERNAME, filename), "r") as f:
+                json_data = json.load(f)
+                data.setdefault(simulated_neuron, {}).setdefault(nodes, {}).setdefault(iteration, json_data)
+
+    # with open("data.json", "w") as fw:
+    #     json.dump(data, fw, indent=4)
+    plot_strong_scaling_mpi(data)

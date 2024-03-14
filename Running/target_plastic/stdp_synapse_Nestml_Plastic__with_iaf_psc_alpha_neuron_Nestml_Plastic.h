@@ -18,7 +18,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  Generated from NESTML at time: 2024-02-26 14:19:03.923133
+ *  Generated from NESTML at time: 2024-04-22 13:11:50.011158
 **/
 
 #ifndef STDP_SYNAPSE_NESTML_PLASTIC__WITH_IAF_PSC_ALPHA_NEURON_NESTML_PLASTIC_H
@@ -152,10 +152,13 @@ private:
    *         as C-style arrays, you need to define the copy constructor and
    *         assignment operator to copy those members.
   **/
+  struct State_{    
     //!  Synaptic weight
     double w;
     double pre_trace;
 
+    State_() {};
+  };
 
   /**
    * Free parameters of the synapse.
@@ -177,6 +180,7 @@ private:
    *         as C-style arrays, you need to define the copy constructor and
    *         assignment operator to copy those members.
   */
+  struct Parameters_{    
     //!  Synaptic transmission delay
     double d;
     double lambda;
@@ -190,37 +194,47 @@ private:
 
 
 
+    /** Initialize parameters to their default values. */
+    Parameters_() {};
+  };
+
   /**
    * Internal variables of the synapse.
    *
    *
    * These variables must be initialized by recompute_internal_variables().
   **/
+  struct Variables_
+  {    
     double __h;    
     double __P__pre_trace__pre_trace;
+  };
 
+  Parameters_ P_;  //!< Free parameters.
+  State_      S_;  //!< Dynamic state.
+  Variables_  V_;  //!< Internal Variables
   // -------------------------------------------------------------------------
   //   Getters/setters for state block
   // -------------------------------------------------------------------------
 
   inline double get_w() const
   {
-    return w;
+    return S_.w;
   }
 
   inline void set_w(const double __v)
   {
-    w = __v;
+    S_.w = __v;
   }
 
   inline double get_pre_trace() const
   {
-    return pre_trace;
+    return S_.pre_trace;
   }
 
   inline void set_pre_trace(const double __v)
   {
-    pre_trace = __v;
+    S_.pre_trace = __v;
   }
 
 
@@ -230,76 +244,76 @@ private:
 
   inline double get_d() const
   {
-    return d;
+    return P_.d;
   }
 
   inline void set_d(const double __v)
   {
-    d = __v;
+    P_.d = __v;
   }inline double get_lambda() const
   {
-    return lambda;
+    return P_.lambda;
   }
 
   inline void set_lambda(const double __v)
   {
-    lambda = __v;
+    P_.lambda = __v;
   }inline double get_tau_tr_pre() const
   {
-    return tau_tr_pre;
+    return P_.tau_tr_pre;
   }
 
   inline void set_tau_tr_pre(const double __v)
   {
-    tau_tr_pre = __v;
+    P_.tau_tr_pre = __v;
   }inline double get_tau_tr_post() const
   {
-    return tau_tr_post;
+    return P_.tau_tr_post;
   }
 
   inline void set_tau_tr_post(const double __v)
   {
-    tau_tr_post = __v;
+    P_.tau_tr_post = __v;
   }inline double get_alpha() const
   {
-    return alpha;
+    return P_.alpha;
   }
 
   inline void set_alpha(const double __v)
   {
-    alpha = __v;
+    P_.alpha = __v;
   }inline double get_mu_plus() const
   {
-    return mu_plus;
+    return P_.mu_plus;
   }
 
   inline void set_mu_plus(const double __v)
   {
-    mu_plus = __v;
+    P_.mu_plus = __v;
   }inline double get_mu_minus() const
   {
-    return mu_minus;
+    return P_.mu_minus;
   }
 
   inline void set_mu_minus(const double __v)
   {
-    mu_minus = __v;
+    P_.mu_minus = __v;
   }inline double get_Wmax() const
   {
-    return Wmax;
+    return P_.Wmax;
   }
 
   inline void set_Wmax(const double __v)
   {
-    Wmax = __v;
+    P_.Wmax = __v;
   }inline double get_Wmin() const
   {
-    return Wmin;
+    return P_.Wmin;
   }
 
   inline void set_Wmin(const double __v)
   {
-    Wmin = __v;
+    P_.Wmin = __v;
   }
 
   // -------------------------------------------------------------------------
@@ -435,17 +449,23 @@ public:
   bool
   send( Event& e, const size_t tid, const stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_PlasticCommonSynapseProperties& cp )
   {
+    const double __resolution = nest::Time::get_resolution().get_ms();  // do not remove, this is necessary for the resolution() function
+
     auto get_thread = [tid]()
     {
         return tid;
     };
 
     const double __t_spike = e.get_stamp().get_ms();
-
+#ifdef DEBUG
+    std::cout << "stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic::send(): handling pre spike at t = " << __t_spike << std::endl;
+#endif
     // use accessor functions (inherited from Connection< >) to obtain delay and target
     iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic* __target = static_cast<iaf_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic*>(get_target(tid));
     assert(__target);
     const double __dendritic_delay = get_delay();
+    const bool pre_before_post_update = 0;
+    bool pre_before_post_flag = false;
 
     if (t_lastspike_ < 0.)
     {
@@ -477,6 +497,12 @@ public:
         // start->t_ > t_lastspike_ - dendritic_delay, i.e. minus_dt < 0
         assert( minus_dt < -kernel().connection_manager.get_stdp_eps() );
 
+        if (pre_before_post_update and start->t_ == __t_spike - __dendritic_delay)
+        {
+          pre_before_post_flag = true;
+          break;  // this would in any case have been the last post spike to be processed
+        }
+
 #ifdef DEBUG
         std::cout << "\tprocessing post spike at t = " << start->t_ << std::endl;
 #endif
@@ -490,12 +516,12 @@ public:
         timestep += (start->t_ + __dendritic_delay) - t_lastspike_;
 
         const double _tr_t = start->t_;
-
+        auto get_t = [_tr_t](){ return _tr_t; };   // do not remove, this is in case the predefined time variable ``t`` is used in the NESTML model      
         /**
          *  NESTML generated onReceive code block for postsynaptic port "post_spikes" begins here!
         **/
-        const double w_ = Wmax * (w / Wmax + (lambda * pow((1.0 - (w / Wmax)), mu_plus) * pre_trace));
-        w = std::min(Wmax, w_);
+        double w_ = P_.Wmax * (S_.w / P_.Wmax + (P_.lambda * pow((1.0 - (S_.w / P_.Wmax)), P_.mu_plus) * S_.pre_trace));
+        S_.w = std::min(P_.Wmax, w_);
 
         /**
          * internal state has now been fully updated to `start->t_ + __dendritic_delay`
@@ -519,19 +545,19 @@ public:
         /**
          *  NESTML generated onReceive code block for presynaptic port "pre_spikes" begins here!
         **/
-          pre_trace += 1;
-          const double w_ = Wmax * (w / Wmax - (alpha * lambda * pow((w / Wmax), mu_minus) * ((post_neuron_t*)(__target))->get_post_trace__for_stdp_synapse_Nestml_Plastic(_tr_t)));
-          w = std::max(Wmin, w_);
+          S_.pre_trace += 1;
+          double w_ = P_.Wmax * (S_.w / P_.Wmax - (P_.alpha * P_.lambda * pow((S_.w / P_.Wmax), P_.mu_minus) * ((post_neuron_t*)(__target))->get_post_trace__for_stdp_synapse_Nestml_Plastic(_tr_t)));
+          S_.w = std::max(P_.Wmin, w_);
 
           /**
            * generated code for emit_spike() function
           **/
 
-          set_delay( d );
+          set_delay( P_.d );
           const long __delay_steps = nest::Time::delay_ms_to_steps( get_delay() );
           set_delay_steps(__delay_steps);
           e.set_receiver( *__target );
-          e.set_weight( w );
+          e.set_weight( S_.w );
           // use accessor functions (inherited from Connection< >) to obtain delay in steps and rport
           e.set_delay_steps( get_delay_steps() );
           e.set_rport( get_rport() );
@@ -549,13 +575,22 @@ public:
      *  in case pre and post spike time coincide and pre update takes priority
     **/
 
+    if (pre_before_post_flag)
+    {
+        auto get_t = [__t_spike](){ return __t_spike; };    // do not remove, this is in case the predefined time variable ``t`` is used in the NESTML model      
+      /**
+       *  NESTML generated onReceive code block for postsynaptic port "post_spikes" begins here!
+      **/
+        double w_ = P_.Wmax * (S_.w / P_.Wmax + (P_.lambda * pow((1.0 - (S_.w / P_.Wmax)), P_.mu_plus) * S_.pre_trace));
+        S_.w = std::min(P_.Wmax, w_);
+    }
 
     /**
      *  synapse internal state has now been fully updated to `__t_spike`
     **/
 
     t_lastspike_ = __t_spike;
-return true;
+    return true;
   }
 
   void get_status( DictionaryDatum& d ) const;
@@ -574,7 +609,7 @@ stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic< targetide
   def< long >( __d, names::size_of, sizeof( *this ) );
 
   // parameters
-  def< double >( __d, names::delay, d );  
+  def< double >( __d, names::delay, P_.d );  
   def<double>(__d, nest::stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic_names::_lambda, get_lambda());  
   def<double>(__d, nest::stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic_names::_tau_tr_pre, get_tau_tr_pre());  
   def<double>(__d, nest::stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic_names::_tau_tr_post, get_tau_tr_post());  
@@ -658,7 +693,7 @@ stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic< targetide
 get_d());
 
   // recompute internal variables in case they are dependent on parameters or state that might have been updated in this call to set_status()
-  __h = nest::Time::get_resolution().get_ms();
+  V_.__h = nest::Time::get_resolution().get_ms();
   recompute_internal_variables();
 }
 
@@ -666,11 +701,12 @@ get_d());
  * NESTML internals block symbols initialisation
 **/
 template < typename targetidentifierT >
-inline void stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic< targetidentifierT >::recompute_internal_variables()
+void stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic< targetidentifierT >::recompute_internal_variables()
 {
+  const double __resolution = nest::Time::get_resolution().get_ms();  // do not remove, this is necessary for the resolution() function
 
 
-  __P__pre_trace__pre_trace = std::exp((-__h) / tau_tr_pre); // as real
+  V_.__P__pre_trace__pre_trace = std::exp((-V_.__h) / P_.tau_tr_pre); // as real
 }
 
 /**
@@ -680,22 +716,22 @@ template < typename targetidentifierT >
 stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic< targetidentifierT >::stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic() : ConnectionBase()
 {
   const double __resolution = nest::Time::get_resolution().get_ms();  // do not remove, this is necessary for the resolution() function
-d = 1; // as ms
-lambda = 0.01; // as real
-tau_tr_pre = 20; // as ms
-tau_tr_post = 20; // as ms
-alpha = 1; // as real
-mu_plus = 1; // as real
-mu_minus = 1; // as real
-Wmax = 100.0; // as real
-Wmin = 0.0; // as real
+P_.d = 1; // as ms
+P_.lambda = 0.01; // as real
+P_.tau_tr_pre = 20; // as ms
+P_.tau_tr_post = 20; // as ms
+P_.alpha = 1; // as real
+P_.mu_plus = 1; // as real
+P_.mu_minus = 1; // as real
+P_.Wmax = 100.0; // as real
+P_.Wmin = 0.0; // as real
 
-  __h = nest::Time::get_resolution().get_ms();
+  V_.__h = nest::Time::get_resolution().get_ms();
   recompute_internal_variables();
 
   // initial values for state variables in ODE or kernel
-w = 1.0; // as real
-pre_trace = 0.0; // as real
+S_.w = 1.0; // as real
+S_.pre_trace = 0.0; // as real
 
   t_lastspike_ = 0.;
 }
@@ -707,19 +743,19 @@ template < typename targetidentifierT >
 stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic< targetidentifierT >::stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic( const stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic< targetidentifierT >& rhs )
 : ConnectionBase( rhs )
 {
-    d = rhs.d;
-    lambda = rhs.lambda;
-    tau_tr_pre = rhs.tau_tr_pre;
-    tau_tr_post = rhs.tau_tr_post;
-    alpha = rhs.alpha;
-    mu_plus = rhs.mu_plus;
-    mu_minus = rhs.mu_minus;
-    Wmax = rhs.Wmax;
-    Wmin = rhs.Wmin;
+    P_.d = rhs.P_.d;
+    P_.lambda = rhs.P_.lambda;
+    P_.tau_tr_pre = rhs.P_.tau_tr_pre;
+    P_.tau_tr_post = rhs.P_.tau_tr_post;
+    P_.alpha = rhs.P_.alpha;
+    P_.mu_plus = rhs.P_.mu_plus;
+    P_.mu_minus = rhs.P_.mu_minus;
+    P_.Wmax = rhs.P_.Wmax;
+    P_.Wmin = rhs.P_.Wmin;
 
   // state variables in ODE or kernel
-    w = rhs.w;
-    pre_trace = rhs.pre_trace;
+    S_.w = rhs.S_.w;
+    S_.pre_trace = rhs.S_.pre_trace;
 
     //weight_ = get_named_parameter<double>(names::weight);
     //set_weight( *rhs.weight_ );
@@ -733,7 +769,23 @@ template < typename targetidentifierT >
 inline void
 stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic< targetidentifierT >::update_internal_state_(double t_start, double timestep, const stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_PlasticCommonSynapseProperties& cp)
 {
-    __h = timestep;
+    if (timestep < 1E-12)
+    {
+#ifdef DEBUG
+        std::cout << "\tupdate_internal_state_() called with dt < 1E-12; skipping update\n" ;
+#endif
+        return;
+    }
+
+    const double __resolution = timestep;  // do not remove, this is necessary for the resolution() function
+    auto get_t = [t_start](){ return t_start; };   // do not remove, this is in case the predefined time variable ``t`` is used in the NESTML model
+
+#ifdef DEBUG
+    std::cout<< "\tUpdating internal state: t_start = " << t_start << ", dt = " << timestep << "\n";
+#endif
+
+    V_.__h = timestep;
+    assert(V_.__h > 0);
     recompute_internal_variables();
 
     /**
@@ -743,10 +795,10 @@ stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic< targetide
     // start rendered code for integrate_odes()
 
     // analytic solver: integrating state variables (first step): pre_trace, 
-    const double pre_trace__tmp = __P__pre_trace__pre_trace * pre_trace;
+    const double pre_trace__tmp = V_.__P__pre_trace__pre_trace * S_.pre_trace;
     // analytic solver: integrating state variables (second step): pre_trace, 
     /* replace analytically solvable variables with precisely integrated values  */
-    pre_trace = pre_trace__tmp;
+    S_.pre_trace = pre_trace__tmp;
 
     /**
      * End NESTML generated code for the update block

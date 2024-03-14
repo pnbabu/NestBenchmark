@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /p/software/jusuf/stages/2023/software/CMake/3.26.3-GCCcore-11.3.0/bin/cmake
+CMAKE_COMMAND = /p/software/jurecadc/stages/2024/software/CMake/3.26.3-GCCcore-12.3.0/bin/cmake
 
 # The command to remove a file.
-RM = /p/software/jusuf/stages/2023/software/CMake/3.26.3-GCCcore-11.3.0/bin/cmake -E rm -f
+RM = /p/software/jurecadc/stages/2024/software/CMake/3.26.3-GCCcore-12.3.0/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_plastic
+CMAKE_SOURCE_DIR = /p/project/cslns/babu1/NestBenchmark/Running/target_plastic
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_plastic
+CMAKE_BINARY_DIR = /p/project/cslns/babu1/NestBenchmark/Running/target_plastic
 
 # Utility rule file for dist.
 
@@ -67,7 +67,7 @@ include CMakeFiles/dist.dir/compiler_depend.make
 include CMakeFiles/dist.dir/progress.make
 
 CMakeFiles/dist:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_plastic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Creating a source distribution from nestmlplasticmodule..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/p/project/cslns/babu1/NestBenchmark/Running/target_plastic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Creating a source distribution from nestmlplasticmodule..."
 	/usr/bin/gmake package_source
 
 dist: CMakeFiles/dist
@@ -83,6 +83,6 @@ CMakeFiles/dist.dir/clean:
 .PHONY : CMakeFiles/dist.dir/clean
 
 CMakeFiles/dist.dir/depend:
-	cd /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_plastic && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_plastic /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_plastic /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_plastic /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_plastic /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_plastic/CMakeFiles/dist.dir/DependInfo.cmake --color=$(COLOR)
+	cd /p/project/cslns/babu1/NestBenchmark/Running/target_plastic && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /p/project/cslns/babu1/NestBenchmark/Running/target_plastic /p/project/cslns/babu1/NestBenchmark/Running/target_plastic /p/project/cslns/babu1/NestBenchmark/Running/target_plastic /p/project/cslns/babu1/NestBenchmark/Running/target_plastic /p/project/cslns/babu1/NestBenchmark/Running/target_plastic/CMakeFiles/dist.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dist.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized
+# Install script for directory: /p/project/cslns/babu1/NestBenchmark/Running/target_optimized
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest")
+  set(CMAKE_INSTALL_PREFIX "/p/project/cslns/babu1/nest-simulator-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,29 +39,21 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/objdump")
+  set(CMAKE_OBJDUMP "/p/software/jurecadc/stages/2024/software/binutils/2.40-GCCcore-12.3.0/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/nestmlOptimizedmodule.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/nestmlOptimizedmodule.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/nestmlOptimizedmodule.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/nestmlOptimizedmodule.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/nestmlOptimizedmodule.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/nestmlOptimizedmodule.so"
          RPATH "")
   endif()
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/nestmlOptimizedmodule.so")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  file(INSTALL DESTINATION "/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest" TYPE MODULE FILES "/p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/nestmlOptimizedmodule.so")
-  if(EXISTS "$ENV{DESTDIR}/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/nestmlOptimizedmodule.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/nestmlOptimizedmodule.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/nest" TYPE MODULE FILES "/p/project/cslns/babu1/NestBenchmark/Running/target_optimized/nestmlOptimizedmodule.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/nestmlOptimizedmodule.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/nestmlOptimizedmodule.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/strip" "$ENV{DESTDIR}/p/home/jusers/linssen1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/nestmlOptimizedmodule.so")
+      execute_process(COMMAND "/p/software/jurecadc/stages/2024/software/binutils/2.40-GCCcore-12.3.0/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/nest/nestmlOptimizedmodule.so")
     endif()
   endif()
 endif()
@@ -74,5 +66,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/p/project/cslns/babu1/NestBenchmark/Running/target_optimized/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

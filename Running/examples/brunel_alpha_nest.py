@@ -71,10 +71,12 @@ parser = argparse.ArgumentParser(description='Run a simulation with NEST')
 parser.add_argument('--benchmarkPath', type=str, default='', help='Path to the nest installation')
 parser.add_argument('--simulated_neuron', type=str, default='iaf_psc_alpha_neuron_Nestml', help='Name of the model to use')
 parser.add_argument('--network_scale', type=int, default=2500, help='Number of neurons to use')
+parser.add_argument('--nodes', type=int, default=2, required=False, help='Number of compute nodes to use')
 parser.add_argument('--threads', type=int, default=4, help='Number of threads to use')
 parser.add_argument('--iteration', type=int, help='iteration number used for the benchmark')
 
 args = parser.parse_args()
+
 
 def LambertWm1(x):
     # Using scipy to mimic the gsl_sf_lambert_Wm1 function.
@@ -96,7 +98,6 @@ def ComputePSPnorm(tauMem, CMem, tauSyn):
     )
 
 
-
 nest.ResetKernel()
 nest.local_num_threads = parser.parse_args().threads
 
@@ -112,7 +113,7 @@ startbuild = time.time()
 # Assigning the simulation parameters to variables.
 
 dt = 0.1  # the resolution in ms
-simtime = 1000.0  # Simulation time in ms
+simtime = 100.0 # 1000.0  # Simulation time in ms
 delay = 1.5  # synaptic delay in ms
 
 ###############################################################################
@@ -137,11 +138,11 @@ N_rec = 50  # record from 50 neurons
 ###############################################################################
 # Definition of connectivity parameters
 
-CE = int(epsilon * NE / (order/2500))  # number of excitatory synapses per neuron
-CI = int(epsilon * NI / (order/2500))  # number of inhibitory synapses per neuron
+CE = int(epsilon * NE / (order / 2500))  # number of excitatory synapses per neuron
+CI = int(epsilon * NI / (order / 2500))  # number of inhibitory synapses per neuron
 
-#CE = int(epsilon * NE)  # number of excitatory synapses per neuron
-#CI = int(epsilon * NI)  # number of inhibitory synapses per neuron
+# CE = int(epsilon * NE)  # number of excitatory synapses per neuron
+# CI = int(epsilon * NI)  # number of inhibitory synapses per neuron
 C_tot = int(CI + CE)  # total number of synapses per neuron
 
 ###############################################################################
@@ -153,7 +154,7 @@ tauSyn = 0.5  # synaptic time constant in ms
 tauMem = 20.0  # time constant of membrane potential in ms
 CMem = 250.0  # capacitance of membrane in in pF
 theta = 20.0  # membrane threshold potential in mV
-neuron_params = {}    
+neuron_params = {}
 if args.simulated_neuron == "iaf_psc_alpha":
     neuron_params = {
         "C_m": CMem,
@@ -189,7 +190,7 @@ elif args.simulated_neuron == "aeif_psc_alpha":
         "V_reset": 0.0,
         "V_m": 0.0,
         "V_th": theta,
-"V_peak": theta
+        "V_peak": theta
     }
 elif args.simulated_neuron.startswith("aeif_psc_alpha") and "NESTML" in args.simulated_neuron.upper():
     neuron_params = {
@@ -202,7 +203,7 @@ elif args.simulated_neuron.startswith("aeif_psc_alpha") and "NESTML" in args.sim
         "V_reset": 0.0,
         "V_m": 0.0,
         "V_th": theta,
-"V_peak": theta
+        "V_peak": theta
     }
 else:
     assert False, "Unknown neuron model: " + str(args.simulated_neuron)
@@ -234,9 +235,9 @@ nest.print_time = True
 nest.overwrite_files = True
 
 try:
- nest.Install("nestmlmodule")
+    nest.Install("nestmlmodule")
 except:
- pass
+    pass
 nest.Install("nestmlOptimizedmodule")
 nest.Install("nestmlplasticmodule")
 print("Building network")
@@ -277,19 +278,21 @@ print("Connecting devices")
 # the excitatory and one for the inhibitory connections giving the
 # previously defined weights and equal delays.
 
+wr = nest.Create("weight_recorder")
+
 if "lastic" in modelName:
     # use plastic synapses
     print("Using NESTML STDP synapse")
     if "iaf_psc_alpha" in args.simulated_neuron:
-        nest.CopyModel("stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
+        nest.CopyModel("stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0., "weight_recorder": wr})
     else:
-        nest.CopyModel("stdp_synapse_Nestml_Plastic__with_aeif_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
+        nest.CopyModel("stdp_synapse_Nestml_Plastic__with_aeif_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0., "weight_recorder": wr})
 
 else:
     # use static synapses
     print("Using NEST built in STDP synapse")
-    nest.CopyModel("stdp_synapse", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
-    #nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})
+    nest.CopyModel("stdp_synapse", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0., "weight_recorder": wr})
+    # nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})
 
 
 nest.CopyModel("static_synapse", "excitatory_static", {"weight": J_ex, "delay": delay})
@@ -315,11 +318,24 @@ nest.Connect(noise, nodes_in, syn_spec="excitatory_static")
 # above is used.
 
 
-
 nest.Connect(e_mm, nodes_ex[0], syn_spec="excitatory_static")
 
-nest.Connect(nodes_ex[:N_rec], espikes, syn_spec="excitatory_static")
-nest.Connect(nodes_in[:N_rec], ispikes, syn_spec="excitatory_static")
+if args.nodes > 1:
+    local_neurons_ex = nest.GetLocalNodeCollection(nodes_ex)
+    local_neurons_in = nest.GetLocalNodeCollection(nodes_in)
+
+    # Convert to NodeCollection
+    local_neurons_ex = nest.NodeCollection(local_neurons_ex.tolist())
+    local_neurons_in = nest.NodeCollection(local_neurons_in.tolist())
+else:
+    local_neurons_ex = nodes_ex
+    local_neurons_in = nodes_in
+
+print("Local exc neurons: ", len(local_neurons_ex))
+print("Local inh neurons: ", len(local_neurons_in))
+
+nest.Connect(local_neurons_ex[:N_rec], espikes, syn_spec="excitatory_static")
+nest.Connect(local_neurons_in[:N_rec], ispikes, syn_spec="excitatory_static")
 
 print("Connecting network")
 
@@ -405,7 +421,7 @@ print(f"                CI: {CI}")
 print(f"Number of synapses: {num_synapses}")
 print(f"       Excitatory : {num_synapses_ex}")
 print(f"       Inhibitory : {num_synapses_in}")
-#TODO:compare on diffrent sizes
+# TODO:compare on diffrent sizes
 print(f"Excitatory rate   : {rate_ex:.2f} Hz")
 print(f"Inhibitory rate   : {rate_in:.2f} Hz")
 
@@ -416,7 +432,6 @@ print(f"Simulation time   : {sim_time:.2f} s")
 # Plot a raster of the excitatory neurons and a histogram.
 
 
-
 def convert_np_arrays_to_lists(obj):
     if isinstance(obj, dict):
         return {k: convert_np_arrays_to_lists(v) for k, v in obj.items()}
@@ -425,33 +440,32 @@ def convert_np_arrays_to_lists(obj):
     else:
         return obj
 
+
 if args.benchmarkPath != "":
     path = args.benchmarkPath
-    status = nest.GetKernelStatus()
+    # status = nest.GetKernelStatus()
+    status = {}
+    # create the folder if it does not exist
+
+    # status["stopwatches"] = {}
+    # stopwatch = nodes_ex.get('update_stopwatch')
+    # status["stopwatches"]["update"] = stopwatch
+    status["weight_recorder"] = {}
+    wr_events = wr.get("events")
+    status["weight_recorder"]["times"] = wr_events["times"]
+    status["weight_recorder"]["senders"] = wr_events["senders"]
+    status["weight_recorder"]["weights"] = wr_events["weights"]
     status = convert_np_arrays_to_lists(status)
-    #create the folder if it does not exist
-
-
-    status["stopwatches"] = {}
-    stopwatch = nodes_ex.get('update_stopwatch')
-    status["stopwatches"]["update"] = stopwatch
-
     if not os.path.exists(path):
         os.makedirs(path)
-    with open(f"{path}/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].json", "w") as f:
-        json.dump(status, f,indent=4)
+    with open(f"{path}/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}]_[nodes={args.nodes}].json", "w") as f:
+        json.dump(status, f)
 
     nest.raster_plot.from_device(espikes, hist=True)
-    plt.savefig(f"{path}/raster_plot_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].png")
+    plt.savefig(f"{path}/raster_plot_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}]_[nodes={args.nodes}].png")
     plt.close()
-
-
 
     fig, ax = plt.subplots()
     ax.plot(e_mm.get()["events"]["times"], e_mm.get()["events"]["V_m"])
-    plt.savefig(f"{path}/V_m_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}].png")
+    plt.savefig(f"{path}/V_m_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}]_[nodes={args.nodes}].png")
     plt.close()
-
-
-
-
