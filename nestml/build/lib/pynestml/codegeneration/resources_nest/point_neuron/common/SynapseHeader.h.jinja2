@@ -676,6 +676,8 @@ public:
     };
 
     const double __t_spike = e.get_stamp().get_ms();
+
+
 #ifdef DEBUG
     std::cout << "{{synapseName}}::send(): handling pre spike at t = " << __t_spike << std::endl;
 #endif
@@ -850,6 +852,7 @@ public:
     **/
 
     t_lastspike_ = __t_spike;
+    return true;
   }
 
   void get_status( DictionaryDatum& d ) const;
