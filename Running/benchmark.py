@@ -393,10 +393,10 @@ def deleteDat():
 
 def deleteJson(name):
     for filename in os.listdir(f"./{name}/{WEAKSCALINGFOLDERNAME}"):
-        if filename.endswith(".json"):
+        if filename.endswith(".json") or filename.endswith(".png"):
             os.remove(f"./{name}/{WEAKSCALINGFOLDERNAME}/{filename}")
     for filename in os.listdir(f"./{name}/{STRONGSCALINGFOLDERNAME}"):
-        if filename.endswith(".json"):
+        if filename.endswith(".json") or filename.endswith(".png"):
             os.remove(f"./{name}/{STRONGSCALINGFOLDERNAME}/{filename}")
 
 
@@ -408,6 +408,7 @@ def runBenchmark(neurons, baseline, name):
     allNeurons.append(baseline)
     print(allNeurons)
     os.makedirs(output_folder, exist_ok=True)
+    
     os.makedirs(f"{output_folder}/{name}", exist_ok=True)
     os.makedirs(f"{name}/{WEAKSCALINGFOLDERNAME}", exist_ok=True)
     os.makedirs(f"{name}/{STRONGSCALINGFOLDERNAME}", exist_ok=True)
