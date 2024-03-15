@@ -284,7 +284,10 @@ print("Connecting devices")
 if "__with_stdp_synapse_Nestml_Plastic" in modelName:
     # use plastic synapses
     neuronName = modelName.split("__")[0]
-    nest.CopyModel(f"stdp_synapse_Nestml_Plastic__with_{neuronName}", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
+    if "Optimized" in modelName:
+        nest.CopyModel(f"stdp_synapse_NESTML_Plastic_Optimized__with_{neuronName}", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
+    else:
+        nest.CopyModel(f"stdp_synapse_NESTML_Plastic__with_{neuronName}", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
 elif "plastic" in modelName:
     # use static synapses
     print("Using NEST built in STDP synapse")

@@ -33,8 +33,8 @@ BENCHMARKS = [
 ] + [
     {
         "neurons": [
-            f"{neuron}_neuron_NESTML_Plastic__with_stdp_synapse_Nestml_Plastic",
-            f"{neuron}_neuron_NESTML_Plastic_Optimized_with_stdp_synapse_Nestml_Plastic_Optimized",
+            f"{neuron}_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic",
+            f"{neuron}_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized",
             f"{neuron}_neuron_NESTML_Plastic",
         ],
         "baseline": neuron,
@@ -42,6 +42,7 @@ BENCHMARKS = [
     }
     for neuron in NEURONS
 ]
+
 
 legend = {
                 "iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML plas-syn",
@@ -59,7 +60,7 @@ legend = {
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(10000), 3, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(7000), 5, dtype=int)
 
 NEURONSPERSCALE = 5
 
@@ -67,7 +68,7 @@ NEURONSPERSCALE = 5
 VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
-ITERATIONS = 10  # XXXXXXXXXXXX: was 10
+ITERATIONS = 5  # XXXXXXXXXXXX: was 10
 DEBUG = False
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
