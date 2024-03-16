@@ -1,0 +1,22 @@
+{
+    "aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic": {
+        "1000": {
+            "0": 463888
+        }
+    },
+    "aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized": {
+        "1000": {
+            "0": 476264
+        }
+    },
+    "aeif_psc_alpha_neuron_NESTML_Plastic": {
+        "1000": {
+            "0": 479036
+        }
+    },
+    "aeif_psc_alpha": {
+        "1000": {
+            "0": 450652
+        }
+    }
+}

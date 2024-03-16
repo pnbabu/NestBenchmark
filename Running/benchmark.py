@@ -45,22 +45,28 @@ BENCHMARKS = [
 
 
 legend = {
-                "iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML neur, NESTML plas-syn",
+                
                 "iaf_psc_alpha_neuron_NESTML_Optimized" : "NESTML neur opt, stat-syn",
-                "iaf_psc_alpha_neuron_NESTML_Plastic" : "NESTML neur, plas-syn",
                 "iaf_psc_alpha_neuron_NESTML":"NESTML neur, stat-syn",
                 "iaf_psc_alpha" : "neur, stat-syn",
-                "aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_Nestml_Plastic" : "NESTML exp neur, NESTML plas-syn",
+
+                "iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic" : "NESTML neur, NESTML plas-syn",
+                "iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized": "NESTML exp neur opt, NESTML plas-syn opt",
+                "iaf_psc_alpha_neuron_NESTML_Plastic" : "NESTML neur, plas-syn",
+
                 "aeif_psc_alpha_neuron_NESTML_Optimized" : "NESTML exp neur opt, stat-syn",
-                "aeif_psc_alpha_neuron_NESTML_Plastic" : "NESTML exp neur, plas-syn",
                 "aeif_psc_alpha_neuron_NESTML":"NESTML exp neur, stat-syn",
                 "aeif_psc_alpha" : "exp neur, stat-syn",
+
+                "aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic" : "NESTML exp neur, NESTML plas-syn",
+                "aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized": "NESTML exp neur opt, NESTML plas-syn opt",
+                "aeif_psc_alpha_neuron_NESTML_Plastic" : "NESTML exp neur, plas-syn",
 }
 
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(7000), 5, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(10000), 5, dtype=int)
 
 NEURONSPERSCALE = 5
 
@@ -68,7 +74,7 @@ NEURONSPERSCALE = 5
 VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
-ITERATIONS = 5  # XXXXXXXXXXXX: was 10
+ITERATIONS = 10  # XXXXXXXXXXXX: was 10
 DEBUG = False
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
@@ -476,6 +482,10 @@ def runBenchmark(neurons, baseline, name):
 
 
 if __name__ == "__main__":
+    for filename in os.listdir("./"):
+        if filename.startswith("std") and filename.endswith(".txt"):
+            os.remove(os.path.join("./", filename))
+    
     try:
         os.remove(os.path.join(output_folder, "log.txt"))
     except FileNotFoundError:
