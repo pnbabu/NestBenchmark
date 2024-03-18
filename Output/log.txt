@@ -1,11 +1,20 @@
 [93mWeak Scaling Benchmark 0[0m
 aeif_psc_alpha_neuron_NESTML_Optimized,1000
-aeif_psc_alpha_neuron_NESTML_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
 aeif_psc_alpha_neuron_NESTML,1000
-aeif_psc_alpha_neuron_NESTML,1000
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
 aeif_psc_alpha,1000
-aeif_psc_alpha,1000
-Strong Scaling Benchmark 0 with 1000 neurons
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 0 with 10000 neurons
 aeif_psc_alpha_neuron_NESTML_Optimized,1
 aeif_psc_alpha_neuron_NESTML_Optimized,2
 aeif_psc_alpha_neuron_NESTML_Optimized,4
@@ -26,26 +35,647 @@ aeif_psc_alpha,16
 aeif_psc_alpha,32
 [93mMemory Scaling Benchmark 0[0m
 aeif_psc_alpha_neuron_NESTML_Optimized,1000
-Memory: 492456
+Memory: 427676
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 647600
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043748
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748084
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3002312
+aeif_psc_alpha_neuron_NESTML,1000
+Memory: 426476
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 647512
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043768
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1748156
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002308
+aeif_psc_alpha,1000
+Memory: 423584
+aeif_psc_alpha,1778
+Memory: 640580
+aeif_psc_alpha,3162
+Memory: 1031316
+aeif_psc_alpha,5623
+Memory: 1726088
+aeif_psc_alpha,10000
+Memory: 2963308
+[93mWeak Scaling Benchmark 1[0m
 aeif_psc_alpha_neuron_NESTML_Optimized,1000
-Memory: 483192
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
 aeif_psc_alpha_neuron_NESTML,1000
-Memory: 459144
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 1 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Optimized,32
+aeif_psc_alpha_neuron_NESTML,1
+aeif_psc_alpha_neuron_NESTML,2
+aeif_psc_alpha_neuron_NESTML,4
+aeif_psc_alpha_neuron_NESTML,8
+aeif_psc_alpha_neuron_NESTML,16
+aeif_psc_alpha_neuron_NESTML,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 1[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 426396
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 647420
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043732
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748108
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3002380
 aeif_psc_alpha_neuron_NESTML,1000
-Memory: 472764
+Memory: 427280
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 649048
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043768
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1747980
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002128
 aeif_psc_alpha,1000
-Memory: 469116
+Memory: 425992
+aeif_psc_alpha,1778
+Memory: 642420
+aeif_psc_alpha,3162
+Memory: 1031280
+aeif_psc_alpha,5623
+Memory: 1726032
+aeif_psc_alpha,10000
+Memory: 2963212
+[93mWeak Scaling Benchmark 2[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+aeif_psc_alpha_neuron_NESTML,1000
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
 aeif_psc_alpha,1000
-Memory: 472492
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 2 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Optimized,32
+aeif_psc_alpha_neuron_NESTML,1
+aeif_psc_alpha_neuron_NESTML,2
+aeif_psc_alpha_neuron_NESTML,4
+aeif_psc_alpha_neuron_NESTML,8
+aeif_psc_alpha_neuron_NESTML,16
+aeif_psc_alpha_neuron_NESTML,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 2[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 425880
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 649272
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043596
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748212
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3002100
+aeif_psc_alpha_neuron_NESTML,1000
+Memory: 427592
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 649436
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043736
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1748124
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002148
+aeif_psc_alpha,1000
+Memory: 423524
+aeif_psc_alpha,1778
+Memory: 640676
+aeif_psc_alpha,3162
+Memory: 1031148
+aeif_psc_alpha,5623
+Memory: 1726060
+aeif_psc_alpha,10000
+Memory: 2963084
+[93mWeak Scaling Benchmark 3[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+aeif_psc_alpha_neuron_NESTML,1000
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 3 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Optimized,32
+aeif_psc_alpha_neuron_NESTML,1
+aeif_psc_alpha_neuron_NESTML,2
+aeif_psc_alpha_neuron_NESTML,4
+aeif_psc_alpha_neuron_NESTML,8
+aeif_psc_alpha_neuron_NESTML,16
+aeif_psc_alpha_neuron_NESTML,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 3[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 426968
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 649728
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043720
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748152
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3002272
+aeif_psc_alpha_neuron_NESTML,1000
+Memory: 446088
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 649524
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043704
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1748116
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002316
+aeif_psc_alpha,1000
+Memory: 422768
+aeif_psc_alpha,1778
+Memory: 640632
+aeif_psc_alpha,3162
+Memory: 1031316
+aeif_psc_alpha,5623
+Memory: 1726060
+aeif_psc_alpha,10000
+Memory: 2963240
+[93mWeak Scaling Benchmark 4[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+aeif_psc_alpha_neuron_NESTML,1000
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 4 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Optimized,32
+aeif_psc_alpha_neuron_NESTML,1
+aeif_psc_alpha_neuron_NESTML,2
+aeif_psc_alpha_neuron_NESTML,4
+aeif_psc_alpha_neuron_NESTML,8
+aeif_psc_alpha_neuron_NESTML,16
+aeif_psc_alpha_neuron_NESTML,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 4[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 427208
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 649356
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043732
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748036
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3006320
+aeif_psc_alpha_neuron_NESTML,1000
+Memory: 426564
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 647968
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043536
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1747904
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002364
+aeif_psc_alpha,1000
+Memory: 424488
+aeif_psc_alpha,1778
+Memory: 640592
+aeif_psc_alpha,3162
+Memory: 1031344
+aeif_psc_alpha,5623
+Memory: 1726008
+aeif_psc_alpha,10000
+Memory: 2963164
+[93mWeak Scaling Benchmark 5[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+aeif_psc_alpha_neuron_NESTML,1000
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 5 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Optimized,32
+aeif_psc_alpha_neuron_NESTML,1
+aeif_psc_alpha_neuron_NESTML,2
+aeif_psc_alpha_neuron_NESTML,4
+aeif_psc_alpha_neuron_NESTML,8
+aeif_psc_alpha_neuron_NESTML,16
+aeif_psc_alpha_neuron_NESTML,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 5[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 428232
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 657816
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043744
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748056
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3002276
+aeif_psc_alpha_neuron_NESTML,1000
+Memory: 427200
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 652288
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043792
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1748048
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002324
+aeif_psc_alpha,1000
+Memory: 422128
+aeif_psc_alpha,1778
+Memory: 641816
+aeif_psc_alpha,3162
+Memory: 1031340
+aeif_psc_alpha,5623
+Memory: 1726064
+aeif_psc_alpha,10000
+Memory: 2963204
+[93mWeak Scaling Benchmark 6[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+aeif_psc_alpha_neuron_NESTML,1000
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 6 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Optimized,32
+aeif_psc_alpha_neuron_NESTML,1
+aeif_psc_alpha_neuron_NESTML,2
+aeif_psc_alpha_neuron_NESTML,4
+aeif_psc_alpha_neuron_NESTML,8
+aeif_psc_alpha_neuron_NESTML,16
+aeif_psc_alpha_neuron_NESTML,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 6[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 426252
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 648628
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043684
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748056
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3004096
+aeif_psc_alpha_neuron_NESTML,1000
+Memory: 427496
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 647600
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043788
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1747916
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002160
+aeif_psc_alpha,1000
+Memory: 421984
+aeif_psc_alpha,1778
+Memory: 640696
+aeif_psc_alpha,3162
+Memory: 1031176
+aeif_psc_alpha,5623
+Memory: 1728080
+aeif_psc_alpha,10000
+Memory: 2963252
+[93mWeak Scaling Benchmark 7[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+aeif_psc_alpha_neuron_NESTML,1000
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 7 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Optimized,32
+aeif_psc_alpha_neuron_NESTML,1
+aeif_psc_alpha_neuron_NESTML,2
+aeif_psc_alpha_neuron_NESTML,4
+aeif_psc_alpha_neuron_NESTML,8
+aeif_psc_alpha_neuron_NESTML,16
+aeif_psc_alpha_neuron_NESTML,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 7[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 425776
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 647500
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043684
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748208
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3002304
+aeif_psc_alpha_neuron_NESTML,1000
+Memory: 427212
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 647772
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043840
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1748072
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002384
+aeif_psc_alpha,1000
+Memory: 423724
+aeif_psc_alpha,1778
+Memory: 640744
+aeif_psc_alpha,3162
+Memory: 1031352
+aeif_psc_alpha,5623
+Memory: 1726116
+aeif_psc_alpha,10000
+Memory: 2963088
+[93mWeak Scaling Benchmark 8[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+aeif_psc_alpha_neuron_NESTML,1000
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 8 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Optimized,32
+aeif_psc_alpha_neuron_NESTML,1
+aeif_psc_alpha_neuron_NESTML,2
+aeif_psc_alpha_neuron_NESTML,4
+aeif_psc_alpha_neuron_NESTML,8
+aeif_psc_alpha_neuron_NESTML,16
+aeif_psc_alpha_neuron_NESTML,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 8[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 427560
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 648440
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043680
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748180
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3002384
+aeif_psc_alpha_neuron_NESTML,1000
+Memory: 426880
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 650764
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043596
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1748252
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002264
+aeif_psc_alpha,1000
+Memory: 423360
+aeif_psc_alpha,1778
+Memory: 640688
+aeif_psc_alpha,3162
+Memory: 1031396
+aeif_psc_alpha,5623
+Memory: 1726064
+aeif_psc_alpha,10000
+Memory: 2963140
+[93mWeak Scaling Benchmark 9[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+aeif_psc_alpha_neuron_NESTML,1000
+aeif_psc_alpha_neuron_NESTML,1778
+aeif_psc_alpha_neuron_NESTML,3162
+aeif_psc_alpha_neuron_NESTML,5623
+aeif_psc_alpha_neuron_NESTML,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 9 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Optimized,32
+aeif_psc_alpha_neuron_NESTML,1
+aeif_psc_alpha_neuron_NESTML,2
+aeif_psc_alpha_neuron_NESTML,4
+aeif_psc_alpha_neuron_NESTML,8
+aeif_psc_alpha_neuron_NESTML,16
+aeif_psc_alpha_neuron_NESTML,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 9[0m
+aeif_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 426524
+aeif_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 649260
+aeif_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1063968
+aeif_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1748132
+aeif_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 3002180
+aeif_psc_alpha_neuron_NESTML,1000
+Memory: 436504
+aeif_psc_alpha_neuron_NESTML,1778
+Memory: 649164
+aeif_psc_alpha_neuron_NESTML,3162
+Memory: 1043704
+aeif_psc_alpha_neuron_NESTML,5623
+Memory: 1748028
+aeif_psc_alpha_neuron_NESTML,10000
+Memory: 3002200
+aeif_psc_alpha,1000
+Memory: 423892
+aeif_psc_alpha,1778
+Memory: 641776
+aeif_psc_alpha,3162
+Memory: 1031332
+aeif_psc_alpha,5623
+Memory: 1726104
+aeif_psc_alpha,10000
+Memory: 2963012
 Finished
 [93mWeak Scaling Benchmark 0[0m
 iaf_psc_alpha_neuron_NESTML_Optimized,1000
-iaf_psc_alpha_neuron_NESTML_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
 iaf_psc_alpha_neuron_NESTML,1000
-iaf_psc_alpha_neuron_NESTML,1000
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
 iaf_psc_alpha,1000
-iaf_psc_alpha,1000
-Strong Scaling Benchmark 0 with 1000 neurons
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 0 with 10000 neurons
 iaf_psc_alpha_neuron_NESTML_Optimized,1
 iaf_psc_alpha_neuron_NESTML_Optimized,2
 iaf_psc_alpha_neuron_NESTML_Optimized,4
@@ -66,28 +696,652 @@ iaf_psc_alpha,16
 iaf_psc_alpha,32
 [93mMemory Scaling Benchmark 0[0m
 iaf_psc_alpha_neuron_NESTML_Optimized,1000
-Memory: 476744
+Memory: 421520
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 638760
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1027696
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1719468
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2951292
+iaf_psc_alpha_neuron_NESTML,1000
+Memory: 421964
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 642136
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1027680
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1719720
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2951184
+iaf_psc_alpha,1000
+Memory: 416752
+iaf_psc_alpha,1778
+Memory: 631792
+iaf_psc_alpha,3162
+Memory: 1014368
+iaf_psc_alpha,5623
+Memory: 1718048
+iaf_psc_alpha,10000
+Memory: 2909992
+[93mWeak Scaling Benchmark 1[0m
 iaf_psc_alpha_neuron_NESTML_Optimized,1000
-Memory: 482732
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
 iaf_psc_alpha_neuron_NESTML,1000
-Memory: 466088
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 1 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Optimized,32
+iaf_psc_alpha_neuron_NESTML,1
+iaf_psc_alpha_neuron_NESTML,2
+iaf_psc_alpha_neuron_NESTML,4
+iaf_psc_alpha_neuron_NESTML,8
+iaf_psc_alpha_neuron_NESTML,16
+iaf_psc_alpha_neuron_NESTML,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 1[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 422524
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 640380
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1027692
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1741932
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2950984
 iaf_psc_alpha_neuron_NESTML,1000
-Memory: 493488
+Memory: 421508
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 638616
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1027644
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1719440
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2951300
 iaf_psc_alpha,1000
-Memory: 489544
+Memory: 417788
+iaf_psc_alpha,1778
+Memory: 632360
+iaf_psc_alpha,3162
+Memory: 1014556
+iaf_psc_alpha,5623
+Memory: 1695744
+iaf_psc_alpha,10000
+Memory: 2909904
+[93mWeak Scaling Benchmark 2[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+iaf_psc_alpha_neuron_NESTML,1000
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
 iaf_psc_alpha,1000
-Memory: 461736
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 2 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Optimized,32
+iaf_psc_alpha_neuron_NESTML,1
+iaf_psc_alpha_neuron_NESTML,2
+iaf_psc_alpha_neuron_NESTML,4
+iaf_psc_alpha_neuron_NESTML,8
+iaf_psc_alpha_neuron_NESTML,16
+iaf_psc_alpha_neuron_NESTML,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 2[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 422408
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 660688
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1027728
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1719336
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2951348
+iaf_psc_alpha_neuron_NESTML,1000
+Memory: 422240
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 638452
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1047720
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1719360
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2951212
+iaf_psc_alpha,1000
+Memory: 420880
+iaf_psc_alpha,1778
+Memory: 631716
+iaf_psc_alpha,3162
+Memory: 1014668
+iaf_psc_alpha,5623
+Memory: 1693148
+iaf_psc_alpha,10000
+Memory: 2910072
+[93mWeak Scaling Benchmark 3[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+iaf_psc_alpha_neuron_NESTML,1000
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 3 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Optimized,32
+iaf_psc_alpha_neuron_NESTML,1
+iaf_psc_alpha_neuron_NESTML,2
+iaf_psc_alpha_neuron_NESTML,4
+iaf_psc_alpha_neuron_NESTML,8
+iaf_psc_alpha_neuron_NESTML,16
+iaf_psc_alpha_neuron_NESTML,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 3[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 421076
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 640812
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1029532
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1719288
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2969472
+iaf_psc_alpha_neuron_NESTML,1000
+Memory: 420876
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 640644
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1027608
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1719568
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2951176
+iaf_psc_alpha,1000
+Memory: 417692
+iaf_psc_alpha,1778
+Memory: 631616
+iaf_psc_alpha,3162
+Memory: 1014516
+iaf_psc_alpha,5623
+Memory: 1695684
+iaf_psc_alpha,10000
+Memory: 2909984
+[93mWeak Scaling Benchmark 4[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+iaf_psc_alpha_neuron_NESTML,1000
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 4 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Optimized,32
+iaf_psc_alpha_neuron_NESTML,1
+iaf_psc_alpha_neuron_NESTML,2
+iaf_psc_alpha_neuron_NESTML,4
+iaf_psc_alpha_neuron_NESTML,8
+iaf_psc_alpha_neuron_NESTML,16
+iaf_psc_alpha_neuron_NESTML,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 4[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 422148
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 640476
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1043820
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1719564
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2951272
+iaf_psc_alpha_neuron_NESTML,1000
+Memory: 421428
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 638416
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1027624
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1719640
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2951148
+iaf_psc_alpha,1000
+Memory: 417532
+iaf_psc_alpha,1778
+Memory: 652548
+iaf_psc_alpha,3162
+Memory: 1014660
+iaf_psc_alpha,5623
+Memory: 1696404
+iaf_psc_alpha,10000
+Memory: 2909820
+[93mWeak Scaling Benchmark 5[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+iaf_psc_alpha_neuron_NESTML,1000
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 5 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Optimized,32
+iaf_psc_alpha_neuron_NESTML,1
+iaf_psc_alpha_neuron_NESTML,2
+iaf_psc_alpha_neuron_NESTML,4
+iaf_psc_alpha_neuron_NESTML,8
+iaf_psc_alpha_neuron_NESTML,16
+iaf_psc_alpha_neuron_NESTML,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 5[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 422608
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 640420
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1027732
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1719392
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2951252
+iaf_psc_alpha_neuron_NESTML,1000
+Memory: 423504
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 638480
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1027716
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1719632
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2951132
+iaf_psc_alpha,1000
+Memory: 416672
+iaf_psc_alpha,1778
+Memory: 635156
+iaf_psc_alpha,3162
+Memory: 1018524
+iaf_psc_alpha,5623
+Memory: 1695700
+iaf_psc_alpha,10000
+Memory: 2910156
+[93mWeak Scaling Benchmark 6[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+iaf_psc_alpha_neuron_NESTML,1000
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 6 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Optimized,32
+iaf_psc_alpha_neuron_NESTML,1
+iaf_psc_alpha_neuron_NESTML,2
+iaf_psc_alpha_neuron_NESTML,4
+iaf_psc_alpha_neuron_NESTML,8
+iaf_psc_alpha_neuron_NESTML,16
+iaf_psc_alpha_neuron_NESTML,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 6[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 421800
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 661572
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1027668
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1719580
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2951288
+iaf_psc_alpha_neuron_NESTML,1000
+Memory: 421332
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 638492
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1027692
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1719604
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2951084
+iaf_psc_alpha,1000
+Memory: 417832
+iaf_psc_alpha,1778
+Memory: 633432
+iaf_psc_alpha,3162
+Memory: 1014608
+iaf_psc_alpha,5623
+Memory: 1695744
+iaf_psc_alpha,10000
+Memory: 2909980
+[93mWeak Scaling Benchmark 7[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+iaf_psc_alpha_neuron_NESTML,1000
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 7 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Optimized,32
+iaf_psc_alpha_neuron_NESTML,1
+iaf_psc_alpha_neuron_NESTML,2
+iaf_psc_alpha_neuron_NESTML,4
+iaf_psc_alpha_neuron_NESTML,8
+iaf_psc_alpha_neuron_NESTML,16
+iaf_psc_alpha_neuron_NESTML,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 7[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 421728
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 640316
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1027588
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1719552
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2951208
+iaf_psc_alpha_neuron_NESTML,1000
+Memory: 423416
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 640032
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1027764
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1719568
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2955272
+iaf_psc_alpha,1000
+Memory: 418156
+iaf_psc_alpha,1778
+Memory: 632160
+iaf_psc_alpha,3162
+Memory: 1014520
+iaf_psc_alpha,5623
+Memory: 1717996
+iaf_psc_alpha,10000
+Memory: 2909828
+[93mWeak Scaling Benchmark 8[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+iaf_psc_alpha_neuron_NESTML,1000
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 8 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Optimized,32
+iaf_psc_alpha_neuron_NESTML,1
+iaf_psc_alpha_neuron_NESTML,2
+iaf_psc_alpha_neuron_NESTML,4
+iaf_psc_alpha_neuron_NESTML,8
+iaf_psc_alpha_neuron_NESTML,16
+iaf_psc_alpha_neuron_NESTML,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 8[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 421412
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 638796
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1027716
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1719316
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2951260
+iaf_psc_alpha_neuron_NESTML,1000
+Memory: 421788
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 638336
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1027680
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1719484
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2951184
+iaf_psc_alpha,1000
+Memory: 418572
+iaf_psc_alpha,1778
+Memory: 633188
+iaf_psc_alpha,3162
+Memory: 1014568
+iaf_psc_alpha,5623
+Memory: 1696412
+iaf_psc_alpha,10000
+Memory: 2910176
+[93mWeak Scaling Benchmark 9[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+iaf_psc_alpha_neuron_NESTML,1000
+iaf_psc_alpha_neuron_NESTML,1778
+iaf_psc_alpha_neuron_NESTML,3162
+iaf_psc_alpha_neuron_NESTML,5623
+iaf_psc_alpha_neuron_NESTML,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 9 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Optimized,32
+iaf_psc_alpha_neuron_NESTML,1
+iaf_psc_alpha_neuron_NESTML,2
+iaf_psc_alpha_neuron_NESTML,4
+iaf_psc_alpha_neuron_NESTML,8
+iaf_psc_alpha_neuron_NESTML,16
+iaf_psc_alpha_neuron_NESTML,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 9[0m
+iaf_psc_alpha_neuron_NESTML_Optimized,1000
+Memory: 424988
+iaf_psc_alpha_neuron_NESTML_Optimized,1778
+Memory: 639932
+iaf_psc_alpha_neuron_NESTML_Optimized,3162
+Memory: 1027476
+iaf_psc_alpha_neuron_NESTML_Optimized,5623
+Memory: 1719424
+iaf_psc_alpha_neuron_NESTML_Optimized,10000
+Memory: 2951192
+iaf_psc_alpha_neuron_NESTML,1000
+Memory: 426512
+iaf_psc_alpha_neuron_NESTML,1778
+Memory: 639648
+iaf_psc_alpha_neuron_NESTML,3162
+Memory: 1027784
+iaf_psc_alpha_neuron_NESTML,5623
+Memory: 1741852
+iaf_psc_alpha_neuron_NESTML,10000
+Memory: 2951204
+iaf_psc_alpha,1000
+Memory: 428828
+iaf_psc_alpha,1778
+Memory: 631268
+iaf_psc_alpha,3162
+Memory: 1014556
+iaf_psc_alpha,5623
+Memory: 1695712
+iaf_psc_alpha,10000
+Memory: 2910144
 Finished
 [93mWeak Scaling Benchmark 0[0m
 aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
-aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
 aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
-aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
 aeif_psc_alpha_neuron_NESTML_Plastic,1000
-aeif_psc_alpha_neuron_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
 aeif_psc_alpha,1000
-aeif_psc_alpha,1000
-Strong Scaling Benchmark 0 with 1000 neurons
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 0 with 10000 neurons
 aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
 aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
 aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
@@ -114,32 +1368,851 @@ aeif_psc_alpha,16
 aeif_psc_alpha,32
 [93mMemory Scaling Benchmark 0[0m
 aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
-Memory: 463888
+Memory: 436772
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 654372
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1055132
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1768256
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038332
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 433020
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 653996
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1054928
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1768372
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038188
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 427684
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 648224
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1043572
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1748124
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3002252
+aeif_psc_alpha,1000
+Memory: 424416
+aeif_psc_alpha,1778
+Memory: 640620
+aeif_psc_alpha,3162
+Memory: 1031148
+aeif_psc_alpha,5623
+Memory: 1726124
+aeif_psc_alpha,10000
+Memory: 2963244
+[93mWeak Scaling Benchmark 1[0m
 aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
-Memory: 461344
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
 aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
-Memory: 476264
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 1 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+aeif_psc_alpha_neuron_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 1[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 431484
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 654024
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1055112
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1790612
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038320
 aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
-Memory: 461836
+Memory: 431024
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 654852
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1077452
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1768436
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038264
 aeif_psc_alpha_neuron_NESTML_Plastic,1000
-Memory: 479036
+Memory: 427068
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 647848
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1043688
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1748180
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3002332
+aeif_psc_alpha,1000
+Memory: 423372
+aeif_psc_alpha,1778
+Memory: 642372
+aeif_psc_alpha,3162
+Memory: 1031432
+aeif_psc_alpha,5623
+Memory: 1726080
+aeif_psc_alpha,10000
+Memory: 2963232
+[93mWeak Scaling Benchmark 2[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
 aeif_psc_alpha_neuron_NESTML_Plastic,1000
-Memory: 463840
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
 aeif_psc_alpha,1000
-Memory: 450652
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 2 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+aeif_psc_alpha_neuron_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 2[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 429424
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 655480
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1055108
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1776428
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038308
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 431820
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 655172
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1054952
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1782584
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038308
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 427608
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 647756
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1043748
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1748388
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3024548
 aeif_psc_alpha,1000
-Memory: 470960
+Memory: 421924
+aeif_psc_alpha,1778
+Memory: 641816
+aeif_psc_alpha,3162
+Memory: 1031344
+aeif_psc_alpha,5623
+Memory: 1726004
+aeif_psc_alpha,10000
+Memory: 2963164
+[93mWeak Scaling Benchmark 3[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 3 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+aeif_psc_alpha_neuron_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 3[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 433212
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 653836
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1055100
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1768296
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038116
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 429448
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 655220
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1055172
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1768308
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038432
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 427104
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 649608
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1043720
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1748212
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3002312
+aeif_psc_alpha,1000
+Memory: 421896
+aeif_psc_alpha,1778
+Memory: 641124
+aeif_psc_alpha,3162
+Memory: 1031304
+aeif_psc_alpha,5623
+Memory: 1726212
+aeif_psc_alpha,10000
+Memory: 2963116
+[93mWeak Scaling Benchmark 4[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 4 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+aeif_psc_alpha_neuron_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 4[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 430868
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 655272
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1055168
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1790468
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038160
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 429420
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 657024
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1055112
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1768196
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038236
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 426472
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 647716
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1043804
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1747900
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3002092
+aeif_psc_alpha,1000
+Memory: 422956
+aeif_psc_alpha,1778
+Memory: 642864
+aeif_psc_alpha,3162
+Memory: 1031400
+aeif_psc_alpha,5623
+Memory: 1725916
+aeif_psc_alpha,10000
+Memory: 2963020
+[93mWeak Scaling Benchmark 5[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 5 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+aeif_psc_alpha_neuron_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 5[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 430412
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 655976
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1054976
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1768552
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038200
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 429436
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 653940
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1055192
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1768416
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038300
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 425652
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 648500
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1043608
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1748148
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3002084
+aeif_psc_alpha,1000
+Memory: 424420
+aeif_psc_alpha,1778
+Memory: 640608
+aeif_psc_alpha,3162
+Memory: 1033348
+aeif_psc_alpha,5623
+Memory: 1726104
+aeif_psc_alpha,10000
+Memory: 2962996
+[93mWeak Scaling Benchmark 6[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 6 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+aeif_psc_alpha_neuron_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 6[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 429760
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 654068
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1075396
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1768336
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038116
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 429488
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 655760
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1055172
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1768356
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038216
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 425872
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 648036
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1049880
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1748164
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3002276
+aeif_psc_alpha,1000
+Memory: 422948
+aeif_psc_alpha,1778
+Memory: 642596
+aeif_psc_alpha,3162
+Memory: 1031348
+aeif_psc_alpha,5623
+Memory: 1726036
+aeif_psc_alpha,10000
+Memory: 2967140
+[93mWeak Scaling Benchmark 7[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 7 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+aeif_psc_alpha_neuron_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 7[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 433320
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 656240
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1055188
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1768144
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038196
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 429532
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 654020
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1054996
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1768348
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038048
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 425856
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 649400
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1043768
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1748132
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3002140
+aeif_psc_alpha,1000
+Memory: 423660
+aeif_psc_alpha,1778
+Memory: 640580
+aeif_psc_alpha,3162
+Memory: 1031380
+aeif_psc_alpha,5623
+Memory: 1725876
+aeif_psc_alpha,10000
+Memory: 2963160
+[93mWeak Scaling Benchmark 8[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 8 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+aeif_psc_alpha_neuron_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 8[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 429976
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 658384
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1055072
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1768364
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038192
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 430884
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 654848
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1055096
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1768384
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038348
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 433408
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 648608
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1043692
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1747932
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3004392
+aeif_psc_alpha,1000
+Memory: 426212
+aeif_psc_alpha,1778
+Memory: 640992
+aeif_psc_alpha,3162
+Memory: 1031364
+aeif_psc_alpha,5623
+Memory: 1726148
+aeif_psc_alpha,10000
+Memory: 2963348
+[93mWeak Scaling Benchmark 9[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+aeif_psc_alpha,1000
+aeif_psc_alpha,1778
+aeif_psc_alpha,3162
+aeif_psc_alpha,5623
+aeif_psc_alpha,10000
+Strong Scaling Benchmark 9 with 10000 neurons
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+aeif_psc_alpha_neuron_NESTML_Plastic,1
+aeif_psc_alpha_neuron_NESTML_Plastic,2
+aeif_psc_alpha_neuron_NESTML_Plastic,4
+aeif_psc_alpha_neuron_NESTML_Plastic,8
+aeif_psc_alpha_neuron_NESTML_Plastic,16
+aeif_psc_alpha_neuron_NESTML_Plastic,32
+aeif_psc_alpha,1
+aeif_psc_alpha,2
+aeif_psc_alpha,4
+aeif_psc_alpha,8
+aeif_psc_alpha,16
+aeif_psc_alpha,32
+[93mMemory Scaling Benchmark 9[0m
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 430896
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 653936
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1054984
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1768376
+aeif_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3038248
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 430028
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 654644
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1055108
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1768180
+aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 3038288
+aeif_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 426660
+aeif_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 649964
+aeif_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1043880
+aeif_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1748120
+aeif_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 3002284
+aeif_psc_alpha,1000
+Memory: 422008
+aeif_psc_alpha,1778
+Memory: 641436
+aeif_psc_alpha,3162
+Memory: 1031340
+aeif_psc_alpha,5623
+Memory: 1726020
+aeif_psc_alpha,10000
+Memory: 2963144
 Finished
 [93mWeak Scaling Benchmark 0[0m
 iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
-iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
 iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
-iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
 iaf_psc_alpha_neuron_NESTML_Plastic,1000
-iaf_psc_alpha_neuron_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
 iaf_psc_alpha,1000
-iaf_psc_alpha,1000
-Strong Scaling Benchmark 0 with 1000 neurons
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 0 with 10000 neurons
 iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
 iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
 iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
@@ -166,19 +2239,826 @@ iaf_psc_alpha,16
 iaf_psc_alpha,32
 [93mMemory Scaling Benchmark 0[0m
 iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
-Memory: 470576
+Memory: 424444
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 646208
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1038768
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1739472
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 2986232
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 426076
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 644936
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038732
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1739380
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986616
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 422348
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 661296
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1027480
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1719468
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951292
+iaf_psc_alpha,1000
+Memory: 438988
+iaf_psc_alpha,1778
+Memory: 635092
+iaf_psc_alpha,3162
+Memory: 1014368
+iaf_psc_alpha,5623
+Memory: 1693520
+iaf_psc_alpha,10000
+Memory: 2909804
+[93mWeak Scaling Benchmark 1[0m
 iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
-Memory: 463204
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
 iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
-Memory: 459088
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 1 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+iaf_psc_alpha_neuron_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 1[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 425696
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 645344
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1038748
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1741508
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 2986476
 iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
-Memory: 480084
+Memory: 424596
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 645200
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038764
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1739332
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986312
 iaf_psc_alpha_neuron_NESTML_Plastic,1000
-Memory: 466480
+Memory: 424736
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 640608
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1027528
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1719536
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951220
+iaf_psc_alpha,1000
+Memory: 430288
+iaf_psc_alpha,1778
+Memory: 631696
+iaf_psc_alpha,3162
+Memory: 1014628
+iaf_psc_alpha,5623
+Memory: 1693884
+iaf_psc_alpha,10000
+Memory: 2910064
+[93mWeak Scaling Benchmark 2[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
 iaf_psc_alpha_neuron_NESTML_Plastic,1000
-Memory: 459852
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
 iaf_psc_alpha,1000
-Memory: 468940
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 2 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+iaf_psc_alpha_neuron_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 2[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 426684
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 644484
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1038740
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1739356
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 2986488
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 425908
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 646104
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038764
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1739360
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986436
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 422748
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 638348
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1029836
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1715972
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951188
 iaf_psc_alpha,1000
-Memory: 481112
+Memory: 421588
+iaf_psc_alpha,1778
+Memory: 653796
+iaf_psc_alpha,3162
+Memory: 1014644
+iaf_psc_alpha,5623
+Memory: 1695708
+iaf_psc_alpha,10000
+Memory: 2909884
+[93mWeak Scaling Benchmark 3[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 3 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+iaf_psc_alpha_neuron_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 3[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 424216
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 646688
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1038652
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1739412
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 3010724
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 426200
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 645556
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038756
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1739492
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986388
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 422124
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 639720
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1027728
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1719592
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951316
+iaf_psc_alpha,1000
+Memory: 416792
+iaf_psc_alpha,1778
+Memory: 632232
+iaf_psc_alpha,3162
+Memory: 1014680
+iaf_psc_alpha,5623
+Memory: 1694836
+iaf_psc_alpha,10000
+Memory: 2913936
+[93mWeak Scaling Benchmark 4[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 4 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+iaf_psc_alpha_neuron_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 4[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 426128
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 644644
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1038748
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1739440
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 2986468
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 424220
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 646016
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038756
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1739328
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986392
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 421376
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 639168
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1027724
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1718936
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951152
+iaf_psc_alpha,1000
+Memory: 436876
+iaf_psc_alpha,1778
+Memory: 632564
+iaf_psc_alpha,3162
+Memory: 1014676
+iaf_psc_alpha,5623
+Memory: 1693608
+iaf_psc_alpha,10000
+Memory: 2910000
+[93mWeak Scaling Benchmark 5[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 5 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+iaf_psc_alpha_neuron_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 5[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 425784
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 646700
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1038792
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1739332
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 2986368
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 425500
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 646728
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038572
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1739328
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986352
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 421408
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 639236
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1027784
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1719500
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951256
+iaf_psc_alpha,1000
+Memory: 416832
+iaf_psc_alpha,1778
+Memory: 631240
+iaf_psc_alpha,3162
+Memory: 1014708
+iaf_psc_alpha,5623
+Memory: 1709948
+iaf_psc_alpha,10000
+Memory: 2909860
+[93mWeak Scaling Benchmark 6[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 6 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+iaf_psc_alpha_neuron_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 6[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 425604
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 645636
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1038684
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1739348
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 2986404
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 424420
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 645960
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038696
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1739432
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986428
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 425164
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 640592
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1027704
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1719576
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951156
+iaf_psc_alpha,1000
+Memory: 417348
+iaf_psc_alpha,1778
+Memory: 632348
+iaf_psc_alpha,3162
+Memory: 1014568
+iaf_psc_alpha,5623
+Memory: 1695624
+iaf_psc_alpha,10000
+Memory: 2910004
+[93mWeak Scaling Benchmark 7[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 7 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+iaf_psc_alpha_neuron_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 7[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 445924
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 648116
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1038832
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1739308
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 2986436
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 424900
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 652708
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038580
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1739312
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986340
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 421952
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 639208
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1027516
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1741880
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951308
+iaf_psc_alpha,1000
+Memory: 417840
+iaf_psc_alpha,1778
+Memory: 633596
+iaf_psc_alpha,3162
+Memory: 1014600
+iaf_psc_alpha,5623
+Memory: 1695628
+iaf_psc_alpha,10000
+Memory: 2910020
+[93mWeak Scaling Benchmark 8[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 8 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+iaf_psc_alpha_neuron_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 8[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 424380
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 663848
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1060988
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1753460
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 2986380
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 424864
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 644976
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038688
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1739296
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986420
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 424924
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 640184
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1027668
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1719464
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951160
+iaf_psc_alpha,1000
+Memory: 418448
+iaf_psc_alpha,1778
+Memory: 646848
+iaf_psc_alpha,3162
+Memory: 1014452
+iaf_psc_alpha,5623
+Memory: 1695600
+iaf_psc_alpha,10000
+Memory: 2910148
+[93mWeak Scaling Benchmark 9[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+iaf_psc_alpha,1000
+iaf_psc_alpha,1778
+iaf_psc_alpha,3162
+iaf_psc_alpha,5623
+iaf_psc_alpha,10000
+Strong Scaling Benchmark 9 with 10000 neurons
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,32
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,2
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,4
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,8
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,16
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,32
+iaf_psc_alpha_neuron_NESTML_Plastic,1
+iaf_psc_alpha_neuron_NESTML_Plastic,2
+iaf_psc_alpha_neuron_NESTML_Plastic,4
+iaf_psc_alpha_neuron_NESTML_Plastic,8
+iaf_psc_alpha_neuron_NESTML_Plastic,16
+iaf_psc_alpha_neuron_NESTML_Plastic,32
+iaf_psc_alpha,1
+iaf_psc_alpha,2
+iaf_psc_alpha,4
+iaf_psc_alpha,8
+iaf_psc_alpha,16
+iaf_psc_alpha,32
+[93mMemory Scaling Benchmark 9[0m
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1000
+Memory: 445992
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,1778
+Memory: 645400
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,3162
+Memory: 1038716
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,5623
+Memory: 1739324
+iaf_psc_alpha_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic,10000
+Memory: 2986372
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1000
+Memory: 425224
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,1778
+Memory: 645644
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,3162
+Memory: 1038704
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,5623
+Memory: 1761548
+iaf_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized,10000
+Memory: 2986344
+iaf_psc_alpha_neuron_NESTML_Plastic,1000
+Memory: 422492
+iaf_psc_alpha_neuron_NESTML_Plastic,1778
+Memory: 639800
+iaf_psc_alpha_neuron_NESTML_Plastic,3162
+Memory: 1031780
+iaf_psc_alpha_neuron_NESTML_Plastic,5623
+Memory: 1723560
+iaf_psc_alpha_neuron_NESTML_Plastic,10000
+Memory: 2951016
+iaf_psc_alpha,1000
+Memory: 418248
+iaf_psc_alpha,1778
+Memory: 632276
+iaf_psc_alpha,3162
+Memory: 1014616
+iaf_psc_alpha,5623
+Memory: 1695548
+iaf_psc_alpha,10000
+Memory: 2909976
 Finished
