@@ -58,6 +58,7 @@ import scipy.special as sp
 import json
 import argparse
 import os
+from datetime import datetime
 
 
 ###############################################################################
@@ -240,6 +241,8 @@ nest.overwrite_files = True
 # Basic
 neuron = args.simulated_neuron.split("_neuron")[0]
 
+current_time_ms = int(datetime.now().timestamp() * 1000) % 2**31 # Get the current time in milliseconds since the Unix epoch, modulo max nr of RNG seed bits in NEST (32)
+nest.rng_seed = current_time_ms
 
 nest.Install(f"{neuron}_nestmlmodule")
 nest.Install(f"{neuron}_nestmlOptimizedmodule")
@@ -288,8 +291,7 @@ if "__with_stdp_synapse_Nestml_Plastic" in modelName:
         nest.CopyModel(f"stdp_synapse_NESTML_Plastic_Optimized__with_{neuronName}", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
     else:
         nest.CopyModel(f"stdp_synapse_NESTML_Plastic__with_{neuronName}", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
-elif "plastic" in modelName:
-    # use static synapses
+elif "PLASTIC" in modelName.upper():
     print("Using NEST built in STDP synapse")
     nest.CopyModel("stdp_synapse", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.}) 
 else:
@@ -405,7 +407,7 @@ print(f"                CI: {CI}")
 print(f"Number of synapses: {num_synapses}")
 print(f"       Excitatory : {num_synapses_ex}")
 print(f"       Inhibitory : {num_synapses_in}")
-#TODO:compare on diffrent sizes
+
 print(f"Excitatory rate   : {rate_ex:.2f} Hz")
 print(f"Inhibitory rate   : {rate_in:.2f} Hz")
 

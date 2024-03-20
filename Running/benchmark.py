@@ -37,7 +37,8 @@ BENCHMARKS = [
             f"{neuron}_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized",
             f"{neuron}_neuron_NESTML_Plastic",
         ],
-        "baseline": neuron,
+        "baseline": f"{neuron}",
+        #"baseline": f"{neuron}_Plastic",
         "name": neuron+"_plastic",
     }
     for neuron in NEURONS
@@ -88,7 +89,6 @@ def log(message):
     with open(os.path.join(output_folder, "log.txt"), "a") as f:
         f.write(f"{message}\n")
 
-
 def start_weak_scaling_Benchmark(iteration, neurons, name, checkMemory=False):
     insert = "/usr/bin/time -f \'%M\'" if checkMemory else ""
     # benchmarkPathStr = '--benchmarkPath ' + WEAKSCALINGFOLDERNAME + "_mem" if checkMemory else ""
@@ -112,7 +112,7 @@ def start_weak_scaling_Benchmark(iteration, neurons, name, checkMemory=False):
             with open(fname, "w") as f:
                 f.write(result.stdout)
 
-        if result.stderr:
+        if result.stderr and DEBUG:
             fname = "stderr_weak_run_" + combined + \
                 "_[iter=" + str(iteration) + "].txt"
             with open(fname, "w") as f:
@@ -149,7 +149,7 @@ def start_strong_scaling_Benchmark(iteration, neurons, name):
             with open(fname, "w") as f:
                 f.write(result.stdout)
 
-        if result.stderr:
+        if result.stderr and DEBUG:
             fname = "stderr_strong_run_" + combined + \
                 "_[iter=" + str(iteration) + "].txt"
             with open(fname, "w") as f:
@@ -160,12 +160,10 @@ def start_strong_scaling_Benchmark(iteration, neurons, name):
             log(f"\033[91m{result.stderr} failed\033[0m")
         deleteDat()
 
-
 def extract_value_from_filename(filename, key):
     pattern = fr"\[{key}=(.*?)\]"
     match = re.search(pattern, filename)
     return match.group(1) if match else None
-
 
 def plot_weak_scaling(data, baseline,name, relative=False):
     plt.figure()
@@ -396,7 +394,6 @@ def deleteDat():
         if filename.endswith(".dat"):
             os.remove(f"./{filename}")
 
-
 def deleteJson(name):
     for filename in os.listdir(f"./{name}/{WEAKSCALINGFOLDERNAME}"):
         if filename.endswith(".json") or filename.endswith(".png"):
@@ -404,7 +401,6 @@ def deleteJson(name):
     for filename in os.listdir(f"./{name}/{STRONGSCALINGFOLDERNAME}"):
         if filename.endswith(".json") or filename.endswith(".png"):
             os.remove(f"./{name}/{STRONGSCALINGFOLDERNAME}/{filename}")
-
 
 def runBenchmark(neurons, baseline, name):
     args = parser.parse_args()
