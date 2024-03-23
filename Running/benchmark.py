@@ -1,4 +1,5 @@
 import argparse
+import shutil
 import subprocess
 import sys
 import os
@@ -8,6 +9,7 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import FuncFormatter
+import matplotlib.ticker as ticker
 
 
 parser = argparse.ArgumentParser(description='Run a Benchmark with NEST')
@@ -77,6 +79,7 @@ NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
 ITERATIONS = 10  # XXXXXXXXXXXX: was 10
 DEBUG = False
+DONTSHOWOPT = True
 
 STRONGSCALINGFOLDERNAME = "timings_strong_scaling"
 WEAKSCALINGFOLDERNAME = "timings_weak_scaling"
@@ -170,7 +173,10 @@ def plot_weak_scaling(data, baseline,name, relative=False):
     neurons = []
     referenceValues = data[baseline]
     for neuron, values in data.items():
+        if "OPTIMIZED" in neuron.upper() and DONTSHOWOPT:
+            continue
         neurons.append(neuron)
+
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
         reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"] /
@@ -195,17 +201,22 @@ def plot_weak_scaling(data, baseline,name, relative=False):
     plt.ylabel(f'Wall clock time {"(ratio)" if relative else ""}')
 
     plt.xscale('log')
-
-    formatter = FuncFormatter(lambda y, _: '{:.16g}'.format(y))
-    plt.gca().yaxis.set_major_formatter(formatter)
-
+    #plt.yscale('log')
+    plt.xticks(x * NEURONSPERSCALE)
+    
     formatterX = FuncFormatter(
-        lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
+        lambda x, _: '{:.16g}'.format(x))
     plt.gca().xaxis.set_major_formatter(formatterX)
+
+    formatterY = ticker.ScalarFormatter(useMathText=True)
+    formatterY.set_scientific(True)
+    formatterY.set_powerlimits((-2, 2))
+    plt.gca().yaxis.set_major_formatter(formatterY)
 
     plt.legend([legend[neuron] for neuron in neurons])
     path = ("relative_" if relative else "") + "weak_scaling.png"
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
+    plt.close()
 
 def plot_timedist(data, baseline, name):
     for neuron, scales in data.items():
@@ -246,6 +257,7 @@ def plot_timedist(data, baseline, name):
         plt.legend()
         plt.savefig(os.path.join(output_folder,
                     f'{name}/output_{neuron}.png'))
+        plt.close()
 
 def plot_Custom(data, baseline,name, relative=False):
     neuron = next(iter(data))
@@ -286,12 +298,14 @@ def plot_Custom(data, baseline,name, relative=False):
         plt.legend(legend[neuron] for neuron in neurons)
         path = ("relative_" if relative else "") + "output_" + stopwatch + ".png"
         plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
-
+        plt.close()
 def plot_strong_scaling(data, baseline,name, relative=False):
     plt.figure()
     neurons = []
     referenceValues = data[baseline]
     for neuron, values in data.items():
+        if "OPTIMIZED" in neuron.upper() and DONTSHOWOPT:
+            continue
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
@@ -313,9 +327,15 @@ def plot_strong_scaling(data, baseline,name, relative=False):
 
     plt.xscale('log')
 
+    formatterY = ticker.ScalarFormatter(useMathText=True)
+    formatterY.set_scientific(True)
+    formatterY.set_powerlimits((-2, 2))
+    plt.gca().yaxis.set_major_formatter(formatterY)
+
     plt.legend()
     path = ("relative_" if relative else "") + "strong_scaling.png"
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
+    plt.close()
 
 def format_bytes(x, _):
     units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
@@ -357,6 +377,7 @@ def plotMemory(memoryData, baseline, name):
 
     plt.legend(memoryData.keys())
     plt.savefig(os.path.join(output_folder, f'{name}/output_memory.png'))
+    plt.close()
 
 def plot_firing_rate(data,name,baseline,relative=False):
     plt.figure()
@@ -388,6 +409,7 @@ def plot_firing_rate(data,name,baseline,relative=False):
     plt.legend()
     path = ("relative_" if relative else "") + "firing_rate.png"
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
+    plt.close()
 
 def deleteDat():
     for filename in os.listdir("./"):
@@ -476,15 +498,17 @@ def runBenchmark(neurons, baseline, name):
     plot_strong_scaling(verticaldata,baseline=baseline, name=name)
     plot_strong_scaling(verticaldata,baseline=baseline,name=name,relative=True)
 
-
 if __name__ == "__main__":
     for filename in os.listdir("./"):
         if filename.startswith("std") and filename.endswith(".txt"):
             os.remove(os.path.join("./", filename))
     
-    try:
-        os.remove(os.path.join(output_folder, "log.txt"))
-    except FileNotFoundError:
-        pass
+
+    for filename in os.listdir(output_folder):
+        file_path = os.path.join(output_folder, filename)
+        if os.path.isfile(file_path):
+            os.remove(file_path)
+        elif os.path.isdir(file_path):
+            shutil.rmtree(file_path)
     for benchmark in BENCHMARKS:
         runBenchmark(benchmark["neurons"], benchmark["baseline"], benchmark["name"])
