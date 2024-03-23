@@ -1,1 +1,1 @@
-/home/lukkyguy/code/NestBenchmark/nest-simulator-install/lib/nest/aeif_psc_alpha_nestmlOptimizedmodule.so
+/p/home/jusers/koll1/jusuf/NestBenchmark/nest-simulator-install/lib64/nest/aeif_psc_alpha_nestmlOptimizedmodule.so

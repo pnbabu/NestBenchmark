@@ -769,25 +769,20 @@ aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic
        *
        * variables that will be integrated: ['post_trace__for_stdp_synapse_NESTML_Plastic_Optimized']
        **/
-
-      if (t - history_[i].t_ >= nest::kernel().connection_manager.get_stdp_eps())
+      const double prev_h = t - history_[i].t_;
+      if (prev_h >= nest::kernel().connection_manager.get_stdp_eps())
       {
-        const double old___h = V_.__h;
-        V_.__h = t - history_[i].t_;
-        assert(V_.__h > 0);
-        recompute_internal_variables(true);
+        assert(prev_h > 0);
 
-        // start rendered code for integrate_odes(post_trace__for_stdp_synapse_NESTML_Plastic_Optimized)
+        const double __P__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized_prev = 1.0 * std::exp((-prev_h) / P_.tau_tr_post__for_stdp_synapse_NESTML_Plastic_Optimized); // as real
+                                                                                                                                                                                                                                     // start rendered code for integrate_odes(post_trace__for_stdp_synapse_NESTML_Plastic_Optimized)
 
         // analytic solver: integrating state variables (first step): post_trace__for_stdp_synapse_NESTML_Plastic_Optimized,
-        const double post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__tmp = V_.__P__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized * S_.ode_state[State_::post_trace__for_stdp_synapse_NESTML_Plastic_Optimized];
+        const double post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__tmp = __P__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized_prev * S_.ode_state[State_::post_trace__for_stdp_synapse_NESTML_Plastic_Optimized];
 
         // analytic solver: integrating state variables (second step): post_trace__for_stdp_synapse_NESTML_Plastic_Optimized,
         /* replace analytically solvable variables with precisely integrated values  */
         S_.ode_state[State_::post_trace__for_stdp_synapse_NESTML_Plastic_Optimized] = post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__tmp;
-
-        V_.__h = old___h;
-        recompute_internal_variables(true);
       }
 
 #ifdef DEBUG
@@ -829,22 +824,18 @@ aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic
    * variables that will be integrated: ['post_trace__for_stdp_synapse_NESTML_Plastic_Optimized']
    **/
 
-  const double old___h = V_.__h;
-  V_.__h = t; // from time 0 to the requested time
-  assert(V_.__h > 0);
-  recompute_internal_variables(true);
+  const double prev_h = t;
+  assert(prev_h > 0);
 
   // start rendered code for integrate_odes(post_trace__for_stdp_synapse_NESTML_Plastic_Optimized)
 
+  const double __P__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized_prev = 1.0 * std::exp((-prev_h) / P_.tau_tr_post__for_stdp_synapse_NESTML_Plastic_Optimized); // as real
   // analytic solver: integrating state variables (first step): post_trace__for_stdp_synapse_NESTML_Plastic_Optimized,
-  const double post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__tmp = V_.__P__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized * S_.ode_state[State_::post_trace__for_stdp_synapse_NESTML_Plastic_Optimized];
+  const double post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__tmp = __P__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized_prev * S_.ode_state[State_::post_trace__for_stdp_synapse_NESTML_Plastic_Optimized];
 
   // analytic solver: integrating state variables (second step): post_trace__for_stdp_synapse_NESTML_Plastic_Optimized,
   /* replace analytically solvable variables with precisely integrated values  */
   S_.ode_state[State_::post_trace__for_stdp_synapse_NESTML_Plastic_Optimized] = post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__tmp;
-
-  V_.__h = old___h;
-  recompute_internal_variables(true);
 
   return S_.ode_state[State_::post_trace__for_stdp_synapse_NESTML_Plastic_Optimized];
 }
