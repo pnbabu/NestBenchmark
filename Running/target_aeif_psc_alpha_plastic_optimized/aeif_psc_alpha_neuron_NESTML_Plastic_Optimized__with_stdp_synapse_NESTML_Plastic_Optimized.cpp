@@ -391,8 +391,6 @@ extern "C" inline int aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_
 void aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Plastic_Optimized::update(nest::Time const &origin, const long from, const long to)
 {
 
-  sw_update.start();
-
   const double __resolution = nest::Time::get_resolution().get_ms(); // do not remove, this is necessary for the resolution() function
 
 #ifdef DEBUG
@@ -539,7 +537,6 @@ void aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Pl
     // voltage logging
     B_.logger_.record_data(origin.get_steps() + lag);
   }
-  sw_update.stop();
 }
 
 // Do not move this function as inline to h-file. It depends on
