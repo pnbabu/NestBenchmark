@@ -211,7 +211,7 @@ void aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Pl
   pre_run_hook();
   // by default, integrate all variables
   // use a default "good enough" value for the absolute error. It can be adjusted via `node.set()`
-  P_.__gsl_error_tol = 1e-3;
+  P_.__gsl_error_tol = 1e-6;
   // initial values for parameters
   P_.C_m = 281.0;                                                 // as pF
   P_.refr_T = 2;                                                  // as ms

@@ -212,9 +212,11 @@ def plot_weak_scaling(data, baseline,name, relative=False):
     formatterY.set_scientific(True)
     formatterY.set_powerlimits((-2, 2))
     plt.gca().yaxis.set_major_formatter(formatterY)
-
+    
+    
     plt.legend([legend[neuron] for neuron in neurons])
     path = ("relative_" if relative else "") + "weak_scaling.png"
+    plt.tight_layout()
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
     plt.close()
 
@@ -331,7 +333,7 @@ def plot_strong_scaling(data, baseline,name, relative=False):
     formatterY.set_scientific(True)
     formatterY.set_powerlimits((-2, 2))
     plt.gca().yaxis.set_major_formatter(formatterY)
-
+    plt.tight_layout()
     plt.legend()
     path = ("relative_" if relative else "") + "strong_scaling.png"
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
@@ -374,8 +376,8 @@ def plotMemory(memoryData, baseline, name):
     formatterX = FuncFormatter(
         lambda x, _: '{:.16g}'.format(x * NEURONSPERSCALE))
     plt.gca().xaxis.set_major_formatter(formatterX)
-
-    plt.legend(memoryData.keys())
+    plt.tight_layout()
+    plt.legend([legend[neuron] for neuron in memoryData])
     plt.savefig(os.path.join(output_folder, f'{name}/output_memory.png'))
     plt.close()
 
@@ -407,6 +409,7 @@ def plot_firing_rate(data,name,baseline,relative=False):
 
 
     plt.legend()
+    plt.tight_layout()
     path = ("relative_" if relative else "") + "firing_rate.png"
     plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
     plt.close()
@@ -499,6 +502,10 @@ def runBenchmark(neurons, baseline, name):
     plot_strong_scaling(verticaldata,baseline=baseline,name=name,relative=True)
 
 if __name__ == "__main__":
+    
+    plt.rcParams.update({'font.size': 14})
+    plt.tight_layout()
+    
     for filename in os.listdir("./"):
         if filename.startswith("std") and filename.endswith(".txt"):
             os.remove(os.path.join("./", filename))
