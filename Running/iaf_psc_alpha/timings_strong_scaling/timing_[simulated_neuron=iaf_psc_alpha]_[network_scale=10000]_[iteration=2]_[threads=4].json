@@ -1,7 +1,7 @@
 {
     "adaptive_target_buffers": true,
     "biological_time": 1000.0,
-    "buffer_size_spike_data": 5037,
+    "buffer_size_spike_data": 5241,
     "buffer_size_target_data": 200000,
     "connection_rules": [
         "pairwise_poisson",
@@ -26,13 +26,13 @@
     "growth_factor_buffer_target_data": 1.5,
     "keep_source_table": true,
     "local_num_threads": 4,
-    "local_spike_counter": 1428486,
+    "local_spike_counter": 1430349,
     "max_buffer_size_target_data": 16777216,
     "max_delay": 1.5,
     "max_num_syn_models": 512,
-    "max_update_time": 0.15616699999999994,
+    "max_update_time": 0.17319000000000004,
     "min_delay": 1.5,
-    "min_update_time": 0.014633999999999994,
+    "min_update_time": 0.014498000000000011,
     "ms_per_tic": 0.001,
     "network_size": 50003,
     "node_models": [
@@ -152,7 +152,7 @@
     ],
     "recv_buffer_size_secondary_events": 0,
     "resolution": 0.1,
-    "rng_seed": 1869593591,
+    "rng_seed": 139127825,
     "rng_type": "mt19937_64",
     "rng_types": [
         "Philox_32",
@@ -183,7 +183,8 @@
             195,
             210,
             225,
-            1305
+            255,
+            5175
         ],
         "global_max_spikes_sent": [
             0,
@@ -195,15 +196,16 @@
             0,
             0,
             0,
-            168,
-            4812,
-            13412,
-            2778,
-            459,
-            641,
-            1129,
-            2078,
-            3358
+            194,
+            4715,
+            14802,
+            2984,
+            225,
+            298,
+            825,
+            1430,
+            2259,
+            3494
         ],
         "new_buffer_size": [
             2,
@@ -215,15 +217,16 @@
             2,
             2,
             2,
-            252,
-            7218,
-            20118,
-            3055,
-            504,
-            961,
-            1693,
-            3117,
-            5037
+            291,
+            7072,
+            22203,
+            3282,
+            247,
+            447,
+            1237,
+            2145,
+            3388,
+            5241
         ]
     },
     "spike_buffer_shrink_limit": 0.2,
@@ -317,17 +320,17 @@
     "T_min": -1152921504606846.8,
     "tics_per_ms": 1000.0,
     "tics_per_step": 100,
-    "time_collocate_spike_data": 0.017812,
-    "time_communicate_prepare": 1.383618,
-    "time_communicate_spike_data": 2.2e-05,
-    "time_communicate_target_data": 1e-06,
-    "time_construction_connect": 3.819192,
-    "time_construction_create": 0.087169,
-    "time_deliver_spike_data": 12.895704,
-    "time_gather_spike_data": 0.021841,
-    "time_gather_target_data": 0.086031,
-    "time_simulate": 30.312069,
-    "time_update": 11.65927,
+    "time_collocate_spike_data": 0.017228,
+    "time_communicate_prepare": 1.679205,
+    "time_communicate_spike_data": 1.8e-05,
+    "time_communicate_target_data": 0.0,
+    "time_construction_connect": 3.703721,
+    "time_construction_create": 0.087265,
+    "time_deliver_spike_data": 14.101748,
+    "time_gather_spike_data": 0.020291,
+    "time_gather_target_data": 0.081553,
+    "time_simulate": 27.21047,
+    "time_update": 10.885725,
     "to_do": 0,
     "total_num_virtual_procs": 4,
     "update_time_limit": Infinity,
@@ -40341,5 +40344,5 @@
             0.0
         ]
     },
-    "exidatoryrate": 28.64
+    "exidatoryrate": 28.7
 }
