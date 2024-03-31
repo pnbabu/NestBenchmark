@@ -284,21 +284,30 @@ print("Connecting devices")
 # the excitatory and one for the inhibitory connections giving the
 # previously defined weights and equal delays.
 
-if "__with_stdp_synapse_Nestml_Plastic" in modelName:
+if "__with_stdp_synapse_Nestml_Plastic".upper() in modelName.upper():
     # use plastic synapses
     neuronName = modelName.split("__")[0]
-    if "Optimized" in modelName:
-        nest.CopyModel(f"stdp_synapse_NESTML_Plastic_Optimized__with_{neuronName}", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
+    if "Optimized".upper() in modelName.upper():
+        nest.CopyModel(f"stdp_synapse_NESTML_Plastic_Optimized__with_{neuronName}", "excitatory", {
+                       "weight": J_ex, "delay": delay, "lambda": 0.})
     else:
-        nest.CopyModel(f"stdp_synapse_NESTML_Plastic__with_{neuronName}", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.})
+        nest.CopyModel(f"stdp_synapse_NESTML_Plastic__with_{neuronName}", "excitatory", {
+                       "weight": J_ex, "delay": delay, "lambda": 0.})
 elif "PLASTIC" in modelName.upper():
     print("Using NEST built in STDP synapse")
-    nest.CopyModel("stdp_synapse", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0.}) 
+    nest.CopyModel("stdp_synapse", "excitatory", {
+                   "weight": J_ex, "delay": delay, "lambda": 0.})
 else:
-    nest.CopyModel("static_synapse", "excitatory", {"weight": J_ex, "delay": delay})    
+    nest.CopyModel("static_synapse", "excitatory", {
+                   "weight": J_ex, "delay": delay})
 
-nest.CopyModel("static_synapse", "excitatory_static", {"weight": J_ex, "delay": delay})
-nest.CopyModel("static_synapse", "inhibitory", {"weight": J_in, "delay": delay})
+
+
+nest.CopyModel("static_synapse", "excitatory_static",
+               {"weight": J_ex, "delay": delay})
+nest.CopyModel("static_synapse", "inhibitory", {
+               "weight": J_in, "delay": delay})
+
 
 #################################################################################
 # Connecting the previously defined poisson generator to the excitatory and

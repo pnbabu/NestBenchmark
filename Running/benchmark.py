@@ -20,9 +20,12 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
-NEURONS = ["aeif_psc_alpha","iaf_psc_alpha"]
+NEURONS = [
+    "iaf_psc_alpha"
+    # ,"aeif_psc_alpha"
+]
 
-BENCHMARKS = [
+STATIC = [
     {
         "neurons": [
             f"{neuron}_neuron_NESTML_Optimized",
@@ -32,7 +35,9 @@ BENCHMARKS = [
         "name": neuron,
     }
     for neuron in NEURONS
-] + [
+]
+
+PLASTIC = [
     {
         "neurons": [
             f"{neuron}_neuron_NESTML_Plastic__with_stdp_synapse_NESTML_Plastic",
@@ -40,12 +45,13 @@ BENCHMARKS = [
             f"{neuron}_neuron_NESTML_Plastic",
         ],
         "baseline": f"{neuron}",
-        #"baseline": f"{neuron}_Plastic",
+        # "baseline": f"{neuron}_Plastic",
         "name": neuron+"_plastic",
     }
     for neuron in NEURONS
 ]
 
+BENCHMARKS = PLASTIC
 
 legend = {
                 
@@ -69,7 +75,7 @@ legend = {
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(10000), 5, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(5000), 5, dtype=int)
 
 NEURONSPERSCALE = 5
 
@@ -77,7 +83,7 @@ NEURONSPERSCALE = 5
 VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
-ITERATIONS = 10  # XXXXXXXXXXXX: was 10
+ITERATIONS = 1  # XXXXXXXXXXXX: was 10
 DEBUG = False
 DONTSHOWOPT = False
 
