@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o"
-  "CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o.d"
+  "CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o"
+  "CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o.d"
   "CMakeFiles/nestmlOptimizedmodule_module.dir/nestmlOptimizedmodule.o"
   "CMakeFiles/nestmlOptimizedmodule_module.dir/nestmlOptimizedmodule.o.d"
   "nestmlOptimizedmodule.pdb"

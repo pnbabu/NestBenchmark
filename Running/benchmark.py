@@ -17,6 +17,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
+
+"""
 # for iaf_psc_alpha neurons
 BASELINENEURON = "iaf_psc_alpha"
 NEURONMODELS = [
@@ -34,7 +36,6 @@ legend = {
 }
 """
 
-
 # for aeif_psc_alpha neurons
 BASELINENEURON = "aeif_psc_alpha"
 NEURONMODELS = [
@@ -50,7 +51,6 @@ legend = {
                 "aeif_psc_alpha_neuron_Nestml": "NESTML neur, NEST syn",
                 BASELINENEURON : "NEST neur + syn"
 }
-"""
 
 
 

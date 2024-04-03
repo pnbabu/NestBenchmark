@@ -1,1 +1,2 @@
-Finished
+[93mWeak Scaling Benchmark 0[0m
+[93maeif_psc_alpha_neuron_Nestml_Plastic__with_stdp_synapse_Nestml_Plastic,1000[0m

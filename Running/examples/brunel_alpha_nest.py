@@ -51,6 +51,7 @@ References
 import time
 import sys
 import matplotlib.pyplot as plt
+from datetime import datetime
 import nest
 import nest.raster_plot
 import numpy as np
@@ -110,6 +111,7 @@ startbuild = time.time()
 
 ###############################################################################
 # Assigning the simulation parameters to variables.
+
 
 dt = 0.1  # the resolution in ms
 simtime = 1000.0  # Simulation time in ms
@@ -232,6 +234,12 @@ p_rate = 1000.0 * nu_ex * CE
 nest.resolution = dt
 nest.print_time = True
 nest.overwrite_files = True
+
+
+current_time_ms = int(datetime.now().timestamp() * 1000) % 2**31           # Get the current time in milliseconds since the Unix epoch, modulo max nr of RNG seed bits in NEST (32)
+nest.rng_seed = current_time_ms
+
+
 
 try:
  nest.Install("nestmlmodule")

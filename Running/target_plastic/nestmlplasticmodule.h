@@ -19,7 +19,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with NEST.  If not, see <http://www.gnu.org/licenses/>.
  *
- *  2024-02-26 14:19:04.347144
+ *  2024-03-11 14:56:08.163001
  */
 
 #ifndef NESTMLPLASTICMODULE_H

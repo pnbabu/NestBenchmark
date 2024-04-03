@@ -83,30 +83,30 @@ CMakeFiles/nestmlOptimizedmodule_module.dir/nestmlOptimizedmodule.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nestmlOptimizedmodule_module.dir/nestmlOptimizedmodule.s"
 	/p/software/jusuf/stages/2023/software/GCCcore/11.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/nestmlOptimizedmodule.cpp -o CMakeFiles/nestmlOptimizedmodule_module.dir/nestmlOptimizedmodule.s
 
-CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o: CMakeFiles/nestmlOptimizedmodule_module.dir/flags.make
-CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o: iaf_psc_alpha_neuron_Nestml_Optimized.cpp
-CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o: CMakeFiles/nestmlOptimizedmodule_module.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o"
-	/p/software/jusuf/stages/2023/software/GCCcore/11.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o -MF CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o.d -o CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o -c /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/iaf_psc_alpha_neuron_Nestml_Optimized.cpp
+CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o: CMakeFiles/nestmlOptimizedmodule_module.dir/flags.make
+CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o: aeif_psc_alpha_neuron_Nestml_Optimized.cpp
+CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o: CMakeFiles/nestmlOptimizedmodule_module.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o"
+	/p/software/jusuf/stages/2023/software/GCCcore/11.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o -MF CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o.d -o CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o -c /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/aeif_psc_alpha_neuron_Nestml_Optimized.cpp
 
-CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.i"
-	/p/software/jusuf/stages/2023/software/GCCcore/11.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/iaf_psc_alpha_neuron_Nestml_Optimized.cpp > CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.i
+CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.i"
+	/p/software/jusuf/stages/2023/software/GCCcore/11.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/aeif_psc_alpha_neuron_Nestml_Optimized.cpp > CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.i
 
-CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.s"
-	/p/software/jusuf/stages/2023/software/GCCcore/11.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/iaf_psc_alpha_neuron_Nestml_Optimized.cpp -o CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.s
+CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.s"
+	/p/software/jusuf/stages/2023/software/GCCcore/11.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/aeif_psc_alpha_neuron_Nestml_Optimized.cpp -o CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.s
 
 # Object files for target nestmlOptimizedmodule_module
 nestmlOptimizedmodule_module_OBJECTS = \
 "CMakeFiles/nestmlOptimizedmodule_module.dir/nestmlOptimizedmodule.o" \
-"CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o"
+"CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o"
 
 # External object files for target nestmlOptimizedmodule_module
 nestmlOptimizedmodule_module_EXTERNAL_OBJECTS =
 
 nestmlOptimizedmodule.so: CMakeFiles/nestmlOptimizedmodule_module.dir/nestmlOptimizedmodule.o
-nestmlOptimizedmodule.so: CMakeFiles/nestmlOptimizedmodule_module.dir/iaf_psc_alpha_neuron_Nestml_Optimized.o
+nestmlOptimizedmodule.so: CMakeFiles/nestmlOptimizedmodule_module.dir/aeif_psc_alpha_neuron_Nestml_Optimized.o
 nestmlOptimizedmodule.so: CMakeFiles/nestmlOptimizedmodule_module.dir/build.make
 nestmlOptimizedmodule.so: CMakeFiles/nestmlOptimizedmodule_module.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/p/home/jusers/linssen1/jusuf/NestBenchmark/Running/target_optimized/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module nestmlOptimizedmodule.so"
