@@ -21,8 +21,8 @@ PATHTOFILE = os.path.join(current_dir, "examples/brunel_alpha_nest.py")
 PATHTOSHFILE = os.path.join(current_dir, "start.sh")
 
 NEURONS = [
-    #"iaf_psc_alpha"
-    "aeif_psc_alpha"
+    "iaf_psc_alpha"
+    ,"aeif_psc_alpha"
 ]
 
 STATIC = [
@@ -75,15 +75,15 @@ legend = {
 # NEURONMODELS = ["iaf_psc_alpha"]
 # NETWORKSCALES = np.logspace(3.4, 4, 3, dtype=int)
 # XXXXXXXXXXXX: was 10 and 30000
-NETWORKSCALES = np.logspace(3, math.log10(5000), 2, dtype=int)
+NETWORKSCALES = np.logspace(3, math.log10(5000), 5, dtype=int)
 
 NEURONSPERSCALE = 5
 
 # VERTICALTHREADS = np.power(2, np.arange(0, 6, 1, dtype=int))
-VERTICALTHREADS = [1,2,4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
+VERTICALTHREADS = [4,8,16,32]  # XXXXXXXXXXXXXXX: more resolution
 NUMTHREADS = VERTICALTHREADS[-1]
 VERTICALNEWORKSCALE = min(NETWORKSCALES[-1],10000)
-ITERATIONS = 1  # XXXXXXXXXXXX: was 10
+ITERATIONS = 5  # XXXXXXXXXXXX: was 10
 DEBUG = False
 DONTSHOWOPT = False
 

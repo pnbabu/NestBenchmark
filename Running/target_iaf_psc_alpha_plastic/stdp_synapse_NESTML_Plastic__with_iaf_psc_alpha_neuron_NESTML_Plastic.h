@@ -591,6 +591,7 @@ public:
     **/
 
     t_lastspike_ = __t_spike;
+    return true;
   }
 
   void get_status( DictionaryDatum& d ) const;
