@@ -51,7 +51,7 @@ PLASTIC = [
     for neuron in NEURONS
 ]
 
-BENCHMARKS = PLASTIC
+BENCHMARKS = STATIC + PLASTIC
 
 legend = {
                 
@@ -185,16 +185,16 @@ def plot_weak_scaling(data, baseline,name, relative=False):
 
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
-        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"] /
-                               1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"] /
+                               1000) for iteration_data in referenceValues[threads].values()]) for threads in x])
         y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"] /
                      1000 for iteration_data in values[threads].values()]) for threads in x])
         # Calculate the factor of y in comparison to the reference value
         if relative:
             y = y / reference_y
 
-        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"] /
-                         1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/(iteration_data["biological_time"] /
+                         1000) for iteration_data in values[threads].values()]) for threads in x])
         # Calculate the standard deviation of the factor
         if relative:
             y_std = y_std / reference_y
@@ -204,9 +204,8 @@ def plot_weak_scaling(data, baseline,name, relative=False):
                      yerr=y_std, fmt='-', ecolor='k', capsize=3)
 
     plt.xlabel('Neuron count')
-    plt.ylabel(f'Wall clock time {"(ratio)" if relative else ""}')
+    plt.ylabel(f'Wall clock time {"(ratio)" if relative else "(s)"}')
 
-    plt.xscale('log')
     #plt.yscale('log')
     plt.xticks(x * NEURONSPERSCALE)
     
@@ -307,6 +306,7 @@ def plot_Custom(data, baseline,name, relative=False):
         path = ("relative_" if relative else "") + "output_" + stopwatch + ".png"
         plt.savefig(os.path.join(output_folder, f"{name}/{path}"))
         plt.close()
+
 def plot_strong_scaling(data, baseline,name, relative=False):
     plt.figure()
     neurons = []
@@ -317,21 +317,21 @@ def plot_strong_scaling(data, baseline,name, relative=False):
         neurons.append(neuron)
         x = sorted(values.keys(), key=lambda k: int(k))
         # Real Time Factor
-        reference_y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"] /
-                               1000 for iteration_data in referenceValues[threads].values()]) for threads in x])
-        y = np.array([np.mean([iteration_data['time_simulate']/iteration_data["biological_time"] /
-                     1000 for iteration_data in values[threads].values()]) for threads in x])
+        reference_y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"] /
+                               1000) for iteration_data in referenceValues[threads].values()]) for threads in x])
+        y = np.array([np.mean([iteration_data['time_simulate']/(iteration_data["biological_time"] /
+                     1000) for iteration_data in values[threads].values()]) for threads in x])
         if relative:
             y = y / reference_y
-        y_std = np.array([np.std([iteration_data['time_simulate']/iteration_data["biological_time"] /
-                         1000 for iteration_data in values[threads].values()]) for threads in x])
+        y_std = np.array([np.std([iteration_data['time_simulate']/(iteration_data["biological_time"] /
+                         1000) for iteration_data in values[threads].values()]) for threads in x])
         if relative:
             y_std = y_std / reference_y
         x = [int(val) for val in x]
         plt.errorbar(x, y=y, yerr=y_std, fmt='-', ecolor='k', capsize=3, label=legend[neuron])
 
     plt.xlabel('Threads')
-    plt.ylabel(f'Wall clock time {"(ratio)" if relative else ""}')
+    plt.ylabel(f'Wall clock time {"(ratio)" if relative else "(s)"}')
 
     plt.xscale('log')
 
