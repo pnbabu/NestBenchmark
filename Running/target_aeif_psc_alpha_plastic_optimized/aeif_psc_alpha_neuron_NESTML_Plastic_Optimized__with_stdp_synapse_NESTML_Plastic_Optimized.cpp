@@ -693,7 +693,7 @@ void aeif_psc_alpha_neuron_NESTML_Plastic_Optimized__with_stdp_synapse_NESTML_Pl
     const double h_prev = t_sp_ms - last_spike_;
     if (h_prev > 1E-12)
     {
-      const double prev_post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized = 1.0 * std::exp((-V_.__h) / P_.tau_tr_post__for_stdp_synapse_NESTML_Plastic_Optimized);
+      const double prev_post_trace__for_stdp_synapse_NESTML_Plastic_Optimized__post_trace__for_stdp_synapse_NESTML_Plastic_Optimized = 1.0 * std::exp((-h_prev) / P_.tau_tr_post__for_stdp_synapse_NESTML_Plastic_Optimized);
       // start rendered code for integrate_odes(post_trace__for_stdp_synapse_NESTML_Plastic_Optimized)
 
       // analytic solver: integrating state variables (first step): post_trace__for_stdp_synapse_NESTML_Plastic_Optimized,
