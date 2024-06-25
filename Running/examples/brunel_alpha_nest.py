@@ -240,6 +240,7 @@ except:
     pass
 nest.Install("nestmlOptimizedmodule")
 nest.Install("nestmlplasticmodule")
+nest.Install("nestmlnocomodule")
 print("Building network")
 
 ###############################################################################
@@ -284,9 +285,12 @@ if "lastic" in modelName:
     # use plastic synapses
     print("Using NESTML STDP synapse")
     if "iaf_psc_alpha" in args.simulated_neuron:
-        nest.CopyModel("stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0., "weight_recorder": wr})
+        nest.CopyModel("stdp_synapse_Nestml_Plastic__with_iaf_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "d": delay, "lambda": 0., "weight_recorder": wr})
     else:
-        nest.CopyModel("stdp_synapse_Nestml_Plastic__with_aeif_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "lambda": 0., "weight_recorder": wr})
+        if "noco" in args.simulated_neuron:
+            nest.CopyModel("stdp_synapse_Nestml_Plastic_noco__with_aeif_psc_alpha_neuron_Nestml_Plastic_noco", "excitatory", {"weight": J_ex, "delay": delay, "d": delay, "lambda": 0., "weight_recorder": wr})
+        else:
+            nest.CopyModel("stdp_synapse_Nestml_Plastic__with_aeif_psc_alpha_neuron_Nestml_Plastic", "excitatory", {"weight": J_ex, "delay": delay, "d": delay, "lambda": 0., "weight_recorder": wr})
 
 else:
     # use static synapses
@@ -443,23 +447,24 @@ def convert_np_arrays_to_lists(obj):
 
 if args.benchmarkPath != "":
     path = args.benchmarkPath
-    # status = nest.GetKernelStatus()
-    status = {}
+    status = nest.GetKernelStatus()
+    # status = {}
     # create the folder if it does not exist
 
     # status["stopwatches"] = {}
     # stopwatch = nodes_ex.get('update_stopwatch')
     # status["stopwatches"]["update"] = stopwatch
-    status["weight_recorder"] = {}
-    wr_events = wr.get("events")
-    status["weight_recorder"]["times"] = wr_events["times"]
-    status["weight_recorder"]["senders"] = wr_events["senders"]
-    status["weight_recorder"]["weights"] = wr_events["weights"]
+    # status["weight_recorder"] = {}
+    # wr_events = wr.get("events")
+    # status["weight_recorder"]["times"] = wr_events["times"]
+    # status["weight_recorder"]["senders"] = wr_events["senders"]
+    # status["weight_recorder"]["weights"] = wr_events["weights"]
     status = convert_np_arrays_to_lists(status)
     if not os.path.exists(path):
         os.makedirs(path)
     with open(f"{path}/timing_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}]_[nodes={args.nodes}].json", "w") as f:
         json.dump(status, f)
+        f.close()
 
     nest.raster_plot.from_device(espikes, hist=True)
     plt.savefig(f"{path}/raster_plot_[simulated_neuron={args.simulated_neuron}]_[network_scale={args.network_scale}]_[iteration={args.iteration}]_[threads={args.threads}]_[nodes={args.nodes}].png")

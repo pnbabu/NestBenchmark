@@ -8,8 +8,8 @@
 #SBATCH --cpus-per-task={{cpus_per_task}}
 #SBATCH --hint=nomultithread
 #SBTACH --exclusive
-#SBATCH --output=run_simulation_{{combination["simulated_neuron"]}}_{{nodes}}_{{combination["iteration"]}}_%j.out
-#SBATCH --error=run_simulation_{{combination["simulated_neuron"]}}_{{nodes}}_{{combination["iteration"]}}_%j.err
+#SBATCH --output={{combination["output_file"]}}
+#SBATCH --error={{combination["error_file"]}}
 
 
 {# export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK #}

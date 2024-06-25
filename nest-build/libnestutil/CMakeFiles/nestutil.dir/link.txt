@@ -1,2 +1,0 @@
-/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/ar qc libnestutil.a CMakeFiles/nestutil.dir/iaf_propagator.cpp.o CMakeFiles/nestutil.dir/logging_event.cpp.o CMakeFiles/nestutil.dir/numerics.cpp.o CMakeFiles/nestutil.dir/stopwatch.cpp.o
-/p/software/jusuf/stages/2023/software/binutils/2.38-GCCcore-11.3.0/bin/ranlib libnestutil.a
