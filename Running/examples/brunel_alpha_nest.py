@@ -425,7 +425,7 @@ print(f"                CI: {CI}")
 print(f"Number of synapses: {num_synapses}")
 print(f"       Excitatory : {num_synapses_ex}")
 print(f"       Inhibitory : {num_synapses_in}")
-# TODO:compare on diffrent sizes
+# TODO:compare on different sizes
 print(f"Excitatory rate   : {rate_ex:.2f} Hz")
 print(f"Inhibitory rate   : {rate_in:.2f} Hz")
 
@@ -448,17 +448,6 @@ def convert_np_arrays_to_lists(obj):
 if args.benchmarkPath != "":
     path = args.benchmarkPath
     status = nest.GetKernelStatus()
-    # status = {}
-    # create the folder if it does not exist
-
-    # status["stopwatches"] = {}
-    # stopwatch = nodes_ex.get('update_stopwatch')
-    # status["stopwatches"]["update"] = stopwatch
-    # status["weight_recorder"] = {}
-    # wr_events = wr.get("events")
-    # status["weight_recorder"]["times"] = wr_events["times"]
-    # status["weight_recorder"]["senders"] = wr_events["senders"]
-    # status["weight_recorder"]["weights"] = wr_events["weights"]
     status = convert_np_arrays_to_lists(status)
     if not os.path.exists(path):
         os.makedirs(path)

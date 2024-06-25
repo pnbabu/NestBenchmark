@@ -1,6 +1,6 @@
 #!/bin/bash
 
-module load Stages/2023 GCC CMake Boost GSL OpenMPI Python SciPy-Stack mpi4py GSL/2.7 libtool/.2.4.7  nano
+ml Stages/2024 GCC Boost ParaStationMPI GSL jemalloc Python SciPy-Stack mpi4py CMake Autotools
 
 cd Running
 python3 benchmark.py

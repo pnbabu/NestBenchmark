@@ -210,71 +210,6 @@ def plot_scaling_data(sim_data: dict, file_prefix: str):
     plt.savefig(os.path.join(output_folder, file_prefix + '_rel.png'))
 
 
-# def plot_strong_scaling_mpi(data):
-#     plt.figure()
-#     neurons = []
-#     for neuron, values in data.items():
-#         neurons.append(neuron)
-#         x = sorted(values.keys(), key=lambda k: int(k))
-#         for threads in x:
-#             _ = [print(iteration_data['time_simulate']) for iteration_data in values[threads].values()]
-#         for threads in x:
-#             _ = [print(iteration_data['biological_time']) for iteration_data in values[threads].values()]
-#         y = np.array([np.mean(
-#             [iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in
-#              values[threads].values()]) for threads in x])
-#         y_std = np.array([np.std(
-#             [iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in
-#              values[threads].values()]) for threads in x])
-#
-#         x = np.array([int(val) for val in x], dtype=int)
-#         plt.errorbar(x, y, yerr=y_std, label=legend[neuron], color=palette(colors[neuron]), linestyle='-', marker='o',
-#                      markersize=4, ecolor='gray', capsize=2)
-#
-#     plt.xlabel('Number of nodes')
-#     plt.ylabel('Wall clock time (s)')
-#     plt.xscale('log')
-#     # plt.yscale('log')
-#     plt.xticks(MPI_SCALES, MPI_SCALES)
-#     plt.legend()
-#     plt.tight_layout()
-#     plt.savefig(os.path.join(output_folder, 'strong_scaling_mpi_abs.png'))
-#
-#     plt.figure()
-#     neurons = []
-#     referenceValues = data[BASELINENEURON]
-#     for neuron, values in data.items():
-#         neurons.append(neuron)
-#         x = sorted(values.keys(), key=lambda k: int(k))
-#         # Real Time Factor
-#         reference_y = np.array([np.mean(
-#             [iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in
-#              referenceValues[threads].values()]) for threads in x])
-#         y = np.array([np.mean(
-#             [iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in
-#              values[threads].values()]) for threads in x])
-#         y_factor = y / reference_y  # Calculate the factor of y in comparison to the reference value
-#
-#         y_std = np.array([np.std(
-#             [iteration_data['time_simulate'] / (iteration_data["biological_time"] / 1000) for iteration_data in
-#              values[threads].values()]) for threads in x])
-#         y_factor_std = y_std / reference_y  # Calculate the standard deviation of the factor
-#
-#         x = np.array([int(val) for val in x], dtype=int)
-#         plt.errorbar(x, y_factor, yerr=y_factor_std, label=legend[neuron], color=palette(colors[neuron]), linestyle='-',
-#                      marker='o', markersize=4, ecolor='gray', capsize=2)
-#
-#     plt.xlabel('Number of nodes')
-#     plt.ylabel('Wall clock time (ratio)')
-#
-#     plt.xscale('log')
-#     # plt.yscale('log')
-#     plt.xticks(MPI_SCALES, MPI_SCALES)
-#
-#     plt.legend()
-#     plt.tight_layout()
-#     plt.savefig(os.path.join(output_folder, 'strong_scaling_mpi_rel.png'))
-
 def process_data(dir_name: str):
     scaling_data = {}
     for filename in os.listdir(os.path.join(output_folder, dir_name)):
@@ -318,7 +253,7 @@ def deleteJson():
 
 def setup_template_env():
     template_file = "sbatch_run.sh.jinja2"
-    template_dir = os.path.realpath(os.path.join(os.path.dirname(__file__), os.pardir))
+    template_dir = os.path.realpath(os.path.join(os.path.dirname(__file__)))
     env = Environment(loader=FileSystemLoader(template_dir))
     template = env.get_template(template_file)
     return template
