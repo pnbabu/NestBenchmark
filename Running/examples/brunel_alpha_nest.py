@@ -510,7 +510,7 @@ endsimulate = time.time()
 # Reading out the total number of spikes received from the spike recorder
 # connected to the excitatory population and the inhibitory population.
 
-events_ex = espikes.n_events
+events_ex = espikes_ascii.n_events
 events_in = ispikes.n_events
 
 ###############################################################################
